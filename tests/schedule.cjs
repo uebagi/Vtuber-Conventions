@@ -34,6 +34,10 @@ setImmediate(async () => {
   assert.equal(run("participantChip('Phoebe Chan').href"), 'https://x.com/feebeechanchibi');
   assert.equal(run("participantChip('Paige Turner').href"), 'https://x.com/paigeterner_');
   assert.equal(run("participantChip('Patchumi').href"), 'https://x.com/Patchumii');
+  assert.equal(run("participantChip('Bun-Mii').href"), 'https://x.com/bun_mii');
+  assert.equal(run("participantChip('Milia').href"), 'https://x.com/ounceofMilia');
+  assert.equal(run("participantChip('Seraph').href"), 'https://x.com/serafufu');
+  assert.equal(run("participantChip('Haewon').href"), 'https://x.com/HaewonTheHeart');
   assert.equal(run("participantChip('BeriBug').href"), run("participantChip('Beribug').href"));
   assert.equal(run("participantChip('Poka').href"), undefined);
   assert.equal(run("participantLinks('Poka').children.length"), 1);
@@ -55,7 +59,7 @@ setImmediate(async () => {
       profile.sources.forEach(source => assert.equal(new URL(source).protocol, 'https:'));
     }
   }
-  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 155);
+  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 197);
   assert.equal(Object.values(socialData.profiles).filter(p => p.primary).length, 136);
   for (const profile of Object.values(socialData.profiles)) {
     if (profile.primary) {
@@ -112,6 +116,12 @@ setImmediate(async () => {
   assert.equal(snapshot.filter(s => s.event_status === 'official').length, 141);
   const unofficial = snapshot.filter(s => s.event_status === 'unofficial');
   assert.equal(unofficial.length, 43);
+  for (const session of unofficial) {
+    for (const name of session.participants.split(';').map(n => n.trim())) {
+      assert(socialData.profiles[name]?.x, `Unlinked booth participant: ${name}`);
+      assert.equal(run(`participantChip(${JSON.stringify(name)}).href`), socialData.profiles[name].x);
+    }
+  }
   assert(unofficial.every(s => s.is_meet_greet && !s.is_concert && s.booth === 'S05'));
   assert.equal(unofficial.filter(s => s.meet_greet_type === 'IRL').length, 5);
   const posters = JSON.parse(fs.readFileSync('vexpo-2026/sources/floratelier-meet-greets.json', 'utf8')).posters;

@@ -1516,214 +1516,339 @@
       }
     },
     "Xaela": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/Xaeela",
+      "sources": [
+        "https://api.fxtwitter.com/Xaeela",
+        "https://vtubie.com/xaeela/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Seraph": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/serafufu",
+      "sources": [
+        "https://api.fxtwitter.com/serafufu",
+        "https://hololist.net/serafufu/",
+        "https://bsky.app/profile/serafufu.bsky.social"
+      ],
+      "notes": "Seraph / Serafufu. Name and published character artwork match the Friday poster.",
+      "checked_on": "2026-09-05"
     },
     "Rin Penrose": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/RinPenrose",
+      "sources": [
+        "https://api.fxtwitter.com/RinPenrose",
+        "https://virtualyoutuber.fandom.com/wiki/Rin_Penrose"
+      ],
+      "checked_on": "2026-09-05"
     },
     "RTGame": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/RTGameCrowd",
+      "sources": [
+        "https://api.fxtwitter.com/RTGameCrowd"
+      ],
+      "notes": "This is RTGame's X profile; its bio says he has moved to Bluesky: https://bsky.app/profile/rtgame.bsky.social",
+      "checked_on": "2026-09-05"
     },
     "Blair Labri": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/LabriBlair",
+      "sources": [
+        "https://api.fxtwitter.com/LabriBlair",
+        "https://hololist.net/blair-labri/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Varidetta": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/Varidetta",
+      "sources": [
+        "https://api.fxtwitter.com/Varidetta",
+        "https://vtubie.com/varidetta/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Marigatou": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/MarigatouDesu",
+      "sources": [
+        "https://api.fxtwitter.com/MarigatouDesu",
+        "https://vtubie.com/marigatou/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Tipanya": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/tipanya_",
+      "sources": [
+        "https://api.fxtwitter.com/tipanya_"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Chocojax": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/chocojaxVT",
+      "sources": [
+        "https://api.fxtwitter.com/chocojaxVT"
+      ],
+      "notes": "VTuber account @chocojaxVT; the artist's main account @chocojax links to it.",
+      "checked_on": "2026-09-05"
     },
     "Rina Lucsper": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/RinaLucsper",
+      "sources": [
+        "https://api.fxtwitter.com/RinaLucsper",
+        "https://vtubie.com/rina-lucsper/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Bun-Mii": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/bun_mii",
+      "sources": [
+        "https://api.fxtwitter.com/bun_mii",
+        "https://api.fxtwitter.com/bunbun_mii/status/1863355447484244120",
+        "https://virtualyoutuber.fandom.com/wiki/Bun-mii"
+      ],
+      "notes": "Current handle is @bun_mii; older sources use @bunbun_mii. The author of the linked model-reference post now resolves to @bun_mii.",
+      "checked_on": "2026-09-05"
     },
     "Felynne Derouge": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/LynneRouge",
+      "sources": [
+        "https://api.fxtwitter.com/LynneRouge"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Bear the Witch": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/bearthewitch",
+      "sources": [
+        "https://api.fxtwitter.com/bearthewitch"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Zephyrianna": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/zephyrianna",
+      "sources": [
+        "https://api.fxtwitter.com/zephyrianna",
+        "https://vtubie.com/zephyrianna/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Firozera": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/firozera",
+      "sources": [
+        "https://api.fxtwitter.com/firozera",
+        "https://vtubie.com/firozera/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Asha": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/ASHA_EXE",
+      "sources": [
+        "https://api.fxtwitter.com/ASHA_EXE",
+        "https://hololist.net/asha_exe/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Elia Stellaria": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/EliaStellaria",
+      "sources": [
+        "https://api.fxtwitter.com/EliaStellaria",
+        "https://virtualyoutuber.fandom.com/wiki/Elia_Stellaria"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Milky": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/Miilkywayz",
+      "sources": [
+        "https://api.fxtwitter.com/Miilkywayz"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Malfina": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/MalfinaVT",
+      "sources": [
+        "https://api.fxtwitter.com/MalfinaVT",
+        "https://virtualyoutuber.fandom.com/wiki/Malfina"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Auteru": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/AuteruTori",
+      "sources": [
+        "https://api.fxtwitter.com/AuteruTori",
+        "https://virtualyoutuber.fandom.com/wiki/Auteru_Tori"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Snoozychu": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/snoozychu",
+      "sources": [
+        "https://api.fxtwitter.com/snoozychu",
+        "https://virtualyoutuber.fandom.com/wiki/Snoozychu"
+      ],
+      "checked_on": "2026-09-05"
     },
     "MysticLight": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/Mystic_Lights",
+      "sources": [
+        "https://api.fxtwitter.com/Mystic_Lights",
+        "https://hololist.net/mysticlight/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Orla": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/orlaganceann",
+      "sources": [
+        "https://api.fxtwitter.com/orlaganceann",
+        "https://twstalker.com/VivariaVirtual",
+        "https://vtubie.com/orla-gan-ceann/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Dreamy": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/DreamyEtude",
+      "sources": [
+        "https://api.fxtwitter.com/DreamyEtude",
+        "https://ww.twstalker.com/VivariaVirtual",
+        "https://hololist.net/dreamy-etude/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Haewon": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/HaewonTheHeart",
+      "sources": [
+        "https://api.fxtwitter.com/HaewonTheHeart",
+        "https://virtualyoutuber.fandom.com/wiki/Haewon_The_Heartstring"
+      ],
+      "notes": "Current handle @HaewonTheHeart; older listings use @HaewonTheWitch.",
+      "checked_on": "2026-09-05"
     },
     "Euryale": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/EuryaleDrift",
+      "sources": [
+        "https://api.fxtwitter.com/EuryaleDrift"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Ninette": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/dearNinette",
+      "sources": [
+        "https://api.fxtwitter.com/dearNinette"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Khiren": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/_Khiren",
+      "sources": [
+        "https://api.fxtwitter.com/_Khiren"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Armia Stars": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/ArmiaStars",
+      "sources": [
+        "https://api.fxtwitter.com/ArmiaStars",
+        "https://virtualyoutuber.fandom.com/wiki/ArmiaStars"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Lucky Loveshot": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/luckyloveshot",
+      "sources": [
+        "https://api.fxtwitter.com/luckyloveshot",
+        "https://virtualyoutuber.fandom.com/wiki/Lucky_Loveshot"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Yuchi": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/YuchiVT",
+      "sources": [
+        "https://api.fxtwitter.com/YuchiVT"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Jelly": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/jellydoughnut__",
+      "sources": [
+        "https://api.fxtwitter.com/jellydoughnut__",
+        "https://hololist.net/jelly-doughnut/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Inksie": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/inksie",
+      "sources": [
+        "https://api.fxtwitter.com/inksie",
+        "https://virtualyoutuber.fandom.com/wiki/Inksie"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Anora": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/anoravt",
+      "sources": [
+        "https://api.fxtwitter.com/anoravt",
+        "https://vtubie.com/anora/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Rayshii": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/Rayshii_vt",
+      "sources": [
+        "https://api.fxtwitter.com/Rayshii_vt"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Raivy": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/RaivyRain",
+      "sources": [
+        "https://api.fxtwitter.com/RaivyRain"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Digiko": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/_digiko",
+      "sources": [
+        "https://api.fxtwitter.com/_digiko"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Yoor": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/yuwoor",
+      "sources": [
+        "https://api.fxtwitter.com/yuwoor",
+        "https://bsky.app/profile/yuwoor.bsky.social"
+      ],
+      "notes": "X display name is Yoor @Bsky. Active personal profile: https://bsky.app/profile/yuwoor.bsky.social; also links VGen under Yoor.",
+      "checked_on": "2026-09-05"
     },
     "Milia": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/ounceofMilia",
+      "sources": [
+        "https://api.fxtwitter.com/ounceofMilia",
+        "https://api.fxtwitter.com/OunceMilia",
+        "https://vtubie.com/milia/"
+      ],
+      "notes": "Current main account is @ounceofMilia; @OunceMilia directs visitors to this account.",
+      "checked_on": "2026-09-05"
     },
     "Naena": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/naenavsinger",
+      "sources": [
+        "https://api.fxtwitter.com/naenavsinger",
+        "https://virtualyoutuber.fandom.com/wiki/Naena"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Meicha": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/MeichaFox",
+      "sources": [
+        "https://api.fxtwitter.com/MeichaFox",
+        "https://vtubie.com/meicha/"
+      ],
+      "checked_on": "2026-09-05"
     },
     "Lucks Shi": {
-      "x": null,
-      "sources": [],
-      "notes": "Named on the florAtelier booth poster; social account not yet researched."
+      "x": "https://x.com/LucksShi",
+      "sources": [
+        "https://api.fxtwitter.com/LucksShi",
+        "https://vtubie.com/lucks-shi/"
+      ],
+      "checked_on": "2026-09-05"
     }
   }
 }

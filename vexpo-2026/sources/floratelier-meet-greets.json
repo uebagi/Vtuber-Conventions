@@ -473,5 +473,11 @@
         }
       ]
     }
-  ]
+  ],
+  "social_research": {
+    "profile_data": "../socials.json",
+    "new_profiles_matched": 42,
+    "announcement_mirror": "https://api.fxtwitter.com/floratelier_/status/2095893825457709322",
+    "notes": "Announcement subsequently retrieved while researching X profiles. Creator profile links and account-renaming notes are recorded in socials.json. Original schedule transcription retained."
+  }
 }
