@@ -7,7 +7,7 @@ Unofficial convention schedules with performer search, day, stage and meet-and-g
 ## Features
 
 - Search sessions and announced participants.
-- Click a participant name to open their researched X (Twitter) profile. Hover to see the handle; unmatched names stay unlinked.
+- Click a participant name to open their researched X (Twitter) profile. Hover to see the handle; unmatched names stay unlinked. YouTube, Twitch, and website links from the convention appear beside the name.
 - Filter by date, location, announced sessions, concerts, meet-and-greets, or official/unofficial status.
 - View lineup notes and links to official sources.
 - Download one session or the filtered schedule as an `.ics` calendar file.
@@ -102,3 +102,5 @@ VeXpo's map was checked September 5, 2026: 155 of 156 distinct display names hav
 Edit an entry's `x` URL and `sources` together when correcting a match. Use `null` for an uncertain account. Notes record spelling differences such as Paige Turner / Paige Terner and Nowi Kaijumari / Nowi Kaijumaru. The social map preserves the names used in the schedule.
 
 Run the functional checks with `node tests/schedule.cjs`.
+
+Primary links for 136 schedule names come from VeXpo's [virtual guests](https://vexpo.uk/guests) and [IRL guests / autographs](https://vexpo.uk/autographs) pages. Each `primary` object records its `url` and convention `source`. Personal link pages were also checked to corroborate X handles; creator-credit links were not treated as the participant's account. The convention pages sometimes link older personal sites, so X research is retained separately (for example, Vampeaches).

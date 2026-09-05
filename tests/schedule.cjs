@@ -23,6 +23,11 @@ setImmediate(async () => {
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
   const people = run("card({...sessions[0], participants: 'Mint Fantôme; A & B'})").children.find(e => e.className === 'people');
   assert.equal(people.children.length, 2);
+  const primary = people.children[0].children[1];
+  assert.equal(primary.href, 'https://youtube.com/channel/UCcHHkJ98eSfa5aj0mdTwwLQ');
+  assert.equal(primary.rel, 'noopener noreferrer');
+  assert.equal(primary.target, '_blank');
+  people.children = people.children.map(group => group.children[0]);
   assert.equal(people.children[0].href, 'https://x.com/MintFantome');
   assert.equal(people.children[1].href, undefined);
   assert.equal(people.children[1].textContent, 'A & B');
@@ -31,6 +36,10 @@ setImmediate(async () => {
   assert.equal(run("participantChip('Patchumi').href"), 'https://x.com/Patchumii');
   assert.equal(run("participantChip('BeriBug').href"), run("participantChip('Beribug').href"));
   assert.equal(run("participantChip('Poka').href"), undefined);
+  assert.equal(run("participantLinks('Poka').children.length"), 1);
+  run("socialProfiles.BadPrimary = {primary: {url: 'javascript:alert(1)'}}");
+  assert.equal(run("participantLinks('BadPrimary').children.length"), 1);
+  run("delete socialProfiles.BadPrimary");
   run("socialProfiles['Unsafe'] = {x: 'javascript:alert(1)'}");
   assert.equal(run("participantChip('Unsafe').href"), undefined);
   run("delete socialProfiles.Unsafe");
@@ -47,6 +56,13 @@ setImmediate(async () => {
     }
   }
   assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 155);
+  assert.equal(Object.values(socialData.profiles).filter(p => p.primary).length, 136);
+  for (const profile of Object.values(socialData.profiles)) {
+    if (profile.primary) {
+      assert.equal(new URL(profile.primary.url).protocol, 'https:');
+      assert(['https://vexpo.uk/guests', 'https://vexpo.uk/autographs'].includes(profile.primary.source));
+    }
+  }
   assert.equal(people.children[0].rel, 'noopener noreferrer');
   assert.equal(people.children[0].target, '_blank');
   assert.equal(count(), 141);

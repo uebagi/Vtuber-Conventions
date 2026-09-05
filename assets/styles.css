@@ -12,3 +12,5 @@
 .filter-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:end;flex:0 1 440px;max-width:100%;min-width:0}.filter-pair label,.filter-pair select{min-width:0}@media(max-width:760px){.filter-pair{flex-basis:100%;gap:12px}}
 
 .social-link{display:inline-flex;align-items:center;gap:8px;color:var(--text);text-decoration:none;overflow-wrap:anywhere}.social-link:hover{border-color:var(--accent);background:#373047}.social-label{color:var(--accent);font-size:.7rem;white-space:nowrap}
+
+.person-group{display:inline-flex;align-items:center;flex-wrap:wrap;gap:5px;max-width:100%}.primary-social{font-size:.7rem;padding:5px;color:var(--muted);text-decoration:none}.primary-social:hover{text-decoration:underline}.primary-social:focus-visible{outline:2px solid currentColor;outline-offset:2px;border-radius:3px}

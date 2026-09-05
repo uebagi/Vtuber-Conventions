@@ -4,80 +4,135 @@
     "0shiriko": {
       "x": "https://x.com/0shiriko",
       "sources": [
+        "https://oshiriko.carrd.co",
         "https://twstalker.com/0shiriko"
-      ]
+      ],
+      "primary": {
+        "url": "https://oshiriko.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Aia Amare": {
       "x": "https://x.com/AiaAmare",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Aia_Amare"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCN68LoM3khS4gdBMiWJO8WA",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Akugaki Koa": {
       "x": "https://x.com/AkugakiKoa",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Akugaki_Koa"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@AkugakiKoa",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Alban Knox": {
       "x": "https://x.com/alban_knox",
       "sources": [
         "https://mobile.twstalker.com/alban_knox"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCQ1zGxHrfEmmW4CPpBx9-qw",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Alfhilde": {
       "x": "https://x.com/AlfhildeO",
       "sources": [
         "https://vtubie.com/alfhilde/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/alfhilde",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Alicja da Lontano": {
       "x": "https://x.com/AlicjaDaLontano",
       "sources": [
         "https://vtubie.com/alicja-da-lontano/"
-      ]
+      ],
+      "primary": {
+        "url": "https://beacons.ai/alicjadalontano/home",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Amaya Whisper": {
       "x": "https://x.com/Amaya_Whisper",
       "sources": [
+        "https://amayawhisper.carrd.co/",
         "https://ww.twstalker.com/Amaya_Whisper"
-      ]
+      ],
+      "primary": {
+        "url": "https://amayawhisper.carrd.co/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Anoko": {
       "x": "https://x.com/AtelierAnoko",
       "sources": [
         "https://mobile.twstalker.com/hellowmabel"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/atelieranoko",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Ao WuWu": {
       "x": "https://x.com/_aowuwu",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Ao_Wuwu"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@Ao_WuWu",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Arisa Noonish": {
       "x": "https://x.com/ArisaNoonish",
       "sources": [
         "https://twstalker.com/ArisaNoonish"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@ArisaNoonish",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Avaritia Hawthorne": {
       "x": "https://x.com/AvaHawt",
       "sources": [
         "https://instalker.org/AvaHawt"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@avaritiahawthorne",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Ayunda Risu": {
       "x": "https://x.com/ayunda_risu",
       "sources": [
         "https://w.twstalker.com/ayunda_risu"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/channel/UCOyYb1c43VlX9rc_lT6NKQw",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "AyuuChii": {
       "x": "https://x.com/ayuu_chii",
       "sources": [
+        "https://linktr.ee/AyuuChii",
         "https://virtualyoutuber.fandom.com/wiki/AyuuChii"
-      ]
+      ],
+      "primary": {
+        "url": "https://linktr.ee/AyuuChii",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "BEASTIEZ": {
       "x": "https://x.com/TheBEASTIEZ",
@@ -89,61 +144,101 @@
       "x": "https://x.com/beribug_",
       "sources": [
         "https://twstalker.com/beribug_"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/beribug",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Beribug": {
       "x": "https://x.com/beribug_",
       "sources": [
         "https://twstalker.com/beribug_"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/beribug",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Bonnie Barkswell": {
       "x": "https://x.com/BonnieBarkswell",
       "sources": [
         "https://ngntipkolamrenang.twstalker.com/BonnieBarkswell"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@BonnieBarkswell",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "CDawgVA": {
       "x": "https://x.com/CDawgVA",
       "sources": [
         "https://twstalker.com/CDawgVA"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/c/CDawgVA",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Callie Calico": {
       "x": "https://x.com/CallieCalicoTV",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Callie_Calico"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/calliecalico",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Cana": {
       "x": "https://x.com/CanariaVTuber",
       "sources": [
         "https://hololist.net/canaria/"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/Cana",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Captain Camille": {
       "x": "https://x.com/cptcam_vt",
       "sources": [
         "https://twstalker.com/cptcam_vt"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/cptcamille/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Cecilia Immergreen": {
       "x": "https://x.com/ceciliaimgreen",
       "sources": [
         "https://twstalker.com/ceciliaimgreen"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@holoen_ceciliaimmergreen",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Cecilia Lent": {
       "x": "https://x.com/CeciliaLent_",
       "sources": [
         "https://www.twstalker.com/D_A_V_E_GAMING"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@Cecilia_Lent",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Claude Clawmark": {
       "x": "https://x.com/ClaudeClawmark",
       "sources": [
         "https://v-data.info/v/oPUVMDcmHLi4SsJG"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@ClaudeClawmark",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Clio Aite": {
       "x": "https://x.com/ClioAite",
@@ -161,7 +256,11 @@
       "x": "https://x.com/C0QUI",
       "sources": [
         "https://hololist.net/coqui-saporana/"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/COQUI",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Dianko": {
       "x": "https://x.com/DiankoLastrea",
@@ -179,49 +278,81 @@
       "x": "https://x.com/dokibird",
       "sources": [
         "https://twstalker.com/dokibird"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@Dokibird",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Dooby": {
       "x": "https://x.com/dooby3D",
       "sources": [
         "https://hololist.net/dooby/"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/dooby3D",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Doppio Dropscythe": {
       "x": "https://x.com/D_Dropscythe",
       "sources": [
         "https://www.virtualhumans.org/human/doppio-dropscythe"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@DoppioDropscythenijisanji",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Dr. NOVA(e)": {
       "x": "https://x.com/DrNOVAe",
       "sources": [
         "https://hololist.net/dr-novae/"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@DrNovae",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Ekkomori": {
       "x": "https://x.com/ekkomorii",
       "sources": [
         "https://hololist.net/ekkomori/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@ekkomori",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Elira Pendora": {
       "x": "https://x.com/EliraPendora",
       "sources": [
         "https://hololist.net/elira-pendora/"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@elirapendora",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Elizabeth Rose Bloodflame": {
       "x": "https://x.com/ERBloodflame",
       "sources": [
         "https://w.twstalker.com/ERBloodflame"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@haloen_erbloodflame",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Embyr Sparks": {
       "x": "https://x.com/embyrsparks",
       "sources": [
         "https://mobile.twstalker.com/GamesPhilosophy"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@embyrsparks",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Emiliya Fell": {
       "x": "https://x.com/EmiliyaFell",
@@ -233,19 +364,31 @@
       "x": "https://x.com/EnnaAlouette",
       "sources": [
         "https://x.com/EnnaAlouette/with_replies?lang=en"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCR6qhsLpn62WVxCBK1dkLow",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Erina Makina": {
       "x": "https://x.com/ErinaMakina",
       "sources": [
         "https://ww.twstalker.com/ErinaMakina"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@ErinaMakina",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Eru Erudite": {
       "x": "https://x.com/EruErudite",
       "sources": [
         "https://www.twstalker.com/MozumiPichi"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@EruErudite",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Essie": {
       "x": "https://x.com/EssieVtuber",
@@ -258,13 +401,21 @@
       "sources": [
         "https://ngntipkolamrenang.twstalker.com/corakyuu",
         "https://w.twstalker.com/MiuMiyana"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@FioFuruyuki",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Fufu": {
       "x": "https://x.com/FufuVT",
       "sources": [
         "https://www6.twstalker.com/FufuVT"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/fufu",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Fujikura Uruka": {
       "x": "https://x.com/fujikurauruka",
@@ -275,104 +426,179 @@
     "Fumiko Hoshi": {
       "x": "https://x.com/fumikohoshi",
       "sources": [
+        "https://solo.to/fumiko",
         "https://virtualyoutuber.fandom.com/wiki/Fumiko_Hoshi"
-      ]
+      ],
+      "primary": {
+        "url": "https://solo.to/fumiko",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Féileacán Cú": {
       "x": "https://x.com/FeileacanCu",
       "sources": [
+        "https://metamorphosislost.blogspot.com/p/where-to-find-feileacan-cu.html",
         "https://ww.twstalker.com/FeileacanCu"
-      ]
+      ],
+      "primary": {
+        "url": "https://metamorphosislost.blogspot.com/p/where-to-find-feileacan-cu.html",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Gigi Murin": {
       "x": "https://x.com/gigimurin",
       "sources": [
         "https://twstalker.com/gigimurin"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@holoen_gigimurin",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Hakos Baelz": {
       "x": "https://x.com/hakosbaelz",
       "sources": [
         "https://w.twstalker.com/hakosbaelz"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@HakosBaelz",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Heavenlyfather": {
       "x": "https://x.com/heavenlyyfather",
       "sources": [
         "https://twicopy.com/roboquestgame/following"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/heavenlyfather",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Hirano Kokoro": {
       "x": "https://x.com/HiranoKokoroCh",
       "sources": [
+        "https://www.hiranokokoro.com/",
         "https://hiranokokoro.framer.website/contact"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.hiranokokoro.com/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Hiyori Mokami": {
       "x": "https://x.com/hiyorimokami",
       "sources": [
         "https://mobile.twstalker.com/hiyorimokami"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@HiyoriMokami",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "InVain": {
       "x": "https://x.com/InVainYT",
       "sources": [
+        "https://solo.to/invain",
         "https://twstalker.com/InVainYT"
-      ]
+      ],
+      "primary": {
+        "url": "https://solo.to/invain",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Ironmouse": {
       "x": "https://x.com/ironmouse",
       "sources": [
         "https://w.twstalker.com/ironmouse"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/c/ironmouseparty",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kaelix Debonair": {
       "x": "https://x.com/KaelixDebonair",
       "sources": [
         "https://www.twstalker.com/KaelixDebonair"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@kaelixdebonair",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kai Kurayomi": {
       "x": "https://x.com/KaiKurayomi",
       "sources": [
+        "https://solo.to/kaikurayomi",
         "https://w.twstalker.com/KaiKurayomi"
-      ]
+      ],
+      "primary": {
+        "url": "https://solo.to/kaikurayomi",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Kairyu Crocodile": {
       "x": "https://x.com/KairyuCrocodile",
       "sources": [
         "https://twstalker.com/TheBEASTIEZ"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@KairyuCrocodile",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kani Kanizawa": {
       "x": "https://x.com/kanikanizawa",
       "sources": [
         "https://www6.twstalker.com/kanikanizawa"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/c/KaniKanizawaCh",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kanna Yanagi": {
       "x": "https://x.com/Yanagi_Kanna",
       "sources": [
         "https://hololist.net/kanna-yanagi/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@KannaYanagi",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Katya Sable": {
       "x": "https://x.com/KatyaSabl",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Katya_Sable"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@KatyaSable",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kira P. Raptor Girl": {
       "x": "https://x.com/KiraPRaptorGirl",
       "sources": [
+        "https://linktr.ee/kirap_rapt",
         "https://twoucan.com/profile/KiraPRaptorGirl"
-      ]
+      ],
+      "primary": {
+        "url": "https://linktr.ee/kirap_rapt",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Kira P. Raptorgirl": {
       "x": "https://x.com/KiraPRaptorGirl",
       "sources": [
+        "https://linktr.ee/kirap_rapt",
         "https://twoucan.com/profile/KiraPRaptorGirl"
-      ]
+      ],
+      "primary": {
+        "url": "https://linktr.ee/kirap_rapt",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "KitsenVT": {
       "x": "https://x.com/kitsenvt",
@@ -384,7 +610,11 @@
       "x": "https://x.com/komachipanko",
       "sources": [
         "https://x.com/komachipanko/with_replies"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/c/komachipanko",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kou Mariya": {
       "x": "https://x.com/koumariya",
@@ -396,73 +626,121 @@
       "x": "https://x.com/KumiVT",
       "sources": [
         "https://ww.twstalker.com/KumiVT"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/kumi",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Kumisa Umare": {
       "x": "https://x.com/kumisaumare",
       "sources": [
         "https://www.twstalker.com/MozumiPichi"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@KumisaUmare",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Kyuru Rin": {
       "x": "https://x.com/KyuruRinSama",
       "sources": [
         "https://twstalker.com/PocketPrinny"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@KyuruRin-sama",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Lan Philia": {
       "x": "https://x.com/LanPhilia",
       "sources": [
         "https://ngntipkolamrenang.twstalker.com/LanPhilia"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@LanPhilia",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Leia Memoria": {
       "x": "https://x.com/LeiaMemoria",
       "sources": [
         "https://mobile.twstalker.com/LeiaMemoria"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@leiamemoria",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Lilith O'Leerie": {
       "x": "https://x.com/itslilithmusic",
       "sources": [
         "https://vtubie.com/lilith-oleerie/"
-      ]
+      ],
+      "primary": {
+        "url": "https://lilithmusic.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Limina Alteri": {
       "x": "https://x.com/alterilimina",
       "sources": [
         "https://ww.twstalker.com/alterilimina"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@AlteriLimina",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Lin (Linvy)": {
       "x": "https://x.com/plinvy",
       "sources": [
         "https://ngntipkolamrenang.twstalker.com/plinvy"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@plinvy",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Luca Kaneshiro": {
       "x": "https://x.com/luca_kaneshiro",
       "sources": [
         "https://twstalker.com/luca_kaneshiro/status/2008790469002883249"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UC7Gb7Uawe20QyFibhLl1lzA",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Lyko Lianna": {
       "x": "https://x.com/LykoLianna",
       "sources": [
         "https://hololist.net/lyko-lianna/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@LykoLianna",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Mabel": {
       "x": "https://x.com/hellowmabel",
       "sources": [
         "https://twstalker.com/hellowmabel"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/mellowmabel",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "MaeFae": {
       "x": "https://x.com/MaeFae",
       "sources": [
         "https://twstalker.com/Jeffherrera11"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@MaeFaeCh",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Maids of England": {
       "x": "https://x.com/MaidsOfEngland",
@@ -474,13 +752,21 @@
       "x": "https://x.com/MallieSprout",
       "sources": [
         "https://hololist.net/mallie-sprout/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/malliesprout",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Maple": {
       "x": "https://x.com/MapleMaple_Ch",
       "sources": [
         "https://mobile.twstalker.com/Stimpak_VT"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@MapleMaple_Ch",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Mari Mari": {
       "x": "https://x.com/MARIMARI_EN",
@@ -492,19 +778,31 @@
       "x": "https://x.com/MariaMari0nette",
       "sources": [
         "https://mobile.twstalker.com/MariaMari0nette"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCwaS8_S7kMiKA3izlTWHbQg",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Matara Kan": {
       "x": "https://x.com/MataraKan",
       "sources": [
         "https://www.twstalker.com/MataraKan/status/1932623801897926980"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/MataraKan",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Meat": {
       "x": "https://x.com/meatscave",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Meat"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/meat",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Meimi Majokko": {
       "x": "https://x.com/majokkoMeimi",
@@ -516,55 +814,93 @@
       "x": "https://x.com/MillieParfait",
       "sources": [
         "https://w.twstalker.com/MillieParfait"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@MillieParfait",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Mint Fantôme": {
       "x": "https://x.com/MintFantome",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Mint_Fant%C3%B4me"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/channel/UCcHHkJ98eSfa5aj0mdTwwLQ",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Mochi": {
       "x": "https://x.com/vtuber_mochi",
       "sources": [
         "https://ngntipkolamrenang.twstalker.com/vtuber_mochi"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/vtubermochi",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "MomAtCookiebox": {
       "x": "https://x.com/MomatCookieBox",
       "sources": [
         "https://twstalker.com/TheDebutFactory"
-      ]
+      ],
+      "primary": {
+        "url": "https://linktr.ee/momatcookiebox",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Mono Monet": {
       "x": "https://x.com/mono_monet",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Mono_Monet"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@monomonet",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Moona Hoshinova": {
       "x": "https://x.com/moonahoshinova",
       "sources": [
         "https://www.twstalker.com/moonahoshinova"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Moyasi": {
       "x": "https://x.com/M0YASI_",
       "sources": [
+        "https://moyasi.art",
         "https://mobile.twstalker.com/M0YASI_"
-      ]
+      ],
+      "primary": {
+        "url": "https://moyasi.art",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Necronival": {
       "x": "https://x.com/necronival",
       "sources": [
         "https://www6.twstalker.com/necronival"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/necronival",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Nina Saotome": {
       "x": "https://x.com/NinanininVT",
       "sources": [
+        "https://ninaninin.carrd.co",
         "https://twstalker.com/NinanininVT"
-      ]
+      ],
+      "primary": {
+        "url": "https://ninaninin.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Nowi Kaijumari": {
       "x": "https://x.com/nowikaijumaru",
@@ -572,26 +908,43 @@
         "https://ww.twstalker.com/Uijery",
         "https://w.twstalker.com/MiuMiyana"
       ],
-      "notes": "Listed by VeXpo as Nowi Kaijumari; Wota Production's talent uses Nowi Kaijumaru."
+      "notes": "Listed by VeXpo as Nowi Kaijumari; Wota Production's talent uses Nowi Kaijumaru.",
+      "primary": {
+        "url": "https://www.youtube.com/@nowikaijumaru",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Obkatiekat": {
       "x": "https://x.com/obkatiekat",
       "sources": [
+        "https://obkatiekat.com",
         "https://x.com/obkatiekat/with_replies"
-      ]
+      ],
+      "primary": {
+        "url": "https://obkatiekat.com",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Ouro Kronii": {
       "x": "https://x.com/ourokronii",
       "sources": [
         "https://mobile.twstalker.com/ourokronii"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@OuroKronii",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Paige Turner": {
       "x": "https://x.com/paigeterner_",
       "sources": [
         "https://hololist.net/paige-terner/"
       ],
-      "notes": "Listed in the schedule as Paige Turner; the V4Mirai talent is Paige Terner."
+      "notes": "Listed in the schedule as Paige Turner; the V4Mirai talent is Paige Terner.",
+      "primary": {
+        "url": "https://www.youtube.com/@Paige_Terner",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Patchumi": {
       "x": "https://x.com/Patchumii",
@@ -599,43 +952,74 @@
         "https://ww.twstalker.com/Uijery",
         "https://w.twstalker.com/MiuMiyana"
       ],
-      "notes": "Current Wota Production account; older listings use PatchumiVT."
+      "notes": "Current Wota Production account; older listings use PatchumiVT.",
+      "primary": {
+        "url": "https://www.youtube.com/@Patchumi",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Penny Puffball": {
       "x": "https://x.com/PennyPuffball",
       "sources": [
         "https://mobile.twstalker.com/PennyPuffball"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@PennyPuffball",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Phoebe Chan": {
       "x": "https://x.com/feebeechanchibi",
       "sources": [
+        "https://feebeechanchibi.com/",
         "https://virtualyoutuber.fandom.com/wiki/Densetsu.EXE?t=20260320003126"
-      ]
+      ],
+      "primary": {
+        "url": "https://feebeechanchibi.com/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Phoenyx": {
       "x": "https://x.com/PhoenyxVT",
       "sources": [
         "https://ww.twstalker.com/PhoenyxVT"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/phoenyx",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "PiaPiUFO": {
       "x": "https://x.com/PiaPiUFO",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/BEASTIEZ"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@PiaPIUFO",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "PillowDear": {
       "x": "https://x.com/pillowdearASMR",
       "sources": [
+        "https://pillowdearvt.com/",
         "https://www6.twstalker.com/pillowdearASMR"
-      ]
+      ],
+      "primary": {
+        "url": "https://pillowdearvt.com/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Podgekinn": {
       "x": "https://x.com/podgekinn",
       "sources": [
+        "https://podgekinn.carrd.co/",
         "https://mobile.twstalker.com/podgekinn"
-      ]
+      ],
+      "primary": {
+        "url": "https://podgekinn.carrd.co/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Poka": {
       "x": null,
@@ -651,32 +1035,53 @@
     "RORO ☆ Hirano Kokoro": {
       "x": "https://x.com/HiranoKokoroCh",
       "sources": [
+        "https://www.hiranokokoro.com/",
         "https://hiranokokoro.framer.website/contact"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.hiranokokoro.com/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Raora Panthera": {
       "x": "https://x.com/raorapanthera",
       "sources": [
         "https://x.com/raorapanthera/with_replies?lang=en"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@holoen_raorapanthera",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Rara Rocora": {
       "x": "https://x.com/RaraRocora",
       "sources": [
         "https://hololist.net/rara-rocora/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@RaraRocora",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Rem Kanashibari": {
       "x": "https://x.com/REMKanashibari",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/REM_Kanashibari"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@REMKanashibari",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Remilia Nephys": {
       "x": "https://x.com/Remilia_Nephys",
       "sources": [
         "https://w.twstalker.com/Remilia_Nephys"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/c/RemiliaNephys",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Rita Kamishiro": {
       "x": "https://x.com/RitaKamishiro",
@@ -688,31 +1093,51 @@
       "x": "https://x.com/rokokoprufei",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Rokoko_Prufei"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/roko",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Saura": {
       "x": "https://x.com/saurawr_",
       "sources": [
         "https://saurawr.com/"
-      ]
+      ],
+      "primary": {
+        "url": "https://saurawr.com/",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Seion Aera": {
       "x": "https://x.com/SeionAera",
       "sources": [
         "https://www6.twstalker.com/SeionAera"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@seionaera",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Shiori Novella": {
       "x": "https://x.com/shiorinovella",
       "sources": [
         "https://x.com/shiorinovella/with_replies?lang=en"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@ShioriNovella",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Shu Yamino": {
       "x": "https://x.com/shu_yamino",
       "sources": [
         "https://x.com/shu_yamino/with_replies"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@shuyamino",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Sif Avellana": {
       "x": "https://x.com/MassiveNutsSif",
@@ -723,62 +1148,108 @@
     "Silvi": {
       "x": "https://x.com/SilviVtuber",
       "sources": [
+        "https://silvivtuber.carrd.co/",
         "https://mobile.twstalker.com/hellowmabel"
-      ]
+      ],
+      "primary": {
+        "url": "https://silvivtuber.carrd.co/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Skye Senfort": {
       "x": "https://x.com/SkyeSenfort",
       "sources": [
+        "https://skyesenfort.wixsite.com/skyesenfort",
         "https://virtualyoutuber.fandom.com/wiki/Skye_Senfort"
-      ]
+      ],
+      "primary": {
+        "url": "https://skyesenfort.wixsite.com/skyesenfort",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Snuffy": {
       "x": "https://x.com/snuffyowo",
       "sources": [
         "https://mobile.twstalker.com/snuffyowo"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/snuffy",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Sonny Brisko": {
       "x": "https://x.com/sonny_brisko",
       "sources": [
         "https://w.twstalker.com/sonny_brisko"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@SonnyBrisko",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Spookieruna": {
       "x": "https://x.com/SpookieRuna",
       "sources": [
+        "https://spookieruna.carrd.co/",
         "https://twstalker.com/EvanG2406"
-      ]
+      ],
+      "primary": {
+        "url": "https://spookieruna.carrd.co/",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Starlight Daryl": {
       "x": "https://x.com/StarlightDaryl",
       "sources": [
+        "https://starlightdaryl.moe/",
         "https://x.com/StarlightDaryl/with_replies?lang=en"
-      ]
+      ],
+      "primary": {
+        "url": "https://starlightdaryl.moe/",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "StarlightDaryl": {
       "x": "https://x.com/StarlightDaryl",
       "sources": [
+        "https://starlightdaryl.moe/",
         "https://x.com/StarlightDaryl/with_replies?lang=en"
-      ]
+      ],
+      "primary": {
+        "url": "https://starlightdaryl.moe/",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Stimpak": {
       "x": "https://x.com/Stimpak_VT",
       "sources": [
         "https://mobile.twstalker.com/Stimpak_VT"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/stimpak_vt",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "SynicalBeanical": {
       "x": "https://x.com/synicalbeanical",
       "sources": [
+        "https://synicalbeanical.uwu.ai",
         "https://mobile.twstalker.com/synicalbeanical"
-      ]
+      ],
+      "primary": {
+        "url": "https://synicalbeanical.uwu.ai",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "TRiGGERPHiSH": {
       "x": "https://x.com/TRiGGERPH1SH",
       "sources": [
         "https://hololist.net/triggerphish/"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@TRiGGERPHiSH",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "TaigaxHolic": {
       "x": "https://x.com/TaigaxHolic",
@@ -796,127 +1267,216 @@
       "x": "https://x.com/Terra404_",
       "sources": [
         "https://hololist.net/terra-404/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@V4Terra404",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "The Best in Jest": {
       "x": "https://x.com/thebestinjest",
       "sources": [
         "https://twstalker.com/thebestinjest"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@thebestinjest",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Tillysuperdog": {
       "x": "https://x.com/_TillySuperDog_",
       "sources": [
         "https://twstalker.com/_TillySuperDog_"
-      ]
+      ],
+      "primary": {
+        "url": "https://beacons.ai/tillysuperdog",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Tomoe Umari": {
       "x": "https://x.com/UmariTomoe",
       "sources": [
+        "https://tomoeumari.carrd.co",
         "https://ngntipkolamrenang.twstalker.com/UmariTomoe"
-      ]
+      ],
+      "primary": {
+        "url": "https://tomoeumari.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Tori Oriane": {
       "x": "https://x.com/ToriOriane",
       "sources": [
+        "https://torioriane.carrd.co",
         "https://virtualyoutuber.fandom.com/wiki/BEASTIEZ"
-      ]
+      ],
+      "primary": {
+        "url": "https://torioriane.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Uki Violeta": {
       "x": "https://x.com/uki_violeta",
       "sources": [
         "https://mobile.twstalker.com/uki_violeta"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@ukivioleta",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Vampeaches": {
       "x": "https://x.com/vampeaches",
       "sources": [
+        "https://solo.to/vampeaches",
         "https://x.com/vampeaches/highlights"
-      ]
+      ],
+      "primary": {
+        "url": "https://dreamsofpeaches.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      },
+      "notes": "The convention links an older Carrd with DreamsofPeaches. The current personal link page confirms @vampeaches."
     },
     "Vantacrow Bringer": {
       "x": "https://x.com/Tyrant_Vanta",
       "sources": [
         "https://w.twstalker.com/Tyrant_Vanta"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@VantacrowBringer",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Veilyn": {
       "x": "https://x.com/Veilyndps",
       "sources": [
         "https://ckworks.jp/vinforadar/video/lz0lIuxGIKk"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@veilyndps",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Vezalius Bandage": {
       "x": "https://x.com/VezaliusBandage",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Vezalius_Bandage"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@VezaliusBandage",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Victoria Roman": {
       "x": "https://x.com/vickyroman_idol",
       "sources": [
         "https://virtualyoutuber.fandom.com/wiki/Victoria_Roman"
-      ]
+      ],
+      "primary": {
+        "url": "https://youtube.com/@vickyroman_idol",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "VividlyVIVI": {
       "x": "https://x.com/vividlyVIVI",
       "sources": [
         "https://twstalker.com/3AM_Talent"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/vividlyvivi",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "VividlyVivi": {
       "x": "https://x.com/vividlyVIVI",
       "sources": [
         "https://twstalker.com/3AM_Talent"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/vividlyvivi",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Vox Akuma": {
       "x": "https://x.com/Vox_Akuma",
       "sources": [
         "https://www6.twstalker.com/Vox_Akuma"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCckdfYDGrjojJM28n5SHYrA",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "WUNDER RiKU": {
       "x": "https://x.com/WunderRiKU",
       "sources": [
         "https://linktr.ee/WunderRiKU"
-      ]
+      ],
+      "primary": {
+        "url": "https://linktr.ee/WunderRiKU",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "Wilhelmina Frost": {
       "x": "https://x.com/wilhelminafr0st",
       "sources": [
         "https://wikiwiki.jp/phaseconnect/%E3%82%A6%E3%82%A3%E3%83%AB%E3%83%98%E3%83%AB%E3%83%9F%E3%83%8A%E3%83%BB%E3%83%95%E3%83%AD%E3%82%B9%E3%83%88"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@WilhelminaFrost",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Yae Yugiri": {
       "x": "https://x.com/YaeYugiri",
       "sources": [
         "https://hololist.net/yae-yugiri/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@yaeyugiri",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "YoshinoArt": {
       "x": "https://x.com/YoshinoArt",
       "sources": [
+        "https://yoshinoart.carrd.co",
         "https://mobile.twstalker.com/YoshinoArt"
-      ]
+      ],
+      "primary": {
+        "url": "https://yoshinoart.carrd.co",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Yu Q. Wilson": {
       "x": "https://x.com/YuQWilson",
       "sources": [
         "https://hololist.net/yu-q-wilson/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@YuQ.Wilson",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "Zeal Ginjoka": {
       "x": "https://x.com/ZealGinjoka",
       "sources": [
         "https://mobile.twstalker.com/ZealGinjoka"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@ZealGinjoka",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "cakejumper": {
       "x": "https://x.com/Itscakejumper",
       "sources": [
         "https://www6.twstalker.com/Itscakejumper"
-      ]
+      ],
+      "primary": {
+        "url": "https://twitch.tv/cakejumper",
+        "source": "https://vexpo.uk/autographs"
+      }
     },
     "hololive English": {
       "x": "https://x.com/hololive_En",
@@ -927,20 +1487,33 @@
     "mipyun": {
       "x": "https://x.com/mipyunvt",
       "sources": [
+        "https://mipyun.carrd.co/",
         "https://mobile.twstalker.com/hellowmabel"
-      ]
+      ],
+      "primary": {
+        "url": "https://mipyun.carrd.co/",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "rachie": {
       "x": "https://x.com/splendiferachie",
       "sources": [
         "https://hololist.net/splendiferachie/"
-      ]
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCRbsmnDTHD9-4pEIuG7zYRw",
+        "source": "https://vexpo.uk/guests"
+      }
     },
     "xIvyDivinex": {
       "x": "https://x.com/DivinexIvy",
       "sources": [
         "https://twstalker.com/cerberVT"
-      ]
+      ],
+      "primary": {
+        "url": "https://beacons.ai/xivydivinex",
+        "source": "https://vexpo.uk/autographs"
+      }
     }
   }
 }

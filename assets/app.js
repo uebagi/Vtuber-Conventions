@@ -48,6 +48,27 @@ function participantChip(name) {
   return link;
 }
 
+function participantLinks(name) {
+  const group = el('span', 'person-group');
+  group.append(participantChip(name));
+  const primary = socialProfiles[name]?.primary;
+  if (primary?.url) {
+    try {
+      const url = new URL(primary.url);
+      if (url.protocol === 'https:' && !url.username && !url.password && url.href !== socialProfiles[name].x) {
+        const host = url.hostname.replace(/^www\./, '');
+        const label = ({'youtube.com': 'YouTube', 'twitch.tv': 'Twitch', 'x.com': 'X', 'twitter.com': 'X'}[host] || 'Website');
+        const link = el('a', 'primary-social', `${label} ↗`);
+        link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
+        link.title = `${name}: ${label}, linked by the convention`;
+        link.setAttribute('aria-label', `${name} on ${label}, opens in a new tab`);
+        group.append(link);
+      }
+    } catch { /* Invalid optional links do not hide the participant. */ }
+  }
+  return group;
+}
+
 async function loadSocials() {
   if (!config.socials) return {};
   try {
@@ -148,7 +169,7 @@ function card(session) {
   const names = session.participants.split(';').map(s => s.trim()).filter(Boolean);
   if (names.length) {
     const people = el('div', 'people');
-    names.forEach(name => people.append(participantChip(name)));
+    names.forEach(name => people.append(participantLinks(name)));
     article.append(people);
   } else article.append(el('p', 'muted', 'Participants not announced.'));
   const details = el('details'); details.append(el('summary', '', 'Lineup details & sources'));
