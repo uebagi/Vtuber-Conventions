@@ -1,0 +1,946 @@
+{
+  "checked_on": "2026-09-05",
+  "profiles": {
+    "0shiriko": {
+      "x": "https://x.com/0shiriko",
+      "sources": [
+        "https://twstalker.com/0shiriko"
+      ]
+    },
+    "Aia Amare": {
+      "x": "https://x.com/AiaAmare",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Aia_Amare"
+      ]
+    },
+    "Akugaki Koa": {
+      "x": "https://x.com/AkugakiKoa",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Akugaki_Koa"
+      ]
+    },
+    "Alban Knox": {
+      "x": "https://x.com/alban_knox",
+      "sources": [
+        "https://mobile.twstalker.com/alban_knox"
+      ]
+    },
+    "Alfhilde": {
+      "x": "https://x.com/AlfhildeO",
+      "sources": [
+        "https://vtubie.com/alfhilde/"
+      ]
+    },
+    "Alicja da Lontano": {
+      "x": "https://x.com/AlicjaDaLontano",
+      "sources": [
+        "https://vtubie.com/alicja-da-lontano/"
+      ]
+    },
+    "Amaya Whisper": {
+      "x": "https://x.com/Amaya_Whisper",
+      "sources": [
+        "https://ww.twstalker.com/Amaya_Whisper"
+      ]
+    },
+    "Anoko": {
+      "x": "https://x.com/AtelierAnoko",
+      "sources": [
+        "https://mobile.twstalker.com/hellowmabel"
+      ]
+    },
+    "Ao WuWu": {
+      "x": "https://x.com/_aowuwu",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Ao_Wuwu"
+      ]
+    },
+    "Arisa Noonish": {
+      "x": "https://x.com/ArisaNoonish",
+      "sources": [
+        "https://twstalker.com/ArisaNoonish"
+      ]
+    },
+    "Avaritia Hawthorne": {
+      "x": "https://x.com/AvaHawt",
+      "sources": [
+        "https://instalker.org/AvaHawt"
+      ]
+    },
+    "Ayunda Risu": {
+      "x": "https://x.com/ayunda_risu",
+      "sources": [
+        "https://w.twstalker.com/ayunda_risu"
+      ]
+    },
+    "AyuuChii": {
+      "x": "https://x.com/ayuu_chii",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/AyuuChii"
+      ]
+    },
+    "BEASTIEZ": {
+      "x": "https://x.com/TheBEASTIEZ",
+      "sources": [
+        "https://twstalker.com/TheBEASTIEZ"
+      ]
+    },
+    "BeriBug": {
+      "x": "https://x.com/beribug_",
+      "sources": [
+        "https://twstalker.com/beribug_"
+      ]
+    },
+    "Beribug": {
+      "x": "https://x.com/beribug_",
+      "sources": [
+        "https://twstalker.com/beribug_"
+      ]
+    },
+    "Bonnie Barkswell": {
+      "x": "https://x.com/BonnieBarkswell",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/BonnieBarkswell"
+      ]
+    },
+    "CDawgVA": {
+      "x": "https://x.com/CDawgVA",
+      "sources": [
+        "https://twstalker.com/CDawgVA"
+      ]
+    },
+    "Callie Calico": {
+      "x": "https://x.com/CallieCalicoTV",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Callie_Calico"
+      ]
+    },
+    "Cana": {
+      "x": "https://x.com/CanariaVTuber",
+      "sources": [
+        "https://hololist.net/canaria/"
+      ]
+    },
+    "Captain Camille": {
+      "x": "https://x.com/cptcam_vt",
+      "sources": [
+        "https://twstalker.com/cptcam_vt"
+      ]
+    },
+    "Cecilia Immergreen": {
+      "x": "https://x.com/ceciliaimgreen",
+      "sources": [
+        "https://twstalker.com/ceciliaimgreen"
+      ]
+    },
+    "Cecilia Lent": {
+      "x": "https://x.com/CeciliaLent_",
+      "sources": [
+        "https://www.twstalker.com/D_A_V_E_GAMING"
+      ]
+    },
+    "Claude Clawmark": {
+      "x": "https://x.com/ClaudeClawmark",
+      "sources": [
+        "https://v-data.info/v/oPUVMDcmHLi4SsJG"
+      ]
+    },
+    "Clio Aite": {
+      "x": "https://x.com/ClioAite",
+      "sources": [
+        "https://twstalker.com/ClioAite"
+      ]
+    },
+    "Commander Connor": {
+      "x": "https://x.com/CmndrConnor",
+      "sources": [
+        "https://x.com/CmndrConnor/with_replies"
+      ]
+    },
+    "Coqui": {
+      "x": "https://x.com/C0QUI",
+      "sources": [
+        "https://hololist.net/coqui-saporana/"
+      ]
+    },
+    "Dianko": {
+      "x": "https://x.com/DiankoLastrea",
+      "sources": [
+        "https://dianko.carrd.co/"
+      ]
+    },
+    "Dizzy Dokuro": {
+      "x": "https://x.com/dizzydokuro",
+      "sources": [
+        "https://w.twstalker.com/dizzydokuro"
+      ]
+    },
+    "Dokibird": {
+      "x": "https://x.com/dokibird",
+      "sources": [
+        "https://twstalker.com/dokibird"
+      ]
+    },
+    "Dooby": {
+      "x": "https://x.com/dooby3D",
+      "sources": [
+        "https://hololist.net/dooby/"
+      ]
+    },
+    "Doppio Dropscythe": {
+      "x": "https://x.com/D_Dropscythe",
+      "sources": [
+        "https://www.virtualhumans.org/human/doppio-dropscythe"
+      ]
+    },
+    "Dr. NOVA(e)": {
+      "x": "https://x.com/DrNOVAe",
+      "sources": [
+        "https://hololist.net/dr-novae/"
+      ]
+    },
+    "Ekkomori": {
+      "x": "https://x.com/ekkomorii",
+      "sources": [
+        "https://hololist.net/ekkomori/"
+      ]
+    },
+    "Elira Pendora": {
+      "x": "https://x.com/EliraPendora",
+      "sources": [
+        "https://hololist.net/elira-pendora/"
+      ]
+    },
+    "Elizabeth Rose Bloodflame": {
+      "x": "https://x.com/ERBloodflame",
+      "sources": [
+        "https://w.twstalker.com/ERBloodflame"
+      ]
+    },
+    "Embyr Sparks": {
+      "x": "https://x.com/embyrsparks",
+      "sources": [
+        "https://mobile.twstalker.com/GamesPhilosophy"
+      ]
+    },
+    "Emiliya Fell": {
+      "x": "https://x.com/EmiliyaFell",
+      "sources": [
+        "https://ww.twstalker.com/EmiliyaFell"
+      ]
+    },
+    "Enna Alouette": {
+      "x": "https://x.com/EnnaAlouette",
+      "sources": [
+        "https://x.com/EnnaAlouette/with_replies?lang=en"
+      ]
+    },
+    "Erina Makina": {
+      "x": "https://x.com/ErinaMakina",
+      "sources": [
+        "https://ww.twstalker.com/ErinaMakina"
+      ]
+    },
+    "Eru Erudite": {
+      "x": "https://x.com/EruErudite",
+      "sources": [
+        "https://www.twstalker.com/MozumiPichi"
+      ]
+    },
+    "Essie": {
+      "x": "https://x.com/EssieVtuber",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/EssieVtuber"
+      ]
+    },
+    "Fio Furuyuki": {
+      "x": "https://x.com/FuruyukiFio",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/corakyuu",
+        "https://w.twstalker.com/MiuMiyana"
+      ]
+    },
+    "Fufu": {
+      "x": "https://x.com/FufuVT",
+      "sources": [
+        "https://www6.twstalker.com/FufuVT"
+      ]
+    },
+    "Fujikura Uruka": {
+      "x": "https://x.com/fujikurauruka",
+      "sources": [
+        "https://hololist.net/fujikura-uruka/"
+      ]
+    },
+    "Fumiko Hoshi": {
+      "x": "https://x.com/fumikohoshi",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Fumiko_Hoshi"
+      ]
+    },
+    "Féileacán Cú": {
+      "x": "https://x.com/FeileacanCu",
+      "sources": [
+        "https://ww.twstalker.com/FeileacanCu"
+      ]
+    },
+    "Gigi Murin": {
+      "x": "https://x.com/gigimurin",
+      "sources": [
+        "https://twstalker.com/gigimurin"
+      ]
+    },
+    "Hakos Baelz": {
+      "x": "https://x.com/hakosbaelz",
+      "sources": [
+        "https://w.twstalker.com/hakosbaelz"
+      ]
+    },
+    "Heavenlyfather": {
+      "x": "https://x.com/heavenlyyfather",
+      "sources": [
+        "https://twicopy.com/roboquestgame/following"
+      ]
+    },
+    "Hirano Kokoro": {
+      "x": "https://x.com/HiranoKokoroCh",
+      "sources": [
+        "https://hiranokokoro.framer.website/contact"
+      ]
+    },
+    "Hiyori Mokami": {
+      "x": "https://x.com/hiyorimokami",
+      "sources": [
+        "https://mobile.twstalker.com/hiyorimokami"
+      ]
+    },
+    "InVain": {
+      "x": "https://x.com/InVainYT",
+      "sources": [
+        "https://twstalker.com/InVainYT"
+      ]
+    },
+    "Ironmouse": {
+      "x": "https://x.com/ironmouse",
+      "sources": [
+        "https://w.twstalker.com/ironmouse"
+      ]
+    },
+    "Kaelix Debonair": {
+      "x": "https://x.com/KaelixDebonair",
+      "sources": [
+        "https://www.twstalker.com/KaelixDebonair"
+      ]
+    },
+    "Kai Kurayomi": {
+      "x": "https://x.com/KaiKurayomi",
+      "sources": [
+        "https://w.twstalker.com/KaiKurayomi"
+      ]
+    },
+    "Kairyu Crocodile": {
+      "x": "https://x.com/KairyuCrocodile",
+      "sources": [
+        "https://twstalker.com/TheBEASTIEZ"
+      ]
+    },
+    "Kani Kanizawa": {
+      "x": "https://x.com/kanikanizawa",
+      "sources": [
+        "https://www6.twstalker.com/kanikanizawa"
+      ]
+    },
+    "Kanna Yanagi": {
+      "x": "https://x.com/Yanagi_Kanna",
+      "sources": [
+        "https://hololist.net/kanna-yanagi/"
+      ]
+    },
+    "Katya Sable": {
+      "x": "https://x.com/KatyaSabl",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Katya_Sable"
+      ]
+    },
+    "Kira P. Raptor Girl": {
+      "x": "https://x.com/KiraPRaptorGirl",
+      "sources": [
+        "https://twoucan.com/profile/KiraPRaptorGirl"
+      ]
+    },
+    "Kira P. Raptorgirl": {
+      "x": "https://x.com/KiraPRaptorGirl",
+      "sources": [
+        "https://twoucan.com/profile/KiraPRaptorGirl"
+      ]
+    },
+    "KitsenVT": {
+      "x": "https://x.com/kitsenvt",
+      "sources": [
+        "https://ww.twstalker.com/kitsenvt"
+      ]
+    },
+    "Komachi Panko": {
+      "x": "https://x.com/komachipanko",
+      "sources": [
+        "https://x.com/komachipanko/with_replies"
+      ]
+    },
+    "Kou Mariya": {
+      "x": "https://x.com/koumariya",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Kou_Mariya"
+      ]
+    },
+    "Kumi": {
+      "x": "https://x.com/KumiVT",
+      "sources": [
+        "https://ww.twstalker.com/KumiVT"
+      ]
+    },
+    "Kumisa Umare": {
+      "x": "https://x.com/kumisaumare",
+      "sources": [
+        "https://www.twstalker.com/MozumiPichi"
+      ]
+    },
+    "Kyuru Rin": {
+      "x": "https://x.com/KyuruRinSama",
+      "sources": [
+        "https://twstalker.com/PocketPrinny"
+      ]
+    },
+    "Lan Philia": {
+      "x": "https://x.com/LanPhilia",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/LanPhilia"
+      ]
+    },
+    "Leia Memoria": {
+      "x": "https://x.com/LeiaMemoria",
+      "sources": [
+        "https://mobile.twstalker.com/LeiaMemoria"
+      ]
+    },
+    "Lilith O'Leerie": {
+      "x": "https://x.com/itslilithmusic",
+      "sources": [
+        "https://vtubie.com/lilith-oleerie/"
+      ]
+    },
+    "Limina Alteri": {
+      "x": "https://x.com/alterilimina",
+      "sources": [
+        "https://ww.twstalker.com/alterilimina"
+      ]
+    },
+    "Lin (Linvy)": {
+      "x": "https://x.com/plinvy",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/plinvy"
+      ]
+    },
+    "Luca Kaneshiro": {
+      "x": "https://x.com/luca_kaneshiro",
+      "sources": [
+        "https://twstalker.com/luca_kaneshiro/status/2008790469002883249"
+      ]
+    },
+    "Lyko Lianna": {
+      "x": "https://x.com/LykoLianna",
+      "sources": [
+        "https://hololist.net/lyko-lianna/"
+      ]
+    },
+    "Mabel": {
+      "x": "https://x.com/hellowmabel",
+      "sources": [
+        "https://twstalker.com/hellowmabel"
+      ]
+    },
+    "MaeFae": {
+      "x": "https://x.com/MaeFae",
+      "sources": [
+        "https://twstalker.com/Jeffherrera11"
+      ]
+    },
+    "Maids of England": {
+      "x": "https://x.com/MaidsOfEngland",
+      "sources": [
+        "https://www6.twstalker.com/MaidsOfEngland"
+      ]
+    },
+    "Mallie Sprout": {
+      "x": "https://x.com/MallieSprout",
+      "sources": [
+        "https://hololist.net/mallie-sprout/"
+      ]
+    },
+    "Maple": {
+      "x": "https://x.com/MapleMaple_Ch",
+      "sources": [
+        "https://mobile.twstalker.com/Stimpak_VT"
+      ]
+    },
+    "Mari Mari": {
+      "x": "https://x.com/MARIMARI_EN",
+      "sources": [
+        "https://w.twstalker.com/MARIMARI_EN"
+      ]
+    },
+    "Maria Marionette": {
+      "x": "https://x.com/MariaMari0nette",
+      "sources": [
+        "https://mobile.twstalker.com/MariaMari0nette"
+      ]
+    },
+    "Matara Kan": {
+      "x": "https://x.com/MataraKan",
+      "sources": [
+        "https://www.twstalker.com/MataraKan/status/1932623801897926980"
+      ]
+    },
+    "Meat": {
+      "x": "https://x.com/meatscave",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Meat"
+      ]
+    },
+    "Meimi Majokko": {
+      "x": "https://x.com/majokkoMeimi",
+      "sources": [
+        "https://ww.twstalker.com/majokkoMeimi"
+      ]
+    },
+    "Millie Parfait": {
+      "x": "https://x.com/MillieParfait",
+      "sources": [
+        "https://w.twstalker.com/MillieParfait"
+      ]
+    },
+    "Mint Fantôme": {
+      "x": "https://x.com/MintFantome",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Mint_Fant%C3%B4me"
+      ]
+    },
+    "Mochi": {
+      "x": "https://x.com/vtuber_mochi",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/vtuber_mochi"
+      ]
+    },
+    "MomAtCookiebox": {
+      "x": "https://x.com/MomatCookieBox",
+      "sources": [
+        "https://twstalker.com/TheDebutFactory"
+      ]
+    },
+    "Mono Monet": {
+      "x": "https://x.com/mono_monet",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Mono_Monet"
+      ]
+    },
+    "Moona Hoshinova": {
+      "x": "https://x.com/moonahoshinova",
+      "sources": [
+        "https://www.twstalker.com/moonahoshinova"
+      ]
+    },
+    "Moyasi": {
+      "x": "https://x.com/M0YASI_",
+      "sources": [
+        "https://mobile.twstalker.com/M0YASI_"
+      ]
+    },
+    "Necronival": {
+      "x": "https://x.com/necronival",
+      "sources": [
+        "https://www6.twstalker.com/necronival"
+      ]
+    },
+    "Nina Saotome": {
+      "x": "https://x.com/NinanininVT",
+      "sources": [
+        "https://twstalker.com/NinanininVT"
+      ]
+    },
+    "Nowi Kaijumari": {
+      "x": "https://x.com/nowikaijumaru",
+      "sources": [
+        "https://ww.twstalker.com/Uijery",
+        "https://w.twstalker.com/MiuMiyana"
+      ],
+      "notes": "Listed by VeXpo as Nowi Kaijumari; Wota Production's talent uses Nowi Kaijumaru."
+    },
+    "Obkatiekat": {
+      "x": "https://x.com/obkatiekat",
+      "sources": [
+        "https://x.com/obkatiekat/with_replies"
+      ]
+    },
+    "Ouro Kronii": {
+      "x": "https://x.com/ourokronii",
+      "sources": [
+        "https://mobile.twstalker.com/ourokronii"
+      ]
+    },
+    "Paige Turner": {
+      "x": "https://x.com/paigeterner_",
+      "sources": [
+        "https://hololist.net/paige-terner/"
+      ],
+      "notes": "Listed in the schedule as Paige Turner; the V4Mirai talent is Paige Terner."
+    },
+    "Patchumi": {
+      "x": "https://x.com/Patchumii",
+      "sources": [
+        "https://ww.twstalker.com/Uijery",
+        "https://w.twstalker.com/MiuMiyana"
+      ],
+      "notes": "Current Wota Production account; older listings use PatchumiVT."
+    },
+    "Penny Puffball": {
+      "x": "https://x.com/PennyPuffball",
+      "sources": [
+        "https://mobile.twstalker.com/PennyPuffball"
+      ]
+    },
+    "Phoebe Chan": {
+      "x": "https://x.com/feebeechanchibi",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Densetsu.EXE?t=20260320003126"
+      ]
+    },
+    "Phoenyx": {
+      "x": "https://x.com/PhoenyxVT",
+      "sources": [
+        "https://ww.twstalker.com/PhoenyxVT"
+      ]
+    },
+    "PiaPiUFO": {
+      "x": "https://x.com/PiaPiUFO",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/BEASTIEZ"
+      ]
+    },
+    "PillowDear": {
+      "x": "https://x.com/pillowdearASMR",
+      "sources": [
+        "https://www6.twstalker.com/pillowdearASMR"
+      ]
+    },
+    "Podgekinn": {
+      "x": "https://x.com/podgekinn",
+      "sources": [
+        "https://mobile.twstalker.com/podgekinn"
+      ]
+    },
+    "Poka": {
+      "x": null,
+      "sources": [],
+      "notes": "No confident match found. Named as Patchumi's co-interviewer in the event description."
+    },
+    "Professor Lando": {
+      "x": "https://x.com/professor_lando",
+      "sources": [
+        "https://mobile.twstalker.com/CmndrConnor"
+      ]
+    },
+    "RORO ☆ Hirano Kokoro": {
+      "x": "https://x.com/HiranoKokoroCh",
+      "sources": [
+        "https://hiranokokoro.framer.website/contact"
+      ]
+    },
+    "Raora Panthera": {
+      "x": "https://x.com/raorapanthera",
+      "sources": [
+        "https://x.com/raorapanthera/with_replies?lang=en"
+      ]
+    },
+    "Rara Rocora": {
+      "x": "https://x.com/RaraRocora",
+      "sources": [
+        "https://hololist.net/rara-rocora/"
+      ]
+    },
+    "Rem Kanashibari": {
+      "x": "https://x.com/REMKanashibari",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/REM_Kanashibari"
+      ]
+    },
+    "Remilia Nephys": {
+      "x": "https://x.com/Remilia_Nephys",
+      "sources": [
+        "https://w.twstalker.com/Remilia_Nephys"
+      ]
+    },
+    "Rita Kamishiro": {
+      "x": "https://x.com/RitaKamishiro",
+      "sources": [
+        "https://mobile.twstalker.com/RitaKamishiro"
+      ]
+    },
+    "Rokoko Prufei": {
+      "x": "https://x.com/rokokoprufei",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Rokoko_Prufei"
+      ]
+    },
+    "Saura": {
+      "x": "https://x.com/saurawr_",
+      "sources": [
+        "https://saurawr.com/"
+      ]
+    },
+    "Seion Aera": {
+      "x": "https://x.com/SeionAera",
+      "sources": [
+        "https://www6.twstalker.com/SeionAera"
+      ]
+    },
+    "Shiori Novella": {
+      "x": "https://x.com/shiorinovella",
+      "sources": [
+        "https://x.com/shiorinovella/with_replies?lang=en"
+      ]
+    },
+    "Shu Yamino": {
+      "x": "https://x.com/shu_yamino",
+      "sources": [
+        "https://x.com/shu_yamino/with_replies"
+      ]
+    },
+    "Sif Avellana": {
+      "x": "https://x.com/MassiveNutsSif",
+      "sources": [
+        "https://x.com/MassiveNutsSif/status/1753506372040163527"
+      ]
+    },
+    "Silvi": {
+      "x": "https://x.com/SilviVtuber",
+      "sources": [
+        "https://mobile.twstalker.com/hellowmabel"
+      ]
+    },
+    "Skye Senfort": {
+      "x": "https://x.com/SkyeSenfort",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Skye_Senfort"
+      ]
+    },
+    "Snuffy": {
+      "x": "https://x.com/snuffyowo",
+      "sources": [
+        "https://mobile.twstalker.com/snuffyowo"
+      ]
+    },
+    "Sonny Brisko": {
+      "x": "https://x.com/sonny_brisko",
+      "sources": [
+        "https://w.twstalker.com/sonny_brisko"
+      ]
+    },
+    "Spookieruna": {
+      "x": "https://x.com/SpookieRuna",
+      "sources": [
+        "https://twstalker.com/EvanG2406"
+      ]
+    },
+    "Starlight Daryl": {
+      "x": "https://x.com/StarlightDaryl",
+      "sources": [
+        "https://x.com/StarlightDaryl/with_replies?lang=en"
+      ]
+    },
+    "StarlightDaryl": {
+      "x": "https://x.com/StarlightDaryl",
+      "sources": [
+        "https://x.com/StarlightDaryl/with_replies?lang=en"
+      ]
+    },
+    "Stimpak": {
+      "x": "https://x.com/Stimpak_VT",
+      "sources": [
+        "https://mobile.twstalker.com/Stimpak_VT"
+      ]
+    },
+    "SynicalBeanical": {
+      "x": "https://x.com/synicalbeanical",
+      "sources": [
+        "https://mobile.twstalker.com/synicalbeanical"
+      ]
+    },
+    "TRiGGERPHiSH": {
+      "x": "https://x.com/TRiGGERPH1SH",
+      "sources": [
+        "https://hololist.net/triggerphish/"
+      ]
+    },
+    "TaigaxHolic": {
+      "x": "https://x.com/TaigaxHolic",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/TaigaxHolic"
+      ]
+    },
+    "Tenma Maemi": {
+      "x": "https://x.com/tenmamaemi",
+      "sources": [
+        "https://hololist.net/tenma-maemi/"
+      ]
+    },
+    "Terra 404": {
+      "x": "https://x.com/Terra404_",
+      "sources": [
+        "https://hololist.net/terra-404/"
+      ]
+    },
+    "The Best in Jest": {
+      "x": "https://x.com/thebestinjest",
+      "sources": [
+        "https://twstalker.com/thebestinjest"
+      ]
+    },
+    "Tillysuperdog": {
+      "x": "https://x.com/_TillySuperDog_",
+      "sources": [
+        "https://twstalker.com/_TillySuperDog_"
+      ]
+    },
+    "Tomoe Umari": {
+      "x": "https://x.com/UmariTomoe",
+      "sources": [
+        "https://ngntipkolamrenang.twstalker.com/UmariTomoe"
+      ]
+    },
+    "Tori Oriane": {
+      "x": "https://x.com/ToriOriane",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/BEASTIEZ"
+      ]
+    },
+    "Uki Violeta": {
+      "x": "https://x.com/uki_violeta",
+      "sources": [
+        "https://mobile.twstalker.com/uki_violeta"
+      ]
+    },
+    "Vampeaches": {
+      "x": "https://x.com/vampeaches",
+      "sources": [
+        "https://x.com/vampeaches/highlights"
+      ]
+    },
+    "Vantacrow Bringer": {
+      "x": "https://x.com/Tyrant_Vanta",
+      "sources": [
+        "https://w.twstalker.com/Tyrant_Vanta"
+      ]
+    },
+    "Veilyn": {
+      "x": "https://x.com/Veilyndps",
+      "sources": [
+        "https://ckworks.jp/vinforadar/video/lz0lIuxGIKk"
+      ]
+    },
+    "Vezalius Bandage": {
+      "x": "https://x.com/VezaliusBandage",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Vezalius_Bandage"
+      ]
+    },
+    "Victoria Roman": {
+      "x": "https://x.com/vickyroman_idol",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Victoria_Roman"
+      ]
+    },
+    "VividlyVIVI": {
+      "x": "https://x.com/vividlyVIVI",
+      "sources": [
+        "https://twstalker.com/3AM_Talent"
+      ]
+    },
+    "VividlyVivi": {
+      "x": "https://x.com/vividlyVIVI",
+      "sources": [
+        "https://twstalker.com/3AM_Talent"
+      ]
+    },
+    "Vox Akuma": {
+      "x": "https://x.com/Vox_Akuma",
+      "sources": [
+        "https://www6.twstalker.com/Vox_Akuma"
+      ]
+    },
+    "WUNDER RiKU": {
+      "x": "https://x.com/WunderRiKU",
+      "sources": [
+        "https://linktr.ee/WunderRiKU"
+      ]
+    },
+    "Wilhelmina Frost": {
+      "x": "https://x.com/wilhelminafr0st",
+      "sources": [
+        "https://wikiwiki.jp/phaseconnect/%E3%82%A6%E3%82%A3%E3%83%AB%E3%83%98%E3%83%AB%E3%83%9F%E3%83%8A%E3%83%BB%E3%83%95%E3%83%AD%E3%82%B9%E3%83%88"
+      ]
+    },
+    "Yae Yugiri": {
+      "x": "https://x.com/YaeYugiri",
+      "sources": [
+        "https://hololist.net/yae-yugiri/"
+      ]
+    },
+    "YoshinoArt": {
+      "x": "https://x.com/YoshinoArt",
+      "sources": [
+        "https://mobile.twstalker.com/YoshinoArt"
+      ]
+    },
+    "Yu Q. Wilson": {
+      "x": "https://x.com/YuQWilson",
+      "sources": [
+        "https://hololist.net/yu-q-wilson/"
+      ]
+    },
+    "Zeal Ginjoka": {
+      "x": "https://x.com/ZealGinjoka",
+      "sources": [
+        "https://mobile.twstalker.com/ZealGinjoka"
+      ]
+    },
+    "cakejumper": {
+      "x": "https://x.com/Itscakejumper",
+      "sources": [
+        "https://www6.twstalker.com/Itscakejumper"
+      ]
+    },
+    "hololive English": {
+      "x": "https://x.com/hololive_En",
+      "sources": [
+        "https://mobile.twstalker.com/hololive_En"
+      ]
+    },
+    "mipyun": {
+      "x": "https://x.com/mipyunvt",
+      "sources": [
+        "https://mobile.twstalker.com/hellowmabel"
+      ]
+    },
+    "rachie": {
+      "x": "https://x.com/splendiferachie",
+      "sources": [
+        "https://hololist.net/splendiferachie/"
+      ]
+    },
+    "xIvyDivinex": {
+      "x": "https://x.com/DivinexIvy",
+      "sources": [
+        "https://twstalker.com/cerberVT"
+      ]
+    }
+  }
+}

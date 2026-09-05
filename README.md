@@ -7,7 +7,7 @@ Unofficial convention schedules with performer search, day, stage and meet-and-g
 ## Features
 
 - Search sessions and announced participants.
-- Click a participant name to search for their account on X (Twitter). These are account-search links, not verified profile links.
+- Click a participant name to open their researched X (Twitter) profile. Hover to see the handle; unmatched names stay unlinked.
 - Filter by date, location, announced sessions, concerts, meet-and-greets, or official/unofficial status.
 - View lineup notes and links to official sources.
 - Download one session or the filtered schedule as an `.ics` calendar file.
@@ -35,6 +35,7 @@ assets/                     Shared JavaScript and CSS
 vexpo-2026/
   index.html                Event page and settings
   schedule.csv              Data used by the website
+  socials.json               X profiles and research sources
   sources/                  Research notes
 .github/workflows/pages.yml GitHub Pages deployment
 ```
@@ -76,7 +77,7 @@ Dates and stage options are generated from each CSV. Shared assets use relative 
 
 Pushes to `main` automatically deploy through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be started manually from that page.
 
-Deployment includes the root index, shared assets, and the `index.html` and `schedule.csv` files from each convention folder. Research files in `sources/` are available in this public repository but are not included in the Pages deployment.
+Deployment includes the root index, shared assets, and the `index.html`, `schedule.csv`, and optional `socials.json` files from each convention folder. Research files in `sources/` are available in this public repository but are not included in the Pages deployment.
 
 For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, and update the links in this README to your own site.
 
@@ -91,3 +92,13 @@ Official/unofficial tags describe the event, not this independent planner. All i
 The source page contains duplicate tables. The import uses the first Saturday table set and the explicitly labeled Sunday table set. The Sunday 10:30–11:30 booth 5 slot is Phoebe Chan in the Sunday section but Féileacán Cú in an earlier duplicate; its notes flag that conflict. `sources/meet-greets.json` records the selected source rows.
 
 Downloaded poster images have been removed from the current repository tree. Official poster URLs remain as citations; earlier commits still contain the old files.
+
+## Participant socials
+
+Each convention can provide `socials.json` and set `data-socials="socials.json"` on its page's `<body>`. The shared app reads the map by the exact participant names in the CSV. Conventions without a map still work.
+
+VeXpo's map was checked September 5, 2026: 155 of 156 distinct display names have matched X profiles (including aliases and group accounts). Research uses public X profiles and indexed mirrors, official sites and announcements, the Virtual YouTuber Wiki, HoloList, and vTubie. Each entry records its source URLs; these are researched matches, not X verification badges. Handles can change. Poka remains unconfirmed and unlinked.
+
+Edit an entry's `x` URL and `sources` together when correcting a match. Use `null` for an uncertain account. Notes record spelling differences such as Paige Turner / Paige Terner and Nowi Kaijumari / Nowi Kaijumaru. The social map preserves the names used in the schedule.
+
+Run the functional checks with `node tests/schedule.cjs`.

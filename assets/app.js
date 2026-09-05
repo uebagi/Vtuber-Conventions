@@ -29,7 +29,38 @@ const el = (tag, className, text) => {
 const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const displayDate = date => new Date(date + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const config = document.body.dataset;
-let sessions = [], selectedDay = 'all';
+let sessions = [], selectedDay = 'all', socialProfiles = {};
+
+function participantChip(name) {
+  const profile = socialProfiles[name];
+  const handle = typeof profile?.x === 'string' && /^https:\/\/x\.com\/([A-Za-z0-9_]{1,15})$/.exec(profile.x)?.[1];
+  if (!handle) {
+    const chip = el('span', 'person', name);
+    chip.title = 'X profile unconfirmed';
+    return chip;
+  }
+  const link = el('a', 'person social-link');
+  link.href = profile.x;
+  link.target = '_blank'; link.rel = 'noopener noreferrer';
+  link.title = `${name} on X (Twitter): @${handle}`;
+  link.setAttribute('aria-label', `${name} on X (Twitter), @${handle}, opens in a new tab`);
+  link.append(el('span', '', name), el('span', 'social-label', 'X ↗'));
+  return link;
+}
+
+async function loadSocials() {
+  if (!config.socials) return {};
+  try {
+    const response = await fetch(config.socials);
+    if (!response.ok) throw new Error('Social profiles unavailable');
+    const data = await response.json();
+    if (!data?.profiles || typeof data.profiles !== 'object' || Array.isArray(data.profiles)) throw new Error('Invalid social profiles');
+    return data.profiles;
+  } catch (error) {
+    console.warn('Social profiles could not be loaded; participant names remain available.', error);
+    return {};
+  }
+}
 const search = document.querySelector('#search');
 const stage = document.querySelector('#stage');
 const announced = document.querySelector('#announced');
@@ -117,15 +148,7 @@ function card(session) {
   const names = session.participants.split(';').map(s => s.trim()).filter(Boolean);
   if (names.length) {
     const people = el('div', 'people');
-    names.forEach(name => {
-      const link = el('a', 'person social-link');
-      link.href = `https://x.com/search?q=${encodeURIComponent(name)}&f=user`;
-      link.target = '_blank'; link.rel = 'noopener noreferrer';
-      link.title = `Find ${name} on X (Twitter)`;
-      link.setAttribute('aria-label', `Find ${name} on X (Twitter), opens in a new tab`);
-      link.append(el('span', '', name), el('span', 'social-label', 'X ↗'));
-      people.append(link);
-    });
+    names.forEach(name => people.append(participantChip(name)));
     article.append(people);
   } else article.append(el('p', 'muted', 'Participants not announced.'));
   const details = el('details'); details.append(el('summary', '', 'Lineup details & sources'));
@@ -207,7 +230,8 @@ document.querySelector('#reset').addEventListener('click', () => {
 
 async function load() {
   try {
-    const response = await fetch('schedule.csv');
+    const [response, profiles] = await Promise.all([fetch('schedule.csv'), loadSocials()]);
+    socialProfiles = profiles;
     if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
     sessions = parseCSV(await response.text());
     if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || !s.end_time || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');

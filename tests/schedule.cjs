@@ -13,21 +13,40 @@ class Element {
 const elements = Object.fromEntries(['#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
 elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
 const body = new Element();
-body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner' };
+body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json' };
 const document = { body, createElement: () => new Element(), querySelector: s => s === '[data-day="all"]' ? elements['.days'].children[0] : elements[s] };
-const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/conventions/vexpo-2026/' }, fetch: async path => { assert.equal(path, 'schedule.csv'); return { ok: true, text: async () => fs.readFileSync('vexpo-2026/schedule.csv', 'utf8') }; } });
+const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('vexpo-2026/' + path, 'utf8')) }; } });
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
-setImmediate(() => {
+setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
   const count = () => run('filteredSessions().length');
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
   const people = run("card({...sessions[0], participants: 'Mint Fantôme; A & B'})").children.find(e => e.className === 'people');
   assert.equal(people.children.length, 2);
-  const profileSearch = new URL(people.children[0].href);
-  assert.equal(profileSearch.origin, 'https://x.com');
-  assert.equal(profileSearch.searchParams.get('q'), 'Mint Fantôme');
-  assert.equal(profileSearch.searchParams.get('f'), 'user');
-  assert.equal(new URL(people.children[1].href).searchParams.get('q'), 'A & B');
+  assert.equal(people.children[0].href, 'https://x.com/MintFantome');
+  assert.equal(people.children[1].href, undefined);
+  assert.equal(people.children[1].textContent, 'A & B');
+  assert.equal(run("participantChip('Phoebe Chan').href"), 'https://x.com/feebeechanchibi');
+  assert.equal(run("participantChip('Paige Turner').href"), 'https://x.com/paigeterner_');
+  assert.equal(run("participantChip('Patchumi').href"), 'https://x.com/Patchumii');
+  assert.equal(run("participantChip('BeriBug').href"), run("participantChip('Beribug').href"));
+  assert.equal(run("participantChip('Poka').href"), undefined);
+  run("socialProfiles['Unsafe'] = {x: 'javascript:alert(1)'}");
+  assert.equal(run("participantChip('Unsafe').href"), undefined);
+  run("delete socialProfiles.Unsafe");
+  const socialData = JSON.parse(fs.readFileSync('vexpo-2026/socials.json', 'utf8'));
+  const participantNames = new Set(run("sessions.flatMap(s => s.participants.split(';').map(n => n.trim()).filter(Boolean))"));
+  assert.equal(participantNames.size, 156);
+  for (const name of participantNames) {
+    assert(Object.hasOwn(socialData.profiles, name), `Missing social research: ${name}`);
+    const profile = socialData.profiles[name];
+    if (profile.x) {
+      assert.match(profile.x, /^https:\/\/x\.com\/[A-Za-z0-9_]{1,15}$/);
+      assert(profile.sources.length > 0, `Missing source: ${name}`);
+      profile.sources.forEach(source => assert.equal(new URL(source).protocol, 'https:'));
+    }
+  }
+  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 155);
   assert.equal(people.children[0].rel, 'noopener noreferrer');
   assert.equal(people.children[0].target, '_blank');
   assert.equal(count(), 141);
@@ -61,5 +80,11 @@ setImmediate(() => {
   assert.equal(snapshot.length, 141); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 98);
   assert(snapshot.every(s => s.event_status === 'official'));
   assert.equal(fs.readdirSync('vexpo-2026/sources').filter(s => /\.(png|jpe?g)$/i.test(s)).length, 0);
-  console.log('PASS: 141 sessions; 98 meet-and-greets (57 Saturday, 41 Sunday); 8 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
+  const originalFetch = context.fetch;
+  context.fetch = async () => ({ok: false});
+  assert.equal(Object.keys(await run('loadSocials()')).length, 0);
+  context.fetch = originalFetch;
+  run('delete config.socials');
+  assert.equal(Object.keys(await run('loadSocials()')).length, 0);
+  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  141 sessions; 98 meet-and-greets (57 Saturday, 41 Sunday); 8 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
 });
