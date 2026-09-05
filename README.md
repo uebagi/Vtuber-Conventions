@@ -55,7 +55,7 @@ Edit the convention's `schedule.csv`. The website reads it directly; `sources/pa
 | `participants`, `participant_source_urls` | Semicolon-separated values |
 | `lineup_status` | `unannounced`, `partial`, or `named lineup published` |
 | `is_concert`, `is_meet_greet` | `true` or `false` |
-| `event_status` | `official` or `unofficial` (all current VeXpo entries are official) |
+| `event_status` | `official` or `unofficial` (convention listings are official; community booth listings can be unofficial) |
 | `meet_greet_type`, `price`, `booth` | Published meet-and-greet format, price, and booth |
 | `concert_classification_notes` | Reason for including or excluding the session |
 
@@ -87,7 +87,7 @@ The VeXpo schedule includes 98 availability windows from the [official meet-and-
 
 The **Meet & greets** dropdown offers **All sessions**, **Meet & greets only**, and **Exclude meet & greets**. Selecting meet-and-greets only clears the concerts checkbox; enabling concerts while meet-and-greets only is selected switches the dropdown to exclude meet-and-greets. Reset restores all sessions. Date, search, location and status filters combine with these choices, and calendar downloads export the displayed results.
 
-Official/unofficial tags describe the event, not this independent planner. All imported VeXpo events are tagged official. Future community events can be tagged unofficial; missing status is displayed as unconfirmed.
+Official/unofficial tags describe the event, not this independent planner. Listings imported from the convention schedule are tagged official. The florAtelier x Fireshine Games booth meet-and-greets are tagged unofficial. Missing status is displayed as unconfirmed.
 
 The source page contains duplicate tables. The import uses the first Saturday table set and the explicitly labeled Sunday table set. The Sunday 10:30–11:30 booth 5 slot is Phoebe Chan in the Sunday section but Féileacán Cú in an earlier duplicate; its notes flag that conflict. `sources/meet-greets.json` records the selected source rows.
 
@@ -97,10 +97,18 @@ Downloaded poster images have been removed from the current repository tree. Off
 
 Each convention can provide `socials.json` and set `data-socials="socials.json"` on its page's `<body>`. The shared app reads the map by the exact participant names in the CSV. Conventions without a map still work.
 
-VeXpo's map was checked September 5, 2026: 155 of 156 distinct display names have matched X profiles (including aliases and group accounts). Research uses public X profiles and indexed mirrors, official sites and announcements, the Virtual YouTuber Wiki, HoloList, and vTubie. Each entry records its source URLs; these are researched matches, not X verification badges. Handles can change. Poka remains unconfirmed and unlinked.
+VeXpo's map was checked September 5, 2026: 155 of 198 distinct display names have matched X profiles (including aliases and group accounts). Research uses public X profiles and indexed mirrors, official sites and announcements, the Virtual YouTuber Wiki, HoloList, and vTubie. Each entry records its source URLs; these are researched matches, not X verification badges. Handles can change. Poka remains unconfirmed and unlinked. The 42 new names from the unofficial booth posters also remain unlinked until their socials are researched.
 
 Edit an entry's `x` URL and `sources` together when correcting a match. Use `null` for an uncertain account. Notes record spelling differences such as Paige Turner / Paige Terner and Nowi Kaijumari / Nowi Kaijumaru. The social map preserves the names used in the schedule.
 
 Run the functional checks with `node tests/schedule.cjs`.
 
 Primary links for 136 schedule names come from VeXpo's [virtual guests](https://vexpo.uk/guests) and [IRL guests / autographs](https://vexpo.uk/autographs) pages. Each `primary` object records its `url` and convention `source`. Personal link pages were also checked to corroborate X handles; creator-credit links were not treated as the participant's account. The convention pages sometimes link older personal sites, so X research is retained separately (for example, Vampeaches).
+
+## florAtelier booth meet & greets
+
+The schedule includes 43 unofficial meet-and-greet slots from the three posters accompanying [florAtelier's announcement](https://x.com/floratelier_/status/2095893825457709322): 13 on Friday, September 18; 16 on Saturday, September 19; and 14 on Sunday, September 20, 2026. All are at **florAtelier x Fireshine Games — booth S05**, with times in BST (UTC+1). Select **Meet & greets only** and **Unofficial** to show them.
+
+Virtual/in-person formats and the five Akasupa markings are preserved. Shared slots remain one calendar event with separate participant names. Prices and booking requirements were not stated on the posters; price is recorded as `Not listed`. Weekdays were mapped to the convention dates. The tweet itself could not be fetched, so the transcription uses the user-supplied photos.
+
+`sources/floratelier-meet-greets.json` records the transcription, date reasoning, source tweet, and image hashes. Reference photos remain local in the ignored `tmp/` folder. There are now 184 sessions: 43 stage/panel sessions, 98 official meet-and-greet windows, and 43 unofficial booth slots.
