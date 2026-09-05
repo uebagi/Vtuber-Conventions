@@ -13,6 +13,8 @@ function buildSite(destination, source = repository) {
   fs.cpSync(path.join(source, 'assets'), path.join(destination, 'assets'), { recursive: true });
 
   const conventions = path.join(source, 'conventions');
+  fs.mkdirSync(path.join(destination, 'conventions'));
+  fs.copyFileSync(path.join(conventions, 'index.html'), path.join(destination, 'conventions', 'index.html'));
   for (const directory of fs.readdirSync(conventions, { withFileTypes: true })) {
     if (!directory.isDirectory()) continue;
     const convention = path.join(conventions, directory.name);

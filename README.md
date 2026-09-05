@@ -30,6 +30,7 @@ Keep the shared asset paths as `../../assets/app.js` and `../../assets/styles.cs
 index.html                   Convention directory
 assets/                      Shared JavaScript and CSS
 conventions/
+  index.html                 Redirect to the site home page
   example-con-2027/           One folder per convention edition
     index.html               Page markup and event settings
     schedule.csv             Schedule read by the website
