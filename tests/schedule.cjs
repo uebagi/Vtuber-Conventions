@@ -124,9 +124,20 @@ setImmediate(async () => {
   }
   assert(unofficial.every(s => s.is_meet_greet && !s.is_concert && s.booth === 'S05'));
   assert.equal(unofficial.filter(s => s.meet_greet_type === 'IRL').length, 5);
-  const posters = JSON.parse(fs.readFileSync('vexpo-2026/sources/floratelier-meet-greets.json', 'utf8')).posters;
-  assert.deepEqual(posters.map(p => p.slots.length), [13,16,14]);
-  assert.equal(posters.flatMap(p => p.slots).filter(s => s.akasupa).length, 5);
+  const research = JSON.parse(fs.readFileSync('vexpo-2026/sources/floratelier-meet-greets.json', 'utf8'));
+  const sourceIds = new Set(research.sources.map(source => source.id));
+  assert.equal(sourceIds.size, research.sources.length);
+  assert.deepEqual(['Friday', 'Saturday', 'Sunday'].map(day => research.sessions.filter(s => s.day === day).length), [13,16,14]);
+  assert.equal(research.sessions.filter(s => s.akasupa).length, 5);
+  for (const session of research.sessions) {
+    assert(session.source_ids.length > 0);
+    assert(session.source_ids.every(id => sourceIds.has(id)), 'Broken source reference');
+    const imported = unofficial.find(s => s.date === session.date && s.start_time === session.start_time);
+    assert(imported, 'Research slot missing from schedule');
+    assert.equal(imported.end_time, session.end_time);
+    assert.equal(imported.participants, session.participants.join('; '));
+    assert.equal(imported.meet_greet_type, session.type);
+  }
   assert.equal(fs.readdirSync('vexpo-2026/sources').filter(s => /\.(png|jpe?g)$/i.test(s)).length, 0);
   const originalFetch = context.fetch;
   context.fetch = async () => ({ok: false});

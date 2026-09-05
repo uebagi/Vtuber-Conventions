@@ -68,6 +68,36 @@ Official/unofficial labels describe the session's status. Include supporting sou
 
 Keep research, transcriptions, and source conflicts in the convention's `sources/` folder. Those files do not drive the website. If you maintain a `sources/participants.json` snapshot, update it alongside the CSV.
 
+### Record sources
+
+For structured research files, use a `sources` list and reference its IDs from each entry in `sessions`. Give each source a unique ID within the file, a public URL, and a `locator` identifying the relevant poster, table, or page section. Multiple sources can share a URL when one post contains several posters.
+
+```json
+{
+  "sources": [
+    {
+      "id": "saturday-poster",
+      "type": "poster",
+      "url": "https://example.org/schedule",
+      "locator": "Saturday schedule poster",
+      "day": "Saturday"
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2027-09-18",
+      "day": "Saturday",
+      "participants": ["Example Performer"],
+      "start_time": "14:00",
+      "end_time": "14:55",
+      "source_ids": ["saturday-poster"]
+    }
+  ]
+}
+```
+
+Use `source_ids` for every session and ensure each ID exists in `sources`. Keep public source references independent of local filenames and image hashes. This research format can be reused across conventions; the website still reads `schedule.csv`.
+
 ### Dates and calendar exports
 
 The site displays dates in US format and times in the convention's local timezone. Set `utc_offset` for each session's date, accounting for daylight saving time. The exporter uses that offset to produce UTC calendar timestamps; it does not calculate the offset from `timezone`.

@@ -1,5 +1,27 @@
 {
-  "source_url": "https://x.com/floratelier_/status/2095893825457709322",
+  "sources": [
+    {
+      "id": "friday-poster",
+      "type": "poster",
+      "url": "https://x.com/floratelier_/status/2095893825457709322",
+      "locator": "Friday schedule poster",
+      "day": "Friday"
+    },
+    {
+      "id": "saturday-poster",
+      "type": "poster",
+      "url": "https://x.com/floratelier_/status/2095893825457709322",
+      "locator": "Saturday schedule poster",
+      "day": "Saturday"
+    },
+    {
+      "id": "sunday-poster",
+      "type": "poster",
+      "url": "https://x.com/floratelier_/status/2095893825457709322",
+      "locator": "Sunday schedule poster",
+      "day": "Sunday"
+    }
+  ],
   "organizers": [
     "florAtelier",
     "Fireshine Games"
@@ -10,474 +32,665 @@
   "timezone_abbreviation": "BST",
   "utc_offset": "+01:00",
   "date_basis": "Poster weekdays mapped to VeXpo 2026, September 18-20. All poster times explicitly say BST.",
-  "source_notes": "Transcribed from three user-supplied photos in tmp/. Tweet could not be fetched; the user supplied its URL as their source. Unofficial classification follows the user instruction. Price and booking details are not stated in the images. IRL corresponds to in-person on the posters.",
-  "posters": [
-    {
-      "file": "image1.png",
-      "sha256": "c5036af1273075830d63b4bad30afbb6c29baf3a61eae58ba10c4ba7f8c254b8",
-      "day": "Friday",
-      "date": "2026-09-18",
-      "slots": [
-        {
-          "talent": "Xaela",
-          "participants": [
-            "Xaela"
-          ],
-          "start_time": "12:00",
-          "end_time": "12:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Seraph",
-          "participants": [
-            "Seraph"
-          ],
-          "start_time": "12:30",
-          "end_time": "12:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Rin Penrose + RTGame",
-          "participants": [
-            "Rin Penrose",
-            "RTGame"
-          ],
-          "start_time": "13:00",
-          "end_time": "13:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "cakejumper",
-          "participants": [
-            "cakejumper"
-          ],
-          "start_time": "14:00",
-          "end_time": "14:25",
-          "type": "IRL",
-          "akasupa": false
-        },
-        {
-          "talent": "Blair Labri",
-          "participants": [
-            "Blair Labri"
-          ],
-          "start_time": "14:30",
-          "end_time": "14:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Varidetta",
-          "participants": [
-            "Varidetta"
-          ],
-          "start_time": "15:00",
-          "end_time": "15:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Marigatou",
-          "participants": [
-            "Marigatou"
-          ],
-          "start_time": "15:30",
-          "end_time": "15:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Tipanya",
-          "participants": [
-            "Tipanya"
-          ],
-          "start_time": "16:00",
-          "end_time": "16:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Chocojax",
-          "participants": [
-            "Chocojax"
-          ],
-          "start_time": "16:30",
-          "end_time": "16:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Rina Lucsper",
-          "participants": [
-            "Rina Lucsper"
-          ],
-          "start_time": "17:00",
-          "end_time": "17:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Bun-Mii",
-          "participants": [
-            "Bun-Mii"
-          ],
-          "start_time": "17:30",
-          "end_time": "17:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Felynne Derouge",
-          "participants": [
-            "Felynne Derouge"
-          ],
-          "start_time": "18:00",
-          "end_time": "18:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Bear the Witch",
-          "participants": [
-            "Bear the Witch"
-          ],
-          "start_time": "18:30",
-          "end_time": "18:55",
-          "type": "Virtual",
-          "akasupa": false
-        }
-      ]
-    },
-    {
-      "file": "image2.png",
-      "sha256": "25d3c8b0f12fc5944e80520eb28495c13bb2ae1f43271f525c8a2e8510cf6390",
-      "day": "Saturday",
-      "date": "2026-09-19",
-      "slots": [
-        {
-          "talent": "Zephyrianna",
-          "participants": [
-            "Zephyrianna"
-          ],
-          "start_time": "09:00",
-          "end_time": "09:55",
-          "type": "Virtual",
-          "akasupa": true
-        },
-        {
-          "talent": "Firozera",
-          "participants": [
-            "Firozera"
-          ],
-          "start_time": "10:00",
-          "end_time": "10:25",
-          "type": "Virtual",
-          "akasupa": true
-        },
-        {
-          "talent": "Asha",
-          "participants": [
-            "Asha"
-          ],
-          "start_time": "10:30",
-          "end_time": "10:55",
-          "type": "Virtual",
-          "akasupa": true
-        },
-        {
-          "talent": "Elia Stellaria",
-          "participants": [
-            "Elia Stellaria"
-          ],
-          "start_time": "11:00",
-          "end_time": "11:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Milky",
-          "participants": [
-            "Milky"
-          ],
-          "start_time": "11:30",
-          "end_time": "12:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Silvi",
-          "participants": [
-            "Silvi"
-          ],
-          "start_time": "12:30",
-          "end_time": "12:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Malfina",
-          "participants": [
-            "Malfina"
-          ],
-          "start_time": "13:00",
-          "end_time": "13:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Auteru",
-          "participants": [
-            "Auteru"
-          ],
-          "start_time": "14:00",
-          "end_time": "14:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Snoozychu",
-          "participants": [
-            "Snoozychu"
-          ],
-          "start_time": "15:00",
-          "end_time": "15:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "MysticLight",
-          "participants": [
-            "MysticLight"
-          ],
-          "start_time": "16:00",
-          "end_time": "16:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Orla + Dreamy",
-          "participants": [
-            "Orla",
-            "Dreamy"
-          ],
-          "start_time": "16:30",
-          "end_time": "16:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Haewon",
-          "participants": [
-            "Haewon"
-          ],
-          "start_time": "17:00",
-          "end_time": "17:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Euryale",
-          "participants": [
-            "Euryale"
-          ],
-          "start_time": "18:00",
-          "end_time": "18:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Ninette",
-          "participants": [
-            "Ninette"
-          ],
-          "start_time": "18:30",
-          "end_time": "18:55",
-          "type": "IRL",
-          "akasupa": false
-        },
-        {
-          "talent": "Khiren",
-          "participants": [
-            "Khiren"
-          ],
-          "start_time": "19:00",
-          "end_time": "19:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "mipyun",
-          "participants": [
-            "mipyun"
-          ],
-          "start_time": "19:30",
-          "end_time": "19:55",
-          "type": "IRL",
-          "akasupa": false
-        }
-      ]
-    },
-    {
-      "file": "image3.png",
-      "sha256": "a41e8eb195e08da0b2192ec4d6756cb59571069b422131df1c2b305d7ce688d2",
-      "day": "Sunday",
-      "date": "2026-09-20",
-      "slots": [
-        {
-          "talent": "Armia Stars",
-          "participants": [
-            "Armia Stars"
-          ],
-          "start_time": "09:00",
-          "end_time": "09:25",
-          "type": "Virtual",
-          "akasupa": true
-        },
-        {
-          "talent": "Lucky Loveshot",
-          "participants": [
-            "Lucky Loveshot"
-          ],
-          "start_time": "09:30",
-          "end_time": "09:55",
-          "type": "Virtual",
-          "akasupa": true
-        },
-        {
-          "talent": "Yuchi",
-          "participants": [
-            "Yuchi"
-          ],
-          "start_time": "10:00",
-          "end_time": "10:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Jelly + Inksie",
-          "participants": [
-            "Jelly",
-            "Inksie"
-          ],
-          "start_time": "11:00",
-          "end_time": "11:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Linvy",
-          "participants": [
-            "Lin (Linvy)"
-          ],
-          "start_time": "12:00",
-          "end_time": "12:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Anora",
-          "participants": [
-            "Anora"
-          ],
-          "start_time": "12:30",
-          "end_time": "12:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Rayshii",
-          "participants": [
-            "Rayshii"
-          ],
-          "start_time": "13:00",
-          "end_time": "13:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Raivy",
-          "participants": [
-            "Raivy"
-          ],
-          "start_time": "13:30",
-          "end_time": "13:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Digiko",
-          "participants": [
-            "Digiko"
-          ],
-          "start_time": "14:00",
-          "end_time": "14:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Yoor + Milia",
-          "participants": [
-            "Yoor",
-            "Milia"
-          ],
-          "start_time": "14:30",
-          "end_time": "14:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Naena",
-          "participants": [
-            "Naena"
-          ],
-          "start_time": "15:00",
-          "end_time": "15:25",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Meicha + Lucks Shi",
-          "participants": [
-            "Meicha",
-            "Lucks Shi"
-          ],
-          "start_time": "15:30",
-          "end_time": "15:55",
-          "type": "Virtual",
-          "akasupa": false
-        },
-        {
-          "talent": "Anoko + mipyun",
-          "participants": [
-            "Anoko",
-            "mipyun"
-          ],
-          "start_time": "16:00",
-          "end_time": "16:55",
-          "type": "IRL",
-          "akasupa": false
-        },
-        {
-          "talent": "Camille + Mabel",
-          "participants": [
-            "Captain Camille",
-            "Mabel"
-          ],
-          "start_time": "17:00",
-          "end_time": "17:55",
-          "type": "IRL",
-          "akasupa": false
-        }
-      ]
-    }
-  ],
+  "source_notes": "Transcribed from the three schedule posters attached to the announcement. The announcement was subsequently retrieved through a public mirror. Unofficial classification follows the user instruction. Prices and booking details are not stated in the posters. IRL corresponds to in-person on the posters.",
   "social_research": {
     "profile_data": "../socials.json",
     "new_profiles_matched": 42,
     "announcement_mirror": "https://api.fxtwitter.com/floratelier_/status/2095893825457709322",
     "notes": "Announcement subsequently retrieved while researching X profiles. Creator profile links and account-renaming notes are recorded in socials.json. Original schedule transcription retained."
-  }
+  },
+  "sessions": [
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Xaela",
+      "participants": [
+        "Xaela"
+      ],
+      "start_time": "12:00",
+      "end_time": "12:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Seraph",
+      "participants": [
+        "Seraph"
+      ],
+      "start_time": "12:30",
+      "end_time": "12:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Rin Penrose + RTGame",
+      "participants": [
+        "Rin Penrose",
+        "RTGame"
+      ],
+      "start_time": "13:00",
+      "end_time": "13:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "cakejumper",
+      "participants": [
+        "cakejumper"
+      ],
+      "start_time": "14:00",
+      "end_time": "14:25",
+      "type": "IRL",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Blair Labri",
+      "participants": [
+        "Blair Labri"
+      ],
+      "start_time": "14:30",
+      "end_time": "14:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Varidetta",
+      "participants": [
+        "Varidetta"
+      ],
+      "start_time": "15:00",
+      "end_time": "15:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Marigatou",
+      "participants": [
+        "Marigatou"
+      ],
+      "start_time": "15:30",
+      "end_time": "15:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Tipanya",
+      "participants": [
+        "Tipanya"
+      ],
+      "start_time": "16:00",
+      "end_time": "16:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Chocojax",
+      "participants": [
+        "Chocojax"
+      ],
+      "start_time": "16:30",
+      "end_time": "16:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Rina Lucsper",
+      "participants": [
+        "Rina Lucsper"
+      ],
+      "start_time": "17:00",
+      "end_time": "17:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Bun-Mii",
+      "participants": [
+        "Bun-Mii"
+      ],
+      "start_time": "17:30",
+      "end_time": "17:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Felynne Derouge",
+      "participants": [
+        "Felynne Derouge"
+      ],
+      "start_time": "18:00",
+      "end_time": "18:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "talent": "Bear the Witch",
+      "participants": [
+        "Bear the Witch"
+      ],
+      "start_time": "18:30",
+      "end_time": "18:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "friday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Zephyrianna",
+      "participants": [
+        "Zephyrianna"
+      ],
+      "start_time": "09:00",
+      "end_time": "09:55",
+      "type": "Virtual",
+      "akasupa": true,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Firozera",
+      "participants": [
+        "Firozera"
+      ],
+      "start_time": "10:00",
+      "end_time": "10:25",
+      "type": "Virtual",
+      "akasupa": true,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Asha",
+      "participants": [
+        "Asha"
+      ],
+      "start_time": "10:30",
+      "end_time": "10:55",
+      "type": "Virtual",
+      "akasupa": true,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Elia Stellaria",
+      "participants": [
+        "Elia Stellaria"
+      ],
+      "start_time": "11:00",
+      "end_time": "11:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Milky",
+      "participants": [
+        "Milky"
+      ],
+      "start_time": "11:30",
+      "end_time": "12:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Silvi",
+      "participants": [
+        "Silvi"
+      ],
+      "start_time": "12:30",
+      "end_time": "12:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Malfina",
+      "participants": [
+        "Malfina"
+      ],
+      "start_time": "13:00",
+      "end_time": "13:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Auteru",
+      "participants": [
+        "Auteru"
+      ],
+      "start_time": "14:00",
+      "end_time": "14:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Snoozychu",
+      "participants": [
+        "Snoozychu"
+      ],
+      "start_time": "15:00",
+      "end_time": "15:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "MysticLight",
+      "participants": [
+        "MysticLight"
+      ],
+      "start_time": "16:00",
+      "end_time": "16:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Orla + Dreamy",
+      "participants": [
+        "Orla",
+        "Dreamy"
+      ],
+      "start_time": "16:30",
+      "end_time": "16:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Haewon",
+      "participants": [
+        "Haewon"
+      ],
+      "start_time": "17:00",
+      "end_time": "17:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Euryale",
+      "participants": [
+        "Euryale"
+      ],
+      "start_time": "18:00",
+      "end_time": "18:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Ninette",
+      "participants": [
+        "Ninette"
+      ],
+      "start_time": "18:30",
+      "end_time": "18:55",
+      "type": "IRL",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "Khiren",
+      "participants": [
+        "Khiren"
+      ],
+      "start_time": "19:00",
+      "end_time": "19:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "talent": "mipyun",
+      "participants": [
+        "mipyun"
+      ],
+      "start_time": "19:30",
+      "end_time": "19:55",
+      "type": "IRL",
+      "akasupa": false,
+      "source_ids": [
+        "saturday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Armia Stars",
+      "participants": [
+        "Armia Stars"
+      ],
+      "start_time": "09:00",
+      "end_time": "09:25",
+      "type": "Virtual",
+      "akasupa": true,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Lucky Loveshot",
+      "participants": [
+        "Lucky Loveshot"
+      ],
+      "start_time": "09:30",
+      "end_time": "09:55",
+      "type": "Virtual",
+      "akasupa": true,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Yuchi",
+      "participants": [
+        "Yuchi"
+      ],
+      "start_time": "10:00",
+      "end_time": "10:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Jelly + Inksie",
+      "participants": [
+        "Jelly",
+        "Inksie"
+      ],
+      "start_time": "11:00",
+      "end_time": "11:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Linvy",
+      "participants": [
+        "Lin (Linvy)"
+      ],
+      "start_time": "12:00",
+      "end_time": "12:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Anora",
+      "participants": [
+        "Anora"
+      ],
+      "start_time": "12:30",
+      "end_time": "12:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Rayshii",
+      "participants": [
+        "Rayshii"
+      ],
+      "start_time": "13:00",
+      "end_time": "13:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Raivy",
+      "participants": [
+        "Raivy"
+      ],
+      "start_time": "13:30",
+      "end_time": "13:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Digiko",
+      "participants": [
+        "Digiko"
+      ],
+      "start_time": "14:00",
+      "end_time": "14:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Yoor + Milia",
+      "participants": [
+        "Yoor",
+        "Milia"
+      ],
+      "start_time": "14:30",
+      "end_time": "14:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Naena",
+      "participants": [
+        "Naena"
+      ],
+      "start_time": "15:00",
+      "end_time": "15:25",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Meicha + Lucks Shi",
+      "participants": [
+        "Meicha",
+        "Lucks Shi"
+      ],
+      "start_time": "15:30",
+      "end_time": "15:55",
+      "type": "Virtual",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Anoko + mipyun",
+      "participants": [
+        "Anoko",
+        "mipyun"
+      ],
+      "start_time": "16:00",
+      "end_time": "16:55",
+      "type": "IRL",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "talent": "Camille + Mabel",
+      "participants": [
+        "Captain Camille",
+        "Mabel"
+      ],
+      "start_time": "17:00",
+      "end_time": "17:55",
+      "type": "IRL",
+      "akasupa": false,
+      "source_ids": [
+        "sunday-poster"
+      ]
+    }
+  ]
 }
