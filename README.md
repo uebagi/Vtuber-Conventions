@@ -32,12 +32,33 @@ assets/                      Shared JavaScript and CSS
 example-con-2027/             One folder per convention
   index.html                 Page markup and event settings
   schedule.csv               Schedule read by the website
+  opening-hours.json         Optional daily entry hours
   socials.json               Optional participant links
   sources/                   Optional research and source notes
 tests/schedule.cjs           Functional checks
 .github/workflows/pages.yml  GitHub Pages deployment
 tmp/                         Ignored local reference files
 ```
+
+## Opening hours
+
+Add an optional `opening-hours.json` to each convention folder and set `data-opening-hours="opening-hours.json"` on its `<body>`. Keep the `#opening-hours` section from the template; shared JavaScript renders the daily cards above the filters. Omit the attribute for conventions without entry hours.
+
+```json
+{
+  "timezone": "Europe/London",
+  "days": [
+    {
+      "date": "2027-09-18",
+      "entries": [
+        { "label": "General Entry", "opens": "10:00", "closes": "18:00" }
+      ]
+    }
+  ]
+}
+```
+
+Use ISO dates and local 24-hour times in the stated timezone. Add one entry per admission type. Weekdays and US-formatted dates are generated automatically. These cards summarize entry hours; individual opening/closing schedule markers and calendar downloads still come from `schedule.csv`, so keep those rows in sync. Concerts remain regular schedule sessions. Deployment includes the optional JSON automatically.
 
 ## Maintain the schedule
 

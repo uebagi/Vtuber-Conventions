@@ -28,9 +28,11 @@ jobs:
             directory="$(dirname "$schedule")"
             mkdir -p "_site/$directory"
             cp "$directory/index.html" "$schedule" "_site/$directory/"
-            if [ -f "$directory/socials.json" ]; then
-              cp "$directory/socials.json" "_site/$directory/"
-            fi
+            for data in socials.json opening-hours.json; do
+              if [ -f "$directory/$data" ]; then
+                cp "$directory/$data" "_site/$directory/"
+              fi
+            done
           done
       - uses: actions/upload-pages-artifact@v4
         with:

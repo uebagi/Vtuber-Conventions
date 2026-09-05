@@ -10,16 +10,25 @@ class Element {
   click() { this.handlers.click(); }
   querySelectorAll() { return this.children; }
 }
-const elements = Object.fromEntries(['#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
+const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
 elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
 const body = new Element();
-body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json' };
+body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json', openingHours: 'opening-hours.json' };
 const document = { body, createElement: () => new Element(), querySelector: s => s === '[data-day="all"]' ? elements['.days'].children[0] : elements[s] };
-const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('vexpo-2026/' + path, 'utf8')) }; } });
+const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json', 'opening-hours.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('vexpo-2026/' + path, 'utf8')) }; } });
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
 setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
   const count = () => run('filteredSessions().length');
+  const hours = elements['#opening-hours'];
+  assert.equal(hours.hidden, false);
+  assert.equal(hours.children[1].children.length, 3);
+  const fridayHours = hours.children[1].children[0];
+  assert.equal(fridayHours.children[0].textContent, 'Friday');
+  assert.equal(fridayHours.children[0].children[0].textContent, 'September 18, 2026');
+  assert.equal(fridayHours.children[1].children[0].children[1].textContent, '12:00–19:00');
+  assert.equal(hours.children[1].children[1].children[1].children.length, 2);
+
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
   const people = run("card({...sessions[0], participants: 'Mint Fantôme; A & B'})").children.find(e => e.className === 'people');
   assert.equal(people.children.length, 2);

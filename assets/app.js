@@ -70,6 +70,44 @@ function participantLinks(name) {
   return group;
 }
 
+// Optional per-convention entry hours, displayed in event-local time.
+async function loadOpeningHours() {
+  const container = document.querySelector('#opening-hours');
+  if (!config.openingHours || !container) return;
+  try {
+    const response = await fetch(config.openingHours);
+    if (!response.ok) throw new Error('Opening hours unavailable');
+    const data = await response.json();
+    new Intl.DateTimeFormat('en-US', { timeZone: data.timezone });
+    if (!data.timezone || !Array.isArray(data.days)) throw new Error('Invalid opening hours');
+    const days = el('div', 'opening-days');
+    for (const day of data.days) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(day.date) || !Array.isArray(day.entries)) throw new Error('Invalid opening day');
+      const section = el('section');
+      const heading = el('h3', '', new Date(day.date + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'long', timeZone: 'UTC' }));
+      const date = el('time', '', displayDate(day.date));
+      date.setAttribute('datetime', day.date);
+      heading.append(date);
+      const entries = el('dl');
+      for (const entry of day.entries) {
+        if (typeof entry.label !== 'string' || ![entry.opens, entry.closes].every(time => /^([01]\d|2[0-3]):[0-5]\d$/.test(time))) throw new Error('Invalid entry hours');
+        const row = el('div');
+        row.append(el('dt', '', entry.label), el('dd', '', `${entry.opens}–${entry.closes}`));
+        entries.append(row);
+      }
+      section.append(heading, entries);
+      days.append(section);
+    }
+    const heading = el('h2', '', 'Show opening hours');
+    heading.id = 'opening-hours-heading';
+    container.replaceChildren(heading, days);
+    container.hidden = !data.days.length;
+  } catch (error) {
+    container.hidden = true;
+    console.warn('Opening hours could not be loaded.', error);
+  }
+}
+
 async function loadSocials() {
   if (!config.socials) return {};
   try {
@@ -271,3 +309,4 @@ async function load() {
   }
 }
 load();
+loadOpeningHours();
