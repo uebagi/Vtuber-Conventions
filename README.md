@@ -1,40 +1,78 @@
-# VtuberConventions
+# VTuber Conventions
 
-A static, unofficial VeXpo 2026 schedule for GitHub Pages. Search participants and sessions, filter by day or stage, and expand a session for lineup notes and official sources. Times stay in British Summer Time (UTC+1), regardless of the viewer's location.
+Unofficial convention schedules with performer search, day and stage filters, and calendar downloads.
 
-## Preview locally
+**[Website](https://uebagi.github.io/Vtuber-Conventions/)** · **[VeXpo 2026 schedule](https://uebagi.github.io/Vtuber-Conventions/vexpo-2026/)**
 
-Run `python -m http.server 8000` in this folder, then open http://localhost:8000. Opening `index.html` directly from disk will not reliably load the CSV.
+## Features
 
-## Publish on GitHub Pages
+- Search sessions and announced participants.
+- Filter by date, stage, announced sessions, or concerts.
+- View lineup notes and links to official sources.
+- Download one session or the filtered schedule as an `.ics` calendar file.
+- Download the schedule as CSV.
 
-1. Push these files to the `main` branch of a GitHub repository.
-2. In the repository, open **Settings → Pages → Build and deployment** and choose **GitHub Actions** as the source.
-3. Run **Publish schedule to GitHub Pages** from the Actions tab, or push another change to `main`.
-4. The workflow's deployment link opens the site.
+Dates use US formatting. Session times stay in the convention's local timezone; VeXpo uses British Summer Time (UTC+1). Calendar files preserve the event's instant in time and display in your calendar app's configured timezone. Downloads are snapshots, not subscriptions.
 
-If your default branch has a different name, update the branch in `.github/workflows/pages.yml`. All site asset paths are relative, so this works under a repository subpath. No build tools or dependencies are needed. Google Fonts are optional; the page uses local fallback fonts if unavailable.
+## Run locally
 
-## Update the schedule
+From the repository root:
 
-The **Concerts only** checkbox uses the CSV's explicit `is_concert` field (`true` or `false`) and also applies to calendar downloads. For this planner, concerts include primarily musical performances: Opening Concert, The VX Factor, Bonnie & Friends, To Hell and Back Again, hololive Meet Karaoke Relay, Maids Of England Stage, PhaseVision (a singing competition), and the hololive concert screening. These classifications are inferred from the official session descriptions, not official event categories. Mixed cosplay showcases, panels, workshops, games and interviews are excluded. Unannounced slots are excluded pending details, not confirmed non-concerts. `concert_classification_notes` records the rationale; the research JSON stores the same flag as a boolean.
+```sh
+python -m http.server 8000
+```
 
-Use **Download Calendar (.ics)** on a card to save one event, or the download button above the schedule to export all currently filtered sessions. With filters reset, it exports the full weekend. Import the file into Apple Calendar, Google Calendar, Outlook, or another iCalendar-compatible app. Downloads include performers, lineup notes, locations, and sources. Times are encoded as UTC instants converted from the CSV's British offset; your calendar displays them in its configured timezone. These are snapshots, not automatically updating subscriptions.
+Open [localhost:8000](http://localhost:8000/) or the [local VeXpo schedule](http://localhost:8000/vexpo-2026/). Keep the server running. Opening the HTML file directly does not reliably allow the browser to load its CSV.
 
-Edit `vexpo-2026/schedule.csv` and push. The website reads this file directly; `vexpo-2026/sources/participants.json` is the research snapshot and is not read by the website. Separate participants and source URLs with semicolons inside their CSV fields. Preserve CSV quoting for commas, quotes, and newlines. `lineup_status` supports `unannounced`, `partial`, and `named lineup published`.
+No package installation or build step is required.
 
-Research posters and participant notes are saved under `vexpo-2026/sources/`. The deployment includes the root index, shared assets, and each convention folder containing a schedule.csv and index.html. Research sources are not published. Update the checked date in `vexpo-2026/index.html` after refreshing performer information. The site does not imply that virtual performers are physically attending the venue.
+## Project structure
 
-The workflow follows [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+```text
+index.html                  Convention index
+assets/                     Shared JavaScript and CSS
+vexpo-2026/
+  index.html                Event page and settings
+  schedule.csv              Data used by the website
+  sources/                  Research notes and posters
+.github/workflows/pages.yml GitHub Pages deployment
+```
 
-## Convention folders
+## Update a schedule
 
-- `index.html`: convention index.
-- `assets/`: shared schedule JavaScript and styles.
-- `vexpo-2026/index.html`: VeXpo page and event settings.
-- `vexpo-2026/schedule.csv`: VeXpo schedule.
-- `vexpo-2026/sources/`: VeXpo research.
+Edit the convention's `schedule.csv`. The website reads it directly; `sources/participants.json` is a research snapshot, not the website's data source. Keep the snapshot aligned when changing researched participant information.
 
-To add a convention, create a sibling folder such as `another-con-2027/`. Copy `vexpo-2026/index.html` into it and add a `schedule.csv` using the same columns. Update the title, event details, official link, timezone label and footer. On the body element, set `data-event-name`, a unique `data-event-id`, and `data-venue`; remove `data-uid-domain` (VeXpo keeps it to preserve existing calendar event IDs). Day controls and headings are generated from the CSV dates. Set each row's timezone and UTC offset for that event date. Add a link to the convention in the root index. The deployment workflow discovers convention folders automatically.
+| Field | Format |
+| --- | --- |
+| `date` | ISO date, such as `2026-09-18` |
+| `day` | Weekday name, such as `Friday` |
+| `start_time`, `end_time` | Local 24-hour time, such as `20:00` |
+| `timezone` | Timezone identifier, such as `Europe/London` |
+| `timezone_abbreviation` | Display label, such as `BST` |
+| `utc_offset` | Offset applicable on the event date, such as `+01:00` |
+| `participants`, `participant_source_urls` | Semicolon-separated values |
+| `lineup_status` | `unannounced`, `partial`, or `named lineup published` |
+| `is_concert` | `true` or `false` |
+| `concert_classification_notes` | Reason for including or excluding the session |
 
-Preview VeXpo at http://localhost:8000/vexpo-2026/ after starting the server at the repository root.
+Preserve the remaining columns and CSV quoting. The current calendar exporter assumes sessions start and end on the same local date. Update the date in the convention page's footer after checking its information.
+
+The concerts filter includes primarily musical performances, singing competitions, karaoke, and concert screenings. Classification is based on session descriptions, not official categories. Unannounced sessions are excluded until their contents are known.
+
+## Add a convention
+
+1. Create a folder at the repository root, such as `another-con-2027/`.
+2. Copy `vexpo-2026/index.html` into it and create `schedule.csv` with the existing columns.
+3. Update the page title, event details, official link, timezone label, and footer.
+4. Set the `<body>` attributes `data-event-name`, `data-event-id`, and `data-venue`. Use a unique event ID. Remove `data-uid-domain` from the copied page; VeXpo retains it to preserve previously exported calendar IDs.
+5. Add a link to the new convention in the root `index.html`.
+
+Dates and stage options are generated from each CSV. Shared assets use relative paths, so convention pages work under the GitHub repository URL.
+
+## Deployment
+
+Pushes to `main` automatically deploy through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be started manually from that page.
+
+Deployment includes the root index, shared assets, and the `index.html` and `schedule.csv` files from each convention folder. Research files in `sources/` are available in this public repository but are not included in the Pages deployment.
+
+For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, and update the links in this README to your own site.
