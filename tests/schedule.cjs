@@ -15,7 +15,7 @@ elements['#stage'].value = elements['#event-status'].value = elements['#meet-gre
 const body = new Element();
 body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json', openingHours: 'opening-hours.json' };
 const document = { body, createElement: () => new Element(), querySelector: s => s === '[data-day="all"]' ? elements['.days'].children[0] : elements[s] };
-const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json', 'opening-hours.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('vexpo-2026/' + path, 'utf8')) }; } });
+const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json', 'opening-hours.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8')) }; } });
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
 setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
@@ -56,7 +56,7 @@ setImmediate(async () => {
   run("socialProfiles['Unsafe'] = {x: 'javascript:alert(1)'}");
   assert.equal(run("participantChip('Unsafe').href"), undefined);
   run("delete socialProfiles.Unsafe");
-  const socialData = JSON.parse(fs.readFileSync('vexpo-2026/socials.json', 'utf8'));
+  const socialData = JSON.parse(fs.readFileSync('conventions/vexpo-2026/socials.json', 'utf8'));
   const participantNames = new Set(run("sessions.flatMap(s => s.participants.split(';').map(n => n.trim()).filter(Boolean))"));
   assert.equal(participantNames.size, 198);
   for (const name of participantNames) {
@@ -121,7 +121,7 @@ setImmediate(async () => {
   assert.equal((unfolded.match(/BEGIN:VEVENT/g) || []).length, 184);
   assert.equal(new Set(unfolded.match(/^UID:.+$/gm)).size, 184);
   assert(ics.split('\r\n').every(line => Buffer.byteLength(line, 'utf8') <= 75));
-  const snapshot = JSON.parse(fs.readFileSync('vexpo-2026/sources/participants.json', 'utf8'));
+  const snapshot = JSON.parse(fs.readFileSync('conventions/vexpo-2026/sources/participants.json', 'utf8'));
   assert.equal(snapshot.length, 184); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 141);
   assert.equal(snapshot.filter(s => s.event_status === 'official').length, 141);
   const unofficial = snapshot.filter(s => s.event_status === 'unofficial');
@@ -134,7 +134,7 @@ setImmediate(async () => {
   }
   assert(unofficial.every(s => s.is_meet_greet && !s.is_concert && s.booth === 'S05'));
   assert.equal(unofficial.filter(s => s.meet_greet_type === 'IRL').length, 5);
-  const research = JSON.parse(fs.readFileSync('vexpo-2026/sources/floratelier-meet-greets.json', 'utf8'));
+  const research = JSON.parse(fs.readFileSync('conventions/vexpo-2026/sources/floratelier-meet-greets.json', 'utf8'));
   const sourceIds = new Set(research.sources.map(source => source.id));
   assert.equal(sourceIds.size, research.sources.length);
   assert.deepEqual(['Friday', 'Saturday', 'Sunday'].map(day => research.sessions.filter(s => s.day === day).length), [13,16,14]);
@@ -148,7 +148,7 @@ setImmediate(async () => {
     assert.equal(imported.participants, session.participants.join('; '));
     assert.equal(imported.meet_greet_type, session.type);
   }
-  assert.equal(fs.readdirSync('vexpo-2026/sources').filter(s => /\.(png|jpe?g)$/i.test(s)).length, 0);
+  assert.equal(fs.readdirSync('conventions/vexpo-2026/sources').filter(s => /\.(png|jpe?g)$/i.test(s)).length, 0);
   const originalFetch = context.fetch;
   context.fetch = async () => ({ok: false});
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);

@@ -19,21 +19,12 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: actions/configure-pages@v5
-      - name: Prepare site
+      - name: Check schedule and site packaging
         run: |
-          mkdir _site
-          cp index.html _site/
-          cp -R assets _site/
-          for schedule in */schedule.csv; do
-            directory="$(dirname "$schedule")"
-            mkdir -p "_site/$directory"
-            cp "$directory/index.html" "$schedule" "_site/$directory/"
-            for data in socials.json opening-hours.json; do
-              if [ -f "$directory/$data" ]; then
-                cp "$directory/$data" "_site/$directory/"
-              fi
-            done
-          done
+          node tests/schedule.cjs
+          node tests/build-site.cjs
+      - name: Prepare site
+        run: node scripts/build-site.cjs
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site

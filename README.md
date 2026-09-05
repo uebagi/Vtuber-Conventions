@@ -1,17 +1,17 @@
 # VTuber Conventions
 
-A static site for convention schedules, participant socials, filters, and calendar downloads. Each convention lives in its own folder and uses shared JavaScript and CSS.
+A static site for convention schedules, participant socials, filters, and calendar downloads. Each convention lives in its own folder under `conventions/` and uses shared JavaScript and CSS.
 
 [Website](https://uebagi.github.io/Vtuber-Conventions/)
 
 ## Add a convention
 
-1. Create a folder at the repository root using a unique slug, such as `example-con-2027/`.
+1. Create a folder under `conventions/` using a unique slug, such as `conventions/example-con-2027/`.
 2. Copy an existing convention's `index.html` into the folder. Create a new `schedule.csv` using the same column headers.
 3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, and footer.
 4. Configure the page's `<body>` attributes as shown below. Remove any copied `data-uid-domain` attribute; new conventions use their event ID for calendar IDs.
 5. Add an optional `socials.json` for participant links. Omit `data-socials` if you do not have a social map.
-6. Copy a convention card in the root `index.html` and update its link, name, dates, and location.
+6. Copy a convention card in the root `index.html` and update its link to `conventions/<slug>/`, name, dates, and location.
 7. Preview the page locally and check its filters, source links, and calendar downloads before pushing to `main`.
 
 ```html
@@ -22,20 +22,22 @@ A static site for convention schedules, participant socials, filters, and calend
   data-socials="socials.json">
 ```
 
-Keep the shared asset paths as `../assets/app.js` and `../assets/styles.css`. Dates and location filter options are generated from the CSV. Use a new folder and event ID for each year's convention.
+Keep the shared asset paths as `../../assets/app.js` and `../../assets/styles.css`, and the convention page's home link as `../../`. Dates and location filter options are generated from the CSV. Use a new folder and event ID for each year's convention.
 
 ## Project layout
 
 ```text
 index.html                   Convention directory
 assets/                      Shared JavaScript and CSS
-example-con-2027/             One folder per convention
-  index.html                 Page markup and event settings
-  schedule.csv               Schedule read by the website
-  opening-hours.json         Optional daily entry hours
-  socials.json               Optional participant links
-  sources/                   Optional research and source notes
-tests/schedule.cjs           Functional checks
+conventions/
+  example-con-2027/           One folder per convention edition
+    index.html               Page markup and event settings
+    schedule.csv             Schedule read by the website
+    opening-hours.json       Optional daily entry hours
+    socials.json             Optional participant links
+    sources/                 Optional research and source notes
+scripts/build-site.cjs       Site packaging and legacy redirects
+tests/                      Schedule and packaging checks
 .github/workflows/pages.yml  GitHub Pages deployment
 tmp/                         Ignored local reference files
 ```
@@ -169,10 +171,11 @@ python -m http.server 8000
 
 Open [localhost:8000](http://localhost:8000/) and select a convention. Keep the server running while testing. Opening HTML through `file://` does not reliably allow CSV and JSON loading.
 
-No package installation or build step is required. To run the existing functional checks, install Node.js and run:
+No package installation or build step is required for local browsing. To run the existing functional checks, install Node.js and run:
 
 ```sh
 node tests/schedule.cjs
+node tests/build-site.cjs
 ```
 
 The tests use the existing schedule as a fixture. Update expected counts and assertions when changing that fixture. For a new convention, also check the page locally: participant links, combined filters, date/time labels, and single-session and filtered calendar downloads.
@@ -181,6 +184,10 @@ The tests use the existing schedule as a fixture. Update expected counts and ass
 
 Pushes to `main` deploy automatically through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be run manually.
 
-The workflow discovers root-level folders containing `schedule.csv` and publishes their `index.html`, `schedule.csv`, and optional `socials.json` and `opening-hours.json`, along with the root index and shared assets. It excludes `sources/` and `tmp/`. Update the workflow if you introduce additional files needed by the website.
+The workflow runs the schedule and packaging checks, then `node scripts/build-site.cjs`. The packaging script discovers `conventions/*/schedule.csv` and publishes each convention's `index.html`, `schedule.csv`, and optional `socials.json` and `opening-hours.json`, along with the root index and shared assets. It excludes `sources/`, `tmp/`, and local agent instructions. Update the script if you introduce additional runtime files.
+
+The script creates a fresh `_site/` directory; it refuses to overwrite an existing output directory. To inspect a packaged preview, use `node scripts/build-site.cjs tmp/site-preview` with a new output path, then `python -m http.server 8001 --directory tmp/site-preview`.
+
+Old convention URLs are preserved by redirects generated only in the published output. The script's `legacySlugs` list identifies folders that previously lived at the repository root; new conventions do not need entries. Redirects preserve query strings and fragments when JavaScript is enabled, and old data download URLs remain available. Existing convention IDs and calendar UIDs stay unchanged.
 
 For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, then update the website and repository links in this README. Use relative links in the site so it works under the repository's Pages URL.
