@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse VeXpo 2026 stages, panels and announced performers. All times are British Summer Time.">
+  <title>VeXpo 2026 · Stage & panel planner</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/app.js" defer></script>
+</head>
+<body data-event-name="VeXpo" data-event-id="vexpo-2026" data-venue="NEC, Birmingham, UK" data-uid-domain="vexpo-fan-planner">
+  <main>
+    <header class="hero">
+      <a href="../">Conventions</a>
+      <p class="intro">VeXpo 2026 · September 18–20, 2026 · NEC, Birmingham</p>
+      <div class="hero-links"><span class="timezone">All times BST · UTC+1</span><a href="https://vexpo.uk/stages-panels" target="_blank" rel="noopener noreferrer">Official schedule ↗</a><a href="schedule.csv" download>Download CSV ↓</a></div>
+    </header>
+
+    <section class="controls" aria-label="Filter schedule">
+      <div class="days" role="group" aria-label="Day"></div>
+      <div class="filters">
+        <label class="search">Performer or session<input id="search" type="search" autocomplete="off"></label>
+        <label>Stage or room<select id="stage"><option value="all">All stages & rooms</option></select></label>
+        <label class="checkbox"><input id="announced" type="checkbox"> Announced sessions only</label>
+        <label class="checkbox"><input id="concerts" type="checkbox"> Concerts only</label>
+      </div>
+    </section>
+
+    <div class="results-bar"><p id="status" role="status" aria-live="polite">Loading the schedule…</p><div class="result-actions"><button id="download-calendar" type="button" disabled>Download calendar (.ics)</button><button id="reset" type="button" class="reset">Reset filters</button></div></div>
+    <div id="schedule" aria-label="Sessions"></div>
+    <noscript><p>Enable JavaScript to browse the schedule, or <a href="schedule.csv">download the CSV</a>.</p></noscript>
+    <footer>Unofficial · Updated September 4, 2026</footer>
+  </main>
+</body>
+</html>
