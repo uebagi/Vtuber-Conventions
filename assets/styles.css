@@ -8,3 +8,5 @@
 @media(prefers-reduced-motion:no-preference){button{transition:background .15s,border-color .15s}}
 
 .card{--stage-color:var(--accent)}.card[data-stage^="M&G Booth"]{--stage-color:#94d9c7}.session-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.session-tags .badge{margin-bottom:0}.event-status{color:var(--accent);background:#2b273d}
+
+.filter-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:end;flex:0 1 440px;max-width:100%;min-width:0}.filter-pair label,.filter-pair select{min-width:0}@media(max-width:760px){.filter-pair{flex-basis:100%;gap:12px}}
