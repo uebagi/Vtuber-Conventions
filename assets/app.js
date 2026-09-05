@@ -29,6 +29,7 @@ const el = (tag, className, text) => {
 const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const displayDate = date => new Date(date + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const config = document.body.dataset;
+const isTimeMarker = session => ['opening', 'closing'].includes(session.event_type);
 let sessions = [], selectedDay = 'all', socialProfiles = {};
 
 function participantChip(name) {
@@ -115,8 +116,8 @@ function createCalendar(items, now = new Date()) {
   for (const session of items) {
     const title = session.event === '???' ? 'To be announced' : session.event;
     const description = [
-      `Local time: ${displayDate(session.date)} ${session.start_time}–${session.end_time} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
-      session.participants ? `Participants: ${session.participants}` : 'Participants not announced.',
+      `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : '–' + session.end_time} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
+      session.participants ? `Participants: ${session.participants}` : isTimeMarker(session) ? '' : 'Participants not announced.',
       `Event status: ${statusLabel(session)}`,
       session.is_meet_greet === 'true' ? `Meet & greet: ${session.meet_greet_type}; price: ${session.price}; booth: ${session.booth}` : '',
       session.lineup_notes,
@@ -127,7 +128,7 @@ function createCalendar(items, now = new Date()) {
     const uid = `${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/[^a-z0-9]+/g, '-')}@${config.uidDomain || config.eventId}`;
     lines.push('BEGIN:VEVENT', `UID:${uid}`, `DTSTAMP:${calendarTimestamp(now)}`,
       `DTSTART:${calendarTimestamp(`${session.date}T${session.start_time}:00${session.utc_offset}`)}`,
-      `DTEND:${calendarTimestamp(`${session.date}T${session.end_time}:00${session.utc_offset}`)}`,
+      ...(isTimeMarker(session) ? [] : [`DTEND:${calendarTimestamp(`${session.date}T${session.end_time}:00${session.utc_offset}`)}`]),
       `SUMMARY:${calendarText(`${config.eventName}: ${title}`)}`,
       `LOCATION:${calendarText(`${session.stage}, ${config.venue}`)}`,
       `DESCRIPTION:${calendarText(description)}`,
@@ -151,7 +152,7 @@ function card(session) {
   const top = el('div', 'card-top');
   top.append(el('span', 'stage', session.stage));
   const times = el('span', 'time');
-  for (const [i, value] of [session.start_time, session.end_time].entries()) {
+  for (const [i, value] of (isTimeMarker(session) ? [session.start_time] : [session.start_time, session.end_time]).entries()) {
     if (i) times.append(' – ');
     const time = el('time', '', value);
     time.dateTime = `${session.date}T${value}:00${session.utc_offset}`;
@@ -171,8 +172,8 @@ function card(session) {
     const people = el('div', 'people');
     names.forEach(name => people.append(participantLinks(name)));
     article.append(people);
-  } else article.append(el('p', 'muted', 'Participants not announced.'));
-  const details = el('details'); details.append(el('summary', '', 'Lineup details & sources'));
+  } else if (!isTimeMarker(session)) article.append(el('p', 'muted', 'Participants not announced.'));
+  const details = el('details'); details.append(el('summary', '', isTimeMarker(session) ? 'Details & sources' : 'Lineup details & sources'));
   if (session.listed_hosts && session.listed_hosts !== '???') details.append(el('p', '', `Listed hosts: ${session.listed_hosts}`));
   if (session.lineup_notes) details.append(el('p', '', session.lineup_notes));
   if (session.concert_classification_notes) details.append(el('p', '', `Concert filter: ${session.concert_classification_notes}`));
@@ -255,8 +256,9 @@ async function load() {
     socialProfiles = profiles;
     if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
     sessions = parseCSV(await response.text());
-    if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || !s.end_time || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
-    sessions.sort((a, b) => (a.date + a.start_time + a.stage).localeCompare(b.date + b.start_time + b.stage));
+    if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || (!s.end_time && !isTimeMarker(s)) || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
+    const sortKey = s => s.date + s.start_time + (s.event_type === 'opening' ? '0' : s.event_type === 'closing' ? '2' : '1') + s.stage;
+    sessions.sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
     [...new Set(sessions.map(s => s.stage))].sort().forEach(name => { const option = el('option', '', name); option.value = name; stage.append(option); });
     setupDays();
     render();

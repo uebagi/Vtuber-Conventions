@@ -8,7 +8,7 @@ A static site for convention schedules, participant socials, filters, and calend
 
 1. Create a folder at the repository root using a unique slug, such as `example-con-2027/`.
 2. Copy an existing convention's `index.html` into the folder. Create a new `schedule.csv` using the same column headers.
-3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, opening hours, and footer.
+3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, and footer.
 4. Configure the page's `<body>` attributes as shown below. Remove any copied `data-uid-domain` attribute; new conventions use their event ID for calendar IDs.
 5. Add an optional `socials.json` for participant links. Omit `data-socials` if you do not have a social map.
 6. Copy a convention card in the root `index.html` and update its link, name, dates, and location.
@@ -50,11 +50,12 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | `timezone` | Timezone identifier, such as `Europe/London` |
 | `timezone_abbreviation`, `utc_offset` | Local label and offset applicable on that date, such as `BST`, `+01:00` |
 | `stage` | Stage, room, or booth name; used by the location filter |
+| `event_type` | Optional `opening` or `closing` for a single-time schedule marker; leave empty for regular sessions |
 | `event` | Session title; `???` displays as “To be announced” |
 | `source_url` | Published source URL for the session |
 | `listed_hosts` | Hosts as listed by the source |
 | `participants` | Individual names separated by semicolons |
-| `lineup_status` | `unannounced`, `partial`, or `named lineup published` |
+| `lineup_status` | `unannounced`, `partial`, `named lineup published`, or `announced` for entry/closing markers |
 | `lineup_notes` | Lineup details, restrictions, and unresolved source conflicts |
 | `participant_source_urls` | Source URLs separated by semicolons; falls back to `source_url` when empty |
 | `is_concert`, `is_meet_greet` | Lowercase `true` or `false` for each filter |
@@ -102,7 +103,9 @@ Use `source_ids` for every session and ensure each ID exists in `sources`. Keep 
 
 The site displays dates in US format and times in the convention's local timezone. Set `utc_offset` for each session's date, accounting for daylight saving time. The exporter uses that offset to produce UTC calendar timestamps; it does not calculate the offset from `timezone`.
 
-Sessions currently must start and end on the same local date. Calendar IDs use the event ID (or an existing `data-uid-domain` override), date, start time, and normalized location name. Give simultaneous locations distinct names and keep these identifiers stable when correcting titles or lineups.
+Add entry-opening and show-closing times as separate CSV rows with `event_type` set to `opening` or `closing`, a `start_time`, and an empty `end_time`. These appear as cards and export as instantaneous calendar events. Keep concert sessions separate.
+
+Regular sessions currently must start and end on the same local date. Calendar IDs use the event ID (or an existing `data-uid-domain` override), date, start time, and normalized location name. Give simultaneous locations distinct names and keep these identifiers stable when correcting titles or lineups.
 
 Calendar downloads are snapshots, not subscriptions.
 
