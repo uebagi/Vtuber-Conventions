@@ -124,7 +124,7 @@ Use `source_ids` for every session and ensure each ID exists in `sources`. Keep 
 
 The site displays dates in US format and times in the convention's local timezone. Set `utc_offset` for each session's date, accounting for daylight saving time. The exporter uses that offset to produce UTC calendar timestamps; it does not calculate the offset from `timezone`.
 
-Add entry-opening and show-closing times as separate CSV rows with `event_type` set to `opening` or `closing`, a `start_time`, and an empty `end_time`. These appear as cards and export as instantaneous calendar events. Keep concert sessions separate.
+Keep admission opening and closing hours in `opening-hours.json`; they are not sessions or calendar events. Concerts remain ordinary timed sessions in the CSV.
 
 Regular sessions currently must start and end on the same local date. Calendar IDs use the event ID (or an existing `data-uid-domain` override), date, start time, and normalized location name. Give simultaneous locations distinct names and keep these identifiers stable when correcting titles or lineups.
 
@@ -181,6 +181,6 @@ The tests use the existing schedule as a fixture. Update expected counts and ass
 
 Pushes to `main` deploy automatically through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be run manually.
 
-The workflow discovers root-level folders containing `schedule.csv` and publishes their `index.html`, `schedule.csv`, and optional `socials.json`, along with the root index and shared assets. It excludes `sources/` and `tmp/`. Update the workflow if you introduce additional files needed by the website.
+The workflow discovers root-level folders containing `schedule.csv` and publishes their `index.html`, `schedule.csv`, and optional `socials.json` and `opening-hours.json`, along with the root index and shared assets. It excludes `sources/` and `tmp/`. Update the workflow if you introduce additional files needed by the website.
 
 For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, then update the website and repository links in this README. Use relative links in the site so it works under the repository's Pages URL.
