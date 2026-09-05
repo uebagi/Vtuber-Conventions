@@ -1,19 +1,109 @@
 # VTuber Conventions
 
-Unofficial convention schedules with performer search, day, stage and meet-and-greet filters, and calendar downloads.
+A static site for convention schedules, participant socials, filters, and calendar downloads. Each convention lives in its own folder and uses shared JavaScript and CSS.
 
-**[Website](https://uebagi.github.io/Vtuber-Conventions/)** · **[VeXpo 2026 schedule](https://uebagi.github.io/Vtuber-Conventions/vexpo-2026/)**
+[Website](https://uebagi.github.io/Vtuber-Conventions/)
 
-## Features
+## Add a convention
 
-- Search sessions and announced participants.
-- Click a participant name to open their researched X (Twitter) profile. Hover to see the handle; unmatched names stay unlinked. YouTube, Twitch, and website links from the convention appear beside the name.
-- Filter by date, location, announced sessions, concerts, meet-and-greets, or official/unofficial status.
-- View lineup notes and links to official sources.
-- Download one session or the filtered schedule as an `.ics` calendar file.
-- Download the schedule as CSV.
+1. Create a folder at the repository root using a unique slug, such as `example-con-2027/`.
+2. Copy an existing convention's `index.html` into the folder. Create a new `schedule.csv` using the same column headers.
+3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, and footer.
+4. Configure the page's `<body>` attributes as shown below. Remove any copied `data-uid-domain` attribute; new conventions use their event ID for calendar IDs.
+5. Add an optional `socials.json` for participant links. Omit `data-socials` if you do not have a social map.
+6. Copy a convention card in the root `index.html` and update its link, name, dates, and location.
+7. Preview the page locally and check its filters, source links, and calendar downloads before pushing to `main`.
 
-Dates use US formatting. Session times stay in the convention's local timezone; VeXpo uses British Summer Time (UTC+1). Calendar files preserve the event's instant in time and display in your calendar app's configured timezone. Downloads are snapshots, not subscriptions.
+```html
+<body
+  data-event-name="Example Con"
+  data-event-id="example-con-2027"
+  data-venue="Convention Centre, City, Country"
+  data-socials="socials.json">
+```
+
+Keep the shared asset paths as `../assets/app.js` and `../assets/styles.css`. Dates and location filter options are generated from the CSV. Use a new folder and event ID for each year's convention.
+
+## Project layout
+
+```text
+index.html                   Convention directory
+assets/                      Shared JavaScript and CSS
+example-con-2027/             One folder per convention
+  index.html                 Page markup and event settings
+  schedule.csv               Schedule read by the website
+  socials.json               Optional participant links
+  sources/                   Optional research and source notes
+tests/schedule.cjs           Functional checks
+.github/workflows/pages.yml  GitHub Pages deployment
+tmp/                         Ignored local reference files
+```
+
+## Maintain the schedule
+
+Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column names. Quote fields containing commas, quotes, or newlines; double any quotes inside quoted fields.
+
+| Columns | Values |
+| --- | --- |
+| `date`, `day` | ISO date (`2027-09-18`) and matching weekday (`Saturday`) |
+| `start_time`, `end_time` | Local 24-hour times (`14:00`, `14:55`) |
+| `timezone` | Timezone identifier, such as `Europe/London` |
+| `timezone_abbreviation`, `utc_offset` | Local label and offset applicable on that date, such as `BST`, `+01:00` |
+| `stage` | Stage, room, or booth name; used by the location filter |
+| `event` | Session title; `???` displays as “To be announced” |
+| `source_url` | Published source URL for the session |
+| `listed_hosts` | Hosts as listed by the source |
+| `participants` | Individual names separated by semicolons |
+| `lineup_status` | `unannounced`, `partial`, or `named lineup published` |
+| `lineup_notes` | Lineup details, restrictions, and unresolved source conflicts |
+| `participant_source_urls` | Source URLs separated by semicolons; falls back to `source_url` when empty |
+| `is_concert`, `is_meet_greet` | Lowercase `true` or `false` for each filter |
+| `concert_classification_notes` | Reason for the concert classification |
+| `event_status` | `official` or `unofficial`; missing values display as unconfirmed |
+| `meet_greet_type`, `price`, `booth` | Meet-and-greet format, published price, and booth; otherwise leave empty |
+
+Use one row per published slot. Keep shared meet-and-greet slots together, with each participant listed separately in `participants`. Record whether times describe availability windows or individual appointments. Use `Not listed` for an unpublished price; do not assume it is free.
+
+Official/unofficial labels describe the session's status. Include supporting source links and explain uncertain classifications in the notes. Concert classification is maintained manually through `is_concert`.
+
+Keep research, transcriptions, and source conflicts in the convention's `sources/` folder. Those files do not drive the website. If you maintain a `sources/participants.json` snapshot, update it alongside the CSV.
+
+### Dates and calendar exports
+
+The site displays dates in US format and times in the convention's local timezone. Set `utc_offset` for each session's date, accounting for daylight saving time. The exporter uses that offset to produce UTC calendar timestamps; it does not calculate the offset from `timezone`.
+
+Sessions currently must start and end on the same local date. Calendar IDs use the event ID (or an existing `data-uid-domain` override), date, start time, and normalized location name. Give simultaneous locations distinct names and keep these identifiers stable when correcting titles or lineups.
+
+Calendar downloads are snapshots, not subscriptions.
+
+## Add participant socials
+
+Create `socials.json` in the convention folder and set `data-socials="socials.json"` on the page. Keys must exactly match the participant names in the CSV, including capitalization and punctuation.
+
+```json
+{
+  "checked_on": "2027-09-01",
+  "profiles": {
+    "Example Performer": {
+      "x": "https://x.com/example_handle",
+      "sources": ["https://example.org/performer"],
+      "primary": {
+        "url": "https://www.youtube.com/@example_handle",
+        "source": "https://example.org/guests"
+      }
+    },
+    "Unconfirmed Performer": {
+      "x": null,
+      "sources": [],
+      "notes": "Account not yet confirmed."
+    }
+  }
+}
+```
+
+Replace the example URLs with researched profiles. Start with the convention's guest links and the creator's own website. Check account changes and aliases before using directories or search results. Link to the actual X profile, and keep its supporting sources with the entry. Use `null` when a match is uncertain.
+
+The optional `primary` link appears beside X as YouTube, Twitch, or Website. Use it for the creator link published by the convention. If a participant has multiple spellings in the CSV, add matching map entries pointing to the same account.
 
 ## Run locally
 
@@ -23,92 +113,20 @@ From the repository root:
 python -m http.server 8000
 ```
 
-Open [localhost:8000](http://localhost:8000/) or the [local VeXpo schedule](http://localhost:8000/vexpo-2026/). Keep the server running. Opening the HTML file directly does not reliably allow the browser to load its CSV.
+Open [localhost:8000](http://localhost:8000/) and select a convention. Keep the server running while testing. Opening HTML through `file://` does not reliably allow CSV and JSON loading.
 
-No package installation or build step is required.
+No package installation or build step is required. To run the existing functional checks, install Node.js and run:
 
-## Project structure
-
-```text
-index.html                  Convention index
-assets/                     Shared JavaScript and CSS
-vexpo-2026/
-  index.html                Event page and settings
-  schedule.csv              Data used by the website
-  socials.json               X profiles and research sources
-  sources/                  Research notes
-.github/workflows/pages.yml GitHub Pages deployment
+```sh
+node tests/schedule.cjs
 ```
 
-## Update a schedule
+The tests use the existing schedule as a fixture. Update expected counts and assertions when changing that fixture. For a new convention, also check the page locally: participant links, combined filters, date/time labels, and single-session and filtered calendar downloads.
 
-Edit the convention's `schedule.csv`. The website reads it directly; `sources/participants.json` is a research snapshot, not the website's data source. Keep the snapshot aligned when changing researched participant information.
+## Deploy
 
-| Field | Format |
-| --- | --- |
-| `date` | ISO date, such as `2026-09-18` |
-| `day` | Weekday name, such as `Friday` |
-| `start_time`, `end_time` | Local 24-hour time, such as `20:00` |
-| `timezone` | Timezone identifier, such as `Europe/London` |
-| `timezone_abbreviation` | Display label, such as `BST` |
-| `utc_offset` | Offset applicable on the event date, such as `+01:00` |
-| `participants`, `participant_source_urls` | Semicolon-separated values |
-| `lineup_status` | `unannounced`, `partial`, or `named lineup published` |
-| `is_concert`, `is_meet_greet` | `true` or `false` |
-| `event_status` | `official` or `unofficial` (convention listings are official; community booth listings can be unofficial) |
-| `meet_greet_type`, `price`, `booth` | Published meet-and-greet format, price, and booth |
-| `concert_classification_notes` | Reason for including or excluding the session |
+Pushes to `main` deploy automatically through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be run manually.
 
-Preserve the remaining columns and CSV quoting. The current calendar exporter assumes sessions start and end on the same local date. Update the date in the convention page's footer after checking its information.
+The workflow discovers root-level folders containing `schedule.csv` and publishes their `index.html`, `schedule.csv`, and optional `socials.json`, along with the root index and shared assets. It excludes `sources/` and `tmp/`. Update the workflow if you introduce additional files needed by the website.
 
-The concerts filter includes primarily musical performances, singing competitions, karaoke, and concert screenings. Classification is based on session descriptions, not official categories. Unannounced sessions are excluded until their contents are known.
-
-## Add a convention
-
-1. Create a folder at the repository root, such as `another-con-2027/`.
-2. Copy `vexpo-2026/index.html` into it and create `schedule.csv` with the existing columns.
-3. Update the page title, event details, official link, timezone label, and footer.
-4. Set the `<body>` attributes `data-event-name`, `data-event-id`, and `data-venue`. Use a unique event ID. Remove `data-uid-domain` from the copied page; VeXpo retains it to preserve previously exported calendar IDs.
-5. Add a link to the new convention in the root `index.html`.
-
-Dates and stage options are generated from each CSV. Shared assets use relative paths, so convention pages work under the GitHub repository URL.
-
-## Deployment
-
-Pushes to `main` automatically deploy through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be started manually from that page.
-
-Deployment includes the root index, shared assets, and the `index.html`, `schedule.csv`, and optional `socials.json` files from each convention folder. Research files in `sources/` are available in this public repository but are not included in the Pages deployment.
-
-For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, and update the links in this README to your own site.
-
-## Meet & greets and event tags
-
-The VeXpo schedule includes 98 availability windows from the [official meet-and-greet page](https://vexpo.uk/meet-greets), checked September 5, 2026. These are the published talent availability windows, not individual appointment durations. Cards and calendar exports include the listed price, booth, and Virtual / IRL / Penplotter format. Booking requirements still apply, including to free listings.
-
-The **Meet & greets** dropdown offers **All sessions**, **Meet & greets only**, and **Exclude meet & greets**. Selecting meet-and-greets only clears the concerts checkbox; enabling concerts while meet-and-greets only is selected switches the dropdown to exclude meet-and-greets. Reset restores all sessions. Date, search, location and status filters combine with these choices, and calendar downloads export the displayed results.
-
-Official/unofficial tags describe the event, not this independent planner. Listings imported from the convention schedule are tagged official. The florAtelier x Fireshine Games booth meet-and-greets are tagged unofficial. Missing status is displayed as unconfirmed.
-
-The source page contains duplicate tables. The import uses the first Saturday table set and the explicitly labeled Sunday table set. The Sunday 10:30–11:30 booth 5 slot is Phoebe Chan in the Sunday section but Féileacán Cú in an earlier duplicate; its notes flag that conflict. `sources/meet-greets.json` records the selected source rows.
-
-Downloaded poster images have been removed from the current repository tree. Official poster URLs remain as citations; earlier commits still contain the old files.
-
-## Participant socials
-
-Each convention can provide `socials.json` and set `data-socials="socials.json"` on its page's `<body>`. The shared app reads the map by the exact participant names in the CSV. Conventions without a map still work.
-
-VeXpo's map was checked September 5, 2026: 197 of 198 distinct display names have matched X profiles (including aliases and group accounts). Research uses public X profiles and indexed mirrors, official sites and announcements, the Virtual YouTuber Wiki, HoloList, and vTubie. Each entry records its source URLs; these are researched matches, not X verification badges. Handles can change. Poka remains unconfirmed and unlinked. All 42 new names from the unofficial booth posters now have researched X links. Public profiles were checked through the FxTwitter mirror and cross-referenced with creator pages and directories. Bun-Mii uses `@bun_mii`, Milia uses `@ounceofMilia`, and Haewon uses `@HaewonTheHeart`; older handles are recorded in notes. RTGame and Yoor have X profiles whose bios direct visitors to Bluesky.
-
-Edit an entry's `x` URL and `sources` together when correcting a match. Use `null` for an uncertain account. Notes record spelling differences such as Paige Turner / Paige Terner and Nowi Kaijumari / Nowi Kaijumaru. The social map preserves the names used in the schedule.
-
-Run the functional checks with `node tests/schedule.cjs`.
-
-Primary links for 136 schedule names come from VeXpo's [virtual guests](https://vexpo.uk/guests) and [IRL guests / autographs](https://vexpo.uk/autographs) pages. Each `primary` object records its `url` and convention `source`. Personal link pages were also checked to corroborate X handles; creator-credit links were not treated as the participant's account. The convention pages sometimes link older personal sites, so X research is retained separately (for example, Vampeaches).
-
-## florAtelier booth meet & greets
-
-The schedule includes 43 unofficial meet-and-greet slots from the three posters accompanying [florAtelier's announcement](https://x.com/floratelier_/status/2095893825457709322): 13 on Friday, September 18; 16 on Saturday, September 19; and 14 on Sunday, September 20, 2026. All are at **florAtelier x Fireshine Games — booth S05**, with times in BST (UTC+1). Select **Meet & greets only** and **Unofficial** to show them.
-
-Virtual/in-person formats and the five Akasupa markings are preserved. Shared slots remain one calendar event with separate participant names. Prices and booking requirements were not stated on the posters; price is recorded as `Not listed`. Weekdays were mapped to the convention dates. The initial transcription uses the user-supplied photos; the announcement was subsequently retrieved through a public mirror while researching participant socials.
-
-`sources/floratelier-meet-greets.json` records the transcription, date reasoning, source tweet, and image hashes. Reference photos remain local in the ignored `tmp/` folder. There are now 184 sessions: 43 stage/panel sessions, 98 official meet-and-greet windows, and 43 unofficial booth slots.
+For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, then update the website and repository links in this README. Use relative links in the site so it works under the repository's Pages URL.
