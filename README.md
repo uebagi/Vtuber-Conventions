@@ -8,7 +8,7 @@ A static site for convention schedules, participant socials, filters, and calend
 
 1. Create a folder at the repository root using a unique slug, such as `example-con-2027/`.
 2. Copy an existing convention's `index.html` into the folder. Create a new `schedule.csv` using the same column headers.
-3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, and footer.
+3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, opening hours, and footer.
 4. Configure the page's `<body>` attributes as shown below. Remove any copied `data-uid-domain` attribute; new conventions use their event ID for calendar IDs.
 5. Add an optional `socials.json` for participant links. Omit `data-socials` if you do not have a social map.
 6. Copy a convention card in the root `index.html` and update its link, name, dates, and location.
