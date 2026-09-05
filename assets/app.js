@@ -34,6 +34,9 @@ const search = document.querySelector('#search');
 const stage = document.querySelector('#stage');
 const announced = document.querySelector('#announced');
 const concerts = document.querySelector('#concerts');
+const meetGreets = document.querySelector('#meet-greets');
+const eventStatus = document.querySelector('#event-status');
+const statusLabel = session => ({ official: 'Official', unofficial: 'Unofficial' }[session.event_status] || 'Status unconfirmed');
 const schedule = document.querySelector('#schedule');
 const status = document.querySelector('#status');
 const downloadCalendar = document.querySelector('#download-calendar');
@@ -62,8 +65,10 @@ function createCalendar(items, now = new Date()) {
     const description = [
       `Local time: ${displayDate(session.date)} ${session.start_time}–${session.end_time} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
       session.participants ? `Participants: ${session.participants}` : 'Participants not announced.',
+      `Event status: ${statusLabel(session)}`,
+      session.is_meet_greet === 'true' ? `Meet & greet: ${session.meet_greet_type}; price: ${session.price}; booth: ${session.booth}` : '',
       session.lineup_notes,
-      'Unofficial schedule snapshot; check the official listing for changes. Listed appearances do not confirm physical attendance.',
+      'Fan-maintained schedule snapshot; check the source listing for changes.',
       session.participant_source_urls || session.source_url
     ].filter(Boolean).join('\n\n');
     // A slot retains its identity when an unannounced title or lineup is updated.
@@ -74,6 +79,7 @@ function createCalendar(items, now = new Date()) {
       `SUMMARY:${calendarText(`${config.eventName}: ${title}`)}`,
       `LOCATION:${calendarText(`${session.stage}, ${config.venue}`)}`,
       `DESCRIPTION:${calendarText(description)}`,
+      `CATEGORIES:${calendarText(statusLabel(session))}${session.is_meet_greet === 'true' ? ',Meet & Greet' : ''}`,
       `URL:${session.source_url.replace(/[\r\n]/g, '')}`, 'END:VEVENT');
   }
   lines.push('END:VCALENDAR');
@@ -100,9 +106,14 @@ function card(session) {
     times.append(time);
   }
   top.append(times); article.append(top);
+  const tags = el('div', 'session-tags');
+  tags.append(el('span', 'badge event-status', statusLabel(session)));
+  if (session.is_meet_greet === 'true') tags.append(el('span', 'badge', 'Meet & Greet'));
+  article.append(tags);
   article.append(el('h3', '', session.event === '???' ? 'To be announced' : session.event));
   if (/recorded concert screening/i.test(session.lineup_notes)) article.append(el('span', 'badge', 'Recorded screening'));
   else if (session.lineup_status === 'partial') article.append(el('span', 'badge', 'Full lineup not listed'));
+  if (session.is_meet_greet === 'true') article.append(el('p', 'muted', `${session.meet_greet_type} · ${session.price} · Availability window`));
   const names = session.participants.split(';').map(s => s.trim()).filter(Boolean);
   if (names.length) {
     const people = el('div', 'people');
@@ -110,7 +121,7 @@ function card(session) {
     article.append(people);
   } else article.append(el('p', 'muted', 'Participants not announced.'));
   const details = el('details'); details.append(el('summary', '', 'Lineup details & sources'));
-  if (session.listed_hosts && session.listed_hosts !== '???') details.append(el('p', '', `Official billing: ${session.listed_hosts}`));
+  if (session.listed_hosts && session.listed_hosts !== '???') details.append(el('p', '', `Listed hosts: ${session.listed_hosts}`));
   if (session.lineup_notes) details.append(el('p', '', session.lineup_notes));
   if (session.concert_classification_notes) details.append(el('p', '', `Concert filter: ${session.concert_classification_notes}`));
   const links = el('div', 'source-links');
@@ -118,7 +129,7 @@ function card(session) {
   urls.forEach((value, i) => {
     const url = new URL(value, location.href);
     if (!['https:', 'http:'].includes(url.protocol)) return;
-    const a = el('a', '', i === 0 ? 'Official listing ↗' : 'Lineup poster ↗');
+    const a = el('a', '', i === 0 ? (session.event_status === 'official' ? 'Official listing ↗' : 'Source listing ↗') : 'Lineup poster ↗');
     a.href = url.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; links.append(a);
   });
   details.append(links); article.append(details);
@@ -134,7 +145,9 @@ function filteredSessions() {
     && (stage.value === 'all' || s.stage === stage.value)
     && (!announced.checked || s.lineup_status !== 'unannounced')
     && (!concerts.checked || s.is_concert === 'true')
-    && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage].join(' ')).includes(term)));
+    && (!meetGreets.checked || s.is_meet_greet === 'true')
+    && (eventStatus.value === 'all' || s.event_status === eventStatus.value)
+    && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status].join(' ')).includes(term)));
 }
 
 function render() {
@@ -175,10 +188,12 @@ function setupDays() {
   }
 }
 search.addEventListener('input', render); stage.addEventListener('change', render); announced.addEventListener('change', render);
-concerts.addEventListener('change', render);
+concerts.addEventListener('change', () => { if (concerts.checked) meetGreets.checked = false; render(); });
+meetGreets.addEventListener('change', () => { if (meetGreets.checked) concerts.checked = false; render(); });
+eventStatus.addEventListener('change', render);
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
-  search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false;
+  search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.checked = false; eventStatus.value = 'all';
   document.querySelector('[data-day="all"]').click();
 });
 

@@ -6,3 +6,5 @@
 .filters{flex-wrap:wrap}.filters .search{min-width:220px}.results-bar{flex-wrap:wrap}.result-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.session-calendar{margin-top:16px;align-self:flex-start;font-size:.8rem;color:var(--accent)}button:disabled{opacity:.5;cursor:not-allowed}
 .convention-list{display:grid;gap:20px}.convention-link{display:flex;flex-direction:column;gap:12px;padding:clamp(24px,4vw,40px);border:1px solid var(--line);border-radius:16px;background:var(--surface);text-decoration:none}.convention-link:hover{border-color:var(--accent)}.convention-name{font-family:'Space Grotesk',sans-serif;font-size:clamp(2rem,5vw,3rem);font-weight:600;line-height:1.2}.convention-meta{color:var(--muted);font-size:1rem}.day-heading{flex-wrap:wrap}
 @media(prefers-reduced-motion:no-preference){button{transition:background .15s,border-color .15s}}
+
+.card{--stage-color:var(--accent)}.card[data-stage^="M&G Booth"]{--stage-color:#94d9c7}.session-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.session-tags .badge{margin-bottom:0}.event-status{color:var(--accent);background:#2b273d}

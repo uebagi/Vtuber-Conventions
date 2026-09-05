@@ -1,13 +1,13 @@
 # VTuber Conventions
 
-Unofficial convention schedules with performer search, day and stage filters, and calendar downloads.
+Unofficial convention schedules with performer search, day, stage and meet-and-greet filters, and calendar downloads.
 
 **[Website](https://uebagi.github.io/Vtuber-Conventions/)** · **[VeXpo 2026 schedule](https://uebagi.github.io/Vtuber-Conventions/vexpo-2026/)**
 
 ## Features
 
 - Search sessions and announced participants.
-- Filter by date, stage, announced sessions, or concerts.
+- Filter by date, location, announced sessions, concerts, meet-and-greets, or official/unofficial status.
 - View lineup notes and links to official sources.
 - Download one session or the filtered schedule as an `.ics` calendar file.
 - Download the schedule as CSV.
@@ -34,7 +34,7 @@ assets/                     Shared JavaScript and CSS
 vexpo-2026/
   index.html                Event page and settings
   schedule.csv              Data used by the website
-  sources/                  Research notes and posters
+  sources/                  Research notes
 .github/workflows/pages.yml GitHub Pages deployment
 ```
 
@@ -52,7 +52,9 @@ Edit the convention's `schedule.csv`. The website reads it directly; `sources/pa
 | `utc_offset` | Offset applicable on the event date, such as `+01:00` |
 | `participants`, `participant_source_urls` | Semicolon-separated values |
 | `lineup_status` | `unannounced`, `partial`, or `named lineup published` |
-| `is_concert` | `true` or `false` |
+| `is_concert`, `is_meet_greet` | `true` or `false` |
+| `event_status` | `official` or `unofficial` (all current VeXpo entries are official) |
+| `meet_greet_type`, `price`, `booth` | Published meet-and-greet format, price, and booth |
 | `concert_classification_notes` | Reason for including or excluding the session |
 
 Preserve the remaining columns and CSV quoting. The current calendar exporter assumes sessions start and end on the same local date. Update the date in the convention page's footer after checking its information.
@@ -76,3 +78,15 @@ Pushes to `main` automatically deploy through [GitHub Actions](https://github.co
 Deployment includes the root index, shared assets, and the `index.html` and `schedule.csv` files from each convention folder. Research files in `sources/` are available in this public repository but are not included in the Pages deployment.
 
 For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, and update the links in this README to your own site.
+
+## Meet & greets and event tags
+
+The VeXpo schedule includes 98 availability windows from the [official meet-and-greet page](https://vexpo.uk/meet-greets), checked September 5, 2026. These are the published talent availability windows, not individual appointment durations. Cards and calendar exports include the listed price, booth, and Virtual / IRL / Penplotter format. Booking requirements still apply, including to free listings.
+
+**Meet & greets only** and **Concerts only** are mutually exclusive filters. Date, search, location and status filters combine with either one, and calendar downloads export the displayed results.
+
+Official/unofficial tags describe the event, not this independent planner. All imported VeXpo events are tagged official. Future community events can be tagged unofficial; missing status is displayed as unconfirmed.
+
+The source page contains duplicate tables. The import uses the first Saturday table set and the explicitly labeled Sunday table set. The Sunday 10:30–11:30 booth 5 slot is Phoebe Chan in the Sunday section but Féileacán Cú in an earlier duplicate; its notes flag that conflict. `sources/meet-greets.json` records the selected source rows.
+
+Downloaded poster images have been removed from the current repository tree. Official poster URLs remain as citations; earlier commits still contain the old files.

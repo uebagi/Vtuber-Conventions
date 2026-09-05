@@ -1,0 +1,786 @@
+[
+  {
+    "day": "Saturday",
+    "talent": "Kumisa Umare",
+    "time": "11:00 - 12:00",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "5"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Nina Saotome",
+    "time": "11:00 - 12:00",
+    "type": "Penplotter",
+    "price": "Free",
+    "booth": "6"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Saura",
+    "time": "11:00 - 12:00",
+    "type": "IRL",
+    "price": "Free",
+    "booth": "7"
+  },
+  {
+    "day": "Saturday",
+    "talent": "InVain",
+    "time": "11:30 - 12:30",
+    "type": "Virtual",
+    "price": "£35",
+    "booth": "1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Tori Oriane",
+    "time": "11:30 - 12:30",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "4"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Vampeaches",
+    "time": "11:30 - 12:30",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Cecilia Lent",
+    "time": "11:30 - 12:30",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Lan Philia",
+    "time": "13:00 - 14:00",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "5"
+  },
+  {
+    "day": "Saturday",
+    "talent": "TRiGGERPHiSH",
+    "time": "13:00 - 14:00",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "6"
+  },
+  {
+    "day": "Saturday",
+    "talent": "The Best in Jest",
+    "time": "13:00 - 14:00",
+    "type": "IRL",
+    "price": "£45",
+    "booth": "7"
+  },
+  {
+    "day": "Saturday",
+    "talent": "AyuuChii",
+    "time": "13:20 - 14:20",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "Auto1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "cakejumper",
+    "time": "13:20 - 14:20",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "Auto4"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Obkatiekat & Fufu",
+    "time": "13:20 - 14:20",
+    "type": "IRL",
+    "price": "£10",
+    "booth": "Auto3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Phoenyx",
+    "time": "13:20 - 14:20",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "Auto2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "WUNDER RiKU & StarlightDaryl",
+    "time": "13:20 - 14:20",
+    "type": "IRL",
+    "price": "£10",
+    "booth": "Auto5"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Bonnie Barkswell",
+    "time": "13:30 - 14:30",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "4"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Hirano Kokoro",
+    "time": "13:30 - 14:30",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Kira P. Raptor Girl",
+    "time": "13:30 - 14:30",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "rachie",
+    "time": "13:30 - 14:30",
+    "type": "Virtual",
+    "price": "£20",
+    "booth": "1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Eru Erudite",
+    "time": "15:00 - 16:00",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "5"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Kai Kurayomi",
+    "time": "15:00 - 16:00",
+    "type": "IRL",
+    "price": "£25",
+    "booth": "7"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Remilia Nephys",
+    "time": "15:00 - 16:00",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "6"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Avaritia Hawthorne",
+    "time": "15:30 - 16:30",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Katya Sable",
+    "time": "15:30 - 16:30",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Meat",
+    "time": "15:30 - 16:30",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "4"
+  },
+  {
+    "day": "Saturday",
+    "talent": "PillowDear",
+    "time": "15:30 - 16:30",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Féileacán Cú",
+    "time": "17:00 - 18:00",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "6"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Kumi",
+    "time": "17:00 - 18:00",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "7"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Veilyn",
+    "time": "17:00 - 18:00",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "5"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Cana",
+    "time": "17:20 - 18:20",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "Auto1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Alfhilde",
+    "time": "17:30 - 18:30",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Beribug",
+    "time": "17:30 - 18:30",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "4"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Coqui",
+    "time": "17:30 - 18:30",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Tomoe Umari",
+    "time": "17:30 - 18:30",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Erina Makina",
+    "time": "19:00 - 20:00",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "6"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Kyuru Rin",
+    "time": "19:00 - 20:00",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "5"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Mallie Sprout & Spookieruna",
+    "time": "19:00 - 20:00",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "7"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Cecilia Immergreen",
+    "time": "11:30 - 12:45",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Hakos Baelz",
+    "time": "11:30 - 12:45",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Ouro Kronii",
+    "time": "16:15 - 17:30",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Raora Panthera",
+    "time": "16:15 - 17:30",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Moona Hoshinova",
+    "time": "18:15 - 19:30",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Luca Kaneshiro",
+    "time": "11:00 - 12:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Sonny Brisko",
+    "time": "11:30 - 12:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Shu Yamino",
+    "time": "12:00 - 13:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Luca Kaneshiro",
+    "time": "12:30 - 13:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Alban Knox",
+    "time": "13:00 - 14:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Shu Yamino",
+    "time": "13:30 - 14:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Doppio Dropscythe",
+    "time": "14:00 - 15:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Vezalius Bandage",
+    "time": "14:30 - 15:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Uki Violeta",
+    "time": "15:00 - 16:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Claude Clawmark",
+    "time": "15:30 - 16:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Vantacrow Bringer",
+    "time": "16:00 - 17:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Elira Pendora",
+    "time": "16:30 - 17:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Claude Clawmark",
+    "time": "17:00 - 18:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Vantacrow Bringer",
+    "time": "17:30 - 18:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Saturday",
+    "talent": "Aia Amare",
+    "time": "18:00 - 19:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Ironmouse",
+    "time": "10:00 - 11:00",
+    "type": "Virtual",
+    "price": "Free",
+    "booth": "2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Kani Kanizawa",
+    "time": "10:00 - 11:00",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Penny Puffball",
+    "time": "10:00 - 11:00",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Seion Aera",
+    "time": "10:00 - 11:00",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "4"
+  },
+  {
+    "day": "Sunday",
+    "talent": "The Best in Jest",
+    "time": "10:00 - 11:00",
+    "type": "IRL",
+    "price": "£45",
+    "booth": "7"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Phoebe Chan",
+    "time": "10:30 - 11:30",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "5"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Victoria Roman",
+    "time": "10:30 - 11:30",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "6"
+  },
+  {
+    "day": "Sunday",
+    "talent": "CDawgVA",
+    "time": "12:00 - 14:00",
+    "type": "IRL",
+    "price": "£45",
+    "booth": "7"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Dr. NOVA(e)",
+    "time": "12:00 - 13:00",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "4"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Ekkomori",
+    "time": "12:00 - 13:00",
+    "type": "Virtual",
+    "price": "£5",
+    "booth": "3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Ironmouse",
+    "time": "12:00 - 13:00",
+    "type": "Virtual",
+    "price": "Free",
+    "booth": "2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "PiaPiUFO",
+    "time": "12:00 - 13:00",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "MaeFae",
+    "time": "12:30 - 13:30",
+    "type": "Penplotter",
+    "price": "£10",
+    "booth": "5"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Wilhelmina Frost",
+    "time": "12:30 - 13:30",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "6"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Leia Memoria",
+    "time": "14:00 - 15:00",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Matara Kan",
+    "time": "14:00 - 15:00",
+    "type": "Virtual",
+    "price": "£20",
+    "booth": "3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "0shiriko",
+    "time": "14:00 - 15:00",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "VividlyVIVI",
+    "time": "14:00 - 15:00",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "4"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Komachi Panko",
+    "time": "14:30 - 15:30",
+    "type": "Penplotter",
+    "price": "£25",
+    "booth": "5"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Mint Fantôme",
+    "time": "14:30 - 15:30",
+    "type": "Virtual",
+    "price": "£25",
+    "booth": "6"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Heavenlyfather",
+    "time": "15:00 - 16:00",
+    "type": "IRL",
+    "price": "£5",
+    "booth": "7"
+  },
+  {
+    "day": "Sunday",
+    "talent": "BEASTIEZ",
+    "time": "16:00 - 17:00",
+    "type": "Virtual",
+    "price": "£25",
+    "booth": "2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Callie Calico",
+    "time": "16:00 - 17:00",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Snuffy",
+    "time": "16:00 - 17:00",
+    "type": "Virtual",
+    "price": "£15",
+    "booth": "4"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Embyr Sparks",
+    "time": "16:00 - 17:00",
+    "type": "Virtual",
+    "price": "£10",
+    "booth": "1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Gigi Murin",
+    "time": "11:30 - 12:45",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Shiori Novella",
+    "time": "11:30 - 12:45",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Elizabeth Rose Bloodflame",
+    "time": "15:15 - 16:30",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Ayunda Risu",
+    "time": "15:15 - 16:30",
+    "type": "Virtual",
+    "price": "£56",
+    "booth": "holo M&G1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Zeal Ginjoka",
+    "time": "10:00 - 11:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Maria Marionette",
+    "time": "10:30 - 11:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Kaelix Debonair",
+    "time": "11:00 - 12:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Zeal Ginjoka",
+    "time": "11:30 - 12:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Enna Alouette",
+    "time": "12:00 - 13:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Kaelix Debonair",
+    "time": "12:30 - 13:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Yu Q. Wilson",
+    "time": "13:00 - 14:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Enna Alouette",
+    "time": "13:30 - 14:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Vox Akuma",
+    "time": "14:00 - 15:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Yu Q. Wilson",
+    "time": "14:30 - 15:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G1"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Millie Parfait",
+    "time": "15:00 - 16:00",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G2"
+  },
+  {
+    "day": "Sunday",
+    "talent": "Vox Akuma",
+    "time": "15:30 - 16:30",
+    "type": "Virtual",
+    "price": "£60",
+    "booth": "ANYC M&G3"
+  }
+]
