@@ -1808,13 +1808,12 @@
       "checked_on": "2026-09-05"
     },
     "Yoor": {
-      "x": "https://x.com/yuwoor",
+      "x": "https://x.com/yoobyunagi",
       "sources": [
-        "https://api.fxtwitter.com/yuwoor",
-        "https://bsky.app/profile/yuwoor.bsky.social"
+        "https://api.fxtwitter.com/yoobyunagi"
       ],
-      "notes": "X display name is Yoor @Bsky. Active personal profile: https://bsky.app/profile/yuwoor.bsky.social; also links VGen under Yoor.",
-      "checked_on": "2026-09-05"
+      "checked_on": "2026-09-05",
+      "notes": "User corrected the booth participant match to @yoobyunagi (yoob). Public X profile retrieved to confirm the handle. The previous @yuwoor match was incorrect."
     },
     "Milia": {
       "x": "https://x.com/ounceofMilia",
