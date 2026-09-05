@@ -21,6 +21,15 @@ setImmediate(() => {
   const run = code => vm.runInContext(code, context);
   const count = () => run('filteredSessions().length');
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
+  const people = run("card({...sessions[0], participants: 'Mint Fantôme; A & B'})").children.find(e => e.className === 'people');
+  assert.equal(people.children.length, 2);
+  const profileSearch = new URL(people.children[0].href);
+  assert.equal(profileSearch.origin, 'https://x.com');
+  assert.equal(profileSearch.searchParams.get('q'), 'Mint Fantôme');
+  assert.equal(profileSearch.searchParams.get('f'), 'user');
+  assert.equal(new URL(people.children[1].href).searchParams.get('q'), 'A & B');
+  assert.equal(people.children[0].rel, 'noopener noreferrer');
+  assert.equal(people.children[0].target, '_blank');
   assert.equal(count(), 141);
   change('#meet-greets', 'exclude'); assert.equal(count(), 43);
   change('#meet-greets', 'all'); assert.equal(count(), 141);

@@ -7,6 +7,7 @@ Unofficial convention schedules with performer search, day, stage and meet-and-g
 ## Features
 
 - Search sessions and announced participants.
+- Click a participant name to search for their account on X (Twitter). These are account-search links, not verified profile links.
 - Filter by date, location, announced sessions, concerts, meet-and-greets, or official/unofficial status.
 - View lineup notes and links to official sources.
 - Download one session or the filtered schedule as an `.ics` calendar file.

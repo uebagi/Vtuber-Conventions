@@ -117,7 +117,15 @@ function card(session) {
   const names = session.participants.split(';').map(s => s.trim()).filter(Boolean);
   if (names.length) {
     const people = el('div', 'people');
-    names.forEach(name => people.append(el('span', 'person', name)));
+    names.forEach(name => {
+      const link = el('a', 'person social-link');
+      link.href = `https://x.com/search?q=${encodeURIComponent(name)}&f=user`;
+      link.target = '_blank'; link.rel = 'noopener noreferrer';
+      link.title = `Find ${name} on X (Twitter)`;
+      link.setAttribute('aria-label', `Find ${name} on X (Twitter), opens in a new tab`);
+      link.append(el('span', '', name), el('span', 'social-label', 'X ↗'));
+      people.append(link);
+    });
     article.append(people);
   } else article.append(el('p', 'muted', 'Participants not announced.'));
   const details = el('details'); details.append(el('summary', '', 'Lineup details & sources'));
