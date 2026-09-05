@@ -78,9 +78,9 @@ setImmediate(async () => {
   }
   assert.equal(people.children[0].rel, 'noopener noreferrer');
   assert.equal(people.children[0].target, '_blank');
-  assert.equal(count(), 192);
-  change('#meet-greets', 'exclude'); assert.equal(count(), 51);
-  change('#meet-greets', 'all'); assert.equal(count(), 192);
+  assert.equal(count(), 184);
+  change('#meet-greets', 'exclude'); assert.equal(count(), 43);
+  change('#meet-greets', 'all'); assert.equal(count(), 184);
   change('#meet-greets', 'only'); assert.equal(count(), 141);
   elements['.days'].children[2].click(); assert.equal(count(), 73);
   elements['.days'].children[3].click(); assert.equal(count(), 55);
@@ -89,7 +89,7 @@ setImmediate(async () => {
   assert(ironmouse.includes('DTSTART:20260920T090000Z'));
   assert(ironmouse.includes('price: Free'));
   assert(ironmouse.includes('CATEGORIES:Official,Meet & Greet'));
-  elements['#reset'].click(); assert.equal(count(), 192);
+  elements['#reset'].click(); assert.equal(count(), 184);
   change('#concerts', true, true); assert.equal(count(), 8);
   change('#meet-greets', 'only'); assert.equal(elements['#concerts'].checked, false); assert.equal(count(), 141);
   change('#concerts', true, true); assert.equal(elements['#meet-greets'].value, 'exclude'); assert.equal(count(), 8);
@@ -110,37 +110,20 @@ setImmediate(async () => {
   elements['.days'].children[3].click(); assert.equal(count(), 14);
   elements['#search'].value = 'Captain Camille'; elements['#search'].handlers.input(); assert.equal(count(), 1);
   assert.equal(run('filteredSessions()[0].meet_greet_type'), 'IRL');
-  elements['#reset'].click(); change('#event-status', 'official'); assert.equal(count(), 149);
+  elements['#reset'].click(); change('#event-status', 'official'); assert.equal(count(), 141);
   change('#meet-greets', 'only'); assert.equal(count(), 98);
   elements['#reset'].click(); change('#event-status', 'unofficial'); change('#meet-greets', 'exclude');
   assert.equal(count(), 0); assert.equal(elements['#download-calendar'].disabled, true);
   elements['#reset'].click();
-  const markers = run('sessions.filter(isTimeMarker)');
-  assert.equal(markers.length, 8);
-  assert.deepEqual(Array.from(markers, s => `${s.day} ${s.start_time} ${s.event}`), [
-    'Friday 12:00 General entry opens', 'Friday 19:00 Show closes',
-    'Saturday 09:00 Akasupa entry opens', 'Saturday 11:00 General entry opens', 'Saturday 20:00 Show closes',
-    'Sunday 09:00 Akasupa entry opens', 'Sunday 10:00 General entry opens', 'Sunday 18:00 Show closes'
-  ]);
-  for (const marker of markers) {
-    const rendered = run(`card(${JSON.stringify(marker)})`);
-    assert.equal(rendered.children[0].children[1].children.length, 1);
-    assert(!rendered.children.some(e => e.textContent === 'Participants not announced.'));
-  }
-  const markerCalendar = run('createCalendar(sessions.filter(isTimeMarker))').replace(/\r\n /g, '');
-  assert(!markerCalendar.includes('DTEND:'));
-  assert(!markerCalendar.includes('Participants not announced'));
-  assert(markerCalendar.includes('DTSTART:20260918T110000Z'));
-  assert.equal(run("sessions.filter(s => s.date === '2026-09-18')[0].event"), 'General entry opens');
-  assert.equal(run("sessions.filter(s => s.date === '2026-09-20').at(-1).event"), 'Show closes');
+  assert.equal(run('sessions.filter(isTimeMarker).length'), 0);
   const ics = run('createCalendar(filteredSessions())');
   const unfolded = ics.replace(/\r\n /g, '');
-  assert.equal((unfolded.match(/BEGIN:VEVENT/g) || []).length, 192);
-  assert.equal(new Set(unfolded.match(/^UID:.+$/gm)).size, 192);
+  assert.equal((unfolded.match(/BEGIN:VEVENT/g) || []).length, 184);
+  assert.equal(new Set(unfolded.match(/^UID:.+$/gm)).size, 184);
   assert(ics.split('\r\n').every(line => Buffer.byteLength(line, 'utf8') <= 75));
   const snapshot = JSON.parse(fs.readFileSync('vexpo-2026/sources/participants.json', 'utf8'));
-  assert.equal(snapshot.length, 192); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 141);
-  assert.equal(snapshot.filter(s => s.event_status === 'official').length, 149);
+  assert.equal(snapshot.length, 184); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 141);
+  assert.equal(snapshot.filter(s => s.event_status === 'official').length, 141);
   const unofficial = snapshot.filter(s => s.event_status === 'unofficial');
   assert.equal(unofficial.length, 43);
   for (const session of unofficial) {
@@ -172,5 +155,5 @@ setImmediate(async () => {
   context.fetch = originalFetch;
   run('delete config.socials');
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);
-  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 141 meet-and-greets including 43 unofficial booth slots; 8 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
+  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  184 sessions; 141 meet-and-greets including 43 unofficial booth slots; 8 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
 });

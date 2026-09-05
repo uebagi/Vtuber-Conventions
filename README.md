@@ -58,7 +58,7 @@ Add an optional `opening-hours.json` to each convention folder and set `data-ope
 }
 ```
 
-Use ISO dates and local 24-hour times in the stated timezone. Add one entry per admission type. Weekdays and US-formatted dates are generated automatically. These cards summarize entry hours; individual opening/closing schedule markers and calendar downloads still come from `schedule.csv`, so keep those rows in sync. Concerts remain regular schedule sessions. Deployment includes the optional JSON automatically.
+Use ISO dates and local 24-hour times in the stated timezone. Add one entry per admission type. Weekdays and US-formatted dates are generated automatically. Entry hours belong in this JSON, not as sessions in `schedule.csv`. They appear only in the top cards and are excluded from session filters and calendar downloads. Concerts remain regular schedule sessions. Deployment includes the optional JSON automatically.
 
 ## Maintain the schedule
 
