@@ -145,7 +145,7 @@ function filteredSessions() {
     && (stage.value === 'all' || s.stage === stage.value)
     && (!announced.checked || s.lineup_status !== 'unannounced')
     && (!concerts.checked || s.is_concert === 'true')
-    && (!meetGreets.checked || s.is_meet_greet === 'true')
+    && (meetGreets.value === 'all' || (meetGreets.value === 'only' ? s.is_meet_greet === 'true' : s.is_meet_greet !== 'true'))
     && (eventStatus.value === 'all' || s.event_status === eventStatus.value)
     && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status].join(' ')).includes(term)));
 }
@@ -188,12 +188,12 @@ function setupDays() {
   }
 }
 search.addEventListener('input', render); stage.addEventListener('change', render); announced.addEventListener('change', render);
-concerts.addEventListener('change', () => { if (concerts.checked) meetGreets.checked = false; render(); });
-meetGreets.addEventListener('change', () => { if (meetGreets.checked) concerts.checked = false; render(); });
+concerts.addEventListener('change', () => { if (concerts.checked && meetGreets.value === 'only') meetGreets.value = 'exclude'; render(); });
+meetGreets.addEventListener('change', () => { if (meetGreets.value === 'only') concerts.checked = false; render(); });
 eventStatus.addEventListener('change', render);
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
-  search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.checked = false; eventStatus.value = 'all';
+  search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.value = 'all'; eventStatus.value = 'all';
   document.querySelector('[data-day="all"]').click();
 });
 

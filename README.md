@@ -83,7 +83,7 @@ For a fork, select **Settings → Pages → Build and deployment → GitHub Acti
 
 The VeXpo schedule includes 98 availability windows from the [official meet-and-greet page](https://vexpo.uk/meet-greets), checked September 5, 2026. These are the published talent availability windows, not individual appointment durations. Cards and calendar exports include the listed price, booth, and Virtual / IRL / Penplotter format. Booking requirements still apply, including to free listings.
 
-**Meet & greets only** and **Concerts only** are mutually exclusive filters. Date, search, location and status filters combine with either one, and calendar downloads export the displayed results.
+The **Meet & greets** dropdown offers **All sessions**, **Meet & greets only**, and **Exclude meet & greets**. Selecting meet-and-greets only clears the concerts checkbox; enabling concerts while meet-and-greets only is selected switches the dropdown to exclude meet-and-greets. Reset restores all sessions. Date, search, location and status filters combine with these choices, and calendar downloads export the displayed results.
 
 Official/unofficial tags describe the event, not this independent planner. All imported VeXpo events are tagged official. Future community events can be tagged unofficial; missing status is displayed as unconfirmed.
 

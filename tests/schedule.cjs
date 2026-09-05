@@ -11,7 +11,7 @@ class Element {
   querySelectorAll() { return this.children; }
 }
 const elements = Object.fromEntries(['#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
-elements['#stage'].value = elements['#event-status'].value = 'all';
+elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
 const body = new Element();
 body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner' };
 const document = { body, createElement: () => new Element(), querySelector: s => s === '[data-day="all"]' ? elements['.days'].children[0] : elements[s] };
@@ -22,7 +22,9 @@ setImmediate(() => {
   const count = () => run('filteredSessions().length');
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
   assert.equal(count(), 141);
-  change('#meet-greets', true, true); assert.equal(count(), 98);
+  change('#meet-greets', 'exclude'); assert.equal(count(), 43);
+  change('#meet-greets', 'all'); assert.equal(count(), 141);
+  change('#meet-greets', 'only'); assert.equal(count(), 98);
   elements['.days'].children[2].click(); assert.equal(count(), 57);
   elements['.days'].children[3].click(); assert.equal(count(), 41);
   elements['#search'].value = 'Ironmouse'; elements['#search'].handlers.input(); assert.equal(count(), 2);
@@ -32,8 +34,8 @@ setImmediate(() => {
   assert(ironmouse.includes('CATEGORIES:Official,Meet & Greet'));
   elements['#reset'].click(); assert.equal(count(), 141);
   change('#concerts', true, true); assert.equal(count(), 8);
-  change('#meet-greets', true, true); assert.equal(elements['#concerts'].checked, false); assert.equal(count(), 98);
-  change('#concerts', true, true); assert.equal(elements['#meet-greets'].checked, false); assert.equal(count(), 8);
+  change('#meet-greets', 'only'); assert.equal(elements['#concerts'].checked, false); assert.equal(count(), 98);
+  change('#concerts', true, true); assert.equal(elements['#meet-greets'].value, 'exclude'); assert.equal(count(), 8);
   elements['#reset'].click(); change('#event-status', 'unofficial'); assert.equal(count(), 0); assert.equal(elements['#download-calendar'].disabled, true);
   // A future unofficial entry must filter and render with the correct tag.
   run("sessions[0].event_status = 'unofficial'; render()"); assert.equal(count(), 1);
@@ -50,5 +52,5 @@ setImmediate(() => {
   assert.equal(snapshot.length, 141); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 98);
   assert(snapshot.every(s => s.event_status === 'official'));
   assert.equal(fs.readdirSync('vexpo-2026/sources').filter(s => /\.(png|jpe?g)$/i.test(s)).length, 0);
-  console.log('PASS: 141 sessions; 98 meet-and-greets (57 Saturday, 41 Sunday); 8 concerts; search, status tags, reset, exclusive toggles, calendar metadata/time conversion/unique IDs, and image removal.');
+  console.log('PASS: 141 sessions; 98 meet-and-greets (57 Saturday, 41 Sunday); 8 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
 });
