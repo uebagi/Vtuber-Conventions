@@ -45,7 +45,7 @@ tmp/                         Ignored local reference files
 
 ## Opening hours
 
-Add an optional `opening-hours.json` to each convention folder and set `data-opening-hours="opening-hours.json"` on its `<body>`. Keep the `#opening-hours` section from the template; shared JavaScript renders the daily cards above the filters. Omit the attribute for conventions without entry hours.
+Add an optional `opening-hours.json` to each convention folder and set `data-opening-hours="opening-hours.json"` on its `<body>`. Keep the `#opening-hours` section from the template; shared JavaScript renders the daily cards above the filters. Omit the attribute for conventions without entry hours. On phones (up to 760px wide), hours start collapsed and the heading button expands or collapses them. Larger screens always show the hours.
 
 ```json
 {

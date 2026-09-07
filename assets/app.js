@@ -98,8 +98,23 @@ async function loadOpeningHours() {
       section.append(heading, entries);
       days.append(section);
     }
-    const heading = el('h2', '', 'Show opening hours');
+    const heading = el('h2');
     heading.id = 'opening-hours-heading';
+    days.id = 'opening-hours-days';
+    days.dataset.collapsed = 'true';
+    const toggle = el('button', 'opening-hours-toggle', 'Show opening hours');
+    toggle.type = 'button';
+    toggle.setAttribute('aria-controls', days.id);
+    toggle.setAttribute('aria-expanded', 'false');
+    const chevron = el('span', 'opening-hours-chevron');
+    chevron.setAttribute('aria-hidden', 'true');
+    toggle.append(chevron);
+    toggle.addEventListener('click', () => {
+      const expanded = days.dataset.collapsed === 'true';
+      days.dataset.collapsed = String(!expanded);
+      toggle.setAttribute('aria-expanded', String(expanded));
+    });
+    heading.append(el('span', 'opening-hours-title', 'Show opening hours'), toggle);
     container.replaceChildren(heading, days);
     container.hidden = !data.days.length;
   } catch (error) {

@@ -16,3 +16,12 @@
 .person-group{display:inline-flex;align-items:center;flex-wrap:wrap;gap:5px;max-width:100%}.primary-social{font-size:.7rem;padding:5px;color:var(--muted);text-decoration:none}.primary-social:hover{text-decoration:underline}.primary-social:focus-visible{outline:2px solid currentColor;outline-offset:2px;border-radius:3px}
 
 .opening-hours{margin:0 0 28px}.opening-hours h2{font-family:'Space Grotesk',sans-serif;font-size:1.15rem;margin:0 0 12px}.opening-days{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.opening-days section{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}.opening-days h3{font-size:.95rem;margin:0 0 12px}.opening-days time{display:block;color:var(--muted);font-size:.78rem;font-weight:400}.opening-days dl{margin:0;font-size:.8rem}.opening-days dl div{display:flex;justify-content:space-between;gap:12px;margin-top:7px}.opening-days dt{color:var(--muted)}.opening-days dd{margin:0;white-space:nowrap;font-variant-numeric:tabular-nums}@media(max-width:900px){.opening-days{grid-template-columns:1fr}}
+
+.opening-hours-toggle{display:none}
+@media(max-width:760px){
+  .opening-hours-title{display:none}
+  .opening-hours-toggle{display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%;min-height:44px;padding:10px 14px;font:inherit;text-align:left}
+  .opening-hours-chevron{width:8px;height:8px;flex-shrink:0;border:solid var(--accent);border-width:0 2px 2px 0;transform:rotate(45deg)}
+  .opening-hours-toggle[aria-expanded=true] .opening-hours-chevron{transform:rotate(-135deg)}
+  .opening-days[data-collapsed=true]{display:none}
+}

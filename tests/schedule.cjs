@@ -2,10 +2,10 @@ const fs = require('node:fs');
 const vm = require('node:vm');
 const assert = require('node:assert/strict');
 class Element {
-  constructor() { this.children = []; this.dataset = {}; this.value = ''; this.checked = false; this.handlers = {}; }
+  constructor() { this.children = []; this.dataset = {}; this.value = ''; this.checked = false; this.handlers = {}; this.attributes = {}; }
   append(...nodes) { this.children.push(...nodes); }
   replaceChildren(...nodes) { this.children = nodes; }
-  setAttribute() {}
+  setAttribute(name, value) { this.attributes[name] = String(value); }
   addEventListener(name, fn) { this.handlers[name] = fn; }
   click() { this.handlers.click(); }
   querySelectorAll() { return this.children; }
@@ -28,6 +28,20 @@ setImmediate(async () => {
   assert.equal(fridayHours.children[0].children[0].textContent, 'September 18, 2026');
   assert.equal(fridayHours.children[1].children[0].children[1].textContent, '12:00–19:00');
   assert.equal(hours.children[1].children[1].children[1].children.length, 2);
+  const hoursToggle = hours.children[0].children[1];
+  const hoursDays = hours.children[1];
+  assert.equal(hoursToggle.type, 'button');
+  assert.equal(hoursToggle.attributes['aria-controls'], hoursDays.id);
+  assert.equal(hoursToggle.attributes['aria-expanded'], 'false');
+  assert.equal(hoursDays.dataset.collapsed, 'true');
+  hoursToggle.click();
+  assert.equal(hoursToggle.attributes['aria-expanded'], 'true');
+  assert.equal(hoursDays.dataset.collapsed, 'false');
+  hoursToggle.click();
+  assert.equal(hoursToggle.attributes['aria-expanded'], 'false');
+  assert.equal(hoursDays.dataset.collapsed, 'true');
+  assert.equal(hoursDays.children.length, 3);
+
 
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
