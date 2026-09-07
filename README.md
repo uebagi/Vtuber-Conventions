@@ -97,6 +97,10 @@ The Event status dropdown contains Official & unofficial, Official, and Unoffici
 
 Use `organizer` for groups that organize, present, or are explicitly featured in a session. Separate multiple tags with semicolons; each group finds the shared session once. Keep talent affiliations in the membership file instead of repeating them on every CSV row. A booth guest is not automatically a member of its organizer.
 
+### Talent filter
+
+Keep the template's `#talent` dropdown. It lists named participants from scheduled sessions alphabetically, excluding known group names. Selecting a talent matches their participant entries, combines with all other filters, and limits calendar downloads to the results. Spellings linked to the same verified X profile share one option; otherwise names match exactly. Unannounced agency lineups are not expanded into individual appearances. Reset returns to All talents.
+
 ### Group and agency memberships
 
 Add optional `groups.json` in the convention folder and set `data-groups="groups.json"` on the page. Keep the template's `#group` dropdown. Options are generated from groups associated with scheduled sessions; roster members who have no scheduled appearance do not become attendees.

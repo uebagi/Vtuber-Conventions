@@ -10,7 +10,7 @@ class Element {
   click() { this.handlers.click(); }
   querySelectorAll() { return this.children; }
 }
-const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#group', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
+const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#group', '#talent', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
 elements['#group'].value = elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
 const body = new Element();
 body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json', openingHours: 'opening-hours.json', groups: 'groups.json' };
@@ -44,6 +44,24 @@ setImmediate(async () => {
 
 
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
+  const talentOptions = elements['#talent'].children;
+  assert.equal(talentOptions[0].textContent, 'All talents');
+  assert(!talentOptions.some(option => option.textContent === 'ChromaSHIFT'));
+  assert.equal(talentOptions.filter(option => option.value === run("talentKey('BeriBug')")).length, 1);
+  assert.equal(run("talentKey('BeriBug')"), run("talentKey('Beribug')"));
+  change('#talent', run("talentKey('Ironmouse')"));
+  assert.equal(count(), 3);
+  change('#meet-greets', 'only'); assert.equal(count(), 2);
+  change('#event-status', 'unofficial'); assert.equal(count(), 0);
+  elements['#reset'].click();
+  assert.equal(elements['#talent'].value, 'all'); assert.equal(count(), 192);
+  change('#talent', run("talentKey('Kaneko Lumi')"));
+  const talentCount = count(); assert(talentCount > 0);
+  change('#group', 'group:Phase Connect'); assert.equal(count(), talentCount);
+  const talentCalendar = run('createCalendar(filteredSessions())');
+  assert.equal((talentCalendar.match(/BEGIN:VEVENT/g) || []).length, talentCount);
+  change('#talent', 'name:Kaneko'); assert.equal(count(), 0);
+  elements['#reset'].click();
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
   const groupOptions = () => elements['#group'].children.map(option => [option.value, option.textContent]);
   assert.deepEqual(statusOptions(), [['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial']]);

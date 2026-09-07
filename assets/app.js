@@ -175,6 +175,9 @@ const concerts = document.querySelector('#concerts');
 const meetGreets = document.querySelector('#meet-greets');
 const eventStatus = document.querySelector('#event-status');
 const groupFilter = document.querySelector('#group');
+const talentFilter = document.querySelector('#talent');
+const participantNames = session => (session.participants || '').split(';').map(name => name.trim()).filter(Boolean);
+const talentKey = name => /^https:\/\/x\.com\/[A-Za-z0-9_]{1,15}$/.test(socialProfiles[name]?.x || '') ? `x:${socialProfiles[name].x.toLowerCase()}` : `name:${name}`;
 const organizersFor = session => [...new Set((session.organizer || '').split(';').map(name => name.trim()).filter(Boolean))];
 const groupsFor = session => [...new Set([...organizersFor(session), ...(session.participants || '').split(';').flatMap(name => [...(talentGroups.get(name.trim()) || [])])])];
 const statusLabel = session => ({ official: 'Official', unofficial: 'Unofficial' }[session.event_status] || 'Status unconfirmed');
@@ -307,6 +310,25 @@ function setupGroups() {
   }
   groupFilter.value = 'all';
 }
+function setupTalents() {
+  if (!talentFilter) return;
+  const groupNames = new Set(sessions.flatMap(groupsFor));
+  const names = [...new Set(sessions.flatMap(participantNames))]
+    .filter(name => name !== '???' && !groupNames.has(name))
+    .sort((a, b) => a.localeCompare(b, 'en-US', { sensitivity: 'base' }));
+  const choices = new Map([['all', 'All talents']]);
+  for (const name of names) {
+    const key = talentKey(name);
+    if (!choices.has(key)) choices.set(key, name);
+  }
+  talentFilter.replaceChildren();
+  for (const [value, label] of choices) {
+    const option = el('option', '', label);
+    option.value = value;
+    talentFilter.append(option);
+  }
+  talentFilter.value = 'all';
+}
 function matchesEventStatus(session) {
   return eventStatus.value === 'all' || session.event_status === eventStatus.value;
 }
@@ -319,6 +341,7 @@ function filteredSessions() {
     && (!concerts.checked || s.is_concert === 'true')
     && (meetGreets.value === 'all' || (meetGreets.value === 'only' ? s.is_meet_greet === 'true' : s.is_meet_greet !== 'true'))
     && matchesEventStatus(s)
+    && (!talentFilter || talentFilter.value === 'all' || participantNames(s).some(name => talentKey(name) === talentFilter.value))
     && (!groupFilter || groupFilter.value === 'all' || groupsFor(s).includes(groupFilter.value.slice('group:'.length)))
     && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status, groupsFor(s).join(' ')].join(' ')).includes(term)));
 }
@@ -365,10 +388,12 @@ concerts.addEventListener('change', () => { if (concerts.checked && meetGreets.v
 meetGreets.addEventListener('change', () => { if (meetGreets.value === 'only') concerts.checked = false; render(); });
 eventStatus.addEventListener('change', render);
 groupFilter?.addEventListener('change', render);
+talentFilter?.addEventListener('change', render);
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
   search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.value = 'all'; eventStatus.value = 'all';
   if (groupFilter) groupFilter.value = 'all';
+  if (talentFilter) talentFilter.value = 'all';
   document.querySelector('[data-day="all"]').click();
 });
 
@@ -386,6 +411,7 @@ async function load() {
     setupDays();
     setupEventStatus();
     setupGroups();
+    setupTalents();
     render();
   } catch (error) {
     status.textContent = 'The schedule could not be loaded.';

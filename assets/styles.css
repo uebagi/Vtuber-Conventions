@@ -26,5 +26,5 @@
   .opening-days[data-collapsed=true]{display:none}
 }
 
-.filters .group-filter { flex: 1 1 220px; min-width: 0; }
-.group-filter select { width: 100%; }
+.filters .group-filter, .filters .talent-filter { flex: 1 1 220px; min-width: 0; }
+.group-filter select, .talent-filter select { width: 100%; }
