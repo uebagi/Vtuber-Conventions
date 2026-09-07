@@ -89,6 +89,8 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | `organizer` | Optional agencies, groups, or organizers separated by semicolons; use consistent names |
 | `meet_greet_type`, `price`, `booth` | Meet-and-greet format, published price, and booth; otherwise leave empty |
 
+For roaming appearances, use `is_meet_greet=true` and `meet_greet_type=Roaming`. Keep shared appearances together, describe the roaming area, and distinguish simultaneous roaming devices in the location field so calendar IDs remain unique. Preserve published times even outside general opening hours and note unconfirmed access requirements.
+
 Use one row per published slot. Keep shared meet-and-greet slots together, with each participant listed separately in `participants`. Record whether times describe availability windows or individual appointments. Use `Not listed` for an unpublished price; do not assume it is free.
 
 Official/unofficial labels describe the session's status. Include supporting source links and explain uncertain classifications in the notes. Concert classification is maintained manually through `is_concert`.

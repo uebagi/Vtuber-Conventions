@@ -1,0 +1,222 @@
+{
+  "sources": [
+    {
+      "id": "roaming-1-1",
+      "type": "announcement",
+      "url": "https://x.com/ItIsMoss/status/2097009131664122302",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-2-1",
+      "type": "announcement",
+      "url": "https://x.com/shyfruits/status/2096554012275360024",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-3-1",
+      "type": "announcement",
+      "url": "https://x.com/Chadakyo/status/2097032169621172377",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-3-2",
+      "type": "announcement",
+      "url": "https://x.com/Chadakyo/status/2097030928631488541",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-4-1",
+      "type": "announcement",
+      "url": "https://x.com/YumeKuzukawa/status/2096600128911995297",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-5-1",
+      "type": "announcement",
+      "url": "https://x.com/myusagii/status/2096977938864287853",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-6-1",
+      "type": "announcement",
+      "url": "https://x.com/SkariTheFae/status/2096682853287288852",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-7-1",
+      "type": "announcement",
+      "url": "https://x.com/floratelier_/status/2096976798303048004",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-8-1",
+      "type": "announcement",
+      "url": "https://x.com/Togichu/status/2096991565482696806",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-9-1",
+      "type": "announcement",
+      "url": "https://x.com/floratelier_/status/2096976798303048004",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-9-2",
+      "type": "announcement",
+      "url": "https://x.com/SilviVtuber/status/2097053332116238366",
+      "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "14:40",
+      "end_time": "15:40",
+      "participants": [
+        "ItIsMoss"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-1-1"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "17:40",
+      "end_time": "18:40",
+      "participants": [
+        "Shyfruits"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-2-1"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "participants": [
+        "Hanakyo"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Time corrected by the creator to 11:30 AM-12:30 PM; the original poster incorrectly says PM for the start.",
+      "source_ids": [
+        "roaming-3-1",
+        "roaming-3-2"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "participants": [
+        "Yume Kuzukawa"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-4-1"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "participants": [
+        "Myusagii",
+        "Haruka Karibu"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-5-1"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "participants": [
+        "Skari"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-6-1"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "08:30",
+      "end_time": "09:30",
+      "participants": [
+        "Captain Camille",
+        "mipyun",
+        "Anoko"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Published start is before the recorded entry hours. Access requirements are unconfirmed; time retained as announced.",
+      "source_ids": [
+        "roaming-7-1"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "participants": [
+        "Togichu"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-8-1"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "participants": [
+        "Silvi",
+        "Mabel"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "",
+      "source_ids": [
+        "roaming-9-1",
+        "roaming-9-2"
+      ]
+    }
+  ]
+}
