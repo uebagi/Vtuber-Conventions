@@ -95,8 +95,13 @@ setImmediate(async () => {
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
   const groupOptions = () => elements['#group'].children.map(option => [option.value, option.textContent]);
   assert.deepEqual(statusOptions(), [['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial']]);
-  assert.deepEqual(groupOptions().slice(1).map(([, name]) => name), ['a:VEnue', 'Aegis-Link', 'Algorhythm Project', 'BEASTIEZ', 'ChromaSHIFT', 'florAtelier', 'Phase Connect', 'Variance Project']);
+  assert.deepEqual(groupOptions().slice(1).map(([, name]) => name), ['a:VEnue', 'Aegis-Link', 'Algorhythm Project', 'BEASTIEZ', 'ChromaSHIFT', 'florAtelier', 'hololive', 'Phase Connect', 'Variance Project']);
   assert.deepEqual(Array.from(run("groupsFor({participants: 'Akugaki Koa; Lalabell Lullaby', organizer: ''})")), ['ChromaSHIFT']);
+  change('#group', 'group:hololive'); assert.equal(count(), 13);
+  assert(run("filteredSessions().some(s => s.event === 'The VX Factor')"));
+  assert(run("filteredSessions().some(s => s.event === 'hololive English 3rd concert -All For One-')"));
+  change('#meet-greets', 'only'); assert.equal(count(), 9);
+  elements['#reset'].click();
   change('#group', 'group:Phase Connect'); assert.equal(count(), 14);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'official').length"), 6);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'unofficial').length"), 8);
