@@ -92,7 +92,7 @@
     "meet_greet_type": "",
     "price": "",
     "booth": "",
-    "organizer": "ChromaSHIFT"
+    "organizer": ""
   },
   {
     "stage": "MONARCH STAGE",
@@ -839,7 +839,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "5",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -989,7 +989,7 @@
     "meet_greet_type": "Virtual",
     "price": "£10",
     "booth": "3",
-    "organizer": "Variance Project"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1014,7 +1014,7 @@
     "meet_greet_type": "Virtual",
     "price": "£15",
     "booth": "4",
-    "organizer": "BEASTIEZ"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1164,7 +1164,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "5",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1189,7 +1189,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "6",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1564,7 +1564,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "5",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1689,7 +1689,7 @@
     "meet_greet_type": "Virtual",
     "price": "£10",
     "booth": "2",
-    "organizer": "Variance Project"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1714,7 +1714,7 @@
     "meet_greet_type": "Virtual",
     "price": "£10",
     "booth": "3",
-    "organizer": "Variance Project"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -1889,7 +1889,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "5",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -2089,7 +2089,7 @@
     "meet_greet_type": "Virtual",
     "price": "£15",
     "booth": "4",
-    "organizer": "BEASTIEZ"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -2189,7 +2189,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "5",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-19",
@@ -2589,7 +2589,7 @@
     "meet_greet_type": "Virtual",
     "price": "£15",
     "booth": "1",
-    "organizer": "BEASTIEZ"
+    "organizer": ""
   },
   {
     "date": "2026-09-20",
@@ -2739,7 +2739,7 @@
     "meet_greet_type": "Penplotter",
     "price": "£10",
     "booth": "5",
-    "organizer": "Aegis-Link"
+    "organizer": ""
   },
   {
     "date": "2026-09-20",
@@ -2889,7 +2889,7 @@
     "meet_greet_type": "Virtual",
     "price": "£10",
     "booth": "2",
-    "organizer": "Variance Project"
+    "organizer": ""
   },
   {
     "date": "2026-09-20",
@@ -3189,7 +3189,7 @@
     "meet_greet_type": "Virtual",
     "price": "£10",
     "booth": "1",
-    "organizer": "Variance Project"
+    "organizer": ""
   },
   {
     "date": "2026-09-20",

@@ -10,12 +10,12 @@ class Element {
   click() { this.handlers.click(); }
   querySelectorAll() { return this.children; }
 }
-const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
-elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
+const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#group', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
+elements['#group'].value = elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
 const body = new Element();
-body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json', openingHours: 'opening-hours.json' };
+body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json', openingHours: 'opening-hours.json', groups: 'groups.json' };
 const document = { body, createElement: () => new Element(), querySelector: s => s === '[data-day="all"]' ? elements['.days'].children[0] : elements[s] };
-const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json', 'opening-hours.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8')) }; } });
+const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json', 'opening-hours.json', 'groups.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8')) }; } });
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
 setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
@@ -45,11 +45,10 @@ setImmediate(async () => {
 
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
-  assert.deepEqual(statusOptions(), [
-    ['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial'],
-    ...['a:VEnue', 'Aegis-Link', 'Algorhythm Project', 'BEASTIEZ', 'ChromaSHIFT', 'florAtelier', 'Phase Connect', 'Variance Project'].map(name => [`organizer:${name}`, name])
-  ]);
-  change('#event-status', 'organizer:Phase Connect'); assert.equal(count(), 14);
+  const groupOptions = () => elements['#group'].children.map(option => [option.value, option.textContent]);
+  assert.deepEqual(statusOptions(), [['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial']]);
+  assert(groupOptions().some(([value]) => value === 'group:Akupin'));
+  change('#group', 'group:Phase Connect'); assert.equal(count(), 14);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'official').length"), 6);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'unofficial').length"), 8);
   const organizerCalendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
@@ -59,13 +58,13 @@ setImmediate(async () => {
   change('#meet-greets', 'exclude'); assert.equal(count(), 4);
   change('#concerts', true, true); assert.equal(count(), 2);
   elements['#reset'].click();
-  change('#event-status', 'organizer:florAtelier'); assert.equal(count(), 44);
+  change('#group', 'group:florAtelier'); assert.equal(count(), 44);
   change('#meet-greets', 'only'); assert.equal(count(), 43);
   change('#meet-greets', 'exclude'); assert.equal(count(), 1);
   assert(run("filteredSessions()[0].event.includes('International Rizzlers')"));
   assert.equal(run('filteredSessions()[0].event_status'), 'official');
   elements['#reset'].click();
-  change('#event-status', 'organizer:Phase Connect');
+  change('#group', 'group:Phase Connect');
   elements['.days'].children[2].click(); assert.equal(count(), 6);
   change('#stage', 'Phase Connect - Booth S07'); assert.equal(count(), 3);
   elements['#search'].value = 'Kaneko'; elements['#search'].handlers.input(); assert.equal(count(), 1);
@@ -77,7 +76,7 @@ setImmediate(async () => {
   const concertGroups = ['Algorhythm Project', 'ChromaSHIFT', 'BEASTIEZ', 'Aegis-Link', 'Variance Project'];
   let sharedUid;
   for (const group of concertGroups) {
-    change('#event-status', `organizer:${group}`);
+    change('#group', `group:${group}`);
     elements['#search'].value = 'Group & Agency Concert'; elements['#search'].handlers.input();
     assert.equal(count(), 1, `Shared concert missing or duplicated for ${group}`);
     assert.equal(run('filteredSessions()[0].event_status'), 'official');
@@ -89,31 +88,53 @@ setImmediate(async () => {
     sharedUid = uid;
     elements['#reset'].click();
   }
-  change('#event-status', 'organizer:ChromaSHIFT'); assert.equal(count(), 3);
+  change('#group', 'group:ChromaSHIFT'); assert.equal(count(), 3);
   change('#concerts', true, true); assert.equal(count(), 3);
   elements['#reset'].click();
-  change('#event-status', 'organizer:BEASTIEZ'); assert.equal(count(), 5);
+  change('#group', 'group:BEASTIEZ'); assert.equal(count(), 5);
   change('#meet-greets', 'only'); assert.equal(count(), 3);
   change('#meet-greets', 'exclude'); assert.equal(count(), 2);
   elements['#reset'].click();
-  change('#event-status', 'organizer:Aegis-Link'); assert.equal(count(), 8);
+  change('#group', 'group:Aegis-Link'); assert.equal(count(), 8);
   change('#meet-greets', 'only'); assert.equal(count(), 7);
   elements['#reset'].click();
-  change('#event-status', 'organizer:Variance Project'); assert.equal(count(), 6);
+  change('#group', 'group:Variance Project'); assert.equal(count(), 6);
   change('#meet-greets', 'only'); assert.equal(count(), 5);
   elements['#reset'].click();
   // New groups need only CSV data; missing fields retain the original status filters.
-  run("const originalOrganizerSessions = sessions; sessions = [{...sessions[0], event_status: 'official', organizer: ' Community & Friends ; Group, Inc. ;; Community & Friends ; '}, {...sessions[0], event_status: 'official', organizer: 'Community & Friends'}, {...sessions[0], event_status: 'official', organizer: 'official'}, {...sessions[0], event_status: 'official', organizer: undefined}]; setupEventStatus()");
-  assert.deepEqual(statusOptions().slice(3), [['organizer:Community & Friends', 'Community & Friends'], ['organizer:Group, Inc.', 'Group, Inc.'], ['organizer:official', 'official']]);
-  change('#event-status', 'organizer:Community & Friends'); assert.equal(count(), 2);
-  change('#event-status', 'organizer:Group, Inc.'); assert.equal(count(), 1);
-  change('#event-status', 'organizer:Community'); assert.equal(count(), 0);
-  change('#event-status', 'organizer:official'); assert.equal(count(), 1);
-  change('#event-status', 'official'); assert.equal(count(), 4);
-  run('sessions = [{...originalOrganizerSessions[0]}]; delete sessions[0].organizer; setupEventStatus()');
-  assert.equal(statusOptions().length, 3); assert.equal(count(), 1);
-  run('sessions = originalOrganizerSessions; setupEventStatus()');
+  run("const originalOrganizerSessions = sessions; sessions = [{...sessions[0], event_status: 'official', organizer: ' Community & Friends ; Group, Inc. ;; Community & Friends ; '}, {...sessions[0], event_status: 'official', organizer: 'Community & Friends'}, {...sessions[0], event_status: 'official', organizer: 'official'}, {...sessions[0], event_status: 'official', organizer: undefined}]; setupGroups()");
+  assert.deepEqual(groupOptions().slice(1), [['group:Community & Friends', 'Community & Friends'], ['group:Group, Inc.', 'Group, Inc.'], ['group:official', 'official']]);
+  change('#group', 'group:Community & Friends'); assert.equal(count(), 2);
+  change('#group', 'group:Group, Inc.'); assert.equal(count(), 1);
+  change('#group', 'group:Community'); assert.equal(count(), 0);
+  change('#group', 'group:official'); assert.equal(count(), 1);
+  change('#group', 'all'); change('#event-status', 'official'); assert.equal(count(), 4);
+  change('#event-status', 'all');
+  run('sessions = [{...originalOrganizerSessions[0]}]; delete sessions[0].organizer; setupGroups()');
+  assert.equal(groupOptions().length, 1); assert.equal(count(), 1);
+  run('sessions = originalOrganizerSessions; setupGroups()');
   elements['#reset'].click();
+  // One talent belongs to two groups; aliases inherit both, independently of status.
+  run("const savedMemberships = talentGroups; talentGroups = indexGroups({groups: [{name: 'Agency', members: ['Talent']}, {name: 'Unit', members: ['Talent'], former_members: [{name: 'Former'}]}], aliases: {'Alias': 'Talent'}}); sessions = [{...originalOrganizerSessions[0], participants: 'Alias; Talent', organizer: 'Agency', event_status: 'official'}, {...originalOrganizerSessions[0], participants: 'Talent', organizer: '', event_status: 'unofficial'}]; setupGroups()");
+  assert.equal(run('groupsFor(sessions[0]).length'), 2);
+  assert.equal(run("talentGroups.has('Former')"), false);
+  for (const group of ['Agency', 'Unit']) {
+    change('#group', `group:${group}`); assert.equal(count(), 2);
+    change('#event-status', 'official'); assert.equal(count(), 1);
+    change('#event-status', 'unofficial'); assert.equal(count(), 1);
+    change('#event-status', 'all');
+  }
+  assert.equal(run("groupsFor({participants: 'Talent Extra', organizer: ''}).length"), 0);
+  assert.throws(() => run("indexGroups({groups: [], aliases: {Alias: 'Missing'}})"));
+  run('talentGroups = savedMemberships; sessions = originalOrganizerSessions; setupGroups()');
+  elements['#reset'].click();
+  const roster = JSON.parse(fs.readFileSync('conventions/vexpo-2026/groups.json', 'utf8'));
+  for (const group of roster.groups) {
+    assert(group.sources.length > 0);
+    group.sources.forEach(url => assert.equal(new URL(url).protocol, 'https:'));
+    assert.equal(new Set(group.members).size, group.members.length);
+    for (const former of group.former_members || []) assert(!group.members.includes(former.name));
+  }
   const people = run("card({...sessions[0], participants: 'Mint Fantôme; A & B'})").children.find(e => e.className === 'people');
   assert.equal(people.children.length, 2);
   const primary = people.children[0].children[1];
@@ -282,7 +303,12 @@ setImmediate(async () => {
   const originalFetch = context.fetch;
   context.fetch = async () => ({ok: false});
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);
+  assert.equal((await run('loadGroups()')).size, 0);
+  context.fetch = async () => ({ok: true, json: async () => ({groups: 'invalid'})});
+  assert.equal((await run('loadGroups()')).size, 0);
   context.fetch = originalFetch;
+  run('delete config.groups');
+  assert.equal((await run('loadGroups()')).size, 0);
   run('delete config.socials');
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);
   console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 147 meet-and-greets including 49 unofficial booth slots; 12 concerts; search, status and organizer filters, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');

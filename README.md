@@ -36,6 +36,7 @@ conventions/
     schedule.csv             Schedule read by the website
     opening-hours.json       Optional daily entry hours
     socials.json             Optional participant links
+    groups.json              Optional sourced membership lists
     sources/                 Optional research and source notes
 scripts/build-site.cjs       Site packaging and legacy redirects
 tests/                      Schedule and packaging checks
@@ -92,9 +93,28 @@ Use one row per published slot. Keep shared meet-and-greet slots together, with 
 
 Official/unofficial labels describe the session's status. Include supporting source links and explain uncertain classifications in the notes. Concert classification is maintained manually through `is_concert`.
 
-The Event status dropdown lists Official & unofficial, Official, Unofficial, then each distinct name from `organizer`. Keep agencies and groups in this dropdown. A session can have multiple groups: use `Example Agency; Another Group` in the CSV. Each name gets its own option; selecting either includes the shared session once. Existing single-name values and empty fields still work. Whitespace and repeated names are ignored.
+The Event status dropdown contains Official & unofficial, Official, and Unofficial. The separate Group / agency dropdown combines explicit `organizer` tags with memberships from `groups.json`. The two filters work together, along with day, location, search, concert and meet-and-greet filters. Group names are searchable and included in calendar descriptions.
 
-Tag groups that organize, present, or are explicitly featured in an event. When a source identifies a performer's group, also tag their other scheduled appearances, including meet-and-greets. Record that evidence and any name aliases under `sources/`; do not infer membership from booth attendance or a collaboration alone. The same session can carry booth-organizer and performer-group tags. Selecting a group spans official and unofficial sessions and combines with the other filters and calendar download. Group names are searchable and included in calendar descriptions. Adding a group needs only CSV data, with no HTML or JavaScript edits.
+Use `organizer` for groups that organize, present, or are explicitly featured in a session. Separate multiple tags with semicolons; each group finds the shared session once. Keep talent affiliations in the membership file instead of repeating them on every CSV row. A booth guest is not automatically a member of its organizer.
+
+### Group and agency memberships
+
+Add optional `groups.json` in the convention folder and set `data-groups="groups.json"` on the page. Keep the template's `#group` dropdown. Options are generated from groups associated with scheduled sessions; roster members who have no scheduled appearance do not become attendees.
+
+```json
+{
+  "checked_on": "2027-09-01",
+  "groups": [
+    {"name": "Example Agency", "members": ["Example Performer"], "sources": ["https://example.org/talents"]},
+    {"name": "Example Unit", "members": ["Example Performer"], "sources": ["https://example.org/unit"]}
+  ],
+  "aliases": {"Alternate Spelling": "Example Performer"}
+}
+```
+
+Each talent may occur in multiple member lists. Matching uses exact CSV participant names; aliases map alternative spellings directly to a roster name, without alias chains. A session inherits all matched memberships and retains its explicit organizer tags. Research official talent pages, group profiles, and announcements; record public source URLs and any uncertainty in `notes`. Optional `former_members` records are research only and never used for matching. Keep rosters appropriate to that convention edition, especially when updating past events. Membership does not establish an individual concert lineup.
+
+Without the optional file, explicit CSV group tags still work. The file is included in deployment automatically.
 
 Keep research, transcriptions, and source conflicts in the convention's `sources/` folder. Those files do not drive the website. If you maintain a `sources/participants.json` snapshot, update it alongside the CSV.
 
@@ -190,7 +210,7 @@ The tests use the existing schedule as a fixture. Update expected counts and ass
 
 Pushes to `main` deploy automatically through [GitHub Actions](https://github.com/uebagi/Vtuber-Conventions/actions/workflows/pages.yml). The workflow can also be run manually.
 
-The workflow runs the schedule and packaging checks, then `node scripts/build-site.cjs`. The packaging script discovers `conventions/*/schedule.csv` and publishes each convention's `index.html`, `schedule.csv`, and optional `socials.json` and `opening-hours.json`, along with the root index and shared assets. It excludes `sources/`, `tmp/`, and local agent instructions. Update the script if you introduce additional runtime files.
+The workflow runs the schedule and packaging checks, then `node scripts/build-site.cjs`. The packaging script discovers `conventions/*/schedule.csv` and publishes each convention's `index.html`, `schedule.csv`, and optional `socials.json`, `groups.json`, and `opening-hours.json`, along with the root index and shared assets. It excludes `sources/`, `tmp/`, and local agent instructions. Update the script if you introduce additional runtime files.
 
 The script creates a fresh `_site/` directory; it refuses to overwrite an existing output directory. To inspect a packaged preview, use `node scripts/build-site.cjs tmp/site-preview` with a new output path, then `python -m http.server 8001 --directory tmp/site-preview`.
 

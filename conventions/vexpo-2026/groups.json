@@ -1,0 +1,328 @@
+{
+  "checked_on": "2026-09-07",
+  "groups": [
+    {
+      "name": "a:VEnue",
+      "members": [
+        "Utano Pandora",
+        "Hazumi Aileen",
+        "Nina Saotome",
+        "Nova Aokami",
+        "Ayla Yew"
+      ],
+      "sources": [
+        "https://x.com/aVEnueChannel",
+        "https://a-venue.live/"
+      ]
+    },
+    {
+      "name": "Aegis-Link",
+      "members": [
+        "TRiGGERPHiSH",
+        "Lan Philia",
+        "MaeFae",
+        "Eru Erudite",
+        "Veilyn",
+        "Kumisa Umare",
+        "Kyuru Rin"
+      ],
+      "sources": [
+        "https://aegis-l.ink/about",
+        "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/6954c7d6-8538-4311-b762-ee59d500e349/GroupAgencyConcert.png"
+      ]
+    },
+    {
+      "name": "Akupin",
+      "members": [
+        "Akugaki Koa",
+        "Lalabell Lullaby"
+      ],
+      "sources": [
+        "https://chroma-shift.com/talents/"
+      ],
+      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
+    },
+    {
+      "name": "Algorhythm Project",
+      "members": [
+        "Ark",
+        "Baabel",
+        "Baku",
+        "Calista",
+        "Dacapo",
+        "DEV",
+        "Effy",
+        "Era",
+        "Evalia",
+        "Faminé",
+        "Ginnique",
+        "HyougaAlpha",
+        "it’s hi",
+        "Ivy",
+        "Karu",
+        "L1MOU",
+        "Listen",
+        "Magnum",
+        "Maylyn",
+        "Midnight",
+        "Millennia",
+        "Morr",
+        "Nirvana",
+        "Poru",
+        "S1R",
+        "Schneider",
+        "Selene",
+        "SiamNeko",
+        "Solar",
+        "Tequila",
+        "Uniwii",
+        "Zekai",
+        "Zenith"
+      ],
+      "sources": [
+        "https://algorhythm.realic.net/links/"
+      ],
+      "notes": "Names with active social links in the official directory. Entries explicitly marked graduated or departed are excluded; L1MOU and S1R are both listed by the directory.",
+      "former_members": [
+        {
+          "name": "Aoi Crescent",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        },
+        {
+          "name": "Aosora Popo",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        },
+        {
+          "name": "Asteroth",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        },
+        {
+          "name": "Ayna",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        },
+        {
+          "name": "Latta",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        },
+        {
+          "name": "Quentin",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        },
+        {
+          "name": "Ricotta",
+          "sources": [
+            "https://algorhythm.realic.net/links/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BEASTIEZ",
+      "members": [
+        "Kairyu Crocodile",
+        "Tori Oriane",
+        "PiaPiUFO",
+        "BeriBug"
+      ],
+      "sources": [
+        "https://x.com/TheBEASTIEZ",
+        "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/6954c7d6-8538-4311-b762-ee59d500e349/GroupAgencyConcert.png"
+      ]
+    },
+    {
+      "name": "ChromaSHIFT",
+      "members": [
+        "Poko Rakun",
+        "Mia Melonya",
+        "Riki Poppet",
+        "Taiga Toragami",
+        "Roca Rourin",
+        "Enya Ignis",
+        "Shabel Tonya",
+        "Akugaki Koa",
+        "Lalabell Lullaby",
+        "Yena Youngblood",
+        "Cersea Soulstorm",
+        "Ruby Runeheart"
+      ],
+      "sources": [
+        "https://chroma-shift.com/talents/"
+      ],
+      "notes": "Current talent page excludes its Graduated section.",
+      "former_members": [
+        {
+          "name": "Daisy Dandelion",
+          "sources": [
+            "https://chroma-shift.com/talents/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "florAtelier",
+      "members": [
+        "Anoko",
+        "mipyun",
+        "Captain Camille",
+        "Silvi",
+        "Mabel"
+      ],
+      "sources": [
+        "https://x.com/floratelier_"
+      ],
+      "notes": "Official profile names five members. Guests at its booth are not automatically members."
+    },
+    {
+      "name": "Outlaws",
+      "members": [
+        "Yena Youngblood",
+        "Cersea Soulstorm",
+        "Ruby Runeheart"
+      ],
+      "sources": [
+        "https://chroma-shift.com/talents/"
+      ],
+      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
+    },
+    {
+      "name": "Phase Connect",
+      "members": [
+        "Rinkou Ashelia",
+        "Utatane Nasa",
+        "Pipkin Pippa",
+        "Tenma Maemi",
+        "Hakushika Iori",
+        "Fujikura Uruka",
+        "Shisui Michiru",
+        "Remilia Nephys",
+        "Chisaka Airi",
+        "Amanogawa Shiina",
+        "Himemiya Rie",
+        "Erina Makina",
+        "Komachi Panko",
+        "Runie Ruse",
+        "Muu Muyu",
+        "Hikanari Hina",
+        "Eimi Isami",
+        "Kaneko Lumi",
+        "Amane Ember",
+        "Dizzy Dokuro",
+        "Jelly Hoshiumi",
+        "Clio Aite",
+        "Mari Mari",
+        "Eepy Sleepy",
+        "Bibi Biscuit",
+        "Malice Evermore",
+        "Nitya Nil",
+        "Sinon Sinfonia",
+        "Wilhelmina Frost",
+        "Kannagi Loki",
+        "Ayase Yuu",
+        "Gram Pico"
+      ],
+      "sources": [
+        "https://phase-connect.com/phase-01-origins/",
+        "https://phase-connect.com/phase-02-alias/",
+        "https://phase-connect.com/phase-03-euphoria/",
+        "https://phase-connect.com/phase-invaders/",
+        "https://jp.phase-connect.com/phase-jp-kaleido-2/",
+        "https://shop.phase-connect.com/products/splash-zone-wet-wild-saga-talent-bundle"
+      ],
+      "notes": "Includes OriginS, ALiAS, Euphoria, Invaders/Quest, SAGA and current KALEiDO members. Older roster pages retain graduates; departures are recorded separately.",
+      "former_members": [
+        {
+          "name": "Saya Sairroxs",
+          "sources": [
+            "https://www.siliconera.com/phase-connect-vtuber-saya-sairroxs-graduates-next-week/"
+          ]
+        },
+        {
+          "name": "Anya Nyabyss",
+          "sources": [
+            "https://x.com/AnyaNyabyss"
+          ]
+        },
+        {
+          "name": "Kaminari Clara",
+          "sources": [
+            "https://note.com/tomo161382/n/n1504e99ff712"
+          ]
+        },
+        {
+          "name": "Kokoromo Memory",
+          "sources": [
+            "https://www.reddit.com/r/PhaseConnect/comments/1qeea4p/"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "PriMari",
+      "members": [
+        "Poko Rakun",
+        "Mia Melonya"
+      ],
+      "sources": [
+        "https://chroma-shift.com/talents/"
+      ],
+      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
+    },
+    {
+      "name": "ReBelles",
+      "members": [
+        "Riki Poppet",
+        "Taiga Toragami",
+        "Roca Rourin"
+      ],
+      "sources": [
+        "https://chroma-shift.com/talents/"
+      ],
+      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
+    },
+    {
+      "name": "Solfege",
+      "members": [
+        "Enya Ignis",
+        "Shabel Tonya"
+      ],
+      "sources": [
+        "https://chroma-shift.com/talents/"
+      ],
+      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
+    },
+    {
+      "name": "Variance Project",
+      "members": [
+        "Avaritia Hawthorne",
+        "Katya Sable",
+        "Leia Memoria",
+        "Cecilia Lent",
+        "Embyr Sparks"
+      ],
+      "sources": [
+        "https://varianceproject.com/talents",
+        "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/6954c7d6-8538-4311-b762-ee59d500e349/GroupAgencyConcert.png"
+      ],
+      "notes": "The official talent page currently returns Katya Sable, Avaritia Hawthorne and Leia Memoria. The current convention poster additionally identifies Cecilia Lent and Embyr Sparks. Combined published roster; the website may lag announcements."
+    }
+  ],
+  "aliases": {
+    "Beribug": "BeriBug",
+    "Aokami Nova": "Nova Aokami",
+    "Ashelia Rinkou": "Rinkou Ashelia",
+    "Hoshiumi Jelly": "Jelly Hoshiumi",
+    "Dokuro Dizzy": "Dizzy Dokuro"
+  }
+}

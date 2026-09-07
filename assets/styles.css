@@ -25,3 +25,6 @@
   .opening-hours-toggle[aria-expanded=true] .opening-hours-chevron{transform:rotate(-135deg)}
   .opening-days[data-collapsed=true]{display:none}
 }
+
+.filters .group-filter { flex: 1 1 220px; min-width: 0; }
+.group-filter select { width: 100%; }

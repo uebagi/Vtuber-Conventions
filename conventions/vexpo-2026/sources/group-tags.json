@@ -20,7 +20,7 @@
       "locator": "Named meet-and-greet participants"
     }
   ],
-  "notes": "Groups are transcribed from the concert poster. Their named performers' other published sessions are tagged with the same groups. Existing organizer tags are retained. This records verified billing for this convention, not a complete agency directory.",
+  "notes": "Historical group-tag research from the concert poster. Membership-derived session groups are now resolved at runtime from groups.json; sessions below record expected group associations, not necessarily literal organizer CSV values.",
   "groups": [
     {
       "name": "Algorhythm Project",

@@ -3,7 +3,7 @@ const path = require('node:path');
 
 const repository = path.resolve(__dirname, '..');
 const legacySlugs = new Set(['vexpo-2026']);
-const dataFiles = ['schedule.csv', 'socials.json', 'opening-hours.json'];
+const dataFiles = ['schedule.csv', 'socials.json', 'opening-hours.json', 'groups.json'];
 
 function buildSite(destination, source = repository) {
   destination = path.resolve(destination);
