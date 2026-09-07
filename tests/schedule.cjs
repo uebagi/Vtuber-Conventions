@@ -12,10 +12,14 @@ class Element {
 }
 const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#concerts', '#meet-greets', '#event-status', '#group', '#talent', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
 elements['#group'].value = elements['#stage'].value = elements['#event-status'].value = elements['#meet-greets'].value = 'all';
+for (const value of ['all', 'only', 'exclude']) { const option = new Element(); option.value = value; elements['#meet-greets'].append(option); }
 const body = new Element();
 body.dataset = { eventName: 'VeXpo', eventId: 'vexpo-2026', venue: 'NEC, Birmingham, UK', uidDomain: 'vexpo-fan-planner', socials: 'socials.json', openingHours: 'opening-hours.json', groups: 'groups.json' };
 const document = { body, createElement: () => new Element(), querySelector: s => s === '[data-day="all"]' ? elements['.days'].children[0] : elements[s] };
 const context = vm.createContext({ document, TextEncoder, URL, console, location: { href: 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/' }, fetch: async path => { assert(['schedule.csv', 'socials.json', 'opening-hours.json', 'groups.json'].includes(path)); return { ok: true, text: async () => fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8'), json: async () => JSON.parse(fs.readFileSync('conventions/vexpo-2026/' + path, 'utf8')) }; } });
+context.history = {state: null, replaceState: (state, title, url) => { context.location.href = url; }};
+const windowHandlers = {};
+context.window = {addEventListener: (name, handler) => { windowHandlers[name] = handler; }};
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
 setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
@@ -44,6 +48,32 @@ setImmediate(async () => {
 
 
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
+  // Share every filter, restore them after loading, and reset the URL.
+  context.location.href = 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/?day=2026-09-19&stage=Phase+Connect+-+Booth+S07&status=unofficial&group=group%3APhase+Connect&talent=x%3Ahttps%3A%2F%2Fx.com%2Fkanekolumi&meet-greets=only&announced=1&q=Kaneko#schedule';
+  run('restoreFiltersFromURL(); render()');
+  assert.equal(count(), 1);
+  assert.equal(elements['#announced'].checked, true);
+  assert.equal(elements['.days'].children[2].attributes['aria-pressed'], 'true');
+  const sharedURL = context.location.href;
+  elements['#reset'].click();
+  assert.equal(new URL(context.location.href).search, '');
+  assert.equal(new URL(context.location.href).hash, '#schedule');
+  assert.equal(count(), 192);
+  context.location.href = sharedURL;
+  windowHandlers.popstate(); assert.equal(count(), 1);
+  elements['#reset'].click();
+  elements['#search'].value = 'A & B + C'; elements['#search'].handlers.input();
+  assert.equal(new URL(context.location.href).searchParams.get('q'), 'A & B + C');
+  elements['#reset'].click();
+  change('#concerts', true, true);
+  assert.equal(new URL(context.location.href).searchParams.get('concerts'), '1');
+  context.location.href = 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/?day=bad&stage=missing&talent=missing&group=missing&status=bad&meet-greets=only&concerts=1';
+  windowHandlers.popstate();
+  assert.equal(run('selectedDay'), 'all');
+  assert.equal(elements['#talent'].value, 'all');
+  assert.equal(elements['#concerts'].checked, false);
+  assert.equal(count(), 147);
+  elements['#reset'].click();
   const talentOptions = elements['#talent'].children;
   assert.equal(talentOptions[0].textContent, 'All talents');
   assert(!talentOptions.some(option => option.textContent === 'ChromaSHIFT'));

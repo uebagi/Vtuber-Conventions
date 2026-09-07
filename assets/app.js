@@ -346,7 +346,38 @@ function filteredSessions() {
     && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status, groupsFor(s).join(' ')].join(' ')).includes(term)));
 }
 
+const filterSelects = {stage, status: eventStatus, 'meet-greets': meetGreets, group: groupFilter, talent: talentFilter};
+function restoreFiltersFromURL() {
+  const params = new URL(location.href).searchParams;
+  search.value = params.get('q') || '';
+  selectedDay = sessions.some(session => session.date === params.get('day')) ? params.get('day') : 'all';
+  for (const [key, select] of Object.entries(filterSelects)) {
+    if (!select) continue;
+    const value = params.get(key);
+    select.value = [...select.children].some(option => option.value === value) ? value : 'all';
+  }
+  announced.checked = params.get('announced') === '1';
+  concerts.checked = params.get('concerts') === '1' && meetGreets.value !== 'only';
+  setupDays();
+}
+function syncFiltersToURL() {
+  const url = new URL(location.href);
+  const values = {q: search.value, day: selectedDay, announced: announced.checked ? '1' : '', concerts: concerts.checked ? '1' : ''};
+  for (const [key, select] of Object.entries(filterSelects)) values[key] = select?.value || 'all';
+  for (const [key, value] of Object.entries(values)) {
+    if (value && (key === 'q' || value !== 'all')) url.searchParams.set(key, value);
+    else url.searchParams.delete(key);
+  }
+  if (url.href !== location.href) history.replaceState(history.state, '', url.href);
+}
+window.addEventListener('popstate', () => {
+  if (!sessions.length) return;
+  restoreFiltersFromURL();
+  render();
+});
+
 function render() {
+  syncFiltersToURL();
   const filtered = filteredSessions();
   downloadCalendar.disabled = !filtered.length;
   downloadCalendar.textContent = `Download ${filtered.length} sessions (.ics)`;
@@ -412,6 +443,7 @@ async function load() {
     setupEventStatus();
     setupGroups();
     setupTalents();
+    restoreFiltersFromURL();
     render();
   } catch (error) {
     status.textContent = 'The schedule could not be loaded.';
