@@ -47,15 +47,14 @@ setImmediate(async () => {
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
   assert.deepEqual(statusOptions(), [
     ['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial'],
-    ['organizer:a:VEnue', 'a:VEnue'], ['organizer:ChromaSHIFT', 'ChromaSHIFT'],
-    ['organizer:florAtelier', 'florAtelier'], ['organizer:Phase Connect', 'Phase Connect']
+    ...['a:VEnue', 'Aegis-Link', 'Algorhythm Project', 'BEASTIEZ', 'ChromaSHIFT', 'florAtelier', 'Phase Connect', 'Variance Project'].map(name => [`organizer:${name}`, name])
   ]);
   change('#event-status', 'organizer:Phase Connect'); assert.equal(count(), 14);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'official').length"), 6);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'unofficial').length"), 8);
   const organizerCalendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
   assert.equal((organizerCalendar.match(/BEGIN:VEVENT/g) || []).length, 14);
-  assert(organizerCalendar.includes('Organizer: Phase Connect'));
+  assert(organizerCalendar.includes('Groups: Phase Connect'));
   change('#meet-greets', 'only'); assert.equal(count(), 10);
   change('#meet-greets', 'exclude'); assert.equal(count(), 4);
   change('#concerts', true, true); assert.equal(count(), 2);
@@ -74,10 +73,41 @@ setImmediate(async () => {
   assert.equal(elements['#event-status'].value, 'all'); assert.equal(count(), 192);
   elements['#search'].value = 'Phase Connect'; elements['#search'].handlers.input(); assert.equal(count(), 14);
   elements['#reset'].click();
+  // A shared concert appears once under each billed group, with all groups in its calendar.
+  const concertGroups = ['Algorhythm Project', 'ChromaSHIFT', 'BEASTIEZ', 'Aegis-Link', 'Variance Project'];
+  let sharedUid;
+  for (const group of concertGroups) {
+    change('#event-status', `organizer:${group}`);
+    elements['#search'].value = 'Group & Agency Concert'; elements['#search'].handlers.input();
+    assert.equal(count(), 1, `Shared concert missing or duplicated for ${group}`);
+    assert.equal(run('filteredSessions()[0].event_status'), 'official');
+    const calendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
+    assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, 1);
+    assert(calendar.includes('Groups: Algorhythm Project\\, ChromaSHIFT\\, BEASTIEZ\\, Aegis-Link\\, Variance Project'));
+    const uid = calendar.match(/^UID:.+$/m)[0];
+    if (sharedUid) assert.equal(uid, sharedUid);
+    sharedUid = uid;
+    elements['#reset'].click();
+  }
+  change('#event-status', 'organizer:ChromaSHIFT'); assert.equal(count(), 3);
+  change('#concerts', true, true); assert.equal(count(), 3);
+  elements['#reset'].click();
+  change('#event-status', 'organizer:BEASTIEZ'); assert.equal(count(), 5);
+  change('#meet-greets', 'only'); assert.equal(count(), 3);
+  change('#meet-greets', 'exclude'); assert.equal(count(), 2);
+  elements['#reset'].click();
+  change('#event-status', 'organizer:Aegis-Link'); assert.equal(count(), 8);
+  change('#meet-greets', 'only'); assert.equal(count(), 7);
+  elements['#reset'].click();
+  change('#event-status', 'organizer:Variance Project'); assert.equal(count(), 6);
+  change('#meet-greets', 'only'); assert.equal(count(), 5);
+  elements['#reset'].click();
   // New groups need only CSV data; missing fields retain the original status filters.
-  run("const originalOrganizerSessions = sessions; sessions = [{...sessions[0], event_status: 'official', organizer: ' Community & Friends '}, {...sessions[0], event_status: 'official', organizer: 'Community & Friends'}, {...sessions[0], event_status: 'official', organizer: 'official'}, {...sessions[0], event_status: 'official', organizer: undefined}]; setupEventStatus()");
-  assert.deepEqual(statusOptions().slice(3), [['organizer:Community & Friends', 'Community & Friends'], ['organizer:official', 'official']]);
+  run("const originalOrganizerSessions = sessions; sessions = [{...sessions[0], event_status: 'official', organizer: ' Community & Friends ; Group, Inc. ;; Community & Friends ; '}, {...sessions[0], event_status: 'official', organizer: 'Community & Friends'}, {...sessions[0], event_status: 'official', organizer: 'official'}, {...sessions[0], event_status: 'official', organizer: undefined}]; setupEventStatus()");
+  assert.deepEqual(statusOptions().slice(3), [['organizer:Community & Friends', 'Community & Friends'], ['organizer:Group, Inc.', 'Group, Inc.'], ['organizer:official', 'official']]);
   change('#event-status', 'organizer:Community & Friends'); assert.equal(count(), 2);
+  change('#event-status', 'organizer:Group, Inc.'); assert.equal(count(), 1);
+  change('#event-status', 'organizer:Community'); assert.equal(count(), 0);
   change('#event-status', 'organizer:official'); assert.equal(count(), 1);
   change('#event-status', 'official'); assert.equal(count(), 4);
   run('sessions = [{...originalOrganizerSessions[0]}]; delete sessions[0].organizer; setupEventStatus()');

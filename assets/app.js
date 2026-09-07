@@ -142,7 +142,7 @@ const announced = document.querySelector('#announced');
 const concerts = document.querySelector('#concerts');
 const meetGreets = document.querySelector('#meet-greets');
 const eventStatus = document.querySelector('#event-status');
-const organizerFor = session => (session.organizer || '').trim();
+const organizersFor = session => [...new Set((session.organizer || '').split(';').map(name => name.trim()).filter(Boolean))];
 const statusLabel = session => ({ official: 'Official', unofficial: 'Unofficial' }[session.event_status] || 'Status unconfirmed');
 const schedule = document.querySelector('#schedule');
 const status = document.querySelector('#status');
@@ -173,7 +173,7 @@ function createCalendar(items, now = new Date()) {
       `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : '–' + session.end_time} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
       session.participants ? `Participants: ${session.participants}` : isTimeMarker(session) ? '' : 'Participants not announced.',
       `Event status: ${statusLabel(session)}`,
-      organizerFor(session) ? `Organizer: ${organizerFor(session)}` : '',
+      organizersFor(session).length ? `Groups: ${organizersFor(session).join(', ')}` : '',
       session.is_meet_greet === 'true' ? `Meet & greet: ${session.meet_greet_type}; price: ${session.price}; booth: ${session.booth}` : '',
       session.lineup_notes,
       'Fan-maintained schedule snapshot; check the source listing for changes.',
@@ -253,7 +253,7 @@ function setupEventStatus() {
     ['all', 'Official & unofficial'],
     ['official', 'Official'],
     ['unofficial', 'Unofficial'],
-    ...[...new Set(sessions.map(organizerFor).filter(Boolean))]
+    ...[...new Set(sessions.flatMap(organizersFor))]
       .sort((a, b) => a.localeCompare(b, 'en-US', { sensitivity: 'base' }))
       .map(name => [`organizer:${name}`, name])
   ];
@@ -268,7 +268,7 @@ function setupEventStatus() {
 function matchesEventStatus(session) {
   const selected = eventStatus.value;
   if (selected === 'all') return true;
-  if (selected.startsWith('organizer:')) return organizerFor(session) === selected.slice('organizer:'.length);
+  if (selected.startsWith('organizer:')) return organizersFor(session).includes(selected.slice('organizer:'.length));
   return session.event_status === selected;
 }
 
@@ -280,7 +280,7 @@ function filteredSessions() {
     && (!concerts.checked || s.is_concert === 'true')
     && (meetGreets.value === 'all' || (meetGreets.value === 'only' ? s.is_meet_greet === 'true' : s.is_meet_greet !== 'true'))
     && matchesEventStatus(s)
-    && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status, organizerFor(s)].join(' ')).includes(term)));
+    && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status, organizersFor(s).join(' ')].join(' ')).includes(term)));
 }
 
 function render() {

@@ -1,0 +1,339 @@
+{
+  "checked_on": "2026-09-07",
+  "sources": [
+    {
+      "id": "group-agency-concert-poster",
+      "url": "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/6954c7d6-8538-4311-b762-ee59d500e349/GroupAgencyConcert.png",
+      "type": "official_poster",
+      "locator": "Named performers grouped beneath agency/group headings on the Group & Agency Concert poster"
+    },
+    {
+      "id": "official-stages-panels",
+      "url": "https://vexpo.uk/stages-panels",
+      "type": "official_schedule",
+      "locator": "Named concert and panel participants"
+    },
+    {
+      "id": "official-meet-greets",
+      "url": "https://vexpo.uk/meet-greets",
+      "type": "official_schedule",
+      "locator": "Named meet-and-greet participants"
+    }
+  ],
+  "notes": "Groups are transcribed from the concert poster. Their named performers' other published sessions are tagged with the same groups. Existing organizer tags are retained. This records verified billing for this convention, not a complete agency directory.",
+  "groups": [
+    {
+      "name": "Algorhythm Project",
+      "participants": [
+        "Tequila",
+        "DEV",
+        "Effy",
+        "Faminé",
+        "Midnight"
+      ],
+      "aliases": {},
+      "source_ids": [
+        "group-agency-concert-poster"
+      ]
+    },
+    {
+      "name": "ChromaSHIFT",
+      "participants": [
+        "Akugaki Koa",
+        "Riki Poppet",
+        "Cersea Soulstorm",
+        "Lalabell Lullaby",
+        "Enya Ignis"
+      ],
+      "aliases": {},
+      "source_ids": [
+        "group-agency-concert-poster"
+      ]
+    },
+    {
+      "name": "BEASTIEZ",
+      "participants": [
+        "Kairyu Crocodile",
+        "Tori Oriane",
+        "PiaPiUFO",
+        "BeriBug"
+      ],
+      "aliases": {
+        "Beribug": "BeriBug"
+      },
+      "source_ids": [
+        "group-agency-concert-poster"
+      ]
+    },
+    {
+      "name": "Aegis-Link",
+      "participants": [
+        "TRiGGERPHiSH",
+        "Lan Philia",
+        "MaeFae",
+        "Eru Erudite",
+        "Veilyn",
+        "Kumisa Umare",
+        "Kyuru Rin"
+      ],
+      "aliases": {},
+      "source_ids": [
+        "group-agency-concert-poster"
+      ]
+    },
+    {
+      "name": "Variance Project",
+      "participants": [
+        "Avaritia Hawthorne",
+        "Katya Sable",
+        "Leia Memoria",
+        "Cecilia Lent",
+        "Embyr Sparks"
+      ],
+      "aliases": {},
+      "source_ids": [
+        "group-agency-concert-poster"
+      ]
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2026-09-18",
+      "start_time": "20:00",
+      "stage": "MONARCH STAGE",
+      "event": "Opening Concert",
+      "groups": [
+        "ChromaSHIFT"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-stages-panels"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "11:00",
+      "stage": "M&G Booth 5",
+      "event": "Kumisa Umare — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "11:30",
+      "stage": "M&G Booth 3",
+      "event": "Cecilia Lent — Meet & Greet",
+      "groups": [
+        "Variance Project"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "11:30",
+      "stage": "M&G Booth 4",
+      "event": "Tori Oriane — Meet & Greet",
+      "groups": [
+        "BEASTIEZ"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "13:00",
+      "stage": "M&G Booth 5",
+      "event": "Lan Philia — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "13:00",
+      "stage": "M&G Booth 6",
+      "event": "TRiGGERPHiSH — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "13:30",
+      "stage": "JUBILEE STAGE",
+      "event": "THE GREAT BRITISH SNACK OFF",
+      "groups": [
+        "BEASTIEZ"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-stages-panels"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "15:00",
+      "stage": "M&G Booth 5",
+      "event": "Eru Erudite — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "15:30",
+      "stage": "M&G Booth 2",
+      "event": "Katya Sable — Meet & Greet",
+      "groups": [
+        "Variance Project"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "15:30",
+      "stage": "M&G Booth 3",
+      "event": "Avaritia Hawthorne — Meet & Greet",
+      "groups": [
+        "Variance Project"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "17:00",
+      "stage": "M&G Booth 5",
+      "event": "Veilyn — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "17:30",
+      "stage": "M&G Booth 4",
+      "event": "Beribug — Meet & Greet",
+      "groups": [
+        "BEASTIEZ"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "18:00",
+      "stage": "MONARCH STAGE",
+      "event": "Group & Agency Concert",
+      "groups": [
+        "Algorhythm Project",
+        "ChromaSHIFT",
+        "BEASTIEZ",
+        "Aegis-Link",
+        "Variance Project"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-stages-panels"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "start_time": "19:00",
+      "stage": "M&G Booth 5",
+      "event": "Kyuru Rin — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "start_time": "12:00",
+      "stage": "M&G Booth 1",
+      "event": "PiaPiUFO — Meet & Greet",
+      "groups": [
+        "BEASTIEZ"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "start_time": "12:30",
+      "stage": "M&G Booth 5",
+      "event": "MaeFae — Meet & Greet",
+      "groups": [
+        "Aegis-Link"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "start_time": "14:00",
+      "stage": "M&G Booth 2",
+      "event": "Leia Memoria — Meet & Greet",
+      "groups": [
+        "Variance Project"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "start_time": "16:00",
+      "stage": "M&G Booth 1",
+      "event": "Embyr Sparks — Meet & Greet",
+      "groups": [
+        "Variance Project"
+      ],
+      "source_ids": [
+        "group-agency-concert-poster",
+        "official-meet-greets"
+      ]
+    }
+  ]
+}

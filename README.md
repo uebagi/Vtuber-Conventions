@@ -85,14 +85,16 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | `is_concert`, `is_meet_greet` | Lowercase `true` or `false` for each filter |
 | `concert_classification_notes` | Reason for the concert classification |
 | `event_status` | `official` or `unofficial`; missing values display as unconfirmed |
-| `organizer` | Optional organizer/group name; use the same spelling on all of its sessions |
+| `organizer` | Optional agencies, groups, or organizers separated by semicolons; use consistent names |
 | `meet_greet_type`, `price`, `booth` | Meet-and-greet format, published price, and booth; otherwise leave empty |
 
 Use one row per published slot. Keep shared meet-and-greet slots together, with each participant listed separately in `participants`. Record whether times describe availability windows or individual appointments. Use `Not listed` for an unpublished price; do not assume it is free.
 
 Official/unofficial labels describe the session's status. Include supporting source links and explain uncertain classifications in the notes. Concert classification is maintained manually through `is_concert`.
 
-The Event status dropdown lists Official & unofficial, Official, Unofficial, then the distinct nonempty `organizer` names from the CSV. Selecting an organizer includes all of its tagged official and unofficial sessions and combines with the other filters and calendar download. Assign it to sessions the group organizes or presents, including its booth events and official stage/panel appearances; do not tag unrelated sessions just because an affiliated performer appears. Leave it empty when there is no specific group to filter by. Adding an organizer requires only data changes, with no HTML or JavaScript edits. Organizer names are also searchable and included in calendar descriptions.
+The Event status dropdown lists Official & unofficial, Official, Unofficial, then each distinct name from `organizer`. Keep agencies and groups in this dropdown. A session can have multiple groups: use `Example Agency; Another Group` in the CSV. Each name gets its own option; selecting either includes the shared session once. Existing single-name values and empty fields still work. Whitespace and repeated names are ignored.
+
+Tag groups that organize, present, or are explicitly featured in an event. When a source identifies a performer's group, also tag their other scheduled appearances, including meet-and-greets. Record that evidence and any name aliases under `sources/`; do not infer membership from booth attendance or a collaboration alone. The same session can carry booth-organizer and performer-group tags. Selecting a group spans official and unofficial sessions and combines with the other filters and calendar download. Group names are searchable and included in calendar descriptions. Adding a group needs only CSV data, with no HTML or JavaScript edits.
 
 Keep research, transcriptions, and source conflicts in the convention's `sources/` folder. Those files do not drive the website. If you maintain a `sources/participants.json` snapshot, update it alongside the CSV.
 
