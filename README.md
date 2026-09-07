@@ -106,13 +106,13 @@ Add optional `groups.json` in the convention folder and set `data-groups="groups
   "checked_on": "2027-09-01",
   "groups": [
     {"name": "Example Agency", "members": ["Example Performer"], "sources": ["https://example.org/talents"]},
-    {"name": "Example Unit", "members": ["Example Performer"], "sources": ["https://example.org/unit"]}
+    {"name": "Independent Group", "members": ["Example Performer"], "sources": ["https://example.org/group"]}
   ],
   "aliases": {"Alternate Spelling": "Example Performer"}
 }
 ```
 
-Each talent may occur in multiple member lists. Matching uses exact CSV participant names; aliases map alternative spellings directly to a roster name, without alias chains. A session inherits all matched memberships and retains its explicit organizer tags. Research official talent pages, group profiles, and announcements; record public source URLs and any uncertainty in `notes`. Optional `former_members` records are research only and never used for matching. Keep rosters appropriate to that convention edition, especially when updating past events. Membership does not establish an individual concert lineup.
+List agencies and independent groups only; omit internal units, generations, and other subgroups of an agency. Keep their talents on the parent agency roster and use the parent agency for explicit CSV tags. A talent may still occur in multiple independent group or agency member lists. Matching uses exact CSV participant names; aliases map alternative spellings directly to a roster name, without alias chains. A session inherits all matched memberships and retains its explicit organizer tags. Research official talent pages, group profiles, and announcements; record public source URLs and any uncertainty in `notes`. Optional `former_members` records are research only and never used for matching. Keep rosters appropriate to that convention edition, especially when updating past events. Membership does not establish an individual concert lineup.
 
 Without the optional file, explicit CSV group tags still work. The file is included in deployment automatically.
 

@@ -47,7 +47,8 @@ setImmediate(async () => {
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
   const groupOptions = () => elements['#group'].children.map(option => [option.value, option.textContent]);
   assert.deepEqual(statusOptions(), [['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial']]);
-  assert(groupOptions().some(([value]) => value === 'group:Akupin'));
+  assert.deepEqual(groupOptions().slice(1).map(([, name]) => name), ['a:VEnue', 'Aegis-Link', 'Algorhythm Project', 'BEASTIEZ', 'ChromaSHIFT', 'florAtelier', 'Phase Connect', 'Variance Project']);
+  assert.deepEqual(Array.from(run("groupsFor({participants: 'Akugaki Koa; Lalabell Lullaby', organizer: ''})")), ['ChromaSHIFT']);
   change('#group', 'group:Phase Connect'); assert.equal(count(), 14);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'official').length"), 6);
   assert.equal(run("filteredSessions().filter(s => s.event_status === 'unofficial').length"), 8);
@@ -115,10 +116,10 @@ setImmediate(async () => {
   run('sessions = originalOrganizerSessions; setupGroups()');
   elements['#reset'].click();
   // One talent belongs to two groups; aliases inherit both, independently of status.
-  run("const savedMemberships = talentGroups; talentGroups = indexGroups({groups: [{name: 'Agency', members: ['Talent']}, {name: 'Unit', members: ['Talent'], former_members: [{name: 'Former'}]}], aliases: {'Alias': 'Talent'}}); sessions = [{...originalOrganizerSessions[0], participants: 'Alias; Talent', organizer: 'Agency', event_status: 'official'}, {...originalOrganizerSessions[0], participants: 'Talent', organizer: '', event_status: 'unofficial'}]; setupGroups()");
+  run("const savedMemberships = talentGroups; talentGroups = indexGroups({groups: [{name: 'Agency', members: ['Talent']}, {name: 'Independent Group', members: ['Talent'], former_members: [{name: 'Former'}]}], aliases: {'Alias': 'Talent'}}); sessions = [{...originalOrganizerSessions[0], participants: 'Alias; Talent', organizer: 'Agency', event_status: 'official'}, {...originalOrganizerSessions[0], participants: 'Talent', organizer: '', event_status: 'unofficial'}]; setupGroups()");
   assert.equal(run('groupsFor(sessions[0]).length'), 2);
   assert.equal(run("talentGroups.has('Former')"), false);
-  for (const group of ['Agency', 'Unit']) {
+  for (const group of ['Agency', 'Independent Group']) {
     change('#group', `group:${group}`); assert.equal(count(), 2);
     change('#event-status', 'official'); assert.equal(count(), 1);
     change('#event-status', 'unofficial'); assert.equal(count(), 1);

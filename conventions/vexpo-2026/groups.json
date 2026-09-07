@@ -32,17 +32,6 @@
       ]
     },
     {
-      "name": "Akupin",
-      "members": [
-        "Akugaki Koa",
-        "Lalabell Lullaby"
-      ],
-      "sources": [
-        "https://chroma-shift.com/talents/"
-      ],
-      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
-    },
-    {
       "name": "Algorhythm Project",
       "members": [
         "Ark",
@@ -185,18 +174,6 @@
       "notes": "Official profile names five members. Guests at its booth are not automatically members."
     },
     {
-      "name": "Outlaws",
-      "members": [
-        "Yena Youngblood",
-        "Cersea Soulstorm",
-        "Ruby Runeheart"
-      ],
-      "sources": [
-        "https://chroma-shift.com/talents/"
-      ],
-      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
-    },
-    {
       "name": "Phase Connect",
       "members": [
         "Rinkou Ashelia",
@@ -267,40 +244,6 @@
           ]
         }
       ]
-    },
-    {
-      "name": "PriMari",
-      "members": [
-        "Poko Rakun",
-        "Mia Melonya"
-      ],
-      "sources": [
-        "https://chroma-shift.com/talents/"
-      ],
-      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
-    },
-    {
-      "name": "ReBelles",
-      "members": [
-        "Riki Poppet",
-        "Taiga Toragami",
-        "Roca Rourin"
-      ],
-      "sources": [
-        "https://chroma-shift.com/talents/"
-      ],
-      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
-    },
-    {
-      "name": "Solfege",
-      "members": [
-        "Enya Ignis",
-        "Shabel Tonya"
-      ],
-      "sources": [
-        "https://chroma-shift.com/talents/"
-      ],
-      "notes": "ChromaSHIFT unit; members also belong to ChromaSHIFT."
     },
     {
       "name": "Variance Project",
