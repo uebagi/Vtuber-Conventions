@@ -58,7 +58,7 @@ setImmediate(async () => {
   run("delete socialProfiles.Unsafe");
   const socialData = JSON.parse(fs.readFileSync('conventions/vexpo-2026/socials.json', 'utf8'));
   const participantNames = new Set(run("sessions.flatMap(s => s.participants.split(';').map(n => n.trim()).filter(Boolean))"));
-  assert.equal(participantNames.size, 198);
+  assert.equal(participantNames.size, 205);
   for (const name of participantNames) {
     assert(Object.hasOwn(socialData.profiles, name), `Missing social research: ${name}`);
     const profile = socialData.profiles[name];
@@ -68,7 +68,7 @@ setImmediate(async () => {
       profile.sources.forEach(source => assert.equal(new URL(source).protocol, 'https:'));
     }
   }
-  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 197);
+  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 204);
   assert.equal(Object.values(socialData.profiles).filter(p => p.primary).length, 136);
   for (const profile of Object.values(socialData.profiles)) {
     if (profile.primary) {
@@ -78,24 +78,24 @@ setImmediate(async () => {
   }
   assert.equal(people.children[0].rel, 'noopener noreferrer');
   assert.equal(people.children[0].target, '_blank');
-  assert.equal(count(), 184);
-  change('#meet-greets', 'exclude'); assert.equal(count(), 43);
-  change('#meet-greets', 'all'); assert.equal(count(), 184);
-  change('#meet-greets', 'only'); assert.equal(count(), 141);
-  elements['.days'].children[2].click(); assert.equal(count(), 73);
-  elements['.days'].children[3].click(); assert.equal(count(), 55);
+  assert.equal(count(), 192);
+  change('#meet-greets', 'exclude'); assert.equal(count(), 45);
+  change('#meet-greets', 'all'); assert.equal(count(), 192);
+  change('#meet-greets', 'only'); assert.equal(count(), 147);
+  elements['.days'].children[2].click(); assert.equal(count(), 75);
+  elements['.days'].children[3].click(); assert.equal(count(), 56);
   elements['#search'].value = 'Ironmouse'; elements['#search'].handlers.input(); assert.equal(count(), 2);
   const ironmouse = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
   assert(ironmouse.includes('DTSTART:20260920T090000Z'));
   assert(ironmouse.includes('price: Free'));
   assert(ironmouse.includes('CATEGORIES:Official,Meet & Greet'));
-  elements['#reset'].click(); assert.equal(count(), 184);
-  change('#concerts', true, true); assert.equal(count(), 8);
-  change('#meet-greets', 'only'); assert.equal(elements['#concerts'].checked, false); assert.equal(count(), 141);
-  change('#concerts', true, true); assert.equal(elements['#meet-greets'].value, 'exclude'); assert.equal(count(), 8);
-  elements['#reset'].click(); change('#event-status', 'unofficial'); assert.equal(count(), 43);
+  elements['#reset'].click(); assert.equal(count(), 192);
+  change('#concerts', true, true); assert.equal(count(), 9);
+  change('#meet-greets', 'only'); assert.equal(elements['#concerts'].checked, false); assert.equal(count(), 147);
+  change('#concerts', true, true); assert.equal(elements['#meet-greets'].value, 'exclude'); assert.equal(count(), 9);
+  elements['#reset'].click(); change('#event-status', 'unofficial'); assert.equal(count(), 51);
   assert.equal(elements['#download-calendar'].disabled, false);
-  change('#meet-greets', 'only'); assert.equal(count(), 43);
+  change('#meet-greets', 'only'); assert.equal(count(), 49);
   const tags = run('card(filteredSessions()[0])').children.find(e => e.className === 'session-tags');
   assert.equal(tags.children[0].textContent, 'Unofficial');
   const boothCalendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
@@ -105,34 +105,38 @@ setImmediate(async () => {
   assert(boothCalendar.includes('price: Not listed'));
   assert(boothCalendar.includes('Booth S05'));
   assert(boothCalendar.includes('Marked Akasupa'));
-  elements['.days'].children[1].click(); assert.equal(count(), 13);
-  elements['.days'].children[2].click(); assert.equal(count(), 16);
-  elements['.days'].children[3].click(); assert.equal(count(), 14);
+  elements['.days'].children[1].click(); assert.equal(count(), 16);
+  elements['.days'].children[2].click(); assert.equal(count(), 18);
+  elements['.days'].children[3].click(); assert.equal(count(), 15);
   elements['#search'].value = 'Captain Camille'; elements['#search'].handlers.input(); assert.equal(count(), 1);
   assert.equal(run('filteredSessions()[0].meet_greet_type'), 'IRL');
   elements['#reset'].click(); change('#event-status', 'official'); assert.equal(count(), 141);
   change('#meet-greets', 'only'); assert.equal(count(), 98);
   elements['#reset'].click(); change('#event-status', 'unofficial'); change('#meet-greets', 'exclude');
+  assert.equal(count(), 2);
+  change('#stage', 'MONARCH STAGE');
   assert.equal(count(), 0); assert.equal(elements['#download-calendar'].disabled, true);
   elements['#reset'].click();
   assert.equal(run('sessions.filter(isTimeMarker).length'), 0);
   const ics = run('createCalendar(filteredSessions())');
   const unfolded = ics.replace(/\r\n /g, '');
-  assert.equal((unfolded.match(/BEGIN:VEVENT/g) || []).length, 184);
-  assert.equal(new Set(unfolded.match(/^UID:.+$/gm)).size, 184);
+  assert.equal((unfolded.match(/BEGIN:VEVENT/g) || []).length, 192);
+  assert.equal(new Set(unfolded.match(/^UID:.+$/gm)).size, 192);
   assert(ics.split('\r\n').every(line => Buffer.byteLength(line, 'utf8') <= 75));
   const snapshot = JSON.parse(fs.readFileSync('conventions/vexpo-2026/sources/participants.json', 'utf8'));
-  assert.equal(snapshot.length, 184); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 141);
+  assert.equal(snapshot.length, 192); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 147);
   assert.equal(snapshot.filter(s => s.event_status === 'official').length, 141);
   const unofficial = snapshot.filter(s => s.event_status === 'unofficial');
-  assert.equal(unofficial.length, 43);
+  assert.equal(unofficial.length, 51);
   for (const session of unofficial) {
     for (const name of session.participants.split(';').map(n => n.trim())) {
       assert(socialData.profiles[name]?.x, `Unlinked booth participant: ${name}`);
       assert.equal(run(`participantChip(${JSON.stringify(name)}).href`), socialData.profiles[name].x);
     }
   }
-  assert(unofficial.every(s => s.is_meet_greet && !s.is_concert && s.booth === 'S05'));
+  const floratelier = unofficial.filter(s => s.booth === 'S05');
+  assert.equal(floratelier.length, 43);
+  assert(floratelier.every(s => s.is_meet_greet && !s.is_concert));
   assert.equal(unofficial.filter(s => s.meet_greet_type === 'IRL').length, 5);
   const research = JSON.parse(fs.readFileSync('conventions/vexpo-2026/sources/floratelier-meet-greets.json', 'utf8'));
   const sourceIds = new Set(research.sources.map(source => source.id));
@@ -142,12 +146,50 @@ setImmediate(async () => {
   for (const session of research.sessions) {
     assert(session.source_ids.length > 0);
     assert(session.source_ids.every(id => sourceIds.has(id)), 'Broken source reference');
-    const imported = unofficial.find(s => s.date === session.date && s.start_time === session.start_time);
+    const imported = floratelier.find(s => s.date === session.date && s.start_time === session.start_time);
     assert(imported, 'Research slot missing from schedule');
     assert.equal(imported.end_time, session.end_time);
     assert.equal(imported.participants, session.participants.join('; '));
     assert.equal(imported.meet_greet_type, session.type);
   }
+  const phase = JSON.parse(fs.readFileSync('conventions/vexpo-2026/sources/phase-connect-schedule.json', 'utf8'));
+  const phaseSourceIds = new Set(phase.sources.map(source => source.id));
+  assert.equal(phaseSourceIds.size, phase.sources.length);
+  assert.equal(phase.sessions.length, 14);
+  assert.equal(phase.sessions.filter(s => s.action === 'added').length, 8);
+  assert.equal(phase.sessions.filter(s => s.event_status === 'official').length, 6);
+  for (const session of phase.sessions) {
+    assert(session.source_ids.length && session.source_ids.every(id => phaseSourceIds.has(id)));
+    const matches = run('sessions').filter(s => s.date === session.date && s.start_time === session.start_time && s.stage === session.stage);
+    assert.equal(matches.length, 1, `Missing or duplicated Phase Connect session: ${session.event}`);
+    assert.equal(matches[0].end_time, session.end_time);
+    assert.equal(matches[0].participants, session.participants.join('; '));
+    assert.equal(matches[0].event_status, session.event_status);
+  }
+  const phaseBooth = run("sessions.filter(s => s.booth === 'S07')");
+  assert.deepEqual(Array.from(phaseBooth, s => `${s.day} ${s.start_time}-${s.end_time} ${s.event}`), [
+    'Friday 12:30-13:00 Komachi Panko — Karaoke',
+    'Friday 15:30-16:30 Bibi Biscuit — Meet & Greet',
+    'Friday 17:00-17:30 Eimi Isami — Meet & Greet',
+    'Friday 18:00-18:30 Rinkou Ashelia — Meet & Greet',
+    'Saturday 13:00-14:00 Malice Evermore — Meet & Greet',
+    'Saturday 16:00-17:00 Kaneko Lumi — Meet & Greet',
+    'Saturday 18:00-18:30 Quest Teatime',
+    'Sunday 15:30-16:30 Jelly Hoshiumi — Meet & Greet'
+  ]);
+  assert.equal(phaseBooth.filter(s => s.is_meet_greet === 'true').length, 6);
+  assert.equal(phaseBooth.filter(s => s.is_concert === 'true').length, 1);
+  assert(phaseBooth.every(s => s.event_status === 'unofficial'));
+  assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.stage === 'JUBILEE STAGE' && s.start_time === '11:00').event"), 'Would WE Lie to You?');
+  assert.equal(run("participantChip('Jelly Hoshiumi').href"), 'https://x.com/jellyhoshiumi');
+  assert.equal(run("participantChip('Jelly').href"), 'https://x.com/jellydoughnut__');
+  assert.equal(run("participantChip('Rinkou Ashelia').href"), 'https://x.com/rinkouashelia');
+  assert.equal(run("participantChip('Eepy Sleepy').href"), 'https://x.com/EepySleepyCh');
+  const phaseCalendar = run("createCalendar(sessions.filter(s => s.booth === 'S07'))").replace(/\r\n /g, '');
+  assert(phaseCalendar.includes('DTSTART:20260918T113000Z'));
+  assert(phaseCalendar.includes('DTEND:20260918T120000Z'));
+  assert(phaseCalendar.includes('DTSTART:20260919T170000Z'));
+  assert(phaseCalendar.includes('DTSTART:20260920T143000Z'));
   assert.equal(fs.readdirSync('conventions/vexpo-2026/sources').filter(s => /\.(png|jpe?g)$/i.test(s)).length, 0);
   const originalFetch = context.fetch;
   context.fetch = async () => ({ok: false});
@@ -155,5 +197,5 @@ setImmediate(async () => {
   context.fetch = originalFetch;
   run('delete config.socials');
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);
-  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  184 sessions; 141 meet-and-greets including 43 unofficial booth slots; 8 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
+  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 147 meet-and-greets including 49 unofficial booth slots; 9 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
 });

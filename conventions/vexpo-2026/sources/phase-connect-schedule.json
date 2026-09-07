@@ -1,0 +1,294 @@
+{
+  "checked_on": "2026-09-06",
+  "organizers": [
+    "Phase Connect"
+  ],
+  "booth": "S07",
+  "timezone": "Europe/London",
+  "timezone_abbreviation": "BST",
+  "utc_offset": "+01:00",
+  "sources": [
+    {
+      "id": "phase-connect-poster",
+      "type": "poster",
+      "url": "https://x.com/PhaseConnect",
+      "locator": "VeXpo September 18–20 Phase Connect schedule, Booth S07; Friday, Saturday, Saturday continued, and Sunday sections",
+      "notes": "User-supplied schedule image. URL identifies the publisher account; the exact announcement permalink has not been established. The poster states all times are BST."
+    },
+    {
+      "id": "vexpo-stages",
+      "type": "webpage",
+      "url": "https://vexpo.uk/stages-panels",
+      "locator": "PhaseVision and Sunday Jubilee Stage Would WE Lie to You? descriptions"
+    },
+    {
+      "id": "vexpo-meet-greets",
+      "type": "webpage",
+      "url": "https://vexpo.uk/meet-greets",
+      "locator": "Existing official Remilia Nephys, Erina Makina, Wilhelmina Frost, and Komachi Panko appointments"
+    },
+    {
+      "id": "quest-roster",
+      "type": "webpage",
+      "url": "https://shop.phase-connect.com/products/phase-invaders-quest-official-model-standee-bundle",
+      "locator": "Official model bundle naming Clio Aite, Eepy Sleepy, and Mari Mari",
+      "notes": "Used to identify the three illustrated Quest Teatime participants; the schedule poster itself does not print their individual names."
+    }
+  ],
+  "date_basis": "Poster dates September 18–20 and Friday–Sunday map to the existing VeXpo 2026 edition. BST is UTC+01:00.",
+  "classification_basis": "Six poster entries explicitly carry Official VeXpo Event labels. The other eight are exhibitor booth activities, tagged unofficial in this planner; this is an interpretation of the poster distinction.",
+  "merge_notes": "Eight new booth sessions added; five official listings matched without duplication; the existing Sunday 11:00 Jubilee Stage placeholder was updated with the game-show title and named lineup. Existing official M&G booth numbers, prices, and formats retained from VeXpo data.",
+  "social_research": {
+    "profile_data": "../socials.json",
+    "new_profiles_matched": 7,
+    "notes": "Creator identities and canonical X handles checked via public profile data. Rinkou Ashelia is Lia; Jelly Hoshiumi is distinct from the previously listed Jelly (jellydoughnut__)."
+  },
+  "sessions": [
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "12:30",
+      "end_time": "13:00",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Komachi Panko — Karaoke",
+      "participants": [
+        "Komachi Panko"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "15:30",
+      "end_time": "16:30",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Bibi Biscuit — Meet & Greet",
+      "participants": [
+        "Bibi Biscuit"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "17:00",
+      "end_time": "17:30",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Eimi Isami — Meet & Greet",
+      "participants": [
+        "Eimi Isami"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "18:00",
+      "end_time": "18:30",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Rinkou Ashelia — Meet & Greet",
+      "participants": [
+        "Rinkou Ashelia"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "stage": "MONARCH STAGE",
+      "event": "PhaseVision",
+      "participants": [
+        "Clio Aite",
+        "Fujikura Uruka",
+        "Tenma Maemi",
+        "Dizzy Dokuro",
+        "Wilhelmina Frost",
+        "Mari Mari",
+        "Komachi Panko"
+      ],
+      "event_status": "official",
+      "source_ids": [
+        "phase-connect-poster",
+        "vexpo-stages"
+      ],
+      "action": "matched_existing"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Malice Evermore — Meet & Greet",
+      "participants": [
+        "Malice Evermore"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "15:00",
+      "end_time": "16:00",
+      "stage": "M&G Booth 6",
+      "event": "Remilia Nephys — Meet & Greet",
+      "participants": [
+        "Remilia Nephys"
+      ],
+      "event_status": "official",
+      "source_ids": [
+        "phase-connect-poster",
+        "vexpo-meet-greets"
+      ],
+      "action": "matched_existing"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Kaneko Lumi — Meet & Greet",
+      "participants": [
+        "Kaneko Lumi"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "18:00",
+      "end_time": "18:30",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Quest Teatime",
+      "participants": [
+        "Clio Aite",
+        "Eepy Sleepy",
+        "Mari Mari"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster",
+        "quest-roster"
+      ],
+      "action": "added"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "19:00",
+      "end_time": "20:00",
+      "stage": "M&G Booth 6",
+      "event": "Erina Makina — Meet & Greet",
+      "participants": [
+        "Erina Makina"
+      ],
+      "event_status": "official",
+      "source_ids": [
+        "phase-connect-poster",
+        "vexpo-meet-greets"
+      ],
+      "action": "matched_existing"
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "stage": "JUBILEE STAGE",
+      "event": "Would WE Lie to You?",
+      "participants": [
+        "Malice Evermore",
+        "Wilhelmina Frost",
+        "Kaneko Lumi",
+        "Rinkou Ashelia",
+        "Tenma Maemi",
+        "Clio Aite",
+        "Mari Mari",
+        "Eimi Isami"
+      ],
+      "event_status": "official",
+      "source_ids": [
+        "phase-connect-poster",
+        "vexpo-stages"
+      ],
+      "action": "updated_placeholder"
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "12:30",
+      "end_time": "13:30",
+      "stage": "M&G Booth 6",
+      "event": "Wilhelmina Frost — Meet & Greet",
+      "participants": [
+        "Wilhelmina Frost"
+      ],
+      "event_status": "official",
+      "source_ids": [
+        "phase-connect-poster",
+        "vexpo-meet-greets"
+      ],
+      "action": "matched_existing"
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "stage": "M&G Booth 5",
+      "event": "Komachi Panko — Meet & Greet",
+      "participants": [
+        "Komachi Panko"
+      ],
+      "event_status": "official",
+      "source_ids": [
+        "phase-connect-poster",
+        "vexpo-meet-greets"
+      ],
+      "action": "matched_existing"
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "15:30",
+      "end_time": "16:30",
+      "stage": "Phase Connect - Booth S07",
+      "event": "Jelly Hoshiumi — Meet & Greet",
+      "participants": [
+        "Jelly Hoshiumi"
+      ],
+      "event_status": "unofficial",
+      "source_ids": [
+        "phase-connect-poster"
+      ],
+      "action": "added"
+    }
+  ]
+}

@@ -1848,6 +1848,57 @@
         "https://vtubie.com/lucks-shi/"
       ],
       "checked_on": "2026-09-05"
+    },
+    "Bibi Biscuit": {
+      "x": "https://x.com/BibiBiscuitCh",
+      "sources": [
+        "https://api.fxtwitter.com/BibiBiscuitCh"
+      ],
+      "checked_on": "2026-09-06"
+    },
+    "Eepy Sleepy": {
+      "x": "https://x.com/EepySleepyCh",
+      "sources": [
+        "https://api.fxtwitter.com/EepySleepyCh"
+      ],
+      "checked_on": "2026-09-06"
+    },
+    "Eimi Isami": {
+      "x": "https://x.com/eimiisami",
+      "sources": [
+        "https://api.fxtwitter.com/eimiisami"
+      ],
+      "checked_on": "2026-09-06"
+    },
+    "Jelly Hoshiumi": {
+      "x": "https://x.com/jellyhoshiumi",
+      "sources": [
+        "https://api.fxtwitter.com/jellyhoshiumi"
+      ],
+      "checked_on": "2026-09-06",
+      "notes": "Phase Connect talent; distinct from Jelly (jellydoughnut__) at the florAtelier booth."
+    },
+    "Kaneko Lumi": {
+      "x": "https://x.com/Kaneko_Lumi",
+      "sources": [
+        "https://api.fxtwitter.com/Kaneko_Lumi"
+      ],
+      "checked_on": "2026-09-06"
+    },
+    "Malice Evermore": {
+      "x": "https://x.com/MaliceEvermore",
+      "sources": [
+        "https://api.fxtwitter.com/MaliceEvermore"
+      ],
+      "checked_on": "2026-09-06"
+    },
+    "Rinkou Ashelia": {
+      "x": "https://x.com/rinkouashelia",
+      "sources": [
+        "https://api.fxtwitter.com/rinkouashelia"
+      ],
+      "checked_on": "2026-09-06",
+      "notes": "Poster uses Rinkou Ashelia; the account display name is Lia. The account links to the RinkouAshelia YouTube channel."
     }
   }
 }
