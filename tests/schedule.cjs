@@ -30,6 +30,45 @@ setImmediate(async () => {
   assert.equal(hours.children[1].children[1].children[1].children.length, 2);
 
   const change = (id, value, checked = false) => { elements[id][checked ? 'checked' : 'value'] = value; elements[id].handlers.change(); };
+  const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
+  assert.deepEqual(statusOptions(), [
+    ['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial'],
+    ['organizer:florAtelier', 'florAtelier'], ['organizer:Phase Connect', 'Phase Connect']
+  ]);
+  change('#event-status', 'organizer:Phase Connect'); assert.equal(count(), 14);
+  assert.equal(run("filteredSessions().filter(s => s.event_status === 'official').length"), 6);
+  assert.equal(run("filteredSessions().filter(s => s.event_status === 'unofficial').length"), 8);
+  const organizerCalendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
+  assert.equal((organizerCalendar.match(/BEGIN:VEVENT/g) || []).length, 14);
+  assert(organizerCalendar.includes('Organizer: Phase Connect'));
+  change('#meet-greets', 'only'); assert.equal(count(), 10);
+  change('#meet-greets', 'exclude'); assert.equal(count(), 4);
+  change('#concerts', true, true); assert.equal(count(), 2);
+  elements['#reset'].click();
+  change('#event-status', 'organizer:florAtelier'); assert.equal(count(), 44);
+  change('#meet-greets', 'only'); assert.equal(count(), 43);
+  change('#meet-greets', 'exclude'); assert.equal(count(), 1);
+  assert(run("filteredSessions()[0].event.includes('International Rizzlers')"));
+  assert.equal(run('filteredSessions()[0].event_status'), 'official');
+  elements['#reset'].click();
+  change('#event-status', 'organizer:Phase Connect');
+  elements['.days'].children[2].click(); assert.equal(count(), 6);
+  change('#stage', 'Phase Connect - Booth S07'); assert.equal(count(), 3);
+  elements['#search'].value = 'Kaneko'; elements['#search'].handlers.input(); assert.equal(count(), 1);
+  elements['#reset'].click();
+  assert.equal(elements['#event-status'].value, 'all'); assert.equal(count(), 192);
+  elements['#search'].value = 'Phase Connect'; elements['#search'].handlers.input(); assert.equal(count(), 14);
+  elements['#reset'].click();
+  // New groups need only CSV data; missing fields retain the original status filters.
+  run("const originalOrganizerSessions = sessions; sessions = [{...sessions[0], event_status: 'official', organizer: ' Community & Friends '}, {...sessions[0], event_status: 'official', organizer: 'Community & Friends'}, {...sessions[0], event_status: 'official', organizer: 'official'}, {...sessions[0], event_status: 'official', organizer: undefined}]; setupEventStatus()");
+  assert.deepEqual(statusOptions().slice(3), [['organizer:Community & Friends', 'Community & Friends'], ['organizer:official', 'official']]);
+  change('#event-status', 'organizer:Community & Friends'); assert.equal(count(), 2);
+  change('#event-status', 'organizer:official'); assert.equal(count(), 1);
+  change('#event-status', 'official'); assert.equal(count(), 4);
+  run('sessions = [{...originalOrganizerSessions[0]}]; delete sessions[0].organizer; setupEventStatus()');
+  assert.equal(statusOptions().length, 3); assert.equal(count(), 1);
+  run('sessions = originalOrganizerSessions; setupEventStatus()');
+  elements['#reset'].click();
   const people = run("card({...sessions[0], participants: 'Mint Fantôme; A & B'})").children.find(e => e.className === 'people');
   assert.equal(people.children.length, 2);
   const primary = people.children[0].children[1];
@@ -126,6 +165,10 @@ setImmediate(async () => {
   const snapshot = JSON.parse(fs.readFileSync('conventions/vexpo-2026/sources/participants.json', 'utf8'));
   assert.equal(snapshot.length, 192); assert.equal(snapshot.filter(s => s.is_meet_greet).length, 147);
   assert.equal(snapshot.filter(s => s.event_status === 'official').length, 141);
+  for (const item of snapshot) {
+    const session = run('sessions').find(s => s.day === item.day && s.start_time === item.start_time && s.stage === item.stage);
+    assert.equal(item.organizer, session.organizer);
+  }
   const unofficial = snapshot.filter(s => s.event_status === 'unofficial');
   assert.equal(unofficial.length, 51);
   for (const session of unofficial) {
@@ -197,5 +240,5 @@ setImmediate(async () => {
   context.fetch = originalFetch;
   run('delete config.socials');
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);
-  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 147 meet-and-greets including 49 unofficial booth slots; 9 concerts; search, status tags, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
+  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 147 meet-and-greets including 49 unofficial booth slots; 9 concerts; search, status and organizer filters, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
 });

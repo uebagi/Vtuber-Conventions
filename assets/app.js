@@ -127,6 +127,7 @@ const announced = document.querySelector('#announced');
 const concerts = document.querySelector('#concerts');
 const meetGreets = document.querySelector('#meet-greets');
 const eventStatus = document.querySelector('#event-status');
+const organizerFor = session => (session.organizer || '').trim();
 const statusLabel = session => ({ official: 'Official', unofficial: 'Unofficial' }[session.event_status] || 'Status unconfirmed');
 const schedule = document.querySelector('#schedule');
 const status = document.querySelector('#status');
@@ -157,6 +158,7 @@ function createCalendar(items, now = new Date()) {
       `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : '–' + session.end_time} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
       session.participants ? `Participants: ${session.participants}` : isTimeMarker(session) ? '' : 'Participants not announced.',
       `Event status: ${statusLabel(session)}`,
+      organizerFor(session) ? `Organizer: ${organizerFor(session)}` : '',
       session.is_meet_greet === 'true' ? `Meet & greet: ${session.meet_greet_type}; price: ${session.price}; booth: ${session.booth}` : '',
       session.lineup_notes,
       'Fan-maintained schedule snapshot; check the source listing for changes.',
@@ -230,6 +232,31 @@ function card(session) {
   article.append(download); return article;
 }
 
+function setupEventStatus() {
+  eventStatus.replaceChildren();
+  const choices = [
+    ['all', 'Official & unofficial'],
+    ['official', 'Official'],
+    ['unofficial', 'Unofficial'],
+    ...[...new Set(sessions.map(organizerFor).filter(Boolean))]
+      .sort((a, b) => a.localeCompare(b, 'en-US', { sensitivity: 'base' }))
+      .map(name => [`organizer:${name}`, name])
+  ];
+  for (const [value, label] of choices) {
+    const option = el('option', '', label);
+    option.value = value;
+    eventStatus.append(option);
+  }
+  eventStatus.value = 'all';
+}
+
+function matchesEventStatus(session) {
+  const selected = eventStatus.value;
+  if (selected === 'all') return true;
+  if (selected.startsWith('organizer:')) return organizerFor(session) === selected.slice('organizer:'.length);
+  return session.event_status === selected;
+}
+
 function filteredSessions() {
   const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
   return sessions.filter(s => (selectedDay === 'all' || s.date === selectedDay)
@@ -237,8 +264,8 @@ function filteredSessions() {
     && (!announced.checked || s.lineup_status !== 'unannounced')
     && (!concerts.checked || s.is_concert === 'true')
     && (meetGreets.value === 'all' || (meetGreets.value === 'only' ? s.is_meet_greet === 'true' : s.is_meet_greet !== 'true'))
-    && (eventStatus.value === 'all' || s.event_status === eventStatus.value)
-    && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status].join(' ')).includes(term)));
+    && matchesEventStatus(s)
+    && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status, organizerFor(s)].join(' ')).includes(term)));
 }
 
 function render() {
@@ -299,6 +326,7 @@ async function load() {
     sessions.sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
     [...new Set(sessions.map(s => s.stage))].sort().forEach(name => { const option = el('option', '', name); option.value = name; stage.append(option); });
     setupDays();
+    setupEventStatus();
     render();
   } catch (error) {
     status.textContent = 'The schedule could not be loaded.';

@@ -85,11 +85,14 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | `is_concert`, `is_meet_greet` | Lowercase `true` or `false` for each filter |
 | `concert_classification_notes` | Reason for the concert classification |
 | `event_status` | `official` or `unofficial`; missing values display as unconfirmed |
+| `organizer` | Optional organizer/group name; use the same spelling on all of its sessions |
 | `meet_greet_type`, `price`, `booth` | Meet-and-greet format, published price, and booth; otherwise leave empty |
 
 Use one row per published slot. Keep shared meet-and-greet slots together, with each participant listed separately in `participants`. Record whether times describe availability windows or individual appointments. Use `Not listed` for an unpublished price; do not assume it is free.
 
 Official/unofficial labels describe the session's status. Include supporting source links and explain uncertain classifications in the notes. Concert classification is maintained manually through `is_concert`.
+
+The Event status dropdown lists Official & unofficial, Official, Unofficial, then the distinct nonempty `organizer` names from the CSV. Selecting an organizer includes all of its tagged official and unofficial sessions and combines with the other filters and calendar download. Assign it to sessions the group organizes or presents, including its booth events and official stage/panel appearances; do not tag unrelated sessions just because an affiliated performer appears. Leave it empty when there is no specific group to filter by. Adding an organizer requires only data changes, with no HTML or JavaScript edits. Organizer names are also searchable and included in calendar descriptions.
 
 Keep research, transcriptions, and source conflicts in the convention's `sources/` folder. Those files do not drive the website. If you maintain a `sources/participants.json` snapshot, update it alongside the CSV.
 
