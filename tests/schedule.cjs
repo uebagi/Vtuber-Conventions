@@ -47,6 +47,7 @@ setImmediate(async () => {
   const statusOptions = () => elements['#event-status'].children.map(option => [option.value, option.textContent]);
   assert.deepEqual(statusOptions(), [
     ['all', 'Official & unofficial'], ['official', 'Official'], ['unofficial', 'Unofficial'],
+    ['organizer:a:VEnue', 'a:VEnue'], ['organizer:ChromaSHIFT', 'ChromaSHIFT'],
     ['organizer:florAtelier', 'florAtelier'], ['organizer:Phase Connect', 'Phase Connect']
   ]);
   change('#event-status', 'organizer:Phase Connect'); assert.equal(count(), 14);
@@ -111,7 +112,7 @@ setImmediate(async () => {
   run("delete socialProfiles.Unsafe");
   const socialData = JSON.parse(fs.readFileSync('conventions/vexpo-2026/socials.json', 'utf8'));
   const participantNames = new Set(run("sessions.flatMap(s => s.participants.split(';').map(n => n.trim()).filter(Boolean))"));
-  assert.equal(participantNames.size, 205);
+  assert.equal(participantNames.size, 219);
   for (const name of participantNames) {
     assert(Object.hasOwn(socialData.profiles, name), `Missing social research: ${name}`);
     const profile = socialData.profiles[name];
@@ -121,7 +122,7 @@ setImmediate(async () => {
       profile.sources.forEach(source => assert.equal(new URL(source).protocol, 'https:'));
     }
   }
-  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 204);
+  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 218);
   assert.equal(Object.values(socialData.profiles).filter(p => p.primary).length, 136);
   for (const profile of Object.values(socialData.profiles)) {
     if (profile.primary) {
@@ -143,9 +144,9 @@ setImmediate(async () => {
   assert(ironmouse.includes('price: Free'));
   assert(ironmouse.includes('CATEGORIES:Official,Meet & Greet'));
   elements['#reset'].click(); assert.equal(count(), 192);
-  change('#concerts', true, true); assert.equal(count(), 9);
+  change('#concerts', true, true); assert.equal(count(), 12);
   change('#meet-greets', 'only'); assert.equal(elements['#concerts'].checked, false); assert.equal(count(), 147);
-  change('#concerts', true, true); assert.equal(elements['#meet-greets'].value, 'exclude'); assert.equal(count(), 9);
+  change('#concerts', true, true); assert.equal(elements['#meet-greets'].value, 'exclude'); assert.equal(count(), 12);
   elements['#reset'].click(); change('#event-status', 'unofficial'); assert.equal(count(), 51);
   assert.equal(elements['#download-calendar'].disabled, false);
   change('#meet-greets', 'only'); assert.equal(count(), 49);
@@ -254,5 +255,5 @@ setImmediate(async () => {
   context.fetch = originalFetch;
   run('delete config.socials');
   assert.equal(Object.keys(await run('loadSocials()')).length, 0);
-  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 147 meet-and-greets including 49 unofficial booth slots; 9 concerts; search, status and organizer filters, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
+  console.log('PASS: Researched direct X profiles, aliases, unknown/unsafe links, optional social data;  192 sessions; 147 meet-and-greets including 49 unofficial booth slots; 12 concerts; search, status and organizer filters, reset, three-way meet-and-greet filter, calendar metadata/time conversion/unique IDs, and image removal.');
 });

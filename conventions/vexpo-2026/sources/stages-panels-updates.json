@@ -1,0 +1,157 @@
+{
+  "checked_on": "2026-09-07",
+  "sources": [
+    {
+      "id": "official-stages-panels",
+      "url": "https://vexpo.uk/stages-panels",
+      "type": "official_schedule",
+      "locator": "Saturday timetable and session descriptions for Monarch Stage and Jubilee Stage"
+    },
+    {
+      "id": "msat2-poster",
+      "url": "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/428ffe29-3326-40c7-86c8-949d29263964/Chromatique.png",
+      "type": "official_poster",
+      "locator": "ChromaSHIFT Presents: Chromatique 3D Concert - Birmingham poster linked in the Saturday session listing"
+    },
+    {
+      "id": "msat4-poster",
+      "url": "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/3c5cff57-1e81-4a9d-9bb8-d0f229c5f3de/IronmouseAndConnor.png",
+      "type": "official_poster",
+      "locator": "Ironmouse & Connor Panel poster linked in the Saturday session listing"
+    },
+    {
+      "id": "msat5-poster",
+      "url": "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/6954c7d6-8538-4311-b762-ee59d500e349/GroupAgencyConcert.png",
+      "type": "official_poster",
+      "locator": "Group & Agency Concert poster linked in the Saturday session listing"
+    },
+    {
+      "id": "jsat4-poster",
+      "url": "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/bc0f7667-668a-4342-9a69-207646207811/AvenueHousewarming.png",
+      "type": "official_poster",
+      "locator": "a:VEnue Debut LIVE: Housewarming Party poster linked in the Saturday session listing"
+    }
+  ],
+  "comparison": {
+    "stage_panel_slots_checked": 43,
+    "previously_unannounced_slots_named": 4,
+    "time_or_location_changes": 0,
+    "notes": "The remaining 39 titles and all slot times match the saved schedule. Other named hosts and participants are unchanged; the existing Would WE Lie to You? lineup already includes all newly listed Phase Connect guests."
+  },
+  "sessions": [
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "stage": "MONARCH STAGE",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "timezone": "Europe/London",
+      "event": "ChromaSHIFT Presents: Chromatique 3D Concert - Birmingham",
+      "previous_event": "???",
+      "participants": [
+        "ChromaSHIFT"
+      ],
+      "is_concert": true,
+      "event_status": "official",
+      "organizer": "ChromaSHIFT",
+      "notes": "Full ChromaSHIFT roster announced as a group; individual performers are not named on this concert listing or poster.",
+      "source_ids": [
+        "official-stages-panels",
+        "msat2-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "stage": "MONARCH STAGE",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "timezone": "Europe/London",
+      "event": "Ironmouse & Connor Panel",
+      "previous_event": "???",
+      "participants": [
+        "Ironmouse",
+        "CDawgVA"
+      ],
+      "is_concert": false,
+      "event_status": "official",
+      "organizer": "",
+      "notes": "Ironmouse and CDawgVA (Connor) are named in the official panel listing.",
+      "source_ids": [
+        "official-stages-panels",
+        "msat4-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "stage": "MONARCH STAGE",
+      "start_time": "18:00",
+      "end_time": "20:00",
+      "timezone": "Europe/London",
+      "event": "Group & Agency Concert",
+      "previous_event": "???",
+      "participants": [
+        "Akugaki Koa",
+        "Riki Poppet",
+        "Cersea Soulstorm",
+        "Lalabell Lullaby",
+        "Enya Ignis",
+        "Avaritia Hawthorne",
+        "Katya Sable",
+        "Leia Memoria",
+        "Cecilia Lent",
+        "Embyr Sparks",
+        "Tequila",
+        "DEV",
+        "Effy",
+        "Faminé",
+        "Midnight",
+        "Kairyu Crocodile",
+        "Tori Oriane",
+        "PiaPiUFO",
+        "BeriBug",
+        "TRiGGERPHiSH",
+        "Lan Philia",
+        "MaeFae",
+        "Eru Erudite",
+        "Veilyn",
+        "Kumisa Umare",
+        "Kyuru Rin"
+      ],
+      "is_concert": true,
+      "event_status": "official",
+      "organizer": "",
+      "notes": "26 performers named on the official Group & Agency Concert poster, representing ChromaSHIFT, Variance Project, Algorhythm Project, BEASTIEZ and Aegis-Link. Free entry for all attendees.",
+      "source_ids": [
+        "official-stages-panels",
+        "msat5-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "stage": "JUBILEE STAGE",
+      "start_time": "16:30",
+      "end_time": "17:30",
+      "timezone": "Europe/London",
+      "event": "a:VEnue Debut LIVE: Housewarming Party",
+      "previous_event": "???",
+      "participants": [
+        "Utano Pandora",
+        "Hazumi Aileen",
+        "Nina Saotome",
+        "Aokami Nova",
+        "Ayla Yew"
+      ],
+      "is_concert": true,
+      "event_status": "official",
+      "organizer": "a:VEnue",
+      "notes": "Debut concert for a:VEnue with all five members named in the official listing. Aokami Nova is listed as Nova Aokami on her social profile.",
+      "source_ids": [
+        "official-stages-panels",
+        "jsat4-poster"
+      ]
+    }
+  ]
+}

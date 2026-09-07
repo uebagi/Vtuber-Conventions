@@ -1899,6 +1899,113 @@
       ],
       "checked_on": "2026-09-06",
       "notes": "Poster uses Rinkou Ashelia; the account display name is Lia. The account links to the RinkouAshelia YouTube channel."
+    },
+    "ChromaSHIFT": {
+      "x": "https://x.com/ChromaSHIFT_FTW",
+      "sources": [
+        "https://chroma-shift.com/",
+        "https://x.com/ChromaSHIFT_BUS",
+        "https://x.com/ChromaSHIFT_FTW"
+      ],
+      "checked_on": "2026-09-07",
+      "notes": "The former ChromaSHIFT_BUS profile directs visitors to ChromaSHIFT_FTW, also linked by the official site."
+    },
+    "Riki Poppet": {
+      "x": "https://x.com/RikiPoppet",
+      "sources": [
+        "https://x.com/RikiPoppet/status/2034344084245021176",
+        "https://x.com/RikiPoppet"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Cersea Soulstorm": {
+      "x": "https://x.com/cerseasoulstorm",
+      "sources": [
+        "https://chroma-shift.com/talent/cersea-soulstorm/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Lalabell Lullaby": {
+      "x": "https://x.com/LalabellLullaby",
+      "sources": [
+        "https://chroma-shift.com/talent/lalabell-lullaby/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Enya Ignis": {
+      "x": "https://x.com/EnyaIgnis",
+      "sources": [
+        "https://chroma-shift.com/talent/enya-ignis/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Tequila": {
+      "x": "https://x.com/Tequila_ARP",
+      "sources": [
+        "https://algorhythm.realic.net/links/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "DEV": {
+      "x": "https://x.com/DEV_ARP",
+      "sources": [
+        "https://algorhythm.realic.net/links/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Effy": {
+      "x": "https://x.com/Effy_ARP",
+      "sources": [
+        "https://algorhythm.realic.net/links/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Faminé": {
+      "x": "https://x.com/Famine_ARP",
+      "sources": [
+        "https://algorhythm.realic.net/links/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Midnight": {
+      "x": "https://x.com/Midnight12AMARP",
+      "sources": [
+        "https://algorhythm.realic.net/links/"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Utano Pandora": {
+      "x": "https://x.com/UtanoPandora",
+      "sources": [
+        "https://x.com/aVEnueChannel",
+        "https://x.com/UtanoPandora"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Hazumi Aileen": {
+      "x": "https://x.com/hazumiaileen",
+      "sources": [
+        "https://x.com/aVEnueChannel",
+        "https://x.com/hazumiaileen"
+      ],
+      "checked_on": "2026-09-07"
+    },
+    "Aokami Nova": {
+      "x": "https://x.com/NovaAokami",
+      "sources": [
+        "https://x.com/aVEnueChannel",
+        "https://x.com/NovaAokami"
+      ],
+      "checked_on": "2026-09-07",
+      "notes": "Billed as Aokami Nova by VeXpo; her own profile and a:VEnue list Nova Aokami."
+    },
+    "Ayla Yew": {
+      "x": "https://x.com/AylaYew",
+      "sources": [
+        "https://x.com/aVEnueChannel",
+        "https://x.com/AylaYew"
+      ],
+      "checked_on": "2026-09-07"
     }
   }
 }
