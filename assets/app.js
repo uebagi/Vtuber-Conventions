@@ -217,7 +217,7 @@ function createCalendar(items, now = new Date()) {
       session.participant_source_urls || session.source_url
     ].filter(Boolean).join('\n\n');
     // A slot retains its identity when an unannounced title or lineup is updated.
-    const uid = `${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/[^a-z0-9]+/g, '-')}@${config.uidDomain || config.eventId}`;
+    const uid = session.calendar_uid?.replace(/[\r\n]/g, '') || `${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/[^a-z0-9]+/g, '-')}@${config.uidDomain || config.eventId}`;
     lines.push('BEGIN:VEVENT', `UID:${uid}`, `DTSTAMP:${calendarTimestamp(now)}`,
       `DTSTART:${calendarTimestamp(`${session.date}T${session.start_time}:00${session.utc_offset}`)}`,
       ...(isTimeMarker(session) || !session.end_time ? [] : [`DTEND:${calendarTimestamp(`${session.date}T${session.end_time}:00${session.utc_offset}`)}`]),

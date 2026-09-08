@@ -370,6 +370,9 @@ setImmediate(async () => {
   assert(afterpartyCalendar.includes('DTSTART:20260918T224500Z'));
   assert(!afterpartyCalendar.includes('DTEND:'));
   assert(!afterpartyCalendar.includes('NEC, Birmingham'));
+  assert(afterpartyCalendar.includes('Premier Inn NEC'));
+  assert(afterpartyCalendar.includes('UID:2026-09-18-2345-hukec-afterparty-venue-unconfirmed-@vexpo-fan-planner'));
+  assert(!afterparty.stage.includes('unconfirmed'));
   assert(afterpartyCalendar.includes('end time unannounced'));
   assert(!run("sessions.some(s => s.organizer.includes('Veizo'))"));
   const originalFetch = context.fetch;

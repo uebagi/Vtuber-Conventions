@@ -5007,13 +5007,13 @@
     "venue": ""
   },
   {
-    "stage": "HUKEC afterparty (venue unconfirmed)",
+    "stage": "HUKEC afterparty - Premier Inn NEC",
     "day": "Friday",
     "event": "Midnight Malarkey — Friday Afterparty",
     "start_time": "23:45",
     "listed_hosts": "Eruu Claymie; Sedric Alfiere; Ekkomori; Ruridori Kafka; Penny Puffball",
     "participants": "Eruu Claymie; Sedric Alfiere; Ekkomori; Ruridori Kafka; Penny Puffball",
-    "lineup_notes": "Unofficial Friday afterparty featuring a five-talent concert. Starts September 18 at 23:45 BST; end time and venue not published. Organizer directs attendees to its Discord for details. Free drinks advertised; admission price not listed. Poster spells Eruu Claymie as Eruu Clayme.",
+    "lineup_notes": "Unofficial Friday afterparty featuring a five-talent concert. Starts September 18 at 23:45 BST; end time not published. Venue confirmed by the user as Premier Inn NEC. Organizer directs attendees to its Discord for details. Free drinks advertised; admission price not listed. Poster spells Eruu Claymie as Eruu Clayme.",
     "participant_source_urls": "https://x.com/HololiveUKEC/status/2094817647149850917",
     "lineup_status": "named lineup published",
     "is_concert": true,
@@ -5026,6 +5026,7 @@
     "organizer": "HUKEC",
     "date": "2026-09-18",
     "end_time": "",
-    "venue": "Venue unconfirmed"
+    "venue": "Premier Inn NEC",
+    "calendar_uid": "2026-09-18-2345-hukec-afterparty-venue-unconfirmed-@vexpo-fan-planner"
   }
 ]

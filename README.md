@@ -75,6 +75,7 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | `timezone` | Timezone identifier, such as `Europe/London` |
 | `timezone_abbreviation`, `utc_offset` | Local label and offset applicable on that date, such as `BST`, `+01:00` |
 | `stage` | Stage, room, or booth name; used by the location filter |
+| `calendar_uid` | Optional existing calendar UID to preserve when correcting a location or time |
 | `venue` | Optional per-session venue override for offsite events; otherwise uses the convention venue |
 | `event_type` | Optional `opening` or `closing` for a single-time schedule marker; leave empty for regular sessions |
 | `event` | Session title; `???` displays as “To be announced” |
