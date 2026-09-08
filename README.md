@@ -103,7 +103,7 @@ Use `organizer` for groups that organize, present, or are explicitly featured in
 
 ### Event types
 
-Keep the `#event-types` checkbox menu from the template. All events is selected by default. Selecting individual types matches any selected type, without duplicate cards; clearing every checkbox shows no results. It replaces Concerts only and the meet-and-greet selector. Concerts use `is_concert`; meet-and-greets use `is_meet_greet` and include roaming. Roaming uses `meet_greet_type=Roaming`; afterparties use `event_type=afterparty`. Stages & panels includes other sessions. Combined events may match multiple types. Exclude meet & greets remains available. New links use comma-separated `type` values (`none` for no selection); existing `concerts` and `meet-greets` links still restore their original restrictions. Reset selects All events and clears legacy restrictions.
+Keep the `#event-types` checkbox menu from the template. All events is selected by default. Selecting individual types matches any selected type, without duplicate cards; clearing every checkbox shows no results. It replaces Concerts only and the meet-and-greet selector. Concerts use `is_concert`; meet-and-greets use `is_meet_greet` and include roaming. Roaming uses `meet_greet_type=Roaming`; afterparties use `event_type=afterparty`. Stages & panels includes other sessions. Combined events may match multiple types. The former Exclude meet & greets option is supported only in old shared links. New links use comma-separated `type` values (`none` for no selection); existing `concerts` and `meet-greets` links still restore their original restrictions. Reset selects All events and clears legacy restrictions.
 
 ### Shareable filters
 

@@ -13,6 +13,7 @@ class Element {
 const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#event-types', '#event-types-summary', '#event-status', '#group', '#talent', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
 elements['#group'].value = elements['#stage'].value = elements['#event-status'].value = elements['#event-types'].value = 'all';
 const html = fs.readFileSync('conventions/vexpo-2026/index.html', 'utf8');
+assert(!html.includes('value="exclude-meet-greets"'));
 assert(!html.includes('id="concerts"')); assert(!html.includes('id="meet-greets"'));
 const typeMarkup = html.match(/<details id="event-types".*?<fieldset>(.*?)<\/fieldset>/s)[1];
 for (const [, value] of typeMarkup.matchAll(/value="([^"]+)"/g)) { const option = new Element(); option.value = value; elements['#event-types'].append(option); }
@@ -29,7 +30,7 @@ setImmediate(() => {
   const run = code => vm.runInContext(code, context);
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };
-  for (const [type, expected] of [['all', 215], ['concert', 14], ['meet-greet', 169], ['roaming', 9], ['afterparty', 1], ['stage-panel', 33], ['exclude-meet-greets', 46]]) {
+  for (const [type, expected] of [['all', 215], ['concert', 14], ['meet-greet', 169], ['roaming', 9], ['afterparty', 1], ['stage-panel', 33]]) {
     select(type); assert.equal(run('filteredSessions().length'), expected, type);
     const url = context.location.href;
     assert.equal(new URL(url).searchParams.get('type'), type === 'all' ? null : type);
