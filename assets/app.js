@@ -173,7 +173,16 @@ const stage = document.querySelector('#stage');
 const announced = document.querySelector('#announced');
 const concerts = document.querySelector('#concerts') || {checked: false, addEventListener() {}};
 const meetGreets = document.querySelector('#meet-greets') || {value: 'all', children: ['all', 'only', 'exclude'].map(value => ({value})), addEventListener() {}};
-const eventType = document.querySelector('#event-type');
+const typeValues = ['all', 'stage-panel', 'concert', 'meet-greet', 'roaming', 'afterparty', 'exclude-meet-greets'];
+const eventType = document.querySelector('#event-type') || {value: 'all', children: typeValues.map(value => ({value})), addEventListener() {}};
+const typeMenu = document.querySelector('#event-types');
+const typeCheckboxes = typeMenu ? [...typeMenu.querySelectorAll('input[type=checkbox]')] : [];
+let selectedTypes = new Set(['all']);
+function updateTypeMenu() {
+  for (const box of typeCheckboxes) box.checked = selectedTypes.has(box.value);
+  const summary = document.querySelector('#event-types-summary');
+  if (summary) summary.textContent = selectedTypes.has('all') ? 'All events' : selectedTypes.size ? `${selectedTypes.size} selected` : 'None selected';
+}
 const eventStatus = document.querySelector('#event-status');
 const groupFilter = document.querySelector('#group');
 const talentFilter = document.querySelector('#talent');
@@ -335,8 +344,7 @@ function matchesEventStatus(session) {
   return eventStatus.value === 'all' || session.event_status === eventStatus.value;
 }
 
-function matchesEventType(session) {
-  const type = eventType?.value || 'all';
+function matchesType(session, type) {
   if (type === 'all') return true;
   if (type === 'concert') return session.is_concert === 'true';
   if (type === 'meet-greet') return session.is_meet_greet === 'true';
@@ -345,6 +353,10 @@ function matchesEventType(session) {
   if (type === 'stage-panel') return session.is_meet_greet !== 'true' && session.is_concert !== 'true' && session.event_type !== 'afterparty';
   if (type === 'exclude-meet-greets') return session.is_meet_greet !== 'true';
   return false;
+}
+
+function matchesEventType(session) {
+  return typeMenu ? [...selectedTypes].some(type => matchesType(session, type)) : matchesType(session, eventType.value);
 }
 
 function filteredSessions() {
@@ -376,12 +388,19 @@ function restoreFiltersFromURL() {
   if (eventType && !params.has('type')) {
     eventType.value = meetGreets.value === 'only' ? 'meet-greet' : concerts.checked ? 'concert' : meetGreets.value === 'exclude' ? 'exclude-meet-greets' : 'all';
   }
+  if (typeMenu) {
+    const requested = params.has('type') ? params.get('type').split(',') : [eventType.value];
+    const valid = requested.filter(type => typeValues.includes(type));
+    selectedTypes = new Set(valid.includes('all') ? ['all'] : valid.length ? valid : requested.includes('none') ? [] : ['all']);
+    updateTypeMenu();
+  }
   setupDays();
 }
 function syncFiltersToURL() {
   const url = new URL(location.href);
   const values = {q: search.value, day: selectedDay, announced: announced.checked ? '1' : '', concerts: concerts.checked ? '1' : ''};
   for (const [key, select] of Object.entries(filterSelects)) values[key] = select?.value || 'all';
+  if (typeMenu) values.type = selectedTypes.has('all') ? 'all' : [...selectedTypes].sort().join(',') || 'none';
   for (const [key, value] of Object.entries(values)) {
     if (value && (key === 'q' || value !== 'all')) url.searchParams.set(key, value);
     else url.searchParams.delete(key);
@@ -438,6 +457,16 @@ meetGreets.addEventListener('change', () => { if (meetGreets.value === 'only') c
 eventStatus.addEventListener('change', render);
 groupFilter?.addEventListener('change', render);
 talentFilter?.addEventListener('change', render);
+for (const box of typeCheckboxes) box.addEventListener('change', () => {
+  concerts.checked = false; meetGreets.value = 'all';
+  if (box.value === 'all') selectedTypes = new Set(box.checked ? ['all'] : []);
+  else {
+    selectedTypes.delete('all');
+    if (box.checked) selectedTypes.add(box.value); else selectedTypes.delete(box.value);
+  }
+  updateTypeMenu(); render();
+});
+typeMenu?.addEventListener('keydown', event => { if (event.key === 'Escape') { typeMenu.open = false; document.querySelector('#event-types-summary').focus(); } });
 eventType?.addEventListener('change', () => { concerts.checked = false; meetGreets.value = 'all'; render(); });
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
@@ -445,6 +474,8 @@ document.querySelector('#reset').addEventListener('click', () => {
   if (groupFilter) groupFilter.value = 'all';
   if (talentFilter) talentFilter.value = 'all';
   if (eventType) eventType.value = 'all';
+  selectedTypes = new Set(['all']); updateTypeMenu();
+  if (typeMenu) typeMenu.open = false;
   document.querySelector('[data-day="all"]').click();
 });
 

@@ -28,3 +28,12 @@
 
 .filters .group-filter, .filters .talent-filter { flex: 1 1 220px; min-width: 0; }
 .group-filter select, .talent-filter select { width: 100%; }
+
+.type-filter{min-width:0;font-size:.8rem;font-weight:600;color:var(--muted)}
+.type-filter>span{display:block;margin-bottom:7px}
+.type-menu{position:relative;margin:0;padding:0;border:0}
+.type-menu>summary{padding:12px;min-height:48px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text)}
+.type-menu fieldset{position:absolute;z-index:10;top:100%;left:0;min-width:100%;width:max-content;max-width:calc(100vw - 68px);margin:5px 0 0;padding:8px;border:1px solid var(--line);border-radius:10px;background:var(--surface);box-shadow:0 8px 24px #0008}
+.filters .type-menu label{display:flex;flex-direction:row;align-items:center;gap:10px;padding:7px;min-height:40px;cursor:pointer;color:var(--text);white-space:normal}
+.type-menu input{width:18px;height:18px;accent-color:var(--accent);flex-shrink:0}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
