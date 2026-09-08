@@ -71,10 +71,11 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | Columns | Values |
 | --- | --- |
 | `date`, `day` | ISO date (`2027-09-18`) and matching weekday (`Saturday`) |
-| `start_time`, `end_time` | Local 24-hour times (`14:00`, `14:55`) |
+| `start_time`, `end_time` | Local 24-hour times (`14:00`, `14:55`); leave end empty when unpublished |
 | `timezone` | Timezone identifier, such as `Europe/London` |
 | `timezone_abbreviation`, `utc_offset` | Local label and offset applicable on that date, such as `BST`, `+01:00` |
 | `stage` | Stage, room, or booth name; used by the location filter |
+| `venue` | Optional per-session venue override for offsite events; otherwise uses the convention venue |
 | `event_type` | Optional `opening` or `closing` for a single-time schedule marker; leave empty for regular sessions |
 | `event` | Session title; `???` displays as “To be announced” |
 | `source_url` | Published source URL for the session |
@@ -164,7 +165,7 @@ The site displays dates in US format and times in the convention's local timezon
 
 Keep admission opening and closing hours in `opening-hours.json`; they are not sessions or calendar events. Concerts remain ordinary timed sessions in the CSV.
 
-Regular sessions currently must start and end on the same local date. Calendar IDs use the event ID (or an existing `data-uid-domain` override), date, start time, and normalized location name. Give simultaneous locations distinct names and keep these identifiers stable when correcting titles or lineups.
+Sessions with an end time currently must start and end on the same local date. When only a start is published, leave `end_time` empty: the card and calendar description show that the end is unannounced, and calendar exports omit `DTEND` rather than inventing a duration. For an afterparty with an unknown venue, set `venue` to `Venue unconfirmed` so exports do not imply it is at the convention venue. Keep announcements without a start time in research records until a slot is published. Calendar IDs use the event ID (or an existing `data-uid-domain` override), date, start time, and normalized location name. Give simultaneous locations distinct names and keep these identifiers stable when correcting titles or lineups.
 
 Calendar downloads are snapshots, not subscriptions.
 

@@ -207,7 +207,7 @@ function createCalendar(items, now = new Date()) {
   for (const session of items) {
     const title = session.event === '???' ? 'To be announced' : session.event;
     const description = [
-      `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : '–' + session.end_time} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
+      `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : session.end_time ? '–' + session.end_time : ' (end time unannounced)'} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
       session.participants ? `Participants: ${session.participants}` : isTimeMarker(session) ? '' : 'Participants not announced.',
       `Event status: ${statusLabel(session)}`,
       groupsFor(session).length ? `Groups: ${groupsFor(session).join(', ')}` : '',
@@ -220,9 +220,9 @@ function createCalendar(items, now = new Date()) {
     const uid = `${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/[^a-z0-9]+/g, '-')}@${config.uidDomain || config.eventId}`;
     lines.push('BEGIN:VEVENT', `UID:${uid}`, `DTSTAMP:${calendarTimestamp(now)}`,
       `DTSTART:${calendarTimestamp(`${session.date}T${session.start_time}:00${session.utc_offset}`)}`,
-      ...(isTimeMarker(session) ? [] : [`DTEND:${calendarTimestamp(`${session.date}T${session.end_time}:00${session.utc_offset}`)}`]),
+      ...(isTimeMarker(session) || !session.end_time ? [] : [`DTEND:${calendarTimestamp(`${session.date}T${session.end_time}:00${session.utc_offset}`)}`]),
       `SUMMARY:${calendarText(`${config.eventName}: ${title}`)}`,
-      `LOCATION:${calendarText(`${session.stage}, ${config.venue}`)}`,
+      `LOCATION:${calendarText(`${session.stage}, ${session.venue || config.venue}`)}`,
       `DESCRIPTION:${calendarText(description)}`,
       `CATEGORIES:${calendarText(statusLabel(session))}${session.is_meet_greet === 'true' ? ',Meet & Greet' : ''}`,
       `URL:${session.source_url.replace(/[\r\n]/g, '')}`, 'END:VEVENT');
@@ -244,12 +244,13 @@ function card(session) {
   const top = el('div', 'card-top');
   top.append(el('span', 'stage', session.stage));
   const times = el('span', 'time');
-  for (const [i, value] of (isTimeMarker(session) ? [session.start_time] : [session.start_time, session.end_time]).entries()) {
+  for (const [i, value] of (isTimeMarker(session) || !session.end_time ? [session.start_time] : [session.start_time, session.end_time]).entries()) {
     if (i) times.append(' – ');
     const time = el('time', '', value);
     time.dateTime = `${session.date}T${value}:00${session.utc_offset}`;
     times.append(time);
   }
+  if (!session.end_time && !isTimeMarker(session)) times.append(' · End time unannounced');
   top.append(times); article.append(top);
   const tags = el('div', 'session-tags');
   tags.append(el('span', 'badge event-status', statusLabel(session)));
@@ -435,7 +436,7 @@ async function load() {
     socialProfiles = profiles;
     if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
     sessions = parseCSV(await response.text());
-    if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || (!s.end_time && !isTimeMarker(s)) || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
+    if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
     const sortKey = s => s.date + s.start_time + (s.event_type === 'opening' ? '0' : s.event_type === 'closing' ? '2' : '1') + s.stage;
     sessions.sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
     [...new Set(sessions.map(s => s.stage))].sort().forEach(name => { const option = el('option', '', name); option.value = name; stage.append(option); });
