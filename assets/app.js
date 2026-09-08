@@ -171,8 +171,9 @@ async function loadGroups() {
 const search = document.querySelector('#search');
 const stage = document.querySelector('#stage');
 const announced = document.querySelector('#announced');
-const concerts = document.querySelector('#concerts');
-const meetGreets = document.querySelector('#meet-greets');
+const concerts = document.querySelector('#concerts') || {checked: false, addEventListener() {}};
+const meetGreets = document.querySelector('#meet-greets') || {value: 'all', children: ['all', 'only', 'exclude'].map(value => ({value})), addEventListener() {}};
+const eventType = document.querySelector('#event-type');
 const eventStatus = document.querySelector('#event-status');
 const groupFilter = document.querySelector('#group');
 const talentFilter = document.querySelector('#talent');
@@ -334,6 +335,18 @@ function matchesEventStatus(session) {
   return eventStatus.value === 'all' || session.event_status === eventStatus.value;
 }
 
+function matchesEventType(session) {
+  const type = eventType?.value || 'all';
+  if (type === 'all') return true;
+  if (type === 'concert') return session.is_concert === 'true';
+  if (type === 'meet-greet') return session.is_meet_greet === 'true';
+  if (type === 'roaming') return session.meet_greet_type === 'Roaming';
+  if (type === 'afterparty') return session.event_type === 'afterparty';
+  if (type === 'stage-panel') return session.is_meet_greet !== 'true' && session.is_concert !== 'true' && session.event_type !== 'afterparty';
+  if (type === 'exclude-meet-greets') return session.is_meet_greet !== 'true';
+  return false;
+}
+
 function filteredSessions() {
   const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
   return sessions.filter(s => (selectedDay === 'all' || s.date === selectedDay)
@@ -341,13 +354,14 @@ function filteredSessions() {
     && (!announced.checked || s.lineup_status !== 'unannounced')
     && (!concerts.checked || s.is_concert === 'true')
     && (meetGreets.value === 'all' || (meetGreets.value === 'only' ? s.is_meet_greet === 'true' : s.is_meet_greet !== 'true'))
+    && matchesEventType(s)
     && matchesEventStatus(s)
     && (!talentFilter || talentFilter.value === 'all' || participantNames(s).some(name => talentKey(name) === talentFilter.value))
     && (!groupFilter || groupFilter.value === 'all' || groupsFor(s).includes(groupFilter.value.slice('group:'.length)))
     && terms.every(term => normalize([s.event, s.participants, s.listed_hosts, s.lineup_notes, s.stage, s.meet_greet_type, s.event_status, groupsFor(s).join(' ')].join(' ')).includes(term)));
 }
 
-const filterSelects = {stage, status: eventStatus, 'meet-greets': meetGreets, group: groupFilter, talent: talentFilter};
+const filterSelects = {type: eventType, stage, status: eventStatus, 'meet-greets': meetGreets, group: groupFilter, talent: talentFilter};
 function restoreFiltersFromURL() {
   const params = new URL(location.href).searchParams;
   search.value = params.get('q') || '';
@@ -359,6 +373,9 @@ function restoreFiltersFromURL() {
   }
   announced.checked = params.get('announced') === '1';
   concerts.checked = params.get('concerts') === '1' && meetGreets.value !== 'only';
+  if (eventType && !params.has('type')) {
+    eventType.value = meetGreets.value === 'only' ? 'meet-greet' : concerts.checked ? 'concert' : meetGreets.value === 'exclude' ? 'exclude-meet-greets' : 'all';
+  }
   setupDays();
 }
 function syncFiltersToURL() {
@@ -421,11 +438,13 @@ meetGreets.addEventListener('change', () => { if (meetGreets.value === 'only') c
 eventStatus.addEventListener('change', render);
 groupFilter?.addEventListener('change', render);
 talentFilter?.addEventListener('change', render);
+eventType?.addEventListener('change', () => { concerts.checked = false; meetGreets.value = 'all'; render(); });
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
   search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.value = 'all'; eventStatus.value = 'all';
   if (groupFilter) groupFilter.value = 'all';
   if (talentFilter) talentFilter.value = 'all';
+  if (eventType) eventType.value = 'all';
   document.querySelector('[data-day="all"]').click();
 });
 

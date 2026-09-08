@@ -5027,6 +5027,7 @@
     "date": "2026-09-18",
     "end_time": "",
     "venue": "Premier Inn NEC",
-    "calendar_uid": "2026-09-18-2345-hukec-afterparty-venue-unconfirmed-@vexpo-fan-planner"
+    "calendar_uid": "2026-09-18-2345-hukec-afterparty-venue-unconfirmed-@vexpo-fan-planner",
+    "event_type": "afterparty"
   }
 ]

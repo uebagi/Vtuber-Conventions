@@ -77,7 +77,7 @@ Edit the convention's `schedule.csv`. Save it as UTF-8 with the existing column 
 | `stage` | Stage, room, or booth name; used by the location filter |
 | `calendar_uid` | Optional existing calendar UID to preserve when correcting a location or time |
 | `venue` | Optional per-session venue override for offsite events; otherwise uses the convention venue |
-| `event_type` | Optional `opening` or `closing` for a single-time schedule marker; leave empty for regular sessions |
+| `event_type` | `afterparty` for afterparties; optional `opening` or `closing` for a single-time schedule marker; otherwise leave empty |
 | `event` | Session title; `???` displays as “To be announced” |
 | `source_url` | Published source URL for the session |
 | `listed_hosts` | Hosts as listed by the source |
@@ -100,6 +100,10 @@ Official/unofficial labels describe the session's status. Include supporting sou
 The Event status dropdown contains Official & unofficial, Official, and Unofficial. The separate Group / agency dropdown combines explicit `organizer` tags with memberships from `groups.json`. The two filters work together, along with day, location, search, concert and meet-and-greet filters. Group names are searchable and included in calendar descriptions.
 
 Use `organizer` for groups that organize, present, or are explicitly featured in a session. Separate multiple tags with semicolons; each group finds the shared session once. Keep talent affiliations in the membership file instead of repeating them on every CSV row. A booth guest is not automatically a member of its organizer.
+
+### Event types
+
+Keep the `#event-type` dropdown from the template. It replaces Concerts only and the meet-and-greet selector. Concerts use `is_concert`; meet-and-greets use `is_meet_greet` and include roaming. Roaming uses `meet_greet_type=Roaming`; afterparties use `event_type=afterparty`. Stages & panels includes other sessions. Combined events may match multiple types. Exclude meet & greets remains available. New links use `type`; existing `concerts` and `meet-greets` links still restore their original restrictions. Reset clears all types and legacy restrictions.
 
 ### Shareable filters
 
@@ -213,6 +217,7 @@ No package installation or build step is required for local browsing. To run the
 
 ```sh
 node tests/schedule.cjs
+node tests/event-types.cjs
 node tests/build-site.cjs
 ```
 
