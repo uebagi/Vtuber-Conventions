@@ -5029,5 +5029,29 @@
     "venue": "Premier Inn NEC",
     "calendar_uid": "2026-09-18-2345-hukec-afterparty-venue-unconfirmed-@vexpo-fan-planner",
     "event_type": "afterparty"
+  },
+  {
+    "stage": "ChromaSHIFT - Booth S02 (Hall 9)",
+    "day": "Saturday",
+    "event": "Lalabell Lullaby — Meet & Greet",
+    "start_time": "14:30",
+    "listed_hosts": "Lalabell Lullaby",
+    "participants": "Lalabell Lullaby",
+    "lineup_notes": "Meet-and-greet announced by Lalabell Lullaby for September 19, 14:30-15:30 BST. Price not published.",
+    "participant_source_urls": "https://ww.twstalker.com/Vtuber_Expo",
+    "lineup_status": "named lineup published",
+    "is_concert": false,
+    "concert_classification_notes": "Meet-and-greet; no concert described.",
+    "is_meet_greet": true,
+    "event_status": "unofficial",
+    "meet_greet_type": "Virtual",
+    "price": "Not listed",
+    "booth": "S02",
+    "organizer": "ChromaSHIFT",
+    "date": "2026-09-19",
+    "end_time": "15:30",
+    "venue": "",
+    "calendar_uid": "",
+    "event_type": ""
   }
 ]

@@ -30,7 +30,7 @@ setImmediate(() => {
   const run = code => vm.runInContext(code, context);
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };
-  for (const [type, expected] of [['all', 215], ['concert', 14], ['meet-greet', 169], ['roaming', 9], ['afterparty', 1], ['stage-panel', 33]]) {
+  for (const [type, expected] of [['all', 216], ['concert', 14], ['meet-greet', 170], ['roaming', 9], ['afterparty', 1], ['stage-panel', 33]]) {
     select(type); assert.equal(run('filteredSessions().length'), expected, type);
     const url = context.location.href;
     assert.equal(new URL(url).searchParams.get('type'), type === 'all' ? null : type);
@@ -40,7 +40,7 @@ setImmediate(() => {
     const calendar = run('createCalendar(filteredSessions())');
     assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, expected);
   }
-  for (const [query, expected, type] of [['concerts=1', 14, 'concert'], ['meet-greets=only', 169, 'meet-greet'], ['meet-greets=exclude', 46, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 13, 'concert'], ['type=invalid', 215, 'all']]) {
+  for (const [query, expected, type] of [['concerts=1', 14, 'concert'], ['meet-greets=only', 170, 'meet-greet'], ['meet-greets=exclude', 46, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 13, 'concert'], ['type=invalid', 216, 'all']]) {
     context.location.href = 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/?' + query;
     windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), expected, query);
     assert(run(`selectedTypes.has(${JSON.stringify(type)})`));
@@ -59,7 +59,7 @@ setImmediate(() => {
   assert.equal(new URL(context.location.href).searchParams.get('type'), 'none');
   windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), 0);
   assert.equal(elements['#download-calendar'].disabled, true);
-  check('all', true); assert.equal(run('filteredSessions().length'), 215);
+  check('all', true); assert.equal(run('filteredSessions().length'), 216);
   select('roaming'); elements['#group'].value = 'group:florAtelier'; elements['#group'].handlers.change();
   assert.equal(run('filteredSessions().length'), 2);
   elements['#reset'].click(); assert.equal(new URL(context.location.href).search, '');

@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-09-10",
+  "sources": [
+    {
+      "id": "stages",
+      "url": "https://vexpo.uk/stages-panels",
+      "type": "schedule",
+      "locator": "Friday, Saturday and Sunday timetable tables"
+    },
+    {
+      "id": "meet-greets",
+      "url": "https://vexpo.uk/meet-greets",
+      "type": "schedule",
+      "locator": "Saturday and explicitly labelled Sunday tables"
+    },
+    {
+      "id": "oshi",
+      "url": "https://oshi-connect.net/vexpo-2026",
+      "type": "schedule",
+      "locator": "Saturday and Sunday meet-and-greet listings"
+    }
+  ],
+  "findings": [
+    {
+      "source_ids": [
+        "stages"
+      ],
+      "notes": "All 43 stage/panel titles and start/end times match existing schedule."
+    },
+    {
+      "source_ids": [
+        "meet-greets"
+      ],
+      "notes": "98 official slots retain existing times, booths and prices. Duplicate-table conflicts persist: Sunday 10:30 Booth 5 names Feileacan Cu in the earlier duplicate and Phoebe Chan in the explicitly labelled Sunday section; Sunday 14:30 Mint Fantome format is Penplotter in the earlier duplicate and Virtual in the explicitly labelled Sunday section. Existing schedule follows the labelled Sunday section."
+    },
+    {
+      "source_ids": [
+        "oshi"
+      ],
+      "notes": "All 11 slots match existing schedule, including PPSlayerVT and Kou Mariya."
+    }
+  ],
+  "limitations": [
+    "Recent social announcements checked through available indexed profiles. Some original X posts and attached posters could not be retrieved; this is not an exhaustive social timeline audit."
+  ]
+}

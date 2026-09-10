@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-09-08",
+  "checked_on": "2026-09-10",
   "sources": [
     {
       "id": "announcement-1",
@@ -84,6 +84,20 @@
       "url": "https://x.com/HololiveUKEC/status/2094817647149850917",
       "locator": "Published schedule table or attached event poster",
       "type": "poster"
+    },
+    {
+      "id": "lalabell-booth-announcement",
+      "url": "https://ww.twstalker.com/Vtuber_Expo",
+      "type": "social-post-mirror",
+      "locator": "LalabellLullaby meet-and-greet announcement reposted by Vtuber_Expo; search index retrieved September 10, 2026",
+      "notes": "Announcement text recovered from indexed profile; original post permalink and image could not be retrieved. Explicit date, time and booth are in the text."
+    },
+    {
+      "id": "variance-saturday-announcements",
+      "url": "https://ww.twstalker.com/Vtuber_Expo",
+      "type": "social-post-mirror",
+      "locator": "Variance_Pro guest announcements for KatyaSable and embyrsparks, reposted by Vtuber_Expo; search index retrieved September 10, 2026",
+      "notes": "Saturday and booth confirmed in indexed text; poster images and original post permalinks could not be retrieved."
     }
   ],
   "sessions": [
@@ -507,6 +521,36 @@
         "announcement-14"
       ],
       "calendar_uid": "2026-09-18-2345-hukec-afterparty-venue-unconfirmed-@vexpo-fan-planner"
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "ChromaSHIFT - Booth S02 (Hall 9)",
+      "event": "Lalabell Lullaby — Meet & Greet",
+      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
+      "listed_hosts": "Lalabell Lullaby",
+      "participants": "Lalabell Lullaby",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Meet-and-greet announced by Lalabell Lullaby for September 19, 14:30-15:30 BST. Price not published.",
+      "participant_source_urls": "https://ww.twstalker.com/Vtuber_Expo",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S02",
+      "event_type": "",
+      "organizer": "ChromaSHIFT",
+      "venue": "",
+      "source_ids": [
+        "lalabell-booth-announcement"
+      ]
     }
   ],
   "untimed_announcements": [
@@ -523,6 +567,34 @@
       ],
       "source_url": "https://x.com/veizojp/status/2092975429888119225",
       "notes": "Individual day and time not announced. Not added to timed schedule."
+    },
+    {
+      "participants": [
+        "Katya Sable"
+      ],
+      "organizer": "Variance Project",
+      "location": "Hall 10, Booth S12",
+      "event": "Booth appearance",
+      "date": "2026-09-19",
+      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
+      "source_ids": [
+        "variance-saturday-announcements"
+      ],
+      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Not added to timed schedule."
+    },
+    {
+      "participants": [
+        "Embyr Sparks"
+      ],
+      "organizer": "Variance Project",
+      "location": "Hall 10, Booth S12",
+      "event": "Meet & Greet",
+      "date": "2026-09-19",
+      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
+      "source_ids": [
+        "variance-saturday-announcements"
+      ],
+      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Not added to timed schedule."
     }
   ]
 }
