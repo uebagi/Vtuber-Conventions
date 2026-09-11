@@ -234,3 +234,9 @@ The script creates a fresh `_site/` directory; it refuses to overwrite an existi
 Old convention URLs are preserved by redirects generated only in the published output. The script's `legacySlugs` list identifies folders that previously lived at the repository root; new conventions do not need entries. Redirects preserve query strings and fragments when JavaScript is enabled, and old data download URLs remain available. Existing convention IDs and calendar UIDs stay unchanged.
 
 For a fork, select **Settings → Pages → Build and deployment → GitHub Actions**, then update the website and repository links in this README. Use relative links in the site so it works under the repository's Pages URL.
+
+## Appearances with unconfirmed times
+
+Add optional `unconfirmed.json` and `data-unconfirmed="unconfirmed.json"` on the convention's body. Its shape is `{ "checked_on": "YYYY-MM-DD", "sessions": [...] }`. Each session uses the schedule field names, plus a stable `id`. Supply `event`, `stage`, `participants`, `source_url`, status and type flags. Keep `start_time` and `end_time` absent or empty; use an empty `date`/`day` unless a specific day is confirmed. Describe a convention date range in `lineup_notes` without implying an appearance every day. Use `event_type: "booth-appearance"` when only a booth appearance, rather than a meet-and-greet, is established.
+
+These cards appear in All days and under the Unconfirmed time button (`?day=unconfirmed`). Known dates also appear under that day. Other filters and socials still work. Calendar downloads exclude these cards and count only timed sessions. Once confirmed, move the appearance into `schedule.csv` and remove its unconfirmed entry to avoid duplicates. The build publishes this optional JSON automatically.

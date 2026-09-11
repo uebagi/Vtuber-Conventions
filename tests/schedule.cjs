@@ -142,7 +142,7 @@ setImmediate(async () => {
     sharedUid = uid;
     elements['#reset'].click();
   }
-  change('#group', 'group:ChromaSHIFT'); assert.equal(count(), 5);
+  change('#group', 'group:ChromaSHIFT'); assert.equal(count(), 6);
   change('#concerts', true, true); assert.equal(count(), 3);
   elements['#reset'].click();
   change('#group', 'group:BEASTIEZ'); assert.equal(count(), 5);
@@ -217,7 +217,7 @@ setImmediate(async () => {
   run("delete socialProfiles.Unsafe");
   const socialData = JSON.parse(fs.readFileSync('conventions/vexpo-2026/socials.json', 'utf8'));
   const participantNames = new Set(run("sessions.flatMap(s => s.participants.split(';').map(n => n.trim()).filter(Boolean))"));
-  assert.equal(participantNames.size, 238);
+  assert.equal(participantNames.size, 241);
   for (const name of participantNames) {
     assert(Object.hasOwn(socialData.profiles, name), `Missing social research: ${name}`);
     const profile = socialData.profiles[name];
@@ -227,7 +227,7 @@ setImmediate(async () => {
       profile.sources.forEach(source => assert.equal(new URL(source).protocol, 'https:'));
     }
   }
-  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 235);
+  assert.equal(Object.values(socialData.profiles).filter(p => p.x).length, 243);
   assert.equal(Object.values(socialData.profiles).filter(p => p.primary).length, 136);
   for (const profile of Object.values(socialData.profiles)) {
     if (profile.primary) {

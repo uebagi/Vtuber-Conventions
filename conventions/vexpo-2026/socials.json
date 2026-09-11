@@ -1,16 +1,16 @@
 {
-  "checked_on": "2026-09-05",
+  "checked_on": "2026-09-11",
   "profiles": {
     "0shiriko": {
       "x": "https://x.com/0shiriko",
       "sources": [
-        "https://oshiriko.carrd.co",
-        "https://twstalker.com/0shiriko"
+        "https://x.com/0shiriko"
       ],
       "primary": {
         "url": "https://oshiriko.carrd.co",
         "source": "https://vexpo.uk/guests"
-      }
+      },
+      "checked_on": "2026-09-11"
     },
     "Aia Amare": {
       "x": "https://x.com/AiaAmare",
@@ -569,14 +569,15 @@
       }
     },
     "Katya Sable": {
-      "x": "https://x.com/KatyaSabl",
+      "x": "https://x.com/KatyaSable",
       "sources": [
-        "https://virtualyoutuber.fandom.com/wiki/Katya_Sable"
+        "https://x.com/KatyaSable"
       ],
       "primary": {
         "url": "https://youtube.com/@KatyaSable",
         "source": "https://vexpo.uk/guests"
-      }
+      },
+      "checked_on": "2026-09-11"
     },
     "Kira P. Raptor Girl": {
       "x": "https://x.com/KiraPRaptorGirl",
@@ -2122,6 +2123,63 @@
       "sources": [
         "https://www.izigenia.com/news/post-1/"
       ]
+    },
+    "Märpo Elder": {
+      "x": "https://x.com/Marpo_VEL",
+      "sources": [
+        "https://x.com/Marpo_VEL"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Cera Luceria": {
+      "x": "https://x.com/CeraLuceria",
+      "sources": [
+        "https://x.com/CeraLuceria"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Mikan": {
+      "x": "https://x.com/MikanVT",
+      "sources": [
+        "https://x.com/MikanVT"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "RIA": {
+      "x": "https://x.com/sagisawaria",
+      "sources": [
+        "https://x.com/sagisawaria"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Evelynn Red": {
+      "x": "https://x.com/Evelynn_Red",
+      "sources": [
+        "https://x.com/Evelynn_Red"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Taiga Toragami": {
+      "x": "https://x.com/TaigaToragami",
+      "sources": [
+        "https://x.com/TaigaToragami"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Ruby Runeheart": {
+      "x": "https://x.com/rubyruneheart",
+      "sources": [
+        "https://x.com/rubyruneheart"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Nene Amano": {
+      "x": "https://x.com/NeneAmanoVTuber",
+      "sources": [
+        "https://x.com/NeneAmanoVTuber",
+        "https://www.patreon.com/cw/NeneAmano"
+      ],
+      "checked_on": "2026-09-11"
     }
   }
 }

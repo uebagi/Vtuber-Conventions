@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-09-11",
+  "sources": [
+    {
+      "id": "stages",
+      "url": "https://vexpo.uk/stages-panels",
+      "type": "schedule",
+      "locator": "Sunday timetable and Jubilee Stage descriptions"
+    },
+    {
+      "id": "meet-greets",
+      "url": "https://vexpo.uk/meet-greets",
+      "type": "schedule",
+      "locator": "All twelve timetable tables, including duplicate versions"
+    },
+    {
+      "id": "oshi",
+      "url": "https://oshi-connect.net/vexpo-2026",
+      "type": "schedule",
+      "locator": "Full visible schedule text"
+    }
+  ],
+  "findings": [
+    {
+      "source_ids": [
+        "stages"
+      ],
+      "notes": "Two Sunday Jubilee Stage placeholders now named: 14:00-15:00 I VTube & Facecam and You Can Too! hosted by cakejumper; 15:30-16:30 ChromaSHIFT Meet N' Compete hosted by Riki Poppet, Taiga Toragami, Ruby Runeheart, Poko Rakun, Bonnie Barkswell and Nene Amano. Timetable otherwise unchanged."
+    },
+    {
+      "source_ids": [
+        "meet-greets",
+        "oshi"
+      ],
+      "notes": "Table text for official meet-and-greets and visible Oshi schedule text match previous check."
+    }
+  ],
+  "limitations": [
+    "Available social search indexes may lag. Digital Gear and Variance appearances have no verified individual times; see booth-events.json and unconfirmed.json."
+  ]
+}

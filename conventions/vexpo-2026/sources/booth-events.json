@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-09-10",
+  "checked_on": "2026-09-11",
   "sources": [
     {
       "id": "announcement-1",
@@ -98,6 +98,13 @@
       "type": "social-post-mirror",
       "locator": "Variance_Pro guest announcements for KatyaSable and embyrsparks, reposted by Vtuber_Expo; search index retrieved September 10, 2026",
       "notes": "Saturday and booth confirmed in indexed text; poster images and original post permalinks could not be retrieved."
+    },
+    {
+      "id": "digital-gear-guest-announcements",
+      "type": "social-post-mirror",
+      "url": "https://www.sotwe.com/Vaiolis",
+      "locator": "Veizo reposts announcing Evelynn Red, Marpo_VEL, 0shiriko, sagisawaria, MikanVT and CeraLuceria for September 18-20, 2026",
+      "notes": "Individual times not in accessible text. Original profile and some post images unavailable; names cross-checked against X profile metadata."
     }
   ],
   "sessions": [
@@ -566,7 +573,7 @@
         "2026-09-20"
       ],
       "source_url": "https://x.com/veizojp/status/2092975429888119225",
-      "notes": "Individual day and time not announced. Not added to timed schedule."
+      "notes": "Individual day and time not announced. Displayed in unconfirmed.json; excluded from calendar downloads."
     },
     {
       "participants": [
@@ -580,7 +587,7 @@
       "source_ids": [
         "variance-saturday-announcements"
       ],
-      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Not added to timed schedule."
+      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Displayed in unconfirmed.json; excluded from calendar downloads."
     },
     {
       "participants": [
@@ -594,7 +601,92 @@
       "source_ids": [
         "variance-saturday-announcements"
       ],
-      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Not added to timed schedule."
+      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Displayed in unconfirmed.json; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "Märpo Elder"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "Meet & Greet",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_ids": [
+        "digital-gear-guest-announcements"
+      ],
+      "source_url": "https://www.sotwe.com/Vaiolis",
+      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "Cera Luceria"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "Meet & Greet",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_ids": [
+        "digital-gear-guest-announcements"
+      ],
+      "source_url": "https://www.sotwe.com/Vaiolis",
+      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "Mikan"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "Meet & Greet",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_ids": [
+        "digital-gear-guest-announcements"
+      ],
+      "source_url": "https://www.sotwe.com/Vaiolis",
+      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "RIA"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "Meet & Greet",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_ids": [
+        "digital-gear-guest-announcements"
+      ],
+      "source_url": "https://www.sotwe.com/Vaiolis",
+      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "Evelynn Red"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "Meet & Greet",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_ids": [
+        "digital-gear-guest-announcements"
+      ],
+      "source_url": "https://www.sotwe.com/Vaiolis",
+      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
     }
   ]
 }

@@ -19,7 +19,7 @@ try {
     if (/^https?:/.test(match[1])) continue;
     assert(fs.existsSync(path.resolve(convention, match[1])), `Broken local link: ${match[1]}`);
   }
-  for (const name of ['schedule.csv', 'socials.json', 'opening-hours.json', 'groups.json']) {
+  for (const name of ['schedule.csv', 'socials.json', 'opening-hours.json', 'groups.json', 'unconfirmed.json']) {
     const source = fs.readFileSync(path.join(repository, 'conventions', slug, name));
     assert.deepEqual(fs.readFileSync(path.join(convention, name)), source);
     assert.deepEqual(fs.readFileSync(path.join(output, slug, name)), source);

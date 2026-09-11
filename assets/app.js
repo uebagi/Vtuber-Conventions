@@ -29,8 +29,19 @@ const el = (tag, className, text) => {
 const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 const displayDate = date => new Date(date + 'T12:00:00Z').toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
 const config = document.body.dataset;
+const hasConfirmedTime = session => Boolean(session.date && session.start_time);
 const isTimeMarker = session => ['opening', 'closing'].includes(session.event_type);
 let sessions = [], selectedDay = 'all', socialProfiles = {}, talentGroups = new Map();
+
+// Untimed appearances remain separate from the timed CSV until a slot is confirmed.
+async function loadUnconfirmed() {
+  if (!config.unconfirmed) return [];
+  const response = await fetch(config.unconfirmed);
+  if (!response.ok) throw new Error('Unconfirmed appearances unavailable');
+  const data = await response.json();
+  if (!Array.isArray(data.sessions) || data.sessions.some(s => !s.event || !s.stage || !s.source_url || typeof s.participants !== 'string' || s.start_time || (s.date && !/^\d{4}-\d{2}-\d{2}$/.test(s.date)))) throw new Error('Invalid unconfirmed appearances');
+  return data.sessions.map(s => ({date: '', day: '', start_time: '', end_time: '', listed_hosts: '', lineup_notes: '', participant_source_urls: '', organizer: '', is_concert: 'false', is_meet_greet: 'false', ...s}));
+}
 
 function participantChip(name) {
   const profile = socialProfiles[name];
@@ -214,7 +225,7 @@ function foldCalendarLine(line) {
 }
 function createCalendar(items, now = new Date()) {
   const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//VeXpo Fan Planner//Schedule//EN', 'CALSCALE:GREGORIAN'];
-  for (const session of items) {
+  for (const session of items.filter(hasConfirmedTime)) {
     const title = session.event === '???' ? 'To be announced' : session.event;
     const description = [
       `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : session.end_time ? '–' + session.end_time : ' (end time unannounced)'} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
@@ -241,6 +252,7 @@ function createCalendar(items, now = new Date()) {
   return lines.map(foldCalendarLine).join('\r\n') + '\r\n';
 }
 function saveCalendar(items, filename) {
+  items = items.filter(hasConfirmedTime);
   if (!items.length) return;
   const url = URL.createObjectURL(new Blob([createCalendar(items)], { type: 'text/calendar;charset=utf-8' }));
   const link = el('a'); link.href = url; link.download = filename;
@@ -254,13 +266,14 @@ function card(session) {
   const top = el('div', 'card-top');
   top.append(el('span', 'stage', session.stage));
   const times = el('span', 'time');
-  for (const [i, value] of (isTimeMarker(session) || !session.end_time ? [session.start_time] : [session.start_time, session.end_time]).entries()) {
+  if (!hasConfirmedTime(session)) times.append('Time unconfirmed');
+  for (const [i, value] of (!hasConfirmedTime(session) ? [] : isTimeMarker(session) || !session.end_time ? [session.start_time] : [session.start_time, session.end_time]).entries()) {
     if (i) times.append(' – ');
     const time = el('time', '', value);
     time.dateTime = `${session.date}T${value}:00${session.utc_offset}`;
     times.append(time);
   }
-  if (!session.end_time && !isTimeMarker(session)) times.append(' · End time unannounced');
+  if (hasConfirmedTime(session) && !session.end_time && !isTimeMarker(session)) times.append(' · End time unannounced');
   top.append(times); article.append(top);
   const tags = el('div', 'session-tags');
   tags.append(el('span', 'badge event-status', statusLabel(session)));
@@ -269,7 +282,7 @@ function card(session) {
   article.append(el('h3', '', session.event === '???' ? 'To be announced' : session.event));
   if (/recorded concert screening/i.test(session.lineup_notes)) article.append(el('span', 'badge', 'Recorded screening'));
   else if (session.lineup_status === 'partial') article.append(el('span', 'badge', 'Full lineup not listed'));
-  if (session.is_meet_greet === 'true') article.append(el('p', 'muted', `${session.meet_greet_type} · ${session.price} · Availability window`));
+  if (session.is_meet_greet === 'true') article.append(el('p', 'muted', `${session.meet_greet_type} · ${session.price}${hasConfirmedTime(session) ? ' · Availability window' : ''}`));
   const names = session.participants.split(';').map(s => s.trim()).filter(Boolean);
   if (names.length) {
     const people = el('div', 'people');
@@ -289,6 +302,10 @@ function card(session) {
     a.href = url.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; links.append(a);
   });
   details.append(links); article.append(details);
+  if (!hasConfirmedTime(session)) {
+    article.append(el('p', 'muted', 'Calendar download available once the time is confirmed.'));
+    return article;
+  }
   const download = el('button', 'session-calendar', 'Download calendar (.ics)');
   download.type = 'button'; download.setAttribute('aria-label', `Download calendar for ${session.event === '???' ? 'unannounced session' : session.event}, ${session.day} ${session.start_time}, ${session.stage}`);
   download.addEventListener('click', () => saveCalendar([session], `${config.eventId}-${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/\s+/g, '-')}.ics`));
@@ -350,7 +367,7 @@ function matchesType(session, type) {
   if (type === 'meet-greet') return session.is_meet_greet === 'true';
   if (type === 'roaming') return session.meet_greet_type === 'Roaming';
   if (type === 'afterparty') return session.event_type === 'afterparty';
-  if (type === 'stage-panel') return session.is_meet_greet !== 'true' && session.is_concert !== 'true' && session.event_type !== 'afterparty';
+  if (type === 'stage-panel') return session.is_meet_greet !== 'true' && session.is_concert !== 'true' && !['afterparty', 'booth-appearance'].includes(session.event_type);
   if (type === 'exclude-meet-greets') return session.is_meet_greet !== 'true';
   return false;
 }
@@ -361,7 +378,7 @@ function matchesEventType(session) {
 
 function filteredSessions() {
   const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
-  return sessions.filter(s => (selectedDay === 'all' || s.date === selectedDay)
+  return sessions.filter(s => (selectedDay === 'all' || (selectedDay === 'unconfirmed' ? !hasConfirmedTime(s) : s.date === selectedDay))
     && (stage.value === 'all' || s.stage === stage.value)
     && (!announced.checked || s.lineup_status !== 'unannounced')
     && (!concerts.checked || s.is_concert === 'true')
@@ -377,7 +394,7 @@ const filterSelects = {type: eventType, stage, status: eventStatus, 'meet-greets
 function restoreFiltersFromURL() {
   const params = new URL(location.href).searchParams;
   search.value = params.get('q') || '';
-  selectedDay = sessions.some(session => session.date === params.get('day')) ? params.get('day') : 'all';
+  selectedDay = params.get('day') === 'unconfirmed' && sessions.some(s => !hasConfirmedTime(s)) ? 'unconfirmed' : sessions.some(session => session.date && session.date === params.get('day')) ? params.get('day') : 'all';
   for (const [key, select] of Object.entries(filterSelects)) {
     if (!select) continue;
     const value = params.get(key);
@@ -416,14 +433,16 @@ window.addEventListener('popstate', () => {
 function render() {
   syncFiltersToURL();
   const filtered = filteredSessions();
-  downloadCalendar.disabled = !filtered.length;
-  downloadCalendar.textContent = `Download ${filtered.length} sessions (.ics)`;
+  const timed = filtered.filter(hasConfirmedTime);
+  downloadCalendar.disabled = !timed.length;
+  downloadCalendar.textContent = `Download ${timed.length} sessions (.ics)`;
+  downloadCalendar.title = 'Only appearances with a confirmed date and start time are included.';
   status.textContent = `${filtered.length} of ${sessions.length} sessions · Event local time`;
   schedule.replaceChildren();
   for (const date of [...new Set(sessions.map(s => s.date))]) {
     const items = filtered.filter(s => s.date === date); if (!items.length) continue;
     const section = el('section'); const heading = el('div', 'day-heading');
-    heading.append(el('h2', '', items[0].day), el('span', '', `${displayDate(date)} · ${items.length} sessions`));
+    heading.append(el('h2', '', date ? items[0].day : 'Day unconfirmed'), el('span', '', `${date ? displayDate(date) : 'Time unconfirmed'} · ${items.length} sessions`));
     const cards = el('div', 'cards'); items.forEach(s => cards.append(card(s)));
     section.append(heading, cards); schedule.append(section);
   }
@@ -437,9 +456,10 @@ function render() {
 function setupDays() {
   const container = document.querySelector('.days');
   container.replaceChildren();
-  const dates = [...new Set(sessions.map(s => s.date))];
+  const dates = [...new Set(sessions.map(s => s.date).filter(Boolean))];
+  if (sessions.some(s => !hasConfirmedTime(s))) dates.push('unconfirmed');
   for (const date of ['all', ...dates]) {
-    const label = date === 'all' ? 'All days' : new Date(date + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
+    const label = date === 'all' ? 'All days' : date === 'unconfirmed' ? 'Unconfirmed time' : new Date(date + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
     const button = el('button', '', label);
     button.type = 'button'; button.dataset.day = date;
     button.setAttribute('aria-pressed', String(date === selectedDay));
@@ -481,13 +501,14 @@ document.querySelector('#reset').addEventListener('click', () => {
 
 async function load() {
   try {
-    const [response, profiles, memberships] = await Promise.all([fetch('schedule.csv'), loadSocials(), loadGroups()]);
+    const [response, profiles, memberships, unconfirmed] = await Promise.all([fetch('schedule.csv'), loadSocials(), loadGroups(), loadUnconfirmed()]);
     talentGroups = memberships;
     socialProfiles = profiles;
     if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
     sessions = parseCSV(await response.text());
     if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
-    const sortKey = s => s.date + s.start_time + (s.event_type === 'opening' ? '0' : s.event_type === 'closing' ? '2' : '1') + s.stage;
+    sessions.push(...unconfirmed);
+    const sortKey = s => (s.date || '9999') + (s.start_time || '99:99') + (s.event_type === 'opening' ? '0' : s.event_type === 'closing' ? '2' : '1') + s.stage;
     sessions.sort((a, b) => sortKey(a).localeCompare(sortKey(b)));
     [...new Set(sessions.map(s => s.stage))].sort().forEach(name => { const option = el('option', '', name); option.value = name; stage.append(option); });
     setupDays();
