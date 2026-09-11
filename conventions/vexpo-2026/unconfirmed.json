@@ -114,44 +114,6 @@
       "meet_greet_type": "Virtual",
       "price": "Not listed",
       "booth": "S09"
-    },
-    {
-      "id": "variance-katya-sable",
-      "date": "2026-09-19",
-      "day": "Saturday",
-      "event": "Katya Sable — Booth appearance",
-      "participants": "Katya Sable",
-      "stage": "Variance Project - Booth S12 (Hall 10)",
-      "organizer": "Variance Project",
-      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
-      "lineup_status": "named lineup published",
-      "lineup_notes": "Saturday booth appearance announced; time could not be verified from the available announcement text.",
-      "is_meet_greet": "false",
-      "is_concert": "false",
-      "event_type": "booth-appearance",
-      "event_status": "unofficial",
-      "meet_greet_type": "Virtual",
-      "price": "Not listed",
-      "booth": "S12"
-    },
-    {
-      "id": "variance-embyr-sparks",
-      "date": "2026-09-19",
-      "day": "Saturday",
-      "event": "Embyr Sparks — Meet & Greet",
-      "participants": "Embyr Sparks",
-      "stage": "Variance Project - Booth S12 (Hall 10)",
-      "organizer": "Variance Project",
-      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
-      "lineup_status": "named lineup published",
-      "lineup_notes": "Saturday booth appearance announced; time could not be verified from the available announcement text.",
-      "is_meet_greet": "true",
-      "is_concert": "false",
-      "event_type": "",
-      "event_status": "unofficial",
-      "meet_greet_type": "Virtual",
-      "price": "Not listed",
-      "booth": "S12"
     }
   ]
 }

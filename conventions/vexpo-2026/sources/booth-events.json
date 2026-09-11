@@ -105,6 +105,24 @@
       "url": "https://www.sotwe.com/Vaiolis",
       "locator": "Veizo reposts announcing Evelynn Red, Marpo_VEL, 0shiriko, sagisawaria, MikanVT and CeraLuceria for September 18-20, 2026",
       "notes": "Individual times not in accessible text. Original profile and some post images unavailable; names cross-checked against X profile metadata."
+    },
+    {
+      "id": "embyr-sparks-booth-poster",
+      "url": "https://x.com/Variance_Pro/status/2097399643944456497",
+      "type": "poster",
+      "locator": "Attached poster bottom banner: activity, date, BST times and Hall 10 / S12"
+    },
+    {
+      "id": "katya-sable-booth-poster",
+      "url": "https://x.com/Variance_Pro/status/2097762061103108595",
+      "type": "poster",
+      "locator": "Attached poster bottom banner: activity, date, BST times and Hall 10 / S12"
+    },
+    {
+      "id": "leia-memoria-booth-poster",
+      "url": "https://x.com/Variance_Pro/status/2098125542159442191",
+      "type": "poster",
+      "locator": "Attached poster bottom banner: activity, date, BST times and Hall 10 / S12"
     }
   ],
   "sessions": [
@@ -558,6 +576,99 @@
       "source_ids": [
         "lalabell-booth-announcement"
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "16:15",
+      "end_time": "17:00",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Variance Project - Booth S12 (Hall 10)",
+      "event": "Embyr Sparks — Meet & Greet",
+      "source_url": "https://x.com/Variance_Pro/status/2097399643944456497",
+      "listed_hosts": "Embyr Sparks",
+      "participants": "Embyr Sparks",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Meet-and-greet window published on the Variance Project poster. Price not listed.",
+      "participant_source_urls": "https://x.com/Variance_Pro/status/2097399643944456497",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S12",
+      "event_type": "",
+      "organizer": "Variance Project",
+      "venue": "",
+      "calendar_uid": "",
+      "source_ids": [
+        "embyr-sparks-booth-poster"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "18:45",
+      "end_time": "19:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Variance Project - Booth S12 (Hall 10)",
+      "event": "Katya Sable — Meet & Greet",
+      "source_url": "https://x.com/Variance_Pro/status/2097762061103108595",
+      "listed_hosts": "Katya Sable",
+      "participants": "Katya Sable",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Meet-and-greet window published on the Variance Project poster. Price not listed.",
+      "participant_source_urls": "https://x.com/Variance_Pro/status/2097762061103108595",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S12",
+      "event_type": "",
+      "organizer": "Variance Project",
+      "venue": "",
+      "calendar_uid": "",
+      "source_ids": [
+        "katya-sable-booth-poster"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "11:30",
+      "end_time": "12:15",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Variance Project - Booth S12 (Hall 10)",
+      "event": "Leia Memoria — Meet & Greet and Karaoke",
+      "source_url": "https://x.com/Variance_Pro/status/2098125542159442191",
+      "listed_hosts": "Leia Memoria",
+      "participants": "Leia Memoria",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Combined meet-and-greet and karaoke slot; individual activity times not separately listed.",
+      "participant_source_urls": "https://x.com/Variance_Pro/status/2098125542159442191",
+      "is_concert": "true",
+      "concert_classification_notes": "Published karaoke performance.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S12",
+      "event_type": "",
+      "organizer": "Variance Project",
+      "venue": "",
+      "calendar_uid": "",
+      "source_ids": [
+        "leia-memoria-booth-poster"
+      ]
     }
   ],
   "untimed_announcements": [
@@ -574,34 +685,6 @@
       ],
       "source_url": "https://x.com/veizojp/status/2092975429888119225",
       "notes": "Individual day and time not announced. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Katya Sable"
-      ],
-      "organizer": "Variance Project",
-      "location": "Hall 10, Booth S12",
-      "event": "Booth appearance",
-      "date": "2026-09-19",
-      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
-      "source_ids": [
-        "variance-saturday-announcements"
-      ],
-      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Embyr Sparks"
-      ],
-      "organizer": "Variance Project",
-      "location": "Hall 10, Booth S12",
-      "event": "Meet & Greet",
-      "date": "2026-09-19",
-      "source_url": "https://ww.twstalker.com/Vtuber_Expo",
-      "source_ids": [
-        "variance-saturday-announcements"
-      ],
-      "notes": "Saturday booth appearance announced. Start and end times could not be verified; attached poster unavailable. Displayed in unconfirmed.json; excluded from calendar downloads."
     },
     {
       "participants": [

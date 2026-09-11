@@ -30,7 +30,7 @@ setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };
-  for (const [type, expected] of [['all', 216], ['concert', 14], ['meet-greet', 170], ['roaming', 9], ['afterparty', 1], ['stage-panel', 33]]) {
+  for (const [type, expected] of [['all', 219], ['concert', 15], ['meet-greet', 173], ['roaming', 9], ['afterparty', 1], ['stage-panel', 33]]) {
     select(type); assert.equal(run('filteredSessions().length'), expected, type);
     const url = context.location.href;
     assert.equal(new URL(url).searchParams.get('type'), type === 'all' ? null : type);
@@ -40,49 +40,49 @@ setImmediate(async () => {
     const calendar = run('createCalendar(filteredSessions())');
     assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, expected);
   }
-  for (const [query, expected, type] of [['concerts=1', 14, 'concert'], ['meet-greets=only', 170, 'meet-greet'], ['meet-greets=exclude', 46, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 13, 'concert'], ['type=invalid', 216, 'all']]) {
+  for (const [query, expected, type] of [['concerts=1', 15, 'concert'], ['meet-greets=only', 173, 'meet-greet'], ['meet-greets=exclude', 46, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 13, 'concert'], ['type=invalid', 219, 'all']]) {
     context.location.href = 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/?' + query;
     windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), expected, query);
     assert(run(`selectedTypes.has(${JSON.stringify(type)})`));
   }
   select('concert'); check('roaming', true); check('afterparty', true);
-  assert.equal(run('filteredSessions().length'), 23); // Afterparty already matches Concerts.
+  assert.equal(run('filteredSessions().length'), 24); // Afterparty already matches Concerts.
   assert.equal(elements['#event-types-summary'].textContent, '3 selected');
   const multiURL = context.location.href;
   assert.equal(new URL(multiURL).searchParams.get('type'), 'afterparty,concert,roaming');
   elements['#reset'].click(); context.location.href = multiURL; windowHandlers.popstate();
-  assert.equal(run('filteredSessions().length'), 23);
+  assert.equal(run('filteredSessions().length'), 24);
   const multiCalendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
-  assert.equal(new Set(multiCalendar.match(/^UID:.+$/gm)).size, 23);
+  assert.equal(new Set(multiCalendar.match(/^UID:.+$/gm)).size, 24);
   check('concert', false); check('roaming', false); check('afterparty', false);
   assert.equal(run('filteredSessions().length'), 0);
   assert.equal(new URL(context.location.href).searchParams.get('type'), 'none');
   windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), 0);
   assert.equal(elements['#download-calendar'].disabled, true);
-  check('all', true); assert.equal(run('filteredSessions().length'), 216);
+  check('all', true); assert.equal(run('filteredSessions().length'), 219);
   select('roaming'); elements['#group'].value = 'group:florAtelier'; elements['#group'].handlers.change();
   assert.equal(run('filteredSessions().length'), 2);
   elements['#reset'].click(); assert.equal(new URL(context.location.href).search, '');
   // Load the real optional announcements as a page with data-unconfirmed does.
   context.document.body.dataset.unconfirmed = 'unconfirmed.json';
   const pending = await run('loadUnconfirmed()');
-  assert.equal(pending.length, 8);
+  assert.equal(pending.length, 6);
   await run('load()');
-  assert.equal(run('filteredSessions().length'), 224);
+  assert.equal(run('filteredSessions().length'), 225);
   const unknownButton = elements['.days'].children.find(b => b.dataset.day === 'unconfirmed');
   assert.equal(unknownButton.textContent, 'Unconfirmed time');
   unknownButton.click();
-  assert.equal(run('filteredSessions().length'), 8);
+  assert.equal(run('filteredSessions().length'), 6);
   assert.equal(new URL(context.location.href).searchParams.get('day'), 'unconfirmed');
   assert.equal(elements['#download-calendar'].disabled, true);
   assert(!run('createCalendar(filteredSessions())').includes('BEGIN:VEVENT'));
   assert(!run('card(filteredSessions()[0])').children.some(c => c.className === 'session-calendar'));
   const sharedPending = context.location.href;
-  elements['#reset'].click(); assert.equal(run('filteredSessions().length'), 224);
+  elements['#reset'].click(); assert.equal(run('filteredSessions().length'), 225);
   assert.equal(new URL(context.location.href).search, '');
   context.location.href = sharedPending; windowHandlers.popstate();
-  assert.equal(run('filteredSessions().length'), 8);
-  select('meet-greet'); assert.equal(run('filteredSessions().length'), 7);
+  assert.equal(run('filteredSessions().length'), 6);
+  select('meet-greet'); assert.equal(run('filteredSessions().length'), 6);
   elements['#group'].value = 'group:Digital Gear / Veizo'; elements['#group'].handlers.change();
   assert.equal(run('filteredSessions().length'), 6);
   elements['#talent'].value = run("talentKey('Mikan')"); elements['#talent'].handlers.change();
@@ -90,11 +90,11 @@ setImmediate(async () => {
   assert.equal(run("participantChip('Mikan').href"), 'https://x.com/MikanVT');
   elements['#reset'].click();
   elements['.days'].children.find(b => b.dataset.day === '2026-09-19').click();
-  assert.equal(run('filteredSessions().filter(s => !hasConfirmedTime(s)).length'), 2);
+  assert.equal(run('filteredSessions().filter(s => !hasConfirmedTime(s)).length'), 0);
   assert(!run("filteredSessions().some(s => s.organizer === 'Digital Gear / Veizo')"));
   elements['#reset'].click();
-  assert.equal((run('createCalendar(filteredSessions())').match(/BEGIN:VEVENT/g) || []).length, 216);
-  assert.equal(elements['#download-calendar'].textContent, 'Download 216 sessions (.ics)');
+  assert.equal((run('createCalendar(filteredSessions())').match(/BEGIN:VEVENT/g) || []).length, 219);
+  assert.equal(elements['#download-calendar'].textContent, 'Download 219 sessions (.ics)');
   assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.start_time === '14:00' && s.stage === 'JUBILEE STAGE').participants"), 'cakejumper');
   assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.start_time === '15:30' && s.stage === 'JUBILEE STAGE').participants.split(';').length"), 6);
   const originalFetch = context.fetch;
