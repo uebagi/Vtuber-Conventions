@@ -123,6 +123,13 @@
       "url": "https://x.com/Variance_Pro/status/2098125542159442191",
       "type": "poster",
       "locator": "Attached poster bottom banner: activity, date, BST times and Hall 10 / S12"
+    },
+    {
+      "id": "digital-gear-nana-asteria",
+      "url": "https://x.com/veizojp/status/2097324078960927023",
+      "type": "poster",
+      "locator": "Nana Asteria final-wave announcement; attached poster identifies Nana and Hall 9 S09",
+      "notes": "Tweet lists September 18-20; neither tweet nor poster gives an individual day or time."
     }
   ],
   "sessions": [
@@ -770,6 +777,23 @@
       ],
       "source_url": "https://www.sotwe.com/Vaiolis",
       "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "Nana Asteria"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "Meet & Greet",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_url": "https://x.com/veizojp/status/2097324078960927023",
+      "source_ids": [
+        "digital-gear-nana-asteria"
+      ],
+      "notes": "Displayed in unconfirmed.json. Individual day/time unconfirmed; excluded from calendar downloads."
     }
   ]
 }

@@ -114,6 +114,25 @@
       "meet_greet_type": "Virtual",
       "price": "Not listed",
       "booth": "S09"
+    },
+    {
+      "id": "digital-gear-nanaasteria",
+      "date": "",
+      "day": "",
+      "event": "Nana Asteria — Meet & Greet",
+      "participants": "Nana Asteria",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "organizer": "Digital Gear / Veizo",
+      "source_url": "https://x.com/veizojp/status/2097324078960927023",
+      "participant_source_urls": "https://x.com/veizojp/status/2097324078960927023",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Announced for VeXpo, September 18-20, 2026. Poster confirms Digital Gear at Hall 9, S09. Individual day, time and price not published in this announcement.",
+      "is_meet_greet": "true",
+      "is_concert": "false",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09"
     }
   ]
 }
