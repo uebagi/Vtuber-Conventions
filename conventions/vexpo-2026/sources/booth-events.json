@@ -136,6 +136,12 @@
       "url": "https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
       "type": "press-release",
       "locator": "Digital Gear September 10 release; booth program and NEPHLA profile sections, plus attached banner"
+    },
+    {
+      "id": "official-exhibitors",
+      "url": "https://vexpo.uk/exhibitors-vendors",
+      "type": "webpage",
+      "locator": "Oshi Connect: Booth S10"
     }
   ],
   "sessions": [
@@ -207,27 +213,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Yukinoshita Peo — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Yukinoshita Peo",
       "participants": "Yukinoshita Peo",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-3"
-      ]
+        "announcement-3",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1130-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-19",
@@ -237,27 +245,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "GX Aura — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "GX Aura",
       "participants": "GX Aura",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-4"
-      ]
+        "announcement-4",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1245-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-19",
@@ -267,27 +277,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Projekt Melody — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Projekt Melody",
       "participants": "Projekt Melody",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-5"
-      ]
+        "announcement-5",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1400-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-19",
@@ -297,27 +309,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Nemimi Yane — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Nemimi Yane",
       "participants": "Nemimi Yane",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-6"
-      ]
+        "announcement-6",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1515-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-19",
@@ -327,27 +341,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Fuzuki Miki — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Fuzuki Miki",
       "participants": "Fuzuki Miki",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-7"
-      ]
+        "announcement-7",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1630-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-19",
@@ -357,27 +373,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "PPSlayerVT — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "PPSlayerVT",
       "participants": "PPSlayerVT",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-8"
-      ]
+        "announcement-8",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1745-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-19",
@@ -387,27 +405,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Kou Mariya — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Kou Mariya",
       "participants": "Kou Mariya",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-9"
-      ]
+        "announcement-9",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-19-1845-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-20",
@@ -417,27 +437,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Elia Stellaria — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Elia Stellaria",
       "participants": "Elia Stellaria",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-10"
-      ]
+        "announcement-10",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-20-1130-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-20",
@@ -447,27 +469,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Omi — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Omi",
       "participants": "Omi",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-11"
-      ]
+        "announcement-11",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-20-1245-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-20",
@@ -477,27 +501,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Rem Kanashibari — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Rem Kanashibari",
       "participants": "Rem Kanashibari",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-12"
-      ]
+        "announcement-12",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-20-1400-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-20",
@@ -507,27 +533,29 @@
       "timezone": "Europe/London",
       "timezone_abbreviation": "BST",
       "utc_offset": "+01:00",
-      "stage": "Oshi Connect booth (number unconfirmed)",
+      "stage": "Oshi Connect booth - S10",
       "event": "Essie — Meet & Greet and Cheki",
       "source_url": "https://oshi-connect.net/vexpo-2026",
       "listed_hosts": "Essie",
       "participants": "Essie",
       "lineup_status": "named lineup published",
-      "lineup_notes": "Meet-and-greet and cheki availability window. Booth number and price not listed on the schedule page.",
-      "participant_source_urls": "https://oshi-connect.net/vexpo-2026",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
       "is_concert": "false",
       "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
       "is_meet_greet": "true",
       "event_status": "unofficial",
       "meet_greet_type": "Virtual",
       "price": "Not listed",
-      "booth": "",
+      "booth": "S10",
       "event_type": "",
       "organizer": "Oshi Connect",
       "venue": "",
       "source_ids": [
-        "announcement-13"
-      ]
+        "announcement-13",
+        "official-exhibitors"
+      ],
+      "calendar_uid": "2026-09-20-1515-oshi-connect-booth-number-unconfirmed-@vexpo-fan-planner"
     },
     {
       "date": "2026-09-18",
