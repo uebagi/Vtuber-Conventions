@@ -133,6 +133,26 @@
       "meet_greet_type": "Virtual",
       "price": "Not listed",
       "booth": "S09"
+    },
+    {
+      "id": "digital-gear-nephla-live",
+      "date": "",
+      "day": "",
+      "event": "NEPHLA — V祭 LIVE in VeXpo",
+      "participants": "NEPHLA",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "organizer": "Digital Gear / Veizo",
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
+      "participant_source_urls": "https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Live performance at Digital Gear, Hall 9 S09, during September 18-20. Individual day and time not announced. Simultaneously streamed on V-sai STUDIO: https://www.youtube.com/@V-saiSTUDIO. No NEPHLA meet-and-greet confirmed by this release.",
+      "is_meet_greet": "false",
+      "is_concert": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "",
+      "price": "Not listed",
+      "booth": "S09",
+      "concert_classification_notes": "Live music performance announced by Digital Gear; streamed from its motion-capture studio in Japan to the booth."
     }
   ]
 }

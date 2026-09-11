@@ -130,6 +130,12 @@
       "type": "poster",
       "locator": "Nana Asteria final-wave announcement; attached poster identifies Nana and Hall 9 S09",
       "notes": "Tweet lists September 18-20; neither tweet nor poster gives an individual day or time."
+    },
+    {
+      "id": "digital-gear-v-sai-release",
+      "url": "https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
+      "type": "press-release",
+      "locator": "Digital Gear September 10 release; booth program and NEPHLA profile sections, plus attached banner"
     }
   ],
   "sessions": [
@@ -794,6 +800,30 @@
         "digital-gear-nana-asteria"
       ],
       "notes": "Displayed in unconfirmed.json. Individual day/time unconfirmed; excluded from calendar downloads."
+    },
+    {
+      "participants": [
+        "NEPHLA"
+      ],
+      "organizer": "Digital Gear / Veizo",
+      "location": "Hall 9, Booth S09",
+      "event": "V祭 LIVE in VeXpo",
+      "date_range": [
+        "2026-09-18",
+        "2026-09-20"
+      ],
+      "source_ids": [
+        "digital-gear-v-sai-release"
+      ],
+      "source_url": "https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
+      "notes": "Live performance transmitted from Japan, also on V-sai STUDIO. Day/time unannounced; stored in unconfirmed.json as a concert, not a meet-and-greet."
     }
-  ]
+  ],
+  "lineup_check": {
+    "checked_on": "2026-09-11",
+    "source_ids": [
+      "digital-gear-v-sai-release"
+    ],
+    "notes": "Release announces 8-10 overseas meet-and-greet talents in addition to NEPHLA. Seven overseas guests are currently verified in the planner. Complete roster remains unresolved; no extra identities inferred from headcount. Veizo profile results remain incomplete."
+  }
 }
