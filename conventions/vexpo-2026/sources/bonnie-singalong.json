@@ -1,0 +1,144 @@
+{
+  "checked_on": "2026-09-11",
+  "event": "Sing-A-Long Concert with Bonnie & Friends",
+  "date": "2026-09-20",
+  "start_time": "11:30",
+  "end_time": "12:30",
+  "announced_participant_count": 27,
+  "sources": [
+    {
+      "id": "organizer-announcement",
+      "url": "https://x.com/Vtuber_Expo/status/2095134912487530858",
+      "type": "social-post",
+      "locator": "Original announcement and attached concert poster"
+    },
+    {
+      "id": "bonniebarkswell-self-post",
+      "url": "https://x.com/BonnieBarkswell/status/2095137884382670923",
+      "type": "social-post",
+      "locator": "Host explicitly named by the organizer; own quote announces the 27-talent concert."
+    },
+    {
+      "id": "pleiadeslillie-self-post",
+      "url": "https://x.com/PleiadesLillie/status/2095138927640252826",
+      "type": "social-post",
+      "locator": "Explicitly announces participation in a quote of the concert announcement."
+    },
+    {
+      "id": "xiulanlong-self-post",
+      "url": "https://x.com/XiulanLong/status/2095141289570246777",
+      "type": "social-post",
+      "locator": "Quotes this concert announcement with a statement about her performance."
+    },
+    {
+      "id": "nanaasteria-self-post",
+      "url": "https://x.com/NanaAsteria/status/2095154947432288499",
+      "type": "social-post",
+      "locator": "Quotes the concert announcement with a crop of her blue-haired, gold-crowned portrait near the bottom right."
+    },
+    {
+      "id": "pillowdearasmr-self-post",
+      "url": "https://x.com/pillowdearASMR/status/2095217555832979510",
+      "type": "social-post",
+      "locator": "Direct reply contains a crop of the peach-haired portrait with floppy ears near the bottom center."
+    },
+    {
+      "id": "pennypuffball-self-post",
+      "url": "https://x.com/PennyPuffball/status/2095254782239711559",
+      "type": "social-post",
+      "locator": "Direct reply contains a crop of the light-blue-haired portrait beside Nana near the bottom."
+    },
+    {
+      "id": "ophieouroboros-self-post",
+      "url": "https://x.com/OphieOuroboros/status/2095383042718040122",
+      "type": "social-post",
+      "locator": "Direct reply explicitly names herself and crops the white-haired portrait with yellow goggles at bottom right."
+    },
+    {
+      "id": "remkanashibari-self-post",
+      "url": "https://x.com/REMKanashibari/status/2095154146735169605",
+      "type": "social-post",
+      "locator": "Direct reply contains a crop of the dark-haired portrait with the heart hair clip at bottom left."
+    }
+  ],
+  "participants": [
+    {
+      "name": "Bonnie Barkswell",
+      "source_ids": [
+        "bonniebarkswell-self-post"
+      ],
+      "evidence": "Host explicitly named by the organizer; own quote announces the 27-talent concert."
+    },
+    {
+      "name": "Lillie Pleiades",
+      "source_ids": [
+        "pleiadeslillie-self-post"
+      ],
+      "evidence": "Explicitly announces participation in a quote of the concert announcement."
+    },
+    {
+      "name": "Xiulan Long",
+      "source_ids": [
+        "xiulanlong-self-post"
+      ],
+      "evidence": "Quotes this concert announcement with a statement about her performance."
+    },
+    {
+      "name": "Nana Asteria",
+      "source_ids": [
+        "nanaasteria-self-post"
+      ],
+      "evidence": "Quotes the concert announcement with a crop of her blue-haired, gold-crowned portrait near the bottom right."
+    },
+    {
+      "name": "PillowDear",
+      "source_ids": [
+        "pillowdearasmr-self-post"
+      ],
+      "evidence": "Direct reply contains a crop of the peach-haired portrait with floppy ears near the bottom center."
+    },
+    {
+      "name": "Penny Puffball",
+      "source_ids": [
+        "pennypuffball-self-post"
+      ],
+      "evidence": "Direct reply contains a crop of the light-blue-haired portrait beside Nana near the bottom."
+    },
+    {
+      "name": "Ophie Ouroboros",
+      "source_ids": [
+        "ophieouroboros-self-post"
+      ],
+      "evidence": "Direct reply explicitly names herself and crops the white-haired portrait with yellow goggles at bottom right."
+    },
+    {
+      "name": "Rem Kanashibari",
+      "source_ids": [
+        "remkanashibari-self-post"
+      ],
+      "evidence": "Direct reply contains a crop of the dark-haired portrait with the heart hair clip at bottom left."
+    }
+  ],
+  "unresolved": [
+    {
+      "names": [
+        "Ruby Runeheart",
+        "Roko",
+        "Hazumi Aileen"
+      ],
+      "notes": "Replies express excitement or use a reaction GIF, but do not explicitly identify a poster portrait or confirm performing. Not added from those replies alone."
+    },
+    {
+      "names": [
+        "Lia"
+      ],
+      "notes": "Fan reply identifies Lia; primary self-identification not found in the supplied saves. Retained as a lead."
+    }
+  ],
+  "notes": [
+    "User-provided saved quote and reply pages were read as data, with relevant original post IDs and reply/quote relationships cross-checked through public tweet metadata. Attached portrait crops inspected directly.",
+    "Saved reply page also includes an unrelated Emiliya Fell bird post; excluded. Saved quote page includes a fan post about PillowDear; the creator reply supplies stronger evidence.",
+    "Neither Nene Amano nor Chikafuji Lisa has been added from earlier unverified visual guesses. These files do not establish all 27 identities.",
+    "No downloaded HTML, private local paths, or source images are included in the published site."
+  ]
+}
