@@ -228,7 +228,7 @@ function createCalendar(items, now = new Date()) {
   for (const session of items.filter(hasConfirmedTime)) {
     const title = session.event === '???' ? 'To be announced' : session.event;
     const description = [
-      `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : session.end_time ? '–' + session.end_time : ' (end time unannounced)'} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
+      `Local time: ${displayDate(session.date)} ${session.start_time}${isTimeMarker(session) ? '' : session.end_time ? '–' + (session.end_date && session.end_date !== session.date ? displayDate(session.end_date) + ' ' : '') + session.end_time : ' (end time unannounced)'} ${session.timezone_abbreviation || session.timezone} (UTC${session.utc_offset}).`,
       session.participants ? `Participants: ${session.participants}` : isTimeMarker(session) ? '' : 'Participants not announced.',
       `Event status: ${statusLabel(session)}`,
       groupsFor(session).length ? `Groups: ${groupsFor(session).join(', ')}` : '',
@@ -241,7 +241,7 @@ function createCalendar(items, now = new Date()) {
     const uid = session.calendar_uid?.replace(/[\r\n]/g, '') || `${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/[^a-z0-9]+/g, '-')}@${config.uidDomain || config.eventId}`;
     lines.push('BEGIN:VEVENT', `UID:${uid}`, `DTSTAMP:${calendarTimestamp(now)}`,
       `DTSTART:${calendarTimestamp(`${session.date}T${session.start_time}:00${session.utc_offset}`)}`,
-      ...(isTimeMarker(session) || !session.end_time ? [] : [`DTEND:${calendarTimestamp(`${session.date}T${session.end_time}:00${session.utc_offset}`)}`]),
+      ...(isTimeMarker(session) || !session.end_time ? [] : [`DTEND:${calendarTimestamp(`${session.end_date || session.date}T${session.end_time}:00${session.utc_offset}`)}`]),
       `SUMMARY:${calendarText(`${config.eventName}: ${title}`)}`,
       `LOCATION:${calendarText(`${session.stage}, ${session.venue || config.venue}`)}`,
       `DESCRIPTION:${calendarText(description)}`,
@@ -270,8 +270,9 @@ function card(session) {
   for (const [i, value] of (!hasConfirmedTime(session) ? [] : isTimeMarker(session) || !session.end_time ? [session.start_time] : [session.start_time, session.end_time]).entries()) {
     if (i) times.append(' – ');
     const time = el('time', '', value);
-    time.dateTime = `${session.date}T${value}:00${session.utc_offset}`;
+    time.dateTime = `${i ? session.end_date || session.date : session.date}T${value}:00${session.utc_offset}`;
     times.append(time);
+    if (i && session.end_date && session.end_date !== session.date) times.append(` (${displayDate(session.end_date)})`);
   }
   if (hasConfirmedTime(session) && !session.end_time && !isTimeMarker(session)) times.append(' · End time unannounced');
   top.append(times); article.append(top);
