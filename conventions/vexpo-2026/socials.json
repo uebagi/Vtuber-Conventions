@@ -2276,6 +2276,20 @@
         "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/"
       ],
       "notes": "X handle published in the official ticket page performer introduction."
+    },
+    "Roca Rourin": {
+      "x": "https://x.com/RocaRourin",
+      "sources": [
+        "https://twstalker.com/RocaRourin"
+      ],
+      "checked_on": "2026-09-12"
+    },
+    "Yena Youngblood": {
+      "x": "https://x.com/YenaYoungblood",
+      "sources": [
+        "https://w.twstalker.com/YenaYoungblood"
+      ],
+      "checked_on": "2026-09-12"
     }
   }
 }
