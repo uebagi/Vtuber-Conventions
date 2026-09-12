@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-09-12",
+  "sources": [
+    {
+      "id": "stages",
+      "url": "https://vexpo.uk/stages-panels",
+      "type": "schedule",
+      "locator": "Sunday Monarch and Panel Room 1 timetable and descriptions"
+    },
+    {
+      "id": "meet-greets",
+      "url": "https://vexpo.uk/meet-greets",
+      "type": "schedule",
+      "locator": "Full visible page text compared with September 11 snapshot"
+    }
+  ],
+  "findings": [
+    {
+      "source_ids": [
+        "stages"
+      ],
+      "notes": "Two placeholders now named: Sunday 10:00-11:00 Monarch, The (Second) Greatest VTuber Quiz, Lucius Merryweather and Lumi; Sunday 15:10-16:30 Panel Room 1, The ASMR Closet, PillowDear. Times unchanged. ASMR is ticketed four-minute one-on-one interaction, included in meet-and-greet filtering."
+    },
+    {
+      "source_ids": [
+        "meet-greets"
+      ],
+      "notes": "Official meet-and-greet page unchanged."
+    }
+  ],
+  "limitations": [
+    "Oshi Connect schedule returned HTTP 403; unable to verify updates.",
+    "Indexed social searches did not yield further verifiable new schedule announcements; X timelines are not comprehensively accessible."
+  ]
+}

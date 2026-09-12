@@ -2290,6 +2290,30 @@
         "https://w.twstalker.com/YenaYoungblood"
       ],
       "checked_on": "2026-09-12"
+    },
+    "Lucius Merryweather": {
+      "x": "https://x.com/Merrydawg",
+      "sources": [
+        "https://x.com/Merrydawg",
+        "https://vexpo.uk/guests"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@Merrydawg",
+        "source": "https://vexpo.uk/guests"
+      },
+      "checked_on": "2026-09-12"
+    },
+    "Lumi": {
+      "x": "https://x.com/Lumituber",
+      "sources": [
+        "https://x.com/Lumituber",
+        "https://vexpo.uk/guests"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/lumituber",
+        "source": "https://vexpo.uk/guests"
+      },
+      "checked_on": "2026-09-12"
     }
   }
 }

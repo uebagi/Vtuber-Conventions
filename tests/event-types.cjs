@@ -30,7 +30,7 @@ setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };
-  for (const [type, expected] of [['all', 233], ['concert', 17], ['meet-greet', 184], ['roaming', 9], ['afterparty', 4], ['stage-panel', 33]]) {
+  for (const [type, expected] of [['all', 233], ['concert', 17], ['meet-greet', 185], ['roaming', 9], ['afterparty', 4], ['stage-panel', 32]]) {
     select(type); assert.equal(run('filteredSessions().length'), expected, type);
     const url = context.location.href;
     assert.equal(new URL(url).searchParams.get('type'), type === 'all' ? null : type);
@@ -40,7 +40,7 @@ setImmediate(async () => {
     const calendar = run('createCalendar(filteredSessions())');
     assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, expected);
   }
-  for (const [query, expected, type] of [['concerts=1', 17, 'concert'], ['meet-greets=only', 184, 'meet-greet'], ['meet-greets=exclude', 49, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 15, 'concert'], ['type=invalid', 233, 'all']]) {
+  for (const [query, expected, type] of [['concerts=1', 17, 'concert'], ['meet-greets=only', 185, 'meet-greet'], ['meet-greets=exclude', 48, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 15, 'concert'], ['type=invalid', 233, 'all']]) {
     context.location.href = 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/?' + query;
     windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), expected, query);
     assert(run(`selectedTypes.has(${JSON.stringify(type)})`));
