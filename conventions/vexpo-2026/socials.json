@@ -2238,39 +2238,44 @@
       ]
     },
     "WeissAndChill": {
-      "x": null,
+      "x": "https://x.com/WeissAndChill",
       "sources": [
-        "https://x.com/Vtuber_Expo/status/2095874673045041585"
+        "https://x.com/Vtuber_Expo/status/2095874673045041585",
+        "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/"
       ],
-      "notes": "Named on the official afterparty poster; X handle not confirmed."
+      "notes": "X handle published in the official ticket page performer introduction."
     },
     "Yuriko Tiger": {
-      "x": null,
+      "x": "https://x.com/yurikotigra",
       "sources": [
-        "https://x.com/Vtuber_Expo/status/2095874673045041585"
+        "https://x.com/Vtuber_Expo/status/2095874673045041585",
+        "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/"
       ],
-      "notes": "Named on the official afterparty poster; X handle not confirmed."
+      "notes": "X handle published in the official ticket page performer introduction."
     },
     "Matcha": {
-      "x": null,
+      "x": "https://x.com/MatchaVTClips",
       "sources": [
-        "https://x.com/Vtuber_Expo/status/2095874673045041585"
+        "https://x.com/Vtuber_Expo/status/2095874673045041585",
+        "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/"
       ],
-      "notes": "Named on the official afterparty poster; X handle not confirmed."
+      "notes": "X handle published in the official ticket page performer introduction."
     },
     "Sare": {
-      "x": null,
+      "x": "https://x.com/officialSARE",
       "sources": [
-        "https://x.com/Vtuber_Expo/status/2095874673045041585"
+        "https://x.com/Vtuber_Expo/status/2095874673045041585",
+        "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/"
       ],
-      "notes": "Named on the official afterparty poster; X handle not confirmed."
+      "notes": "X handle published in the official ticket page performer introduction."
     },
     "Blobbanaut": {
-      "x": null,
+      "x": "https://x.com/blobbanaut",
       "sources": [
-        "https://x.com/Vtuber_Expo/status/2095874673045041585"
+        "https://x.com/Vtuber_Expo/status/2095874673045041585",
+        "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/"
       ],
-      "notes": "Named on the official afterparty poster; X handle not confirmed."
+      "notes": "X handle published in the official ticket page performer introduction."
     }
   }
 }
