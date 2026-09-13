@@ -3,6 +3,22 @@
   "source_url": "https://vexpo.uk/about/floor-plan",
   "locations": [
     {
+      "id": "underground",
+      "label": "Underground 18+",
+      "bounds": [
+        27.2,
+        19.6,
+        11.3,
+        9.3
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": [
+        "Underground 18+ - "
+      ],
+      "note": "Entire Underground 18+ area. Adults only."
+    },
+    {
       "id": "monarch",
       "label": "Monarch Stage",
       "bounds": [
