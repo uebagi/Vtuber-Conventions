@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-09-12",
+  "checked_on": "2026-09-13",
   "sources": [
     {
       "id": "announcement-1",
@@ -196,6 +196,13 @@
       "url": "https://x.com/ChromaSHIFT_FTW/status/2098788727040450856",
       "type": "poster",
       "locator": "Three-day booth schedule and post text: Hall 9 S02, September 18-20; free admission, two-minute slots, queue cap and GBP 11 chekis"
+    },
+    {
+      "id": "digital-gear-full-schedule",
+      "url": "https://x.com/veizojp/status/2098773634097508742",
+      "type": "poster",
+      "locator": "Attached VeXpo 2026 Meet & Greet Schedule: Friday, Saturday and Sunday columns; Digital Gear Streaming Booth, Hall 9 S09",
+      "notes": "Times transcribed from the poster in BST. STREAMED labels recorded only where shown. Resolves all eight previously untimed Digital Gear announcements."
     }
   ],
   "sessions": [
@@ -1214,143 +1221,425 @@
       "source_ids": [
         "chromashift-full-booth-schedule"
       ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "12:15",
+      "end_time": "13:15",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "NEPHLA — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "NEPHLA",
+      "participants": "NEPHLA",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule. Earlier Digital Gear announcement describes NEPHLA performing live from Japan; the latest poster lists these slots in its meet-and-greet schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742; https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
+      "is_concert": "true",
+      "concert_classification_notes": "Live music performance announced by Digital Gear; also listed in the meet-and-greet schedule.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "13:30",
+      "end_time": "14:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Mikan — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Mikan",
+      "participants": "Mikan",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "14:45",
+      "end_time": "15:15",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "0shiriko — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "0shiriko",
+      "participants": "0shiriko",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "17:15",
+      "end_time": "17:45",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Arietty — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Arietty",
+      "participants": "Arietty",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "11:15",
+      "end_time": "11:45",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Märpo Elder — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Märpo Elder",
+      "participants": "Märpo Elder",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "12:15",
+      "end_time": "13:15",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "NEPHLA — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "NEPHLA",
+      "participants": "NEPHLA",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule. Earlier Digital Gear announcement describes NEPHLA performing live from Japan; the latest poster lists these slots in its meet-and-greet schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742; https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
+      "is_concert": "true",
+      "concert_classification_notes": "Live music performance announced by Digital Gear; also listed in the meet-and-greet schedule.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "13:45",
+      "end_time": "14:15",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Evelynn Red — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Evelynn Red",
+      "participants": "Evelynn Red",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Nana Asteria — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Nana Asteria",
+      "participants": "Nana Asteria",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "17:30",
+      "end_time": "18:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Cera Luceria — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Cera Luceria",
+      "participants": "Cera Luceria",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "18:45",
+      "end_time": "19:15",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "RIA — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "RIA",
+      "participants": "RIA",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "11:00",
+      "end_time": "12:00",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Eruu Claymie — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Eruu Claymie",
+      "participants": "Eruu Claymie",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "12:45",
+      "end_time": "13:45",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Yoto — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Yoto",
+      "participants": "Yoto",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "14:00",
+      "end_time": "14:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Digital Gear / Veizo - Booth S09 (Hall 9)",
+      "event": "Nemo Nevermore — Meet & Greet",
+      "source_url": "https://x.com/veizojp/status/2098773634097508742",
+      "listed_hosts": "Nemo Nevermore",
+      "participants": "Nemo Nevermore",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Published Digital Gear / Veizo meet-and-greet schedule; Hall 9, booth S09. Marked STREAMED on the schedule.",
+      "participant_source_urls": "https://x.com/veizojp/status/2098773634097508742",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S09",
+      "event_type": "",
+      "organizer": "Digital Gear / Veizo",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "digital-gear-full-schedule"
+      ]
     }
   ],
-  "untimed_announcements": [
-    {
-      "participants": [
-        "0shiriko"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_url": "https://x.com/veizojp/status/2092975429888119225",
-      "notes": "Individual day and time not announced. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Märpo Elder"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_ids": [
-        "digital-gear-guest-announcements"
-      ],
-      "source_url": "https://www.sotwe.com/Vaiolis",
-      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Cera Luceria"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_ids": [
-        "digital-gear-guest-announcements"
-      ],
-      "source_url": "https://www.sotwe.com/Vaiolis",
-      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Mikan"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_ids": [
-        "digital-gear-guest-announcements"
-      ],
-      "source_url": "https://www.sotwe.com/Vaiolis",
-      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "RIA"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_ids": [
-        "digital-gear-guest-announcements"
-      ],
-      "source_url": "https://www.sotwe.com/Vaiolis",
-      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Evelynn Red"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_ids": [
-        "digital-gear-guest-announcements"
-      ],
-      "source_url": "https://www.sotwe.com/Vaiolis",
-      "notes": "Day and time unconfirmed. Displayed in unconfirmed.json; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "Nana Asteria"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "Meet & Greet",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_url": "https://x.com/veizojp/status/2097324078960927023",
-      "source_ids": [
-        "digital-gear-nana-asteria"
-      ],
-      "notes": "Displayed in unconfirmed.json. Individual day/time unconfirmed; excluded from calendar downloads."
-    },
-    {
-      "participants": [
-        "NEPHLA"
-      ],
-      "organizer": "Digital Gear / Veizo",
-      "location": "Hall 9, Booth S09",
-      "event": "V祭 LIVE in VeXpo",
-      "date_range": [
-        "2026-09-18",
-        "2026-09-20"
-      ],
-      "source_ids": [
-        "digital-gear-v-sai-release"
-      ],
-      "source_url": "https://prtimes.jp/main/html/rd/p/000000031.000133595.html",
-      "notes": "Live performance transmitted from Japan, also on V-sai STUDIO. Day/time unannounced; stored in unconfirmed.json as a concert, not a meet-and-greet."
-    }
-  ],
+  "untimed_announcements": [],
   "lineup_check": {
     "checked_on": "2026-09-11",
     "source_ids": [

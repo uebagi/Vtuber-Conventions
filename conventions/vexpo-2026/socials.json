@@ -1,5 +1,5 @@
 {
-  "checked_on": "2026-09-11",
+  "checked_on": "2026-09-13",
   "profiles": {
     "0shiriko": {
       "x": "https://x.com/0shiriko",
@@ -2348,6 +2348,27 @@
         "https://x.com/aVEnueChannel/status/2097274352047649197"
       ],
       "checked_on": "2026-09-12"
+    },
+    "Arietty": {
+      "x": "https://x.com/Ariettyx3",
+      "sources": [
+        "https://x.com/veizojp/status/2098773634097508742"
+      ],
+      "checked_on": "2026-09-13"
+    },
+    "Yoto": {
+      "x": "https://x.com/kochirayoto",
+      "sources": [
+        "https://x.com/veizojp/status/2098773634097508742"
+      ],
+      "checked_on": "2026-09-13"
+    },
+    "Nemo Nevermore": {
+      "x": "https://x.com/NemoNevermore_",
+      "sources": [
+        "https://x.com/veizojp/status/2098773634097508742"
+      ],
+      "checked_on": "2026-09-13"
     }
   }
 }
