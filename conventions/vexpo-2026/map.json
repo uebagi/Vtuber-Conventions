@@ -1,0 +1,294 @@
+{
+  "image": "https://images.squarespace-cdn.com/content/v1/697e84aee021eb1c80fdbe31/74022d30-6779-4f34-8ede-70a75e68183f/Full+Map.png?format=2500w",
+  "source_url": "https://vexpo.uk/about/floor-plan",
+  "locations": [
+    {
+      "id": "monarch",
+      "label": "Monarch Stage",
+      "bounds": [
+        70,
+        64,
+        27,
+        18
+      ],
+      "stages": [
+        "MONARCH STAGE"
+      ],
+      "booths": [],
+      "stage_prefixes": []
+    },
+    {
+      "id": "jubilee",
+      "label": "Jubilee Stage",
+      "bounds": [
+        3,
+        49,
+        15,
+        13
+      ],
+      "stages": [
+        "JUBILEE STAGE"
+      ],
+      "booths": [],
+      "stage_prefixes": []
+    },
+    {
+      "id": "panel-1",
+      "label": "Panel Room 1",
+      "bounds": [
+        19.5,
+        17.8,
+        6.5,
+        8
+      ],
+      "stages": [
+        "PANEL ROOM 1"
+      ],
+      "booths": [],
+      "stage_prefixes": []
+    },
+    {
+      "id": "panel-2",
+      "label": "Panel Room 2",
+      "bounds": [
+        19.5,
+        6.5,
+        6.5,
+        6.2
+      ],
+      "stages": [
+        "PANEL ROOM 2"
+      ],
+      "booths": [],
+      "stage_prefixes": []
+    },
+    {
+      "id": "meet-greets",
+      "label": "Meet & Greet Area",
+      "bounds": [
+        27.2,
+        6.5,
+        12.3,
+        10
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": [
+        "M&G Booth "
+      ],
+      "note": "General area only. Individual table positions are not shown on this floor plan."
+    },
+    {
+      "id": "hololive",
+      "label": "hololive Meet",
+      "bounds": [
+        40,
+        44,
+        5,
+        8
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": [
+        "M&G Booth holo"
+      ]
+    },
+    {
+      "id": "nijisanji",
+      "label": "NIJISANJI EN / ANYCOLOR",
+      "bounds": [
+        40,
+        33.2,
+        5,
+        8.1
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": [
+        "M&G Booth ANYC "
+      ],
+      "note": "NIJISANJI EN meet-and-greets at ANYC M&G1, M&G2 and M&G3. Individual table positions are not marked on the floor plan."
+    },
+    {
+      "id": "autographs",
+      "label": "Autographs",
+      "bounds": [
+        53.6,
+        46.2,
+        8,
+        6
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": [
+        "M&G Booth Auto"
+      ]
+    },
+    {
+      "id": "chromashift",
+      "label": "ChromaSHIFT \u00b7 S02",
+      "bounds": [
+        83.7,
+        54.1,
+        3.3,
+        4
+      ],
+      "stages": [],
+      "booths": [
+        "S02"
+      ],
+      "stage_prefixes": []
+    },
+    {
+      "id": "digital-gear",
+      "label": "Digital Gear / Veizo \u00b7 S09",
+      "bounds": [
+        75.1,
+        48.1,
+        1.6,
+        4
+      ],
+      "stages": [],
+      "booths": [
+        "S09"
+      ],
+      "stage_prefixes": []
+    },
+    {
+      "id": "phase",
+      "label": "Phase Connect \u00b7 S07",
+      "bounds": [
+        63.3,
+        54.1,
+        5.9,
+        6
+      ],
+      "stages": [],
+      "booths": [
+        "S07"
+      ],
+      "stage_prefixes": []
+    },
+    {
+      "id": "floratelier",
+      "label": "florAtelier \u00b7 S05",
+      "bounds": [
+        73,
+        54.14,
+        3.17,
+        3.96
+      ],
+      "stages": [],
+      "booths": [
+        "S05"
+      ],
+      "stage_prefixes": [],
+      "polygon": [
+        [
+          50,
+          0
+        ],
+        [
+          100,
+          0
+        ],
+        [
+          100,
+          100
+        ],
+        [
+          0,
+          100
+        ],
+        [
+          0,
+          50
+        ],
+        [
+          50,
+          50
+        ]
+      ]
+    },
+    {
+      "id": "variance",
+      "label": "Variance Project / Aegis-Link \u00b7 S12",
+      "bounds": [
+        28.8,
+        54.1,
+        4.8,
+        2
+      ],
+      "stages": [],
+      "booths": [
+        "S12"
+      ],
+      "stage_prefixes": []
+    },
+    {
+      "id": "oshi-connect",
+      "label": "Oshi Connect \u00b7 S10",
+      "bounds": [
+        33.6,
+        54.1,
+        3.3,
+        4
+      ],
+      "stages": [],
+      "booths": [
+        "S10"
+      ],
+      "stage_prefixes": []
+    },
+    {
+      "id": "roaming",
+      "label": "Roaming \u00b7 Halls 9 & 10",
+      "bounds": [
+        0,
+        0,
+        100,
+        100
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": [
+        "Roaming - "
+      ],
+      "note": "Roaming takes place across Halls 9 & 10. The full floor plan is shown; live positions are not tracked.",
+      "overview": true
+    },
+    {
+      "id": "community",
+      "label": "Community Area",
+      "bounds": [
+        88,
+        46.2,
+        8,
+        6
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": []
+    },
+    {
+      "id": "badge",
+      "label": "Badge Collection",
+      "bounds": [
+        64,
+        64.3,
+        5.2,
+        13.5
+      ],
+      "stages": [],
+      "booths": [],
+      "stage_prefixes": []
+    }
+  ],
+  "image_widths": [
+    500,
+    750,
+    1000,
+    1500,
+    2500
+  ]
+}

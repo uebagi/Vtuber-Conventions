@@ -23,6 +23,7 @@ jobs:
         run: |
           node tests/schedule.cjs
           node tests/event-types.cjs
+          node tests/map.cjs
           node tests/build-site.cjs
       - name: Prepare site
         run: node scripts/build-site.cjs

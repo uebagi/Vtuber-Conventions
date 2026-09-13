@@ -303,6 +303,15 @@ function card(session) {
     a.href = url.href; a.target = '_blank'; a.rel = 'noopener noreferrer'; links.append(a);
   });
   details.append(links); article.append(details);
+  const mapLocation = globalThis.conventionMap?.locationFor(session);
+  const actions = mapLocation ? el('div', 'session-actions') : article;
+  if (mapLocation) {
+    const showMap = el('button', 'session-map', 'Show on map');
+    showMap.type = 'button';
+    showMap.addEventListener('click', () => globalThis.conventionMap.open(mapLocation.id));
+    actions.append(showMap);
+    article.append(actions);
+  }
   if (!hasConfirmedTime(session)) {
     article.append(el('p', 'muted', 'Calendar download available once the time is confirmed.'));
     return article;
@@ -310,7 +319,7 @@ function card(session) {
   const download = el('button', 'session-calendar', 'Download calendar (.ics)');
   download.type = 'button'; download.setAttribute('aria-label', `Download calendar for ${session.event === '???' ? 'unannounced session' : session.event}, ${session.day} ${session.start_time}, ${session.stage}`);
   download.addEventListener('click', () => saveCalendar([session], `${config.eventId}-${session.date}-${session.start_time.replace(':', '')}-${session.stage.toLowerCase().replace(/\s+/g, '-')}.ics`));
-  article.append(download); return article;
+  actions.append(download); return article;
 }
 
 function setupEventStatus() {

@@ -10,6 +10,9 @@ const temporary = fs.mkdtempSync(path.join(os.tmpdir(), 'vtuber-conventions-test
 try {
   const output = buildSite(path.join(temporary, 'site'));
   const slug = 'vexpo-2026';
+  for (const file of ['map.json']) assert(fs.existsSync(path.join(output, 'conventions', slug, file)));
+  assert(fs.existsSync(path.join(output, 'assets', 'map.js')));
+  assert(!fs.existsSync(path.join(output, 'conventions', slug, 'floor-plan.png')));
   const rootHTML = fs.readFileSync(path.join(output, 'index.html'), 'utf8');
   assert(rootHTML.includes(`href="conventions/${slug}/"`));
   const convention = path.join(output, 'conventions', slug);

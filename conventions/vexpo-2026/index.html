@@ -7,13 +7,14 @@
   <title>VeXpo 2026 · Schedule</title>
   <link rel="stylesheet" href="../../assets/styles.css">
   <script src="../../assets/app.js" defer></script>
+  <script src="../../assets/map.js" defer></script>
 </head>
-<body data-unconfirmed="unconfirmed.json" data-groups="groups.json" data-opening-hours="opening-hours.json" data-socials="socials.json" data-event-name="VeXpo" data-event-id="vexpo-2026" data-venue="NEC, Birmingham, UK" data-uid-domain="vexpo-fan-planner">
+<body data-map="map.json" data-unconfirmed="unconfirmed.json" data-groups="groups.json" data-opening-hours="opening-hours.json" data-socials="socials.json" data-event-name="VeXpo" data-event-id="vexpo-2026" data-venue="NEC, Birmingham, UK" data-uid-domain="vexpo-fan-planner">
   <main>
     <header class="hero">
       <a href="../../">Conventions</a>
       <p class="intro">VeXpo 2026 · September 18–20, 2026 · NEC, Birmingham</p>
-      <div class="hero-links"><span class="timezone">All times BST · UTC+1</span><a href="https://vexpo.uk/stages-panels" target="_blank" rel="noopener noreferrer">Official schedule ↗</a><a href="schedule.csv" download>Download CSV ↓</a></div>
+      <div class="hero-links"><button id="open-map" type="button" disabled>Floor plan</button><span class="timezone">All times BST · UTC+1</span><a href="https://vexpo.uk/stages-panels" target="_blank" rel="noopener noreferrer">Official schedule ↗</a><a href="schedule.csv" download>Download CSV ↓</a></div>
     </header>
 
     <section id="opening-hours" class="opening-hours" aria-labelledby="opening-hours-heading" hidden></section>
