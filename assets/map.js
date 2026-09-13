@@ -80,6 +80,7 @@ function findMapLocation(locations, session) {
       x = Math.max(visibleX - baseW * scale, Math.min(viewport.clientWidth - visibleX, x));
       y = Math.max(visibleY - baseH * scale, Math.min(viewport.clientHeight - visibleY, y));
       canvas.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+      canvas.style.setProperty('--map-zoom', scale);
       if (responsiveImage && baseW > 1) picture.sizes = `${Math.ceil(baseW * scale)}px`;
       zoomLabel.textContent = `${Math.round(scale * 100)}%`;
       zoomOut.disabled = scale <= 1; zoomIn.disabled = scale >= 6;

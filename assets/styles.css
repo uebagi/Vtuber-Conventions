@@ -48,3 +48,10 @@
 .floor-event-list .card{content-visibility:auto;contain-intrinsic-size:auto 320px}.floor-location-selected .session-map{display:none}
 
 .floor-hotspot.floor-polygon{border:0;border-radius:0;color:#5930a9}.floor-polygon svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;overflow:visible}.floor-polygon polygon{fill:none;stroke:currentColor;stroke-width:4px}.floor-polygon[aria-pressed=true]{color:#ffb900}.floor-polygon:focus-visible{color:#27113c}
+
+/* Keep hotspot strokes thin in screen pixels as the map zooms. */
+.floor-hotspot{border:0;box-shadow:inset 0 0 0 calc(1px / var(--map-zoom,1)) #5930a9}
+.floor-hotspot:hover{outline:0;box-shadow:inset 0 0 0 calc(1.5px / var(--map-zoom,1)) #27113c}
+.floor-hotspot[aria-pressed=true]{outline:0;box-shadow:inset 0 0 0 calc(1.5px / var(--map-zoom,1)) #ffb900}
+.floor-dialog .floor-hotspot:focus-visible{outline:0;box-shadow:inset 0 0 0 calc(2px / var(--map-zoom,1)) var(--accent)}
+.floor-hotspot.floor-polygon{box-shadow:none}.floor-polygon polygon{stroke-width:calc(2px / var(--map-zoom,1))}
