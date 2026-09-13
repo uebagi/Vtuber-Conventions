@@ -65,6 +65,60 @@
       "type": "announcement",
       "url": "https://x.com/SilviVtuber/status/2097053332116238366",
       "locator": "Creator announcement and attached roaming poster; correction text takes precedence over poster."
+    },
+    {
+      "id": "roaming-2098467484655321203",
+      "type": "announcement",
+      "url": "https://x.com/MyraMors/status/2098467484655321203",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2098003938540696016",
+      "type": "announcement",
+      "url": "https://x.com/AuteruTori/status/2098003938540696016",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2097833160876703791",
+      "type": "announcement",
+      "url": "https://x.com/CaptainBeezy/status/2097833160876703791",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2097743090542899622",
+      "type": "announcement",
+      "url": "https://x.com/plinvy/status/2097743090542899622",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2097744594498965923",
+      "type": "announcement",
+      "url": "https://x.com/rokokoprufei/status/2097744594498965923",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2097416416596988116",
+      "type": "announcement",
+      "url": "https://x.com/Hayami_Luna/status/2097416416596988116",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2097339907190427815",
+      "type": "announcement",
+      "url": "https://x.com/MomatCookieBox/status/2097339907190427815",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-2097274352047649197",
+      "type": "announcement",
+      "url": "https://x.com/aVEnueChannel/status/2097274352047649197",
+      "locator": "Creator post and attached VeXpo roaming poster(s); September 2026, BST."
+    },
+    {
+      "id": "roaming-anoko-confirmation",
+      "type": "announcement",
+      "url": "https://x.com/AtelierAnoko/status/2097654420485886067",
+      "locator": "Anoko confirms Sunday September 20, 08:30-09:30, Halls 9 & 10."
     }
   ],
   "sessions": [
@@ -181,7 +235,8 @@
       "event_status": "official",
       "notes": "Published start is before the recorded entry hours. Access requirements are unconfirmed; time retained as announced.",
       "source_ids": [
-        "roaming-7-1"
+        "roaming-7-1",
+        "roaming-anoko-confirmation"
       ]
     },
     {
@@ -217,6 +272,167 @@
         "roaming-9-1",
         "roaming-9-2"
       ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "participants": [
+        "Myra Mors"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10. Creator advertises an early model preview and free goodies.",
+      "source_ids": [
+        "roaming-2098467484655321203"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "13:00",
+      "end_time": "14:00",
+      "participants": [
+        "Auteru"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10.",
+      "source_ids": [
+        "roaming-2098003938540696016"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "participants": [
+        "Captain Beezy"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10.",
+      "source_ids": [
+        "roaming-2097833160876703791"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "14:30",
+      "end_time": "15:30",
+      "participants": [
+        "Lin (Linvy)"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10. Creator plans to stream her roaming point of view on Twitch.",
+      "source_ids": [
+        "roaming-2097743090542899622"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "08:30",
+      "end_time": "09:30",
+      "participants": [
+        "Rokoko Prufei"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10. Starts before published hall admission hours; access requirements are unconfirmed. Time retained as announced. Creator says she will visit attendees queuing.",
+      "source_ids": [
+        "roaming-2097744594498965923"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "16:00",
+      "end_time": "17:00",
+      "participants": [
+        "Hayami Luna"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10.",
+      "source_ids": [
+        "roaming-2097416416596988116"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "11:30",
+      "end_time": "12:30",
+      "participants": [
+        "MomAtCookiebox"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10.",
+      "source_ids": [
+        "roaming-2097339907190427815"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "11:40",
+      "end_time": "",
+      "participants": [
+        "Ayla Yew"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10. End time not announced. Starts before published hall admission hours; access requirements are unconfirmed. Time retained as announced.",
+      "source_ids": [
+        "roaming-2097274352047649197"
+      ]
+    },
+    {
+      "date": "2026-09-18",
+      "day": "Friday",
+      "start_time": "11:40",
+      "end_time": "",
+      "participants": [
+        "Nova Aokami"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10. End time not announced. Starts before published hall admission hours; access requirements are unconfirmed. Time retained as announced.",
+      "source_ids": [
+        "roaming-2097274352047649197"
+      ]
+    },
+    {
+      "date": "2026-09-19",
+      "day": "Saturday",
+      "start_time": "10:00",
+      "end_time": "",
+      "participants": [
+        "Utano Pandora"
+      ],
+      "location": "Halls 9 & 10",
+      "type": "Roaming",
+      "event_status": "official",
+      "notes": "Roaming meet-and-greet availability in Halls 9 & 10. End time not announced.",
+      "source_ids": [
+        "roaming-2097274352047649197"
+      ]
     }
-  ]
+  ],
+  "checked_on": "2026-09-12"
 }

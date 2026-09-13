@@ -698,7 +698,8 @@
     "Lin (Linvy)": {
       "x": "https://x.com/plinvy",
       "sources": [
-        "https://ngntipkolamrenang.twstalker.com/plinvy"
+        "https://ngntipkolamrenang.twstalker.com/plinvy",
+        "https://x.com/plinvy/status/2097743090542899622"
       ],
       "primary": {
         "url": "https://youtube.com/@plinvy",
@@ -846,7 +847,8 @@
     "MomAtCookiebox": {
       "x": "https://x.com/MomatCookieBox",
       "sources": [
-        "https://twstalker.com/TheDebutFactory"
+        "https://twstalker.com/TheDebutFactory",
+        "https://x.com/MomatCookieBox/status/2097339907190427815"
       ],
       "primary": {
         "url": "https://linktr.ee/momatcookiebox",
@@ -1101,7 +1103,8 @@
     "Rokoko Prufei": {
       "x": "https://x.com/rokokoprufei",
       "sources": [
-        "https://virtualyoutuber.fandom.com/wiki/Rokoko_Prufei"
+        "https://virtualyoutuber.fandom.com/wiki/Rokoko_Prufei",
+        "https://x.com/rokokoprufei/status/2097744594498965923"
       ],
       "primary": {
         "url": "https://twitch.tv/roko",
@@ -1680,7 +1683,8 @@
       "x": "https://x.com/AuteruTori",
       "sources": [
         "https://api.fxtwitter.com/AuteruTori",
-        "https://virtualyoutuber.fandom.com/wiki/Auteru_Tori"
+        "https://virtualyoutuber.fandom.com/wiki/Auteru_Tori",
+        "https://x.com/AuteruTori/status/2098003938540696016"
       ],
       "checked_on": "2026-09-05"
     },
@@ -1987,7 +1991,8 @@
       "x": "https://x.com/UtanoPandora",
       "sources": [
         "https://x.com/aVEnueChannel",
-        "https://x.com/UtanoPandora"
+        "https://x.com/UtanoPandora",
+        "https://x.com/aVEnueChannel/status/2097274352047649197"
       ],
       "checked_on": "2026-09-07"
     },
@@ -2012,7 +2017,8 @@
       "x": "https://x.com/AylaYew",
       "sources": [
         "https://x.com/aVEnueChannel",
-        "https://x.com/AylaYew"
+        "https://x.com/AylaYew",
+        "https://x.com/aVEnueChannel/status/2097274352047649197"
       ],
       "checked_on": "2026-09-07"
     },
@@ -2313,6 +2319,34 @@
         "url": "https://www.twitch.tv/lumituber",
         "source": "https://vexpo.uk/guests"
       },
+      "checked_on": "2026-09-12"
+    },
+    "Myra Mors": {
+      "x": "https://x.com/MyraMors",
+      "sources": [
+        "https://x.com/MyraMors/status/2098467484655321203"
+      ],
+      "checked_on": "2026-09-12"
+    },
+    "Captain Beezy": {
+      "x": "https://x.com/CaptainBeezy",
+      "sources": [
+        "https://x.com/CaptainBeezy/status/2097833160876703791"
+      ],
+      "checked_on": "2026-09-12"
+    },
+    "Hayami Luna": {
+      "x": "https://x.com/Hayami_Luna",
+      "sources": [
+        "https://x.com/Hayami_Luna/status/2097416416596988116"
+      ],
+      "checked_on": "2026-09-12"
+    },
+    "Nova Aokami": {
+      "x": "https://x.com/NovaAokami",
+      "sources": [
+        "https://x.com/aVEnueChannel/status/2097274352047649197"
+      ],
       "checked_on": "2026-09-12"
     }
   }

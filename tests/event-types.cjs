@@ -30,7 +30,7 @@ setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };
-  for (const [type, expected] of [['all', 233], ['concert', 17], ['meet-greet', 185], ['roaming', 9], ['afterparty', 4], ['stage-panel', 32]]) {
+  for (const [type, expected] of [['all', 243], ['concert', 17], ['meet-greet', 195], ['roaming', 19], ['afterparty', 4], ['stage-panel', 32]]) {
     select(type); assert.equal(run('filteredSessions().length'), expected, type);
     const url = context.location.href;
     assert.equal(new URL(url).searchParams.get('type'), type === 'all' ? null : type);
@@ -40,26 +40,26 @@ setImmediate(async () => {
     const calendar = run('createCalendar(filteredSessions())');
     assert.equal((calendar.match(/BEGIN:VEVENT/g) || []).length, expected);
   }
-  for (const [query, expected, type] of [['concerts=1', 17, 'concert'], ['meet-greets=only', 185, 'meet-greet'], ['meet-greets=exclude', 48, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 15, 'concert'], ['type=invalid', 233, 'all']]) {
+  for (const [query, expected, type] of [['concerts=1', 17, 'concert'], ['meet-greets=only', 195, 'meet-greet'], ['meet-greets=exclude', 48, 'exclude-meet-greets'], ['concerts=1&meet-greets=exclude', 15, 'concert'], ['type=invalid', 243, 'all']]) {
     context.location.href = 'https://example.github.io/Vtuber-Conventions/conventions/vexpo-2026/?' + query;
     windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), expected, query);
     assert(run(`selectedTypes.has(${JSON.stringify(type)})`));
   }
   select('concert'); check('roaming', true); check('afterparty', true);
-  assert.equal(run('filteredSessions().length'), 27); // Concerts and afterparties overlap; lounge music only matches Afterparty.
+  assert.equal(run('filteredSessions().length'), 37); // Concerts and afterparties overlap; lounge music only matches Afterparty.
   assert.equal(elements['#event-types-summary'].textContent, '3 selected');
   const multiURL = context.location.href;
   assert.equal(new URL(multiURL).searchParams.get('type'), 'afterparty,concert,roaming');
   elements['#reset'].click(); context.location.href = multiURL; windowHandlers.popstate();
-  assert.equal(run('filteredSessions().length'), 27);
+  assert.equal(run('filteredSessions().length'), 37);
   const multiCalendar = run('createCalendar(filteredSessions())').replace(/\r\n /g, '');
-  assert.equal(new Set(multiCalendar.match(/^UID:.+$/gm)).size, 27);
+  assert.equal(new Set(multiCalendar.match(/^UID:.+$/gm)).size, 37);
   check('concert', false); check('roaming', false); check('afterparty', false);
   assert.equal(run('filteredSessions().length'), 0);
   assert.equal(new URL(context.location.href).searchParams.get('type'), 'none');
   windowHandlers.popstate(); assert.equal(run('filteredSessions().length'), 0);
   assert.equal(elements['#download-calendar'].disabled, true);
-  check('all', true); assert.equal(run('filteredSessions().length'), 233);
+  check('all', true); assert.equal(run('filteredSessions().length'), 243);
   select('roaming'); elements['#group'].value = 'group:florAtelier'; elements['#group'].handlers.change();
   assert.equal(run('filteredSessions().length'), 2);
   elements['#reset'].click(); assert.equal(new URL(context.location.href).search, '');
@@ -74,7 +74,7 @@ setImmediate(async () => {
   assert(nana); assert.equal(nana.date, ''); assert.equal(nana.start_time, '');
   assert.equal(nana.source_url, 'https://x.com/veizojp/status/2097324078960927023');
   await run('load()');
-  assert.equal(run('filteredSessions().length'), 241);
+  assert.equal(run('filteredSessions().length'), 251);
   const unknownButton = elements['.days'].children.find(b => b.dataset.day === 'unconfirmed');
   assert.equal(unknownButton.textContent, 'Unconfirmed time');
   unknownButton.click();
@@ -84,7 +84,7 @@ setImmediate(async () => {
   assert(!run('createCalendar(filteredSessions())').includes('BEGIN:VEVENT'));
   assert(!run('card(filteredSessions()[0])').children.some(c => c.className === 'session-calendar'));
   const sharedPending = context.location.href;
-  elements['#reset'].click(); assert.equal(run('filteredSessions().length'), 241);
+  elements['#reset'].click(); assert.equal(run('filteredSessions().length'), 251);
   assert.equal(new URL(context.location.href).search, '');
   context.location.href = sharedPending; windowHandlers.popstate();
   assert.equal(run('filteredSessions().length'), 8);
@@ -99,8 +99,8 @@ setImmediate(async () => {
   assert.equal(run('filteredSessions().filter(s => !hasConfirmedTime(s)).length'), 0);
   assert(!run("filteredSessions().some(s => s.organizer === 'Digital Gear / Veizo')"));
   elements['#reset'].click();
-  assert.equal((run('createCalendar(filteredSessions())').match(/BEGIN:VEVENT/g) || []).length, 233);
-  assert.equal(elements['#download-calendar'].textContent, 'Download 233 sessions (.ics)');
+  assert.equal((run('createCalendar(filteredSessions())').match(/BEGIN:VEVENT/g) || []).length, 243);
+  assert.equal(elements['#download-calendar'].textContent, 'Download 243 sessions (.ics)');
   assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.start_time === '14:00' && s.stage === 'JUBILEE STAGE').participants"), 'cakejumper');
   assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.start_time === '15:30' && s.stage === 'JUBILEE STAGE').participants.split(';').length"), 6);
   const originalFetch = context.fetch;
