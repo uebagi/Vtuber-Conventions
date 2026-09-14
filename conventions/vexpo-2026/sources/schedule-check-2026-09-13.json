@@ -1,0 +1,53 @@
+{
+  "checked_on": "2026-09-13",
+  "sources": [
+    {
+      "id": "stages",
+      "url": "https://vexpo.uk/stages-panels",
+      "type": "schedule",
+      "locator": "Full visible page text compared with September 12 snapshot"
+    },
+    {
+      "id": "meet-greets",
+      "url": "https://vexpo.uk/meet-greets",
+      "type": "schedule",
+      "locator": "Full visible page text compared with September 12 snapshot"
+    },
+    {
+      "id": "oshi-connect",
+      "url": "https://oshi-connect.net/vexpo-2026",
+      "type": "schedule",
+      "locator": "Full Saturday and Sunday timetable"
+    },
+    {
+      "id": "afterparty",
+      "url": "https://tickets.virtualstageproductions.co.uk/Vexpo-After26/",
+      "type": "schedule",
+      "locator": "Event schedule, DJs, location and admission details"
+    }
+  ],
+  "findings": [
+    {
+      "source_ids": [
+        "stages",
+        "meet-greets"
+      ],
+      "notes": "Visible page text unchanged from September 12."
+    },
+    {
+      "source_ids": [
+        "oshi-connect"
+      ],
+      "notes": "Added Sunday Inanna Bell (listed as Innana Bell) 10:15-11:00 and Isaa Corva 16:30-17:30 BST at booth S10. Other eleven slots unchanged."
+    },
+    {
+      "source_ids": [
+        "afterparty"
+      ],
+      "notes": "Published programme, location, DJs and admission details match current entries."
+    }
+  ],
+  "limitations": [
+    "X timeline access is incomplete and indexed mirrors can be stale. Searches did not establish additional new booth or roaming times; this is not an exhaustive check of all social posts."
+  ]
+}

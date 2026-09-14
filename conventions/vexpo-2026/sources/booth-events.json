@@ -210,6 +210,13 @@
       "type": "poster",
       "locator": "Danisaurz VeXpo 2026 Lineup: Friday autographs, Saturday and Sunday Underground 18+ booth availability",
       "notes": "Creator-posted availability windows, interpreted as in-person meet opportunities rather than individual appointment lengths. Friday official guest autograph appearance; independent weekend booth appearances. No costume character attendance inferred from photographs."
+    },
+    {
+      "id": "oshi-connect-september-13",
+      "url": "https://oshi-connect.net/vexpo-2026",
+      "type": "schedule",
+      "locator": "Sunday September 20 timetable: opening 10:15 slot and closing 16:30 slot",
+      "notes": "Two additions compared with the eleven previously recorded slots; existing eleven start/end times unchanged."
     }
   ],
   "sessions": [
@@ -1803,6 +1810,70 @@
       "end_date": "",
       "source_ids": [
         "danisaurz-appearance-schedule"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "10:15",
+      "end_time": "11:00",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Oshi Connect booth - S10",
+      "event": "Inanna Bell — Meet & Greet and Cheki",
+      "source_url": "https://oshi-connect.net/vexpo-2026",
+      "listed_hosts": "Inanna Bell",
+      "participants": "Inanna Bell",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page. Listed as \"Innana Bell\" on the Oshi Connect schedule; creator uses Inanna Bell.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S10",
+      "event_type": "",
+      "organizer": "Oshi Connect",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "oshi-connect-september-13"
+      ]
+    },
+    {
+      "date": "2026-09-20",
+      "day": "Sunday",
+      "start_time": "16:30",
+      "end_time": "17:30",
+      "timezone": "Europe/London",
+      "timezone_abbreviation": "BST",
+      "utc_offset": "+01:00",
+      "stage": "Oshi Connect booth - S10",
+      "event": "Isaa Corva — Meet & Greet and Cheki",
+      "source_url": "https://oshi-connect.net/vexpo-2026",
+      "listed_hosts": "Isaa Corva",
+      "participants": "Isaa Corva",
+      "lineup_status": "named lineup published",
+      "lineup_notes": "Meet-and-greet and cheki availability window. Booth S10 confirmed by the official exhibitor listing. Price not listed on the schedule page.",
+      "participant_source_urls": "https://oshi-connect.net/vexpo-2026; https://vexpo.uk/exhibitors-vendors",
+      "is_concert": "false",
+      "concert_classification_notes": "Meet-and-greet and photos; no concert described.",
+      "is_meet_greet": "true",
+      "event_status": "unofficial",
+      "meet_greet_type": "Virtual",
+      "price": "Not listed",
+      "booth": "S10",
+      "event_type": "",
+      "organizer": "Oshi Connect",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "source_ids": [
+        "oshi-connect-september-13"
       ]
     }
   ],
