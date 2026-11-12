@@ -207,7 +207,7 @@ const schedule = document.querySelector('#schedule');
 const status = document.querySelector('#status');
 const downloadCalendar = document.querySelector('#download-calendar');
 const viewSelect = document.querySelector('#schedule-view');
-let scheduleView = 'cards';
+let scheduleView = 'calendar';
 
 // Export UTC instants so calendar apps preserve BST regardless of device timezone.
 function calendarTimestamp(value) {
@@ -409,7 +409,7 @@ function scheduleDates() {
 }
 function restoreFiltersFromURL() {
   const params = new URL(location.href).searchParams;
-  scheduleView = params.get('view') === 'calendar' ? 'calendar' : 'cards';
+  scheduleView = params.get('view') === 'cards' ? 'cards' : 'calendar';
   if (viewSelect) viewSelect.value = scheduleView;
   search.value = params.get('q') || '';
   selectedDay = params.get('day') === 'unconfirmed' && sessions.some(s => !hasConfirmedTime(s)) ? 'unconfirmed' : scheduleDates().includes(params.get('day')) ? params.get('day') : 'all';
@@ -433,7 +433,7 @@ function restoreFiltersFromURL() {
 }
 function syncFiltersToURL() {
   const url = new URL(location.href);
-  const values = {q: search.value, day: selectedDay, announced: announced.checked ? '1' : '', concerts: concerts.checked ? '1' : '', view: scheduleView === 'calendar' ? 'calendar' : ''};
+  const values = {q: search.value, day: selectedDay, announced: announced.checked ? '1' : '', concerts: concerts.checked ? '1' : '', view: scheduleView === 'cards' ? 'cards' : ''};
   for (const [key, select] of Object.entries(filterSelects)) values[key] = select?.value || 'all';
   if (typeMenu) values.type = selectedTypes.has('all') ? 'all' : [...selectedTypes].sort().join(',') || 'none';
   for (const [key, value] of Object.entries(values)) {
@@ -495,7 +495,7 @@ function setupDays() {
 }
 search.addEventListener('input', render); stage.addEventListener('change', render); announced.addEventListener('change', render);
 viewSelect?.addEventListener('change', () => {
-  scheduleView = viewSelect.value === 'calendar' ? 'calendar' : 'cards';
+  scheduleView = viewSelect.value === 'cards' ? 'cards' : 'calendar';
   if (selectedDay !== 'all' && selectedDay !== 'unconfirmed' && !scheduleDates().includes(selectedDay)) selectedDay = 'all';
   setupDays(); render();
 });
@@ -517,7 +517,7 @@ typeMenu?.addEventListener('keydown', event => { if (event.key === 'Escape') { t
 eventType?.addEventListener('change', () => { concerts.checked = false; meetGreets.value = 'all'; render(); });
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
-  scheduleView = 'cards'; if (viewSelect) viewSelect.value = 'cards';
+  scheduleView = 'calendar'; if (viewSelect) viewSelect.value = 'calendar';
   search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.value = 'all'; eventStatus.value = 'all';
   if (groupFilter) groupFilter.value = 'all';
   if (talentFilter) talentFilter.value = 'all';

@@ -29,11 +29,13 @@ context.window = {addEventListener: (name, handler) => { windowHandlers[name] = 
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
 setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
-  elements['#schedule-view'].value = 'calendar'; elements['#schedule-view'].handlers.change();
-  assert.equal(new URL(context.location.href).searchParams.get('view'), 'calendar');
+  assert.equal(elements['#schedule-view'].value, 'calendar');
+  assert(!new URL(context.location.href).searchParams.has('view'));
+  elements['#schedule-view'].value = 'cards'; elements['#schedule-view'].handlers.change();
+  assert.equal(new URL(context.location.href).searchParams.get('view'), 'cards');
   assert.equal(run('filteredSessions().length'), 263);
-  windowHandlers.popstate(); assert.equal(elements['#schedule-view'].value, 'calendar');
-  elements['#reset'].click(); assert.equal(elements['#schedule-view'].value, 'cards');
+  windowHandlers.popstate(); assert.equal(elements['#schedule-view'].value, 'cards');
+  elements['#reset'].click(); assert.equal(elements['#schedule-view'].value, 'calendar');
   assert(!new URL(context.location.href).searchParams.has('view'));
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };

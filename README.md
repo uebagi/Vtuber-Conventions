@@ -26,7 +26,7 @@ Keep the shared asset paths as `../../assets/app.js` and `../../assets/styles.cs
 
 ## Schedule views
 
-Use the **View** selector on a convention page to switch between **Cards** and **Calendar**. Calendar shows days in columns with a shared event-local time axis; simultaneous events occupy separate lanes. Click an event for the full card, sources, socials and calendar download. Existing filters apply to both views. `?view=calendar` shares the calendar view alongside filters; invalid view values fall back to Cards, and Reset filters returns to Cards.
+Calendar is the default on desktop and phones. Use the **View** selector on a convention page to switch between **Cards** and **Calendar**. Calendar shows days in columns with a shared event-local time axis; simultaneous events occupy separate lanes. Click an event for the full card, sources, socials and calendar download. Existing filters apply to both views. `?view=cards` shares the optional Cards view alongside filters; missing or invalid view values and Reset filters return to Calendar. Existing `?view=calendar` links remain supported.
 
 When the calendar has 960px or less of available width, it uses a chronological agenda with day headings and full-width event buttons. This also covers phone browsers using a wider desktop-style viewport and calendars embedded in narrow containers. It scrolls with the page, without a wide time grid or nested scrolling. Simultaneous sessions remain separate rows with their actual times. Switching screen size preserves the selected view and filters; both layouts open the same event details. A 760px viewport fallback supports browsers without container queries.
 
