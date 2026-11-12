@@ -28,6 +28,8 @@ Keep the shared asset paths as `../../assets/app.js` and `../../assets/styles.cs
 
 Use the **View** selector on a convention page to switch between **Cards** and **Calendar**. Calendar shows days in columns with a shared event-local time axis; simultaneous events occupy separate lanes. Click an event for the full card, sources, socials and calendar download. Existing filters apply to both views. `?view=calendar` shares the calendar view alongside filters; invalid view values fall back to Cards, and Reset filters returns to Cards.
 
+At widths up to 760px, Calendar uses a chronological agenda with day headings and full-width event buttons. It scrolls with the page, without a wide time grid or nested scrolling. Simultaneous sessions remain separate rows with their actual times. Switching screen size preserves the selected view and filters; both layouts open the same event details.
+
 Untimed appearances appear below the grid rather than receiving invented all-day slots. Dashed start-only markers say that the end is unannounced; their display space does not create a duration or affect ICS. Confirmed overnight sessions are split at local midnight for display and retain one calendar identity. Shared `assets/timetable.js` loads before `assets/app.js`; packaging copies both automatically. Verify geometry with `node tests/timetable.cjs` and check interactions in the browser.
 
 ## Automatic archive

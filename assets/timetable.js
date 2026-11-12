@@ -42,7 +42,7 @@
     const days = layout(sessions).filter(day => selectedDay === 'all' || day.date === selectedDay);
     const pending = sessions.filter(s => !s.date || !s.start_time);
     if (days.length) {
-      const note = el('p', 'timetable-hint', 'Select an event for details. Scroll to see more times and days.');
+      const note = el('p', 'timetable-hint', 'Select an event for details.');
       const viewport = el('div', 'timetable-viewport');
       viewport.tabIndex = 0; viewport.setAttribute('role', 'region');
       viewport.setAttribute('aria-label', 'Calendar schedule in event local time');
@@ -76,8 +76,14 @@
       dialog.addEventListener('click', event => { if (event.target === dialog) dialog.close(); });
       const colors = ['#c5b1ff', '#94d9c7', '#ffc29b', '#f3a8d0', '#9cccf5'];
       const locations = [...new Set(sessions.map(s => s.stage))].sort();
+      const agenda = el('div', 'timetable-agenda');
+      agenda.setAttribute('aria-label', 'Calendar agenda in event local time');
       for (const day of days) {
         const column = el('div', 'timetable-day'); column.setAttribute('aria-label', displayDate(day.date));
+        const agendaDay = el('section', 'agenda-day');
+        const agendaHeading = el('h2', 'agenda-heading');
+        agendaHeading.append(el('strong', '', new Date(day.date + 'T12:00Z').toLocaleDateString('en-US', {weekday: 'long', timeZone: 'UTC'})), el('span', '', `${displayDate(day.date)} · ${day.entries[0].session.timezone_abbreviation || 'Local time'}`));
+        agendaDay.append(agendaHeading);
         for (const entry of day.entries) {
           const session = entry.session;
           const button = el('button', 'timetable-event' + (entry.end === null ? ' timetable-start-only' : ''));
@@ -95,10 +101,26 @@
           button.append(el('strong', '', name), el('span', 'timetable-time', time), el('span', 'timetable-location', session.stage));
           button.addEventListener('click', () => { detail.replaceChildren(card(session)); dialog.showModal(); });
           column.append(button);
+          // Phones use a chronological agenda, keeping simultaneous events readable.
+          const agendaButton = el('button', 'agenda-event' + (entry.end === null ? ' agenda-start-only' : ''));
+          agendaButton.type = 'button';
+          agendaButton.style.setProperty('--event-color', colors[locations.indexOf(session.stage) % colors.length]);
+          agendaButton.setAttribute('aria-label', button.getAttribute('aria-label'));
+          const agendaTime = el('span', 'agenda-time');
+          agendaTime.append(el('strong', '', entry.fromPrevious ? '00:00' : session.start_time));
+          if (entry.end !== null) agendaTime.append(el('span', '', entry.toNext ? '24:00' : session.end_time));
+          const description = el('span', 'agenda-description');
+          description.append(el('strong', 'agenda-title', name), el('span', 'agenda-location', session.stage));
+          if (entry.end === null) description.append(el('span', 'agenda-notice', 'End time unannounced'));
+          if (continuation) description.append(el('span', 'agenda-notice', continuation.trim()));
+          agendaButton.append(agendaTime, description);
+          agendaButton.addEventListener('click', () => { detail.replaceChildren(card(session)); dialog.showModal(); });
+          agendaDay.append(agendaButton);
         }
         body.append(column);
+        agenda.append(agendaDay);
       }
-      grid.append(top, body); viewport.append(grid); container.append(note, viewport, dialog);
+      grid.append(top, body); viewport.append(grid); container.append(note, viewport, agenda, dialog);
     }
     if (pending.length) {
       const section = el('section', 'timetable-pending');

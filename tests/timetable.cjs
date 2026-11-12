@@ -29,6 +29,31 @@ assert.equal(layout([]).length, 0);
 assert(context.scheduleTimetable.occursOnDay(session('Overnight', '23:30', '01:00', {end_date: '2026-11-14'}), '2026-11-14'));
 assert(!context.scheduleTimetable.occursOnDay(session('Until midnight', '23:30', '00:00', {end_date: '2026-11-14'}), '2026-11-14'));
 assert(!context.scheduleTimetable.occursOnDay(unknown, '2026-11-14'));
+// Both responsive layouts must contain every segment and open the same details.
+class Element {
+  constructor(tag, className, text) { this.tag = tag; this.className = className || ''; this.text = text; this.children = []; this.attributes = {}; this.handlers = {}; this.style = {setProperty() {}}; }
+  append(...children) { this.children.push(...children); }
+  replaceChildren(...children) { this.children = children; }
+  setAttribute(key, value) { this.attributes[key] = value; }
+  getAttribute(key) { return this.attributes[key]; }
+  addEventListener(key, handler) { this.handlers[key] = handler; }
+  showModal() { this.open = true; }
+  close() { this.open = false; }
+}
+const el = (tag, cls, text) => new Element(tag, cls, text);
+const container = el('div');
+const fixture = [session('Known', '10:00', '11:00'), unknown, session('Night', '23:30', '01:00', {end_date: '2026-11-14'}), session('Pending', '', '')].map(s => ({stage: 'Test room', timezone_abbreviation: 'PST', participants: '', ...s}));
+context.scheduleTimetable.render(container, fixture, {el, card: s => el('article', 'card', s.event), displayDate: date => date});
+const all = node => [node, ...node.children.flatMap(all)];
+const nodes = all(container);
+const mobile = nodes.filter(n => n.className.split(' ').includes('agenda-event'));
+const desktop = nodes.filter(n => n.className.split(' ').includes('timetable-event'));
+assert.equal(mobile.length, 4); assert.equal(mobile.length, desktop.length);
+for (let i = 0; i < mobile.length; i++) assert.equal(mobile[i].attributes['aria-label'], desktop[i].attributes['aria-label']);
+const dialog = nodes.find(n => n.tag === 'dialog');
+mobile[0].handlers.click(); assert(dialog.open);
+assert(nodes.find(n => n.className === 'timetable-pending'));
+assert(nodes.some(n => n.className === 'agenda-notice' && n.text === 'End time unannounced'));
 for (const slug of fs.readdirSync('conventions')) {
   const file = `conventions/${slug}/index.html`;
   if (!fs.existsSync(file)) continue;
