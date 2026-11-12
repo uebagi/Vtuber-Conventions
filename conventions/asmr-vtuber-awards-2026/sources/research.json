@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-11-12",
+  "event": {
+    "name": "ASMR VTuber Awards 2026",
+    "start": "2026-11-14",
+    "end": "2026-11-14",
+    "venue": "Online — Twitch",
+    "timezone": "Etc/UTC",
+    "abbreviation": "UTC",
+    "offset": "+00:00"
+  },
+  "sources": [
+    {
+      "id": "awards-home",
+      "url": "https://asmrvtuberawards.show/",
+      "type": "official webpage",
+      "locator": "Dated show announcement and About / hosts; linked Twitch broadcast channel"
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2026-11-14",
+      "day": "Saturday",
+      "start_time": "19:00",
+      "end_time": "",
+      "timezone": "Etc/UTC",
+      "timezone_abbreviation": "UTC",
+      "utc_offset": "+00:00",
+      "stage": "ASMR VTuber Awards livestream",
+      "event": "ASMR VTuber Awards",
+      "source_url": "https://asmrvtuberawards.show/",
+      "listed_hosts": "YumiTasty;DaChickTries;Vixen;Phoenyx",
+      "participants": "YumiTasty;DaChickTries;Vixen;Phoenyx",
+      "lineup_status": "announced",
+      "lineup_notes": "Watch: https://twitch.tv/asmrvtuberawards. Hosted by YumiTasty, DaChickTries, Vixen and Phoenyx. Nominees are not treated as confirmed attendees. The end time is unannounced.",
+      "participant_source_urls": "https://asmrvtuberawards.show/",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "false",
+      "event_status": "official",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "award-show",
+      "source_ids": [
+        "awards-home"
+      ]
+    }
+  ],
+  "notes": [
+    "The prominent Saturday November 14 19:00 UTC announcement supersedes the old question-mark date in the About table. The page identifies the 2026 edition. Vixen is also called VixenBlair in the rules; no speculative account match is made."
+  ]
+}

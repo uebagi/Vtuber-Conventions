@@ -1,0 +1,1040 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-admiral-trina",
+      "url": "https://admiraltrina.crd.co/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-akemi-kraus",
+      "url": "https://vtubie.com/akemi-kraus/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-arisa-noonish",
+      "url": "https://www.glitchstars.com/stars/arisanoonish",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-arisa-noonish-2",
+      "url": "https://twstalker.com/ArisaNoonish",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-arisa-noonish-3",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-chio-chompi",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-chio-chompi-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-eva-ananova",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-eva-ananova-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-felynne-derouge",
+      "url": "https://www.instalker.org/LynneRouge",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-felynne-derouge-2",
+      "url": "https://ww.twstalker.com/LynneRouge",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-hiyori-mokami",
+      "url": "https://www.glitchstars.com/stars/hiyorimokami",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-hiyori-mokami-2",
+      "url": "https://mobile.twstalker.com/hiyorimokami",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-hiyori-mokami-3",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-joeschmmo",
+      "url": "https://kawaiikon.com/guests/joeschmmo/",
+      "type": "VTuber identity evidence",
+      "locator": "Convention guest biography explicitly identifies JoeSchmmo as a VTuber who also does IRL streams."
+    },
+    {
+      "id": "identity-kumogorogoro",
+      "url": "https://merch.kawaentertainment.com/en-jp/pages/collabs",
+      "type": "VTuber identity evidence",
+      "locator": "Official merchandise partner describes this creator as a tarantula-cryptid VTuber."
+    },
+    {
+      "id": "identity-lemi-lichen",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-lemi-lichen-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-miwabelle",
+      "url": "https://www.glitchstars.com/stars/miwabelle",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-miwabelle-2",
+      "url": "https://hololist.net/miwabelle/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-miwabelle-3",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-mochi",
+      "url": "https://www.glitchstars.com/stars/vtubermochi",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-mochi-2",
+      "url": "https://hololist.net/mochi/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-mochi-3",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-mogu",
+      "url": "https://awa-con.com/glitch-stars/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-mogu-2",
+      "url": "https://www.glitchstars.com/stars/mogu",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-mogu-3",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-nemimi-yane",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-pekoe-boo",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-pekoe-boo-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-perry-winkleton",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-perry-winkleton-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-phoebe-chan",
+      "url": "https://www.kumoricon.org/guests/musical",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-pillowdear",
+      "url": "https://pillowdearvt.com/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-pillowdear-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-porcelainmaid",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-raki-kazuki",
+      "url": "https://asapa.ca/animethon/2025/raki-kazuki",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-raki-kazuki-2",
+      "url": "https://bacharu.io/vtuber/raki-kazuki",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-raki-kazuki-3",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-rina-lunette",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-rina-lunette-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-ryakishou",
+      "url": "https://ryakishou.carrd.co/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-serena-starstruck",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-serena-starstruck-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-tanetenshi",
+      "url": "https://tanetenshi.carrd.co/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-tanetenshi-2",
+      "url": "https://hololist.net/tane-tenshi/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-tokaku",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-tokaku-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-usachi-yui",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-usachi-yui-2",
+      "url": "https://x.com/StellarVersePro/status/2119837478085702112",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-yuki-astrea",
+      "url": "https://duoleveling.wordpress.com/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-yuki-astrea-2",
+      "url": "https://hololist.net/duo-leveling/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-yuna-astrea",
+      "url": "https://duoleveling.wordpress.com/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    },
+    {
+      "id": "identity-yuna-astrea-2",
+      "url": "https://hololist.net/duo-leveling/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json."
+    }
+  ],
+  "participants": {
+    "Admiral Trina": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-admiral-trina"
+      ]
+    },
+    "Akemi Kraus": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-akemi-kraus"
+      ]
+    },
+    "Arisa Noonish": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-arisa-noonish",
+        "identity-arisa-noonish-2",
+        "identity-arisa-noonish-3"
+      ]
+    },
+    "Chio Chompi": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-chio-chompi",
+        "identity-chio-chompi-2"
+      ]
+    },
+    "Eva Ananova": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-eva-ananova",
+        "identity-eva-ananova-2"
+      ]
+    },
+    "Felynne deRouge": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-felynne-derouge",
+        "identity-felynne-derouge-2"
+      ]
+    },
+    "Hiyori Mokami": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-hiyori-mokami",
+        "identity-hiyori-mokami-2",
+        "identity-hiyori-mokami-3"
+      ]
+    },
+    "JoeSchmmo": {
+      "classification": "verified-vtuber",
+      "basis": "Convention guest biography explicitly identifies JoeSchmmo as a VTuber who also does IRL streams.",
+      "source_ids": [
+        "identity-joeschmmo"
+      ]
+    },
+    "Kumogorogoro": {
+      "classification": "verified-vtuber",
+      "basis": "Official merchandise partner describes this creator as a tarantula-cryptid VTuber.",
+      "source_ids": [
+        "identity-kumogorogoro"
+      ]
+    },
+    "Lemi Lichen": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-lemi-lichen",
+        "identity-lemi-lichen-2"
+      ]
+    },
+    "Miwabelle": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-miwabelle",
+        "identity-miwabelle-2",
+        "identity-miwabelle-3"
+      ]
+    },
+    "Mochi": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-mochi",
+        "identity-mochi-2",
+        "identity-mochi-3"
+      ]
+    },
+    "Mogu": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-mogu",
+        "identity-mogu-2",
+        "identity-mogu-3"
+      ]
+    },
+    "Nemimi Yane": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-nemimi-yane"
+      ]
+    },
+    "Pekoe Boo": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-pekoe-boo",
+        "identity-pekoe-boo-2"
+      ]
+    },
+    "Perry Winkleton": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-perry-winkleton",
+        "identity-perry-winkleton-2"
+      ]
+    },
+    "Phoebe Chan": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-phoebe-chan"
+      ]
+    },
+    "Pillowdear": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-pillowdear",
+        "identity-pillowdear-2"
+      ]
+    },
+    "PorcelainMaid": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-porcelainmaid"
+      ]
+    },
+    "Raki Kazuki": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-raki-kazuki",
+        "identity-raki-kazuki-2",
+        "identity-raki-kazuki-3"
+      ]
+    },
+    "Rina Lunette": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-rina-lunette",
+        "identity-rina-lunette-2"
+      ]
+    },
+    "Ryakishou": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-ryakishou"
+      ]
+    },
+    "Serena Starstruck": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-serena-starstruck",
+        "identity-serena-starstruck-2"
+      ]
+    },
+    "TaneTenshi": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-tanetenshi",
+        "identity-tanetenshi-2"
+      ]
+    },
+    "Tokaku": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-tokaku",
+        "identity-tokaku-2"
+      ]
+    },
+    "Usachi Yui": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-usachi-yui",
+        "identity-usachi-yui-2"
+      ]
+    },
+    "Yuki Astrea": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-yuki-astrea",
+        "identity-yuki-astrea-2"
+      ]
+    },
+    "Yuna Astrea": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer virtual-creator biography, linked creator identity or VTuber roster corroborates this scheduled talent. Account evidence is retained in socials.json.",
+      "source_ids": [
+        "identity-yuna-astrea",
+        "identity-yuna-astrea-2"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "So You Wanna Rig a VTuber? Waffo's Live2D Crash Course",
+      "date": "2026-11-13",
+      "start_time": "10:30",
+      "stage": "Panel 1 — B115-B116",
+      "basis": "The published title/description explicitly concerns VTubers or VTuber model creation; no individual VTuber lineup is inferred.",
+      "verified_talents": [],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "IMPROMPTUBER",
+      "date": "2026-11-13",
+      "start_time": "11:00",
+      "stage": "Live Events 1 — C123-C124",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "PorcelainMaid"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Chio Chompi Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "11:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Chio Chompi"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Perry Winkleton Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "11:30",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Perry Winkleton"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Tokaku Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "12:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Tokaku"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Ryakishou Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "12:30",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Ryakishou"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Mochi Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "13:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Mochi"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Felynne deRouge Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "14:00",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Felynne deRouge"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Arisa Noonish Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "15:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Arisa Noonish"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Hiyori Mokami Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "16:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Hiyori Mokami"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Rina Lunette Meet & Greet",
+      "date": "2026-11-13",
+      "start_time": "17:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Rina Lunette"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Kumoricon Idol Festival",
+      "date": "2026-11-13",
+      "start_time": "18:30",
+      "stage": "Main Events — Hall E",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Phoebe Chan"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Guess That VTuber!",
+      "date": "2026-11-14",
+      "start_time": "10:30",
+      "stage": "Live Events 1 — C123-C124",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Nemimi Yane"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Akemi Kraus Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "11:00",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Akemi Kraus"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Miwabelle Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "11:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Miwabelle"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Mogu Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "11:30",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Mogu"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "The Time I **** My Collab Partner’s ******",
+      "date": "2026-11-14",
+      "start_time": "12:00",
+      "stage": "Live Events 1 — C123-C124",
+      "basis": "Official panel from the named VTuber agency Stellar Verse Productions; individual talent lineup unannounced.",
+      "verified_talents": [],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "TaneTenshi Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "12:30",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "TaneTenshi"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Pillowdear Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "13:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Pillowdear"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "BEASTIEZ: What's That Drawing?",
+      "date": "2026-11-14",
+      "start_time": "13:30",
+      "stage": "Live Events 1 — C123-C124",
+      "basis": "The organizer explicitly announces the VTuber group BEASTIEZ; individual group members are not inferred.",
+      "verified_talents": [],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Kumogorogoro Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "14:00",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Kumogorogoro"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Nemimi Yane Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "14:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Nemimi Yane"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "VTubers Meetup",
+      "date": "2026-11-14",
+      "start_time": "14:30",
+      "stage": "Cosplay Meetup 3 — Hall A1",
+      "basis": "The published title/description explicitly concerns VTubers or VTuber model creation; no individual VTuber lineup is inferred.",
+      "verified_talents": [],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "BEASTIEZ Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "15:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "The organizer explicitly announces the VTuber group BEASTIEZ; individual group members are not inferred.",
+      "verified_talents": [],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "2.5D Idol, Phoebe: Bridge the Distance! Sing Across the Galaxy!",
+      "date": "2026-11-14",
+      "start_time": "16:00",
+      "stage": "Main Events — Hall E",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Phoebe Chan"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Raki Kazuki Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "16:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Raki Kazuki"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Usachi Yui Meet & Greet",
+      "date": "2026-11-14",
+      "start_time": "17:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Usachi Yui"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Phoebe Chan Autograph Signing",
+      "date": "2026-11-14",
+      "start_time": "17:30",
+      "stage": "Phoebe Chan — Exhibit Hall Booth 923",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Phoebe Chan"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "JoeSchmmo Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "11:00",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "JoeSchmmo"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "PorcelainMaid Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "11:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "PorcelainMaid"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Serena Starstruck Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "11:30",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Serena Starstruck"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Starlight Anthem: Isekai Stellar Live",
+      "date": "2026-11-15",
+      "start_time": "12:30",
+      "stage": "Auditorium — Oregon Ballroom 201-202",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Tokaku",
+        "Hiyori Mokami",
+        "Perry Winkleton",
+        "Eva Ananova",
+        "Miwabelle",
+        "Arisa Noonish",
+        "Serena Starstruck",
+        "Pekoe Boo",
+        "Mochi",
+        "Raki Kazuki",
+        "Pillowdear",
+        "Usachi Yui",
+        "Chio Chompi",
+        "Lemi Lichen",
+        "Rina Lunette",
+        "Mogu"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Admiral Trina Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "12:30",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Admiral Trina"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Duo Leveling (Yuki & Yuna Astrea) Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "14:00",
+      "stage": "Japanime Games Booth — Exhibit Hall Booth 511 & 513",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Yuki Astrea",
+        "Yuna Astrea"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Eva Ananova Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "14:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Eva Ananova"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    },
+    {
+      "event": "Pekoe Boo Meet & Greet",
+      "date": "2026-11-15",
+      "start_time": "15:00",
+      "stage": "Stellar Verse Productions Booth — Exhibit Hall Booth 507",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Pekoe Boo"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "events": "Seven hololive card-game-only sessions",
+      "reason": "Franchise-themed activity without a confirmed VTuber appearance."
+    },
+    {
+      "people": "Waffo; Koko",
+      "reason": "Named workshop hosts, but verified VTuber identities not established. Retain host credits only."
+    }
+  ]
+}

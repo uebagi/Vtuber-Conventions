@@ -1,0 +1,45 @@
+{
+  "timezone": "America/New_York",
+  "days": [
+    {
+      "date": "2026-11-19",
+      "entries": [
+        {
+          "label": "Exhibit Hall",
+          "opens": "12:00",
+          "closes": "20:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-20",
+      "entries": [
+        {
+          "label": "Exhibit Hall",
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-21",
+      "entries": [
+        {
+          "label": "Exhibit Hall",
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-22",
+      "entries": [
+        {
+          "label": "Exhibit Hall",
+          "opens": "10:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+  ]
+}

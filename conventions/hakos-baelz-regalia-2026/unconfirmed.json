@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-11-12",
+  "sessions": [
+    {
+      "date": "2026-12-01",
+      "day": "Tuesday",
+      "start_time": "",
+      "end_time": "",
+      "timezone": "Asia/Tokyo",
+      "timezone_abbreviation": "JST",
+      "utc_offset": "+09:00",
+      "stage": "Kanadevia Hall",
+      "event": "REGALIA — pre-show fan meeting",
+      "source_url": "https://hololive.hololivepro.com/en/events/regalia/",
+      "listed_hosts": "",
+      "participants": "Hakos Baelz",
+      "lineup_status": "announced",
+      "lineup_notes": "Bonus for early-entry arena ticket holders. Meeting start and end are unannounced; 16:45 is the doors-open time, not a confirmed meeting start. Ticket fees apply.",
+      "participant_source_urls": "https://hololive.hololivepro.com/en/events/regalia/",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "true",
+      "event_status": "official",
+      "meet_greet_type": "Pre-show fan meeting",
+      "price": "Early-entry arena ticket: ¥16,000 (tax included)",
+      "booth": "",
+      "event_type": "",
+      "organizer": "hololive",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "early-entry-fan-meeting"
+    }
+  ]
+}

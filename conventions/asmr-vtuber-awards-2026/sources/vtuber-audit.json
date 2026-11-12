@@ -1,0 +1,79 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-dachicktries",
+      "url": "https://asmrvtuberawards.show/",
+      "type": "VTuber identity evidence",
+      "locator": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend."
+    },
+    {
+      "id": "identity-phoenyx",
+      "url": "https://asmrvtuberawards.show/",
+      "type": "VTuber identity evidence",
+      "locator": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend."
+    },
+    {
+      "id": "identity-vixen",
+      "url": "https://asmrvtuberawards.show/",
+      "type": "VTuber identity evidence",
+      "locator": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend."
+    },
+    {
+      "id": "identity-yumitasty",
+      "url": "https://asmrvtuberawards.show/",
+      "type": "VTuber identity evidence",
+      "locator": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend."
+    }
+  ],
+  "participants": {
+    "DaChickTries": {
+      "classification": "verified-vtuber",
+      "basis": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend.",
+      "source_ids": [
+        "identity-dachicktries"
+      ]
+    },
+    "Phoenyx": {
+      "classification": "verified-vtuber",
+      "basis": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend.",
+      "source_ids": [
+        "identity-phoenyx"
+      ]
+    },
+    "Vixen": {
+      "classification": "verified-vtuber",
+      "basis": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend.",
+      "source_ids": [
+        "identity-vixen"
+      ]
+    },
+    "YumiTasty": {
+      "classification": "verified-vtuber",
+      "basis": "Official VTuber awards site names the four hosts and links their creator channels; no nominees are inferred to attend.",
+      "source_ids": [
+        "identity-yumitasty"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "ASMR VTuber Awards",
+      "date": "2026-11-14",
+      "start_time": "19:00",
+      "stage": "ASMR VTuber Awards livestream",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "YumiTasty",
+        "DaChickTries",
+        "Vixen",
+        "Phoenyx"
+      ],
+      "sources": [
+        "https://asmrvtuberawards.show/"
+      ]
+    }
+  ],
+  "excluded": []
+}

@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "Hakos Baelz": {
+      "x": "https://x.com/hakosbaelz",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/hakos-baelz/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCgmPnx-EEeOrZSg5Tiw7ZRQ?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/hakos-baelz/"
+      }
+    }
+  }
+}

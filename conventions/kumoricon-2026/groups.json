@@ -1,0 +1,83 @@
+{
+  "checked_on": "2026-11-12",
+  "groups": [
+    {
+      "name": "Stellar Verse Productions",
+      "members": [
+        "Perry Winkleton",
+        "Tokaku",
+        "Serena Starstruck",
+        "Rina Lunette",
+        "Lemi Lichen",
+        "Usachi Yui",
+        "Eva Ananova",
+        "Chio Chompi",
+        "Pekoe Boo"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/news/2026",
+        "https://www.kumoricon.org/guests/content-creator"
+      ],
+      "notes": "The October 11, 2026 organizer announcement explicitly introduces these nine as the Stellar Verse VTubers. No individual session lineup is inferred from membership."
+    },
+    {
+      "name": "Glitch Stars",
+      "members": [
+        "Mochi",
+        "Miwabelle",
+        "Arisa Noonish",
+        "Hiyori Mokami",
+        "Mogu"
+      ],
+      "sources": [
+        "https://www.glitchstars.com/stars"
+      ],
+      "notes": "Scheduled name Mochi corresponds to VTuber Mochi on the official roster; matching supported by the Glitch Stars profile and linked directory identity. Internal generations omitted."
+    },
+    {
+      "name": "BEASTIEZ",
+      "members": [
+        "Beribug",
+        "Tori Oriane",
+        "PiaPiUFO",
+        "Kairyu Crocodile"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator"
+      ],
+      "notes": "Roster only; the two group sessions do not name individual participants."
+    },
+    {
+      "name": "Duo Leveling",
+      "members": [
+        "Yuki Astrea",
+        "Yuna Astrea"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/schedule",
+        "https://duoleveling.wordpress.com/"
+      ],
+      "notes": "The shared meet-and-greet explicitly names both twins."
+    },
+    {
+      "name": "virtuchannel",
+      "members": [
+        "Phoebe Chan"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/guests/musical"
+      ]
+    },
+    {
+      "name": "Densetsu.EXE",
+      "members": [
+        "Phoebe Chan"
+      ],
+      "sources": [
+        "https://www.kumoricon.org/guests/musical"
+      ],
+      "notes": "Only the scheduled member is recorded. The group roster does not imply other members attend Kumoricon."
+    }
+  ],
+  "notes": "Booth organizer tags do not establish membership. Further possible affiliations are unresolved; no former agency memberships are treated as current."
+}

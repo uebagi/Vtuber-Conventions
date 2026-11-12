@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-11-12",
+  "groups": [
+    {
+      "name": "V-Moe Maid Cafe",
+      "members": [
+        "Luci",
+        "Lethia",
+        "Fuwa",
+        "Aurelia"
+      ],
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    },
+    {
+      "name": "Glitch Stars",
+      "members": [
+        "Majokko Meimi"
+      ],
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ],
+      "notes": "Only Majokko Meimi is explicitly described as a Glitch Stars member in the reviewed biography; co-listing is not used to infer the others' memberships."
+    },
+    {
+      "name": "ChromaSHIFT",
+      "members": [
+        "Yena Youngblood"
+      ],
+      "sources": [
+        "https://awa-con.com/vtuber-vocaloids/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    }
+  ]
+}

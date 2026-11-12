@@ -1,0 +1,464 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-alejandro-saab-cyyu",
+      "url": "https://awa-con.com/alejandro-saab-cyyu/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly labels Voice Actor / Vtuber and names CyYuVtuber."
+    },
+    {
+      "id": "identity-amalee",
+      "url": "https://awa-con.com/amalee/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber."
+    },
+    {
+      "id": "identity-amaya-whisper",
+      "url": "https://awa-con.com/glitch-stars/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-aurelia",
+      "url": "https://awa-con.com/v-moe-maid-cafe/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-fuwa",
+      "url": "https://awa-con.com/v-moe-maid-cafe/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-kou-mariya",
+      "url": "https://awa-con.com/vtuber-vocaloids/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-leah-asimov",
+      "url": "https://awa-con.com/glitch-stars/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-lethia",
+      "url": "https://awa-con.com/v-moe-maid-cafe/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-luci",
+      "url": "https://awa-con.com/v-moe-maid-cafe/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-majokko-meimi",
+      "url": "https://awa-con.com/glitch-stars/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-michaela-laws",
+      "url": "https://awa-con.com/michaela-laws/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly labels the guest a VTuber."
+    },
+    {
+      "id": "identity-mogu",
+      "url": "https://awa-con.com/glitch-stars/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-nana-asteria",
+      "url": "https://awa-con.com/vtuber-vocaloids/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-penny-puffball",
+      "url": "https://awa-con.com/vtuber-vocaloids/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-pillow-dear",
+      "url": "https://awa-con.com/vtuber-vocaloids/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-yena-youngblood",
+      "url": "https://awa-con.com/vtuber-vocaloids/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group."
+    },
+    {
+      "id": "identity-rachie",
+      "url": "https://awa-con.com/rachie/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography describes her VTuber activities beginning in 2021."
+    }
+  ],
+  "participants": {
+    "Alejandro Saab / CyYu": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly labels Voice Actor / Vtuber and names CyYuVtuber.",
+      "source_ids": [
+        "identity-alejandro-saab-cyyu"
+      ]
+    },
+    "AmaLee": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber.",
+      "source_ids": [
+        "identity-amalee"
+      ]
+    },
+    "Amaya Whisper": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-amaya-whisper"
+      ]
+    },
+    "Aurelia": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-aurelia"
+      ]
+    },
+    "Fuwa": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-fuwa"
+      ]
+    },
+    "Kou Mariya": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-kou-mariya"
+      ]
+    },
+    "Leah Asimov": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-leah-asimov"
+      ]
+    },
+    "Lethia": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-lethia"
+      ]
+    },
+    "Luci": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-luci"
+      ]
+    },
+    "Majokko Meimi": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-majokko-meimi"
+      ]
+    },
+    "Michaela Laws": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly labels the guest a VTuber.",
+      "source_ids": [
+        "identity-michaela-laws"
+      ]
+    },
+    "Mogu": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-mogu"
+      ]
+    },
+    "Nana Asteria": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-nana-asteria"
+      ]
+    },
+    "Penny Puffball": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-penny-puffball"
+      ]
+    },
+    "Pillow Dear": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-pillow-dear"
+      ]
+    },
+    "Yena Youngblood": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber / virtual performer or as a member of the stated indie VTuber group.",
+      "source_ids": [
+        "identity-yena-youngblood"
+      ]
+    },
+    "rachie": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography describes her VTuber activities beginning in 2021.",
+      "source_ids": [
+        "identity-rachie"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "Event Horizon — virtual idol concert",
+      "date": "2026-11-21",
+      "start_time": "14:00",
+      "stage": "Baby Grand Panel",
+      "basis": "The published title/description explicitly concerns VTubers or VTuber model creation; no individual VTuber lineup is inferred.",
+      "verified_talents": [],
+      "sources": [
+        "https://awa-con.com/events/idol-programming/"
+      ]
+    },
+    {
+      "event": "Majokko Meimi — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Majokko Meimi"
+      ],
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    {
+      "event": "Mogu — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Mogu"
+      ],
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    {
+      "event": "Leah Asimov — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Leah Asimov"
+      ],
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    {
+      "event": "Amaya Whisper — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Amaya Whisper"
+      ],
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    {
+      "event": "Penny Puffball — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Penny Puffball"
+      ],
+      "sources": [
+        "https://awa-con.com/vtuber-vocaloids/"
+      ]
+    },
+    {
+      "event": "Nana Asteria — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Nana Asteria"
+      ],
+      "sources": [
+        "https://awa-con.com/vtuber-vocaloids/"
+      ]
+    },
+    {
+      "event": "Pillow Dear — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Pillow Dear"
+      ],
+      "sources": [
+        "https://awa-con.com/vtuber-vocaloids/"
+      ]
+    },
+    {
+      "event": "Yena Youngblood — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Yena Youngblood"
+      ],
+      "sources": [
+        "https://awa-con.com/vtuber-vocaloids/"
+      ]
+    },
+    {
+      "event": "Kou Mariya — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Kou Mariya"
+      ],
+      "sources": [
+        "https://awa-con.com/vtuber-vocaloids/"
+      ]
+    },
+    {
+      "event": "Luci — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Luci"
+      ],
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    {
+      "event": "Lethia — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Lethia"
+      ],
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    {
+      "event": "Fuwa — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Fuwa"
+      ],
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    {
+      "event": "Aurelia — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Aurelia"
+      ],
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    {
+      "event": "AmaLee — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "AmaLee"
+      ],
+      "sources": [
+        "https://awa-con.com/guests/"
+      ]
+    },
+    {
+      "event": "Michaela Laws — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Michaela Laws"
+      ],
+      "sources": [
+        "https://awa-con.com/guests/"
+      ]
+    },
+    {
+      "event": "rachie — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "rachie"
+      ],
+      "sources": [
+        "https://awa-con.com/guests/"
+      ]
+    },
+    {
+      "event": "Alejandro Saab / CyYu — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Alejandro Saab / CyYu"
+      ],
+      "sources": [
+        "https://awa-con.com/guests/"
+      ]
+    }
+  ],
+  "excluded": []
+}

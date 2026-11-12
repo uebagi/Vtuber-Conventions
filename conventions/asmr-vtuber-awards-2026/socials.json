@@ -1,0 +1,48 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "DaChickTries": {
+      "x": null,
+      "sources": [
+        "https://asmrvtuberawards.show/"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/dachicktries",
+        "source": "https://asmrvtuberawards.show/"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "Phoenyx": {
+      "x": "https://x.com/PhoenyxVT",
+      "sources": [
+        "https://ww.twstalker.com/PhoenyxVT"
+      ],
+      "primary": {
+        "url": "https://twitch.tv/phoenyx",
+        "source": "https://vexpo.uk/autographs"
+      }
+    },
+    "Vixen": {
+      "x": null,
+      "sources": [
+        "https://asmrvtuberawards.show/"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/vixen",
+        "source": "https://asmrvtuberawards.show/"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "YumiTasty": {
+      "x": null,
+      "sources": [
+        "https://asmrvtuberawards.show/"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/yumitasty",
+        "source": "https://asmrvtuberawards.show/"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    }
+  }
+}

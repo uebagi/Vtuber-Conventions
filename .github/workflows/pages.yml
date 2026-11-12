@@ -24,6 +24,9 @@ jobs:
           node tests/schedule.cjs
           node tests/event-types.cjs
           node tests/map.cjs
+          node tests/directory.cjs
+          node tests/late-2026.cjs
+          node tests/vtuber-scope.cjs
           node tests/build-site.cjs
       - name: Prepare site
         run: node scripts/build-site.cjs

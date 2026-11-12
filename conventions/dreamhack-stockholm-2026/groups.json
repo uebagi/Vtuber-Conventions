@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-11-12",
+  "groups": [
+    {
+      "name": "hololive",
+      "members": [
+        "Airani Iofifteen",
+        "Elizabeth Rose Bloodflame",
+        "Kaela Kovalskia",
+        "Kobo Kanaeru",
+        "Kureiji Ollie",
+        "Moona Hoshinova",
+        "Mori Calliope",
+        "Nerissa Ravencroft",
+        "Pavolia Reine",
+        "Raora Panthera",
+        "Shiori Novella",
+        "Takanashi Kiara",
+        "Vestia Zeta",
+        "Anya Melfissa"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    },
+    {
+      "name": "HOLOSTARS",
+      "members": [
+        "Octavio",
+        "Jurard T Rexford"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    }
+  ]
+}

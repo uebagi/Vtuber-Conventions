@@ -1,0 +1,30 @@
+{
+  "checked_on": "2026-11-12",
+  "groups": [
+    {
+      "name": "NIJISANJI",
+      "members": [
+        "Sonny Brisko",
+        "Shu Yamino",
+        "Luca Kaneshiro",
+        "Ren Zotto"
+      ],
+      "sources": [
+        "https://www.anycolor.co.jp/news/475s_nukrog"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    },
+    {
+      "name": "KAMITSUBAKI STUDIO",
+      "members": [
+        "KAF",
+        "Isekaijoucho"
+      ],
+      "sources": [
+        "https://kamitsubaki.jp/artist/kaf/",
+        "https://kamitsubaki.jp/artist/isekaijoucho/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    }
+  ]
+}

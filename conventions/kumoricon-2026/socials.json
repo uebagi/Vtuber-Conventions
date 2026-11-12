@@ -1,0 +1,256 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "Usachi Yui": {
+      "x": "https://x.com/UsachiYui",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@UsachiYui",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Tokaku": {
+      "x": "https://x.com/n_tokaku",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@n_Tokaku",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Serena Starstruck": {
+      "x": "https://x.com/Sera_Starstruck",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@Sera_Starstruck",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Rina Lunette": {
+      "x": "https://x.com/RinaLunette",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@RinaLunette",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "PorcelainMaid": {
+      "x": "https://x.com/PorcelainMaid",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@PorcelainMaid",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Perry Winkleton": {
+      "x": "https://x.com/WinkletonPerry",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@WinkletonPerry",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Pekoe Boo": {
+      "x": "https://x.com/Pekoe_Boo",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@Pekoe_Boo",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Nemimi Yane": {
+      "x": "https://x.com/NemimiYane",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@NemimiYane",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Lemi Lichen": {
+      "x": "https://x.com/LemiLichen",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers."
+    },
+    "Eva Ananova": {
+      "x": "https://x.com/EvaAnanova",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@evaananova",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Chio Chompi": {
+      "x": "https://x.com/ChioChompi",
+      "sources": [
+        "https://www.kumoricon.org/guests/content-creator",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://www.youtube.com/@ChioChompi",
+        "source": "https://www.kumoricon.org/guests/content-creator"
+      }
+    },
+    "Phoebe Chan": {
+      "x": "https://x.com/feebeechanchibi",
+      "sources": [
+        "https://www.kumoricon.org/guests/musical"
+      ],
+      "notes": "Profile target linked by the organizer; X content may be unavailable to automated readers.",
+      "primary": {
+        "url": "https://feebeechanchibi.com/",
+        "source": "https://www.kumoricon.org/guests/musical"
+      }
+    },
+    "Admiral Trina": {
+      "x": "https://x.com/admiraltrina",
+      "sources": [
+        "https://admiraltrina.crd.co/"
+      ]
+    },
+    "Akemi Kraus": {
+      "x": "https://x.com/AkemiKraus",
+      "sources": [
+        "https://vtubie.com/akemi-kraus/"
+      ]
+    },
+    "Arisa Noonish": {
+      "x": "https://x.com/ArisaNoonish",
+      "sources": [
+        "https://www.glitchstars.com/stars/arisanoonish",
+        "https://twstalker.com/ArisaNoonish",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Hiyori Mokami": {
+      "x": "https://x.com/hiyorimokami",
+      "sources": [
+        "https://www.glitchstars.com/stars/hiyorimokami",
+        "https://mobile.twstalker.com/hiyorimokami",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Miwabelle": {
+      "x": "https://x.com/Miwabelle1",
+      "sources": [
+        "https://www.glitchstars.com/stars/miwabelle",
+        "https://hololist.net/miwabelle/",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Mochi": {
+      "x": "https://x.com/vtuber_mochi",
+      "sources": [
+        "https://www.glitchstars.com/stars/vtubermochi",
+        "https://hololist.net/mochi/",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Mogu": {
+      "x": "https://x.com/mogughost",
+      "sources": [
+        "https://awa-con.com/glitch-stars/",
+        "https://www.glitchstars.com/stars/mogu",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Pillowdear": {
+      "x": "https://x.com/pillowdearASMR",
+      "sources": [
+        "https://pillowdearvt.com/",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Raki Kazuki": {
+      "x": "https://x.com/RakiKazuki",
+      "sources": [
+        "https://asapa.ca/animethon/2025/raki-kazuki",
+        "https://bacharu.io/vtuber/raki-kazuki",
+        "https://x.com/StellarVersePro/status/2119837478085702112"
+      ]
+    },
+    "Ryakishou": {
+      "x": "https://x.com/Ryakishou",
+      "sources": [
+        "https://ryakishou.carrd.co/"
+      ]
+    },
+    "Felynne deRouge": {
+      "x": "https://x.com/LynneRouge",
+      "sources": [
+        "https://www.instalker.org/LynneRouge",
+        "https://ww.twstalker.com/LynneRouge"
+      ]
+    },
+    "TaneTenshi": {
+      "x": "https://x.com/tane_tenshi",
+      "sources": [
+        "https://tanetenshi.carrd.co/",
+        "https://hololist.net/tane-tenshi/"
+      ]
+    },
+    "Kumogorogoro": {
+      "x": "https://x.com/kumogorogoro",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Kumogorogoro",
+        "https://kumogorogoro.carrd.co/"
+      ]
+    },
+    "JoeSchmmo": {
+      "x": "https://x.com/joeschmmogaming",
+      "sources": [
+        "https://vtubie.com/joeschmmo/"
+      ]
+    },
+    "Yuki Astrea": {
+      "x": "https://x.com/duoleveling",
+      "sources": [
+        "https://duoleveling.wordpress.com/",
+        "https://hololist.net/duo-leveling/"
+      ]
+    },
+    "Yuna Astrea": {
+      "x": "https://x.com/duoleveling",
+      "sources": [
+        "https://duoleveling.wordpress.com/",
+        "https://hololist.net/duo-leveling/"
+      ]
+    }
+  }
+}

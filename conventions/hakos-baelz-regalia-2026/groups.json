@@ -1,0 +1,15 @@
+{
+  "checked_on": "2026-11-12",
+  "groups": [
+    {
+      "name": "hololive",
+      "members": [
+        "Hakos Baelz"
+      ],
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/hakos-baelz/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    }
+  ]
+}

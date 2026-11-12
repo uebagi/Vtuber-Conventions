@@ -1,0 +1,140 @@
+{
+  "checked_on": "2026-11-12",
+  "event": {
+    "name": "Anime Festival Asia Singapore 2026",
+    "start": "2026-11-27",
+    "end": "2026-11-29",
+    "venue": "Suntec Singapore Convention & Exhibition Centre, Halls 401–406, Singapore",
+    "timezone": "Asia/Singapore",
+    "abbreviation": "SGT",
+    "offset": "+08:00"
+  },
+  "sources": [
+    {
+      "id": "event-programme",
+      "url": "https://animefestival.asia/afasg26/",
+      "type": "official webpage",
+      "locator": "2026 dates, venue, exhibition hours; Saturday MusicFest 19:00 and published bill"
+    },
+    {
+      "id": "nijisanji-stage",
+      "url": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "type": "official webpage",
+      "locator": "Stage Info: November 28, 17:15 SGT, AFA NEXT Stage; four named remote performers"
+    },
+    {
+      "id": "guest-programme",
+      "url": "https://animefestival.asia/afasg26/guests/",
+      "type": "official webpage",
+      "locator": "KAMITSUBAKI STAGE and Paradox Live guest programme"
+    }
+  ],
+  "sessions": [
+    {
+      "date": "2026-11-28",
+      "day": "Saturday",
+      "start_time": "17:15",
+      "end_time": "",
+      "timezone": "Asia/Singapore",
+      "timezone_abbreviation": "SGT",
+      "utc_offset": "+08:00",
+      "stage": "AFA NEXT Stage",
+      "event": "NIJISANJI EN — AFA NEXT Stage",
+      "source_url": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "listed_hosts": "",
+      "participants": "Sonny Brisko;Shu Yamino;Luca Kaneshiro;Ren Zotto",
+      "lineup_status": "announced",
+      "lineup_notes": "Remote appearance; no livestream. Stage access is included with an AFA admission ticket. End time unannounced.",
+      "participant_source_urls": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "false",
+      "event_status": "official",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "NIJISANJI",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "nijisanji-next-stage",
+      "source_ids": [
+        "nijisanji-stage"
+      ]
+    },
+    {
+      "date": "2026-11-28",
+      "day": "Saturday",
+      "start_time": "19:00",
+      "end_time": "",
+      "timezone": "Asia/Singapore",
+      "timezone_abbreviation": "SGT",
+      "utc_offset": "+08:00",
+      "stage": "Concert stage",
+      "event": "AFASG26 MusicFest powered by Crunchyroll — Saturday",
+      "source_url": "https://animefestival.asia/afasg26/",
+      "listed_hosts": "",
+      "participants": "KAF;Isekaijoucho",
+      "lineup_status": "announced",
+      "lineup_notes": "Full concert starts 19:00; individual KAMITSUBAKI STAGE set times for VTuber/virtual singers KAF and Isekaijoucho are unannounced. Other published acts: virtual DJ mascot SACRA-chan (opening act), Aooo, Kyary Pamyu Pamyu, Liella! (Liyuu, Naomi Payton and Yuina), and May’n. These acts are credited here without classifying them as VTubers. Doors open 18:00; separate concert ticket required.",
+      "participant_source_urls": "https://animefestival.asia/afasg26/",
+      "is_concert": "true",
+      "concert_classification_notes": "Published music / karaoke performance.",
+      "is_meet_greet": "false",
+      "event_status": "official",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "saturday-musicfest",
+      "source_ids": [
+        "event-programme"
+      ]
+    },
+    {
+      "date": "2026-11-29",
+      "day": "Sunday",
+      "start_time": "",
+      "end_time": "",
+      "timezone": "Asia/Singapore",
+      "timezone_abbreviation": "SGT",
+      "utc_offset": "+08:00",
+      "stage": "AFA NEXT Stage",
+      "event": "Paradox Live — 96Neko virtual appearance",
+      "source_url": "https://animefestival.asia/afasg26/guests/",
+      "listed_hosts": "",
+      "participants": "96Neko",
+      "lineup_status": "announced",
+      "lineup_notes": "Virtual appearance as the voice of Anne Faulkner. Individual stage time and end time are unannounced. No in-person attendance is implied.",
+      "participant_source_urls": "https://animefestival.asia/afasg26/guests/",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "false",
+      "event_status": "official",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "paradox-live-96neko",
+      "source_ids": [
+        "guest-programme"
+      ]
+    }
+  ],
+  "notes": [
+    "19:00 is the Saturday full-concert start, not a separately published KAF/Isekaijoucho set time. Group performance credit for Liella! is retained in notes, with only its three explicitly announced members named.",
+    "No VTuber-specific meet-and-greet appointment was established from the meet-and-greet page. 96Neko / Paradox Live is listed separately without a published time; no VTuber attendance claim or slot is inferred.",
+    "The NIJISANJI internal unit name is not used as an agency group. Musical content of its stage appearance was not established, so it is not marked as a concert.",
+    "VTuber scope audited November 12, 2026: only verified VTubers appear in participants/Talent. Other published speakers or performers are retained as credits, not inferred to be VTubers.",
+    "96Neko's VTuber identity is corroborated by the official Fukuya merchandise announcement documenting her March 2019 debut. The edition-specific AFA virtual appearance remains unconfirmed in time; see vtuber-audit.json."
+  ]
+}

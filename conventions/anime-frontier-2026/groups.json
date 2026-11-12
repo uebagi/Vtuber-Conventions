@@ -1,0 +1,38 @@
+{
+  "checked_on": "2026-11-12",
+  "groups": [
+    {
+      "name": "hololive",
+      "members": [
+        "Oozora Subaru",
+        "Takane Lui",
+        "Airani Iofifteen",
+        "Anya Melfissa",
+        "Pavolia Reine",
+        "Vestia Zeta",
+        "Mori Calliope",
+        "Takanashi Kiara",
+        "Ouro Kronii",
+        "Raora Panthera",
+        "Shiori Novella"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    },
+    {
+      "name": "HOLOSTARS",
+      "members": [
+        "Axel Syrios",
+        "Machina X Flayon",
+        "Banzoin Hakka",
+        "Octavio"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ],
+      "notes": "Membership is explicit in the linked organizer or agency listing; no event lineup is inferred from membership."
+    }
+  ]
+}

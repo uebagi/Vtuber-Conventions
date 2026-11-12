@@ -1,0 +1,149 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "Airani Iofifteen": {
+      "x": "https://x.com/airaniiofifteen",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/airani-iofifteen/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCAoy6rzhSf4ydcYjJw3WoVg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/airani-iofifteen/"
+      }
+    },
+    "Anya Melfissa": {
+      "x": "https://x.com/anyamelfissa",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/anya-melfissa/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UC727SQYUvx5pDDGQpTICNWg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/anya-melfissa/"
+      }
+    },
+    "Axel Syrios": {
+      "x": "https://x.com/axelsyrios",
+      "sources": [
+        "https://holostars.hololivepro.com/en/talent/axel-syrios/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UC2hx0xVkMoHGWijwr_lA01w",
+        "source": "https://holostars.hololivepro.com/en/talent/axel-syrios/"
+      }
+    },
+    "Banzoin Hakka": {
+      "x": null,
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ],
+      "notes": "No unambiguous X profile was established from the reviewed official sources."
+    },
+    "Machina X Flayon": {
+      "x": null,
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ],
+      "notes": "No unambiguous X profile was established from the reviewed official sources."
+    },
+    "Mori Calliope": {
+      "x": "https://x.com/moricalliope",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/mori-calliope/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/mori-calliope/"
+      }
+    },
+    "Octavio": {
+      "x": "https://x.com/octavio_holo",
+      "sources": [
+        "https://holostars.hololivepro.com/en/talent/octavio/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCLk1hcmxg8rJ3Nm1_GvxTRA",
+        "source": "https://holostars.hololivepro.com/en/talent/octavio/"
+      }
+    },
+    "Oozora Subaru": {
+      "x": "https://x.com/oozorasubaru",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/oozora-subaru/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCvzGlP9oQwU--Y0r9id_jnA?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/oozora-subaru/"
+      }
+    },
+    "Ouro Kronii": {
+      "x": "https://x.com/ourokronii",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/ouro-kronii/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCmbs8T6MWqUHP1tIQvSgKrg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/ouro-kronii/"
+      }
+    },
+    "Pavolia Reine": {
+      "x": "https://x.com/pavoliareine",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/pavolia-reine/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UChgTyjG-pdNvxxhdsXfHQ5Q?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/pavolia-reine/"
+      }
+    },
+    "Raora Panthera": {
+      "x": "https://x.com/raorapanthera",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/raora-panthera/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCl69AEx4MdqMZH7Jtsm7Tig?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/raora-panthera/"
+      }
+    },
+    "Shiori Novella": {
+      "x": "https://x.com/shiorinovella",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/shiori-novella/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCgnfPPb9JI3e9A4cXHnWbyg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/shiori-novella/"
+      }
+    },
+    "Takanashi Kiara": {
+      "x": "https://x.com/takanashikiara",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/takanashi-kiara/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/takanashi-kiara/"
+      }
+    },
+    "Takane Lui": {
+      "x": "https://x.com/takanelui",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/takane-lui/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCs9_O1tRPMQTHQ-N_L6FU2g?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/takane-lui/"
+      }
+    },
+    "Vestia Zeta": {
+      "x": "https://x.com/vestiazeta",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/vestia-zeta/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCTvHWSfBZgtxE4sILOaurIQ?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/vestia-zeta/"
+      }
+    }
+  }
+}

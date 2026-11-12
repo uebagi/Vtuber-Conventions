@@ -1,0 +1,35 @@
+{
+  "timezone": "America/Los_Angeles",
+  "days": [
+    {
+      "date": "2026-11-13",
+      "entries": [
+        {
+          "label": "Convention",
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "entries": [
+        {
+          "label": "Convention",
+          "opens": "10:00",
+          "closes": "19:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "entries": [
+        {
+          "label": "Convention",
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+  ]
+}

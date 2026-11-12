@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-11-12",
+  "sessions": [
+    {
+      "date": "",
+      "day": "",
+      "start_time": "",
+      "end_time": "",
+      "timezone": "Europe/Stockholm",
+      "timezone_abbreviation": "CET",
+      "utc_offset": "+01:00",
+      "stage": "Location unannounced",
+      "event": "Anya Melfissa — guest appearance",
+      "source_url": "https://dreamhack.com/stockholm/hololive/",
+      "listed_hosts": "",
+      "participants": "Anya Melfissa",
+      "lineup_status": "announced",
+      "lineup_notes": "Listed in the overall November 27–29 talent lineup. No individual slot, day or appearance format is established; this does not confirm a meet-and-greet.",
+      "participant_source_urls": "https://dreamhack.com/stockholm/hololive/",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "false",
+      "event_status": "official",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "hololive",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "anya-guest-announcement"
+    }
+  ]
+}

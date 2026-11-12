@@ -1,0 +1,63 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "96Neko": {
+      "x": "https://x.com/96__neko",
+      "sources": [
+        "https://animefestival.asia/afasg26/guests/"
+      ]
+    },
+    "Isekaijoucho": {
+      "x": "https://x.com/isekaijoucho",
+      "sources": [
+        "https://animefestival.asia/afasg26/guests/"
+      ]
+    },
+    "KAF": {
+      "x": "https://x.com/virtual_kaf",
+      "sources": [
+        "https://animefestival.asia/afasg26/guests/"
+      ]
+    },
+    "Luca Kaneshiro": {
+      "x": "https://x.com/Luca_Kaneshiro",
+      "sources": [
+        "https://www.nijisanji.jp/en/talents/l/luca-kaneshiro"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UC7Gb7Uawe20QyFibhLl1lzA",
+        "source": "https://www.nijisanji.jp/en/talents/l/luca-kaneshiro"
+      }
+    },
+    "Ren Zotto": {
+      "x": "https://x.com/RenZott0",
+      "sources": [
+        "https://www.nijisanji.jp/en/talents/l/ren-zotto"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCKu59gTZ_rdEmerdx5rV4Yg",
+        "source": "https://www.nijisanji.jp/en/talents/l/ren-zotto"
+      }
+    },
+    "Shu Yamino": {
+      "x": "https://x.com/Shu_Yamino",
+      "sources": [
+        "https://www.nijisanji.jp/en/talents/l/shu-yamino"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCG0rzBZV_QMP4MtWg6IjhEA",
+        "source": "https://www.nijisanji.jp/en/talents/l/shu-yamino"
+      }
+    },
+    "Sonny Brisko": {
+      "x": "https://x.com/sonny_brisko",
+      "sources": [
+        "https://www.nijisanji.jp/en/talents/l/sonny-brisko"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCuuAb_72QzK0M1USPMEl1yw",
+        "source": "https://www.nijisanji.jp/en/talents/l/sonny-brisko"
+      }
+    }
+  }
+}

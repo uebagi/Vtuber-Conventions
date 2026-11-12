@@ -1,5 +1,5 @@
 /* Small RFC 4180 parser: quoted commas, newlines, escaped quotes and UTF-8 BOM. */
-function parseCSV(text) {
+function parseCSV(text, requiredHeaders = []) {
   const rows = []; let row = [], field = '', quoted = false;
   text = text.replace(/^\uFEFF/, '');
   for (let i = 0; i < text.length; i++) {
@@ -17,6 +17,7 @@ function parseCSV(text) {
   if (quoted) throw new Error('Unclosed CSV field');
   if (field || row.length) { row.push(field); rows.push(row); }
   const headers = rows.shift() || [];
+  if (requiredHeaders.some(name => !headers.includes(name))) throw new Error('Invalid schedule columns');
   return rows.map(values => Object.fromEntries(headers.map((name, i) => [name, values[i] || ''])));
 }
 
@@ -515,8 +516,8 @@ async function load() {
     talentGroups = memberships;
     socialProfiles = profiles;
     if (!response.ok) throw new Error(`Schedule request failed: ${response.status}`);
-    sessions = parseCSV(await response.text());
-    if (!sessions.length || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
+    sessions = parseCSV(await response.text(), ['date', 'event', 'stage', 'start_time', 'utc_offset', 'source_url', 'participants', 'lineup_notes']);
+    if ((!sessions.length && !unconfirmed.length) || sessions.some(s => !s.date || !s.event || !s.stage || !s.start_time || !s.utc_offset || !s.source_url || !('participants' in s) || !('lineup_notes' in s))) throw new Error('Invalid schedule columns');
     sessions.push(...unconfirmed);
     const sortKey = s => (s.date || '9999') + (s.start_time || '99:99') + (s.event_type === 'opening' ? '0' : s.event_type === 'closing' ? '2' : '1') + s.stage;
     sessions.sort((a, b) => sortKey(a).localeCompare(sortKey(b)));

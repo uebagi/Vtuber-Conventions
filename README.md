@@ -11,7 +11,7 @@ A static site for convention schedules, participant socials, filters, and calend
 3. Update the HTML title, description, convention name, dates, venue, official schedule link, timezone label, and footer.
 4. Configure the page's `<body>` attributes as shown below. Remove any copied `data-uid-domain` attribute; new conventions use their event ID for calendar IDs.
 5. Add an optional `socials.json` for participant links. Omit `data-socials` if you do not have a social map.
-6. Copy a convention card in the root `index.html` and update its link to `conventions/<slug>/`, name, dates, and location.
+6. Copy a convention card in the root `index.html` and update its link to `conventions/<slug>/`, name, dates, and location. Set `data-end-date` to the final ISO event date and `data-timezone` to its local IANA timezone.
 7. Preview the page locally and check its filters, source links, and calendar downloads before pushing to `main`.
 
 ```html
@@ -23,6 +23,12 @@ A static site for convention schedules, participant socials, filters, and calend
 ```
 
 Keep the shared asset paths as `../../assets/app.js` and `../../assets/styles.css`, and the convention page's home link as `../../`. Dates and location filter options are generated from the CSV. Use a new folder and event ID for each year's convention.
+
+## Automatic archive
+
+The home page moves cards into **Archive** after their final day in the convention's local timezone. Set `data-end-date="2026-11-15" data-timezone="America/Los_Angeles"` on each convention link, using that edition's researched values. `assets/directory.js` checks on page load, every minute, and when a tab becomes visible again; no deployment or scheduled job is needed at the end of an event. Archived cards show most recent first. Missing or invalid metadata leaves a card in the current list.
+
+Archiving only changes the home-page grouping. Convention folders, URLs, shared filter links and calendar downloads remain available. Without JavaScript, all cards remain accessible in the original list. Verify boundary dates and differing event timezones with `node tests/directory.cjs`.
 
 ## Project layout
 
@@ -237,9 +243,13 @@ For a fork, select **Settings → Pages → Build and deployment → GitHub Acti
 
 ## Appearances with unconfirmed times
 
+Only publish a session with a documented VTuber connection: confirmed VTuber performers/hosts, or programming explicitly about VTubing. Generic workshops and franchise card games without a VTuber appearance do not qualify. `participants` drives the Talent filter and must contain verified VTubers only; preserve other published speakers/performers in `listed_hosts` or notes without classifying them as VTubers. For mixed concerts, keep the actual full-concert start and explain that individual VTuber set times are unpublished. Keep identity evidence and excluded leads in `sources/vtuber-audit.json`; uncertain edition-specific guest claims stay in research until reconfirmed.
+
 Add optional `unconfirmed.json` and `data-unconfirmed="unconfirmed.json"` on the convention's body. Its shape is `{ "checked_on": "YYYY-MM-DD", "sessions": [...] }`. Each session uses the schedule field names, plus a stable `id`. Supply `event`, `stage`, `participants`, `source_url`, status and type flags. Keep `start_time` and `end_time` absent or empty; use an empty `date`/`day` unless a specific day is confirmed. Describe a convention date range in `lineup_notes` without implying an appearance every day. Use `event_type: "booth-appearance"` when only a booth appearance, rather than a meet-and-greet, is established.
 
 These cards appear in All days and under the Unconfirmed time button (`?day=unconfirmed`). Known dates also appear under that day. Other filters and socials still work. Calendar downloads exclude these cards and count only timed sessions. Once confirmed, move the appearance into `schedule.csv` and remove its unconfirmed entry to avoid duplicates. The build publishes this optional JSON automatically.
+
+An event with no timed sessions yet may use a header-only `schedule.csv` together with a nonempty `unconfirmed.json`. Keep the full CSV header so the page and packaging remain valid. An empty schedule without announcements still shows the load error.
 
 
 ## Optional floor plan (POC)

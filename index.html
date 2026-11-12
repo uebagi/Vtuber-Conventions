@@ -5,15 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Convention schedules</title>
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/directory.js" defer></script>
 </head>
 <body>
   <main>
-    <nav class="convention-list" aria-label="Conventions">
-      <a class="convention-link" href="conventions/vexpo-2026/">
+    <section class="directory-section" id="current-conventions" aria-labelledby="current-heading">
+      <h2 id="current-heading">Conventions</h2>
+      <p id="no-upcoming" class="muted" hidden>No upcoming conventions listed.</p>
+      <nav class="convention-list" id="current-list" aria-label="Current and upcoming conventions">
+      <a class="convention-link" href="conventions/vexpo-2026/" data-end-date="2026-09-20" data-timezone="Europe/London">
         <span class="convention-name">VeXpo 2026</span>
         <span class="convention-meta">September 18–20, 2026 · NEC, Birmingham</span>
       </a>
-    </nav>
+      <a class="convention-link" href="conventions/kumoricon-2026/" data-end-date="2026-11-15" data-timezone="America/Los_Angeles">
+        <span class="convention-name">Kumoricon 2026</span>
+        <span class="convention-meta">November 13–15, 2026 · Oregon Convention Center, Portland</span>
+      </a>
+      <a class="convention-link" href="conventions/twitchcon-san-diego-2026/" data-end-date="2026-11-15" data-timezone="America/Los_Angeles">
+        <span class="convention-name">TwitchCon San Diego 2026</span>
+        <span class="convention-meta">November 13–15, 2026 · San Diego Convention Center, San Diego</span>
+      </a>
+      <a class="convention-link" href="conventions/asmr-vtuber-awards-2026/" data-end-date="2026-11-14" data-timezone="Etc/UTC">
+        <span class="convention-name">ASMR VTuber Awards 2026</span>
+        <span class="convention-meta">November 14, 2026 · Online — Twitch</span>
+      </a>
+      <a class="convention-link" href="conventions/anime-weekend-atlanta-2026/" data-end-date="2026-11-22" data-timezone="America/New_York">
+        <span class="convention-name">Anime Weekend Atlanta 2026</span>
+        <span class="convention-meta">November 19–22, 2026 · Georgia World Congress Center, Atlanta</span>
+      </a>
+      <a class="convention-link" href="conventions/dreamhack-stockholm-2026/" data-end-date="2026-11-29" data-timezone="Europe/Stockholm">
+        <span class="convention-name">DreamHack Stockholm 2026</span>
+        <span class="convention-meta">November 27–29, 2026 · Stockholmsmässan, Stockholm</span>
+      </a>
+      <a class="convention-link" href="conventions/anime-festival-asia-singapore-2026/" data-end-date="2026-11-29" data-timezone="Asia/Singapore">
+        <span class="convention-name">Anime Festival Asia Singapore 2026</span>
+        <span class="convention-meta">November 27–29, 2026 · Suntec Singapore</span>
+      </a>
+      <a class="convention-link" href="conventions/hakos-baelz-regalia-2026/" data-end-date="2026-12-01" data-timezone="Asia/Tokyo">
+        <span class="convention-name">Hakos Baelz REGALIA 2026</span>
+        <span class="convention-meta">December 1, 2026 · Kanadevia Hall, Tokyo + streaming</span>
+      </a>
+      <a class="convention-link" href="conventions/anime-frontier-2026/" data-end-date="2026-12-06" data-timezone="America/Chicago">
+        <span class="convention-name">Anime Frontier 2026</span>
+        <span class="convention-meta">December 4–6, 2026 · Fort Worth Convention Center, Fort Worth</span>
+      </a>
+
+
+
+      </nav>
+    </section>
+    <section class="directory-section" id="archived-conventions" aria-labelledby="archive-heading" hidden>
+      <h2 id="archive-heading">Archive</h2>
+      <nav class="convention-list" id="archive-list" aria-label="Archived conventions"></nav>
+    </section>
   </main>
 </body>
 </html>

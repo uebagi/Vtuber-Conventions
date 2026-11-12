@@ -14,6 +14,20 @@ try {
   assert(fs.existsSync(path.join(output, 'assets', 'map.js')));
   assert(!fs.existsSync(path.join(output, 'conventions', slug, 'floor-plan.png')));
   const rootHTML = fs.readFileSync(path.join(output, 'index.html'), 'utf8');
+  // Every discovered edition must retain all referenced optional runtime data.
+  for (const entry of fs.readdirSync(path.join(repository, 'conventions'), {withFileTypes: true})) {
+    if (!entry.isDirectory()) continue;
+    const source = path.join(repository, 'conventions', entry.name);
+    if (!fs.existsSync(path.join(source, 'schedule.csv'))) continue;
+    const target = path.join(output, 'conventions', entry.name);
+    const page = fs.readFileSync(path.join(source, 'index.html'), 'utf8');
+    assert.equal(fs.readFileSync(path.join(target, 'index.html'), 'utf8'), page);
+    for (const [, name] of page.matchAll(/data-(?:socials|groups|opening-hours|unconfirmed)="([^"]+)"/g)) {
+      assert.deepEqual(fs.readFileSync(path.join(target, name)), fs.readFileSync(path.join(source, name)));
+    }
+    assert.deepEqual(fs.readFileSync(path.join(target, 'schedule.csv')), fs.readFileSync(path.join(source, 'schedule.csv')));
+    assert(!fs.existsSync(path.join(target, 'sources')));
+  }
   assert(rootHTML.includes(`href="conventions/${slug}/"`));
   const convention = path.join(output, 'conventions', slug);
   const html = fs.readFileSync(path.join(convention, 'index.html'), 'utf8');

@@ -1,0 +1,157 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-96neko",
+      "url": "https://www.fancy-fukuya.co.jp/topics/20190796neko/",
+      "type": "VTuber identity evidence",
+      "locator": "Official merchandise partner explicitly documents 96Neko's March 2019 VTuber debut and virtual character; AFA confirms a virtual appearance for this edition."
+    },
+    {
+      "id": "identity-96neko-2",
+      "url": "https://animefestival.asia/afasg26/guests/",
+      "type": "VTuber identity evidence",
+      "locator": "Official merchandise partner explicitly documents 96Neko's March 2019 VTuber debut and virtual character; AFA confirms a virtual appearance for this edition."
+    },
+    {
+      "id": "identity-isekaijoucho",
+      "url": "https://kamitsubaki.jp/artist/isekaijoucho/",
+      "type": "VTuber identity evidence",
+      "locator": "Official agency artist page identifies the virtual dark singer and their creator persona."
+    },
+    {
+      "id": "identity-kaf",
+      "url": "https://kamitsubaki.jp/artist/kaf/",
+      "type": "VTuber identity evidence",
+      "locator": "Official agency artist page identifies KAF as its founding virtual singer using a 3D avatar."
+    },
+    {
+      "id": "identity-luca-kaneshiro",
+      "url": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "type": "VTuber identity evidence",
+      "locator": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance."
+    },
+    {
+      "id": "identity-ren-zotto",
+      "url": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "type": "VTuber identity evidence",
+      "locator": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance."
+    },
+    {
+      "id": "identity-shu-yamino",
+      "url": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "type": "VTuber identity evidence",
+      "locator": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance."
+    },
+    {
+      "id": "identity-sonny-brisko",
+      "url": "https://www.anycolor.co.jp/news/475s_nukrog",
+      "type": "VTuber identity evidence",
+      "locator": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance."
+    }
+  ],
+  "participants": {
+    "96Neko": {
+      "classification": "verified-vtuber",
+      "basis": "Official merchandise partner explicitly documents 96Neko's March 2019 VTuber debut and virtual character; AFA confirms a virtual appearance for this edition.",
+      "source_ids": [
+        "identity-96neko",
+        "identity-96neko-2"
+      ]
+    },
+    "Isekaijoucho": {
+      "classification": "verified-vtuber",
+      "basis": "Official agency artist page identifies the virtual dark singer and their creator persona.",
+      "source_ids": [
+        "identity-isekaijoucho"
+      ]
+    },
+    "KAF": {
+      "classification": "verified-vtuber",
+      "basis": "Official agency artist page identifies KAF as its founding virtual singer using a 3D avatar.",
+      "source_ids": [
+        "identity-kaf"
+      ]
+    },
+    "Luca Kaneshiro": {
+      "classification": "verified-vtuber",
+      "basis": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance.",
+      "source_ids": [
+        "identity-luca-kaneshiro"
+      ]
+    },
+    "Ren Zotto": {
+      "classification": "verified-vtuber",
+      "basis": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance.",
+      "source_ids": [
+        "identity-ren-zotto"
+      ]
+    },
+    "Shu Yamino": {
+      "classification": "verified-vtuber",
+      "basis": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance.",
+      "source_ids": [
+        "identity-shu-yamino"
+      ]
+    },
+    "Sonny Brisko": {
+      "classification": "verified-vtuber",
+      "basis": "ANYCOLOR explicitly announces these named NIJISANJI virtual Livers and their remote performance.",
+      "source_ids": [
+        "identity-sonny-brisko"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "NIJISANJI EN — AFA NEXT Stage",
+      "date": "2026-11-28",
+      "start_time": "17:15",
+      "stage": "AFA NEXT Stage",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Sonny Brisko",
+        "Shu Yamino",
+        "Luca Kaneshiro",
+        "Ren Zotto"
+      ],
+      "sources": [
+        "https://www.anycolor.co.jp/news/475s_nukrog"
+      ]
+    },
+    {
+      "event": "AFASG26 MusicFest powered by Crunchyroll — Saturday",
+      "date": "2026-11-28",
+      "start_time": "19:00",
+      "stage": "Concert stage",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "KAF",
+        "Isekaijoucho"
+      ],
+      "sources": [
+        "https://animefestival.asia/afasg26/"
+      ]
+    },
+    {
+      "event": "Paradox Live — 96Neko virtual appearance",
+      "date": "2026-11-29",
+      "start_time": "",
+      "stage": "AFA NEXT Stage",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "96Neko"
+      ],
+      "sources": [
+        "https://animefestival.asia/afasg26/guests/"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "people": "SACRA-chan; Aooo; Kyary Pamyu Pamyu; Liyuu; Naomi Payton; Yuina; May’n",
+      "reason": "Mixed concert billing does not establish VTuber identity. SACRA-chan is described as a virtual DJ mascot; no VTuber creator identity was established. Keep all credits in concert notes only."
+    }
+  ]
+}

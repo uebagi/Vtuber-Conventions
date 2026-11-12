@@ -1,0 +1,212 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "AmaLee": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/amalee",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "Arielle": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/arielle",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "BigNoseBug": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/bignosebug",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "CodeMiko": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/codemiko",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "GEEGA": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/geega",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "LordAethelstan": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/lordaethelstan",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "MurderCrumpet": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/murdercrumpet",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "PiaPiUFO": {
+      "x": "https://x.com/PiaPiUFO",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/BEASTIEZ"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/piapiufo",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      }
+    },
+    "Rainhoe": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/rainhoe",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "RatCousin": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/ratcousin",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "Sinder": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/sinder",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "VchiBan": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/vchiban",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "henyathegenius": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/henyathegenius",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "ironmouse": {
+      "x": "https://x.com/ironmouse",
+      "sources": [
+        "https://w.twstalker.com/ironmouse"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/ironmouse",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      }
+    },
+    "nihmune": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/nihmune",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "nyanners": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/nyanners",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "shindigs": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/shindigs",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "shxtou": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/shxtou",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "thisisgob": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/thisisgob",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    }
+  }
+}

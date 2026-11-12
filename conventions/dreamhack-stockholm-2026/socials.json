@@ -1,0 +1,165 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "Airani Iofifteen": {
+      "x": "https://x.com/airaniiofifteen",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/airani-iofifteen/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCAoy6rzhSf4ydcYjJw3WoVg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/airani-iofifteen/"
+      }
+    },
+    "Anya Melfissa": {
+      "x": "https://x.com/anyamelfissa",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/anya-melfissa/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UC727SQYUvx5pDDGQpTICNWg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/anya-melfissa/"
+      }
+    },
+    "Elizabeth Rose Bloodflame": {
+      "x": "https://x.com/ERBloodflame",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/elizabeth-rose-bloodflame/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCW5uhrG1eCBYditmhL0Ykjw?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/elizabeth-rose-bloodflame/"
+      }
+    },
+    "Jurard T Rexford": {
+      "x": "https://x.com/jurardtrexford",
+      "sources": [
+        "https://holostars.hololivepro.com/en/talent/jurard-t-rexford/"
+      ],
+      "primary": {
+        "url": "https://youtube.com/channel/UCTVSOgYuSWmNAt-lnJPkEEw",
+        "source": "https://holostars.hololivepro.com/en/talent/jurard-t-rexford/"
+      }
+    },
+    "Kaela Kovalskia": {
+      "x": "https://x.com/kaelakovalskia",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/kaela-kovalskia/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCZLZ8Jjx_RN2CXloOmgTHVg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/kaela-kovalskia/"
+      }
+    },
+    "Kobo Kanaeru": {
+      "x": "https://x.com/kobokanaeru",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/kobo-kanaeru/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCjLEmnpCNeisMxy134KPwWw?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/kobo-kanaeru/"
+      }
+    },
+    "Kureiji Ollie": {
+      "x": "https://x.com/kureijiollie",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/kureiji-ollie/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCYz_5n-uDuChHtLo7My1HnQ?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/kureiji-ollie/"
+      }
+    },
+    "Moona Hoshinova": {
+      "x": "https://x.com/moonahoshinova",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/moona-hoshinova/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCP0BspO_AMEe3aQqqpo89Dg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/moona-hoshinova/"
+      }
+    },
+    "Mori Calliope": {
+      "x": "https://x.com/moricalliope",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/mori-calliope/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCL_qhgtOy0dy1Agp8vkySQg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/mori-calliope/"
+      }
+    },
+    "Nerissa Ravencroft": {
+      "x": "https://x.com/nerissa_en",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/nerissa-ravencroft/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UC_sFNM0z0MWm9A6WlKPuMMg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/nerissa-ravencroft/"
+      }
+    },
+    "Octavio": {
+      "x": "https://x.com/octavio_holo",
+      "sources": [
+        "https://holostars.hololivepro.com/en/talent/octavio/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCLk1hcmxg8rJ3Nm1_GvxTRA",
+        "source": "https://holostars.hololivepro.com/en/talent/octavio/"
+      }
+    },
+    "Pavolia Reine": {
+      "x": "https://x.com/pavoliareine",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/pavolia-reine/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UChgTyjG-pdNvxxhdsXfHQ5Q?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/pavolia-reine/"
+      }
+    },
+    "Raora Panthera": {
+      "x": "https://x.com/raorapanthera",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/raora-panthera/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCl69AEx4MdqMZH7Jtsm7Tig?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/raora-panthera/"
+      }
+    },
+    "Shiori Novella": {
+      "x": "https://x.com/shiorinovella",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/shiori-novella/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCgnfPPb9JI3e9A4cXHnWbyg?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/shiori-novella/"
+      }
+    },
+    "Takanashi Kiara": {
+      "x": "https://x.com/takanashikiara",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/takanashi-kiara/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCHsx4Hqa-1ORjQTh9TYDhww?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/takanashi-kiara/"
+      }
+    },
+    "Vestia Zeta": {
+      "x": "https://x.com/vestiazeta",
+      "sources": [
+        "https://hololive.hololivepro.com/en/talents/vestia-zeta/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCTvHWSfBZgtxE4sILOaurIQ?sub_confirmation=1",
+        "source": "https://hololive.hololivepro.com/en/talents/vestia-zeta/"
+      }
+    }
+  }
+}

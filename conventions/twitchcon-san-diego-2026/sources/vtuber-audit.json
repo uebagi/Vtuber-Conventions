@@ -1,0 +1,545 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-amalee",
+      "url": "https://awa-con.com/amalee/",
+      "type": "VTuber identity evidence",
+      "locator": "Organizer biography explicitly identifies the guest as a VTuber."
+    },
+    {
+      "id": "identity-arielle",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-bignosebug",
+      "url": "https://www.bignosebug.com/",
+      "type": "VTuber identity evidence",
+      "locator": "Creator website explicitly identifies the creator as a VTuber, including the cartoon mascot model."
+    },
+    {
+      "id": "identity-codemiko",
+      "url": "https://linktr.ee/codemiko",
+      "type": "VTuber identity evidence",
+      "locator": "Verified official Linktree explicitly describes CodeMiko as a VTuber and links the exact Twitch channel."
+    },
+    {
+      "id": "identity-geega",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-lordaethelstan",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-murdercrumpet",
+      "url": "https://www.youtube.com/channel/UCppy5aNheQU7KREryGMA0Yg",
+      "type": "VTuber identity evidence",
+      "locator": "Creator channel includes a VTuber lore video and explicitly identifies the Twitch persona."
+    },
+    {
+      "id": "identity-murdercrumpet-2",
+      "url": "https://www.youtube.com/watch?v=UgmwYEKvPUU",
+      "type": "VTuber identity evidence",
+      "locator": "Creator channel includes a VTuber lore video and explicitly identifies the Twitch persona."
+    },
+    {
+      "id": "identity-piapiufo",
+      "url": "https://www.youtube.com/channel/UCRtugKQIPPfZmVZ6vLiOsdQ",
+      "type": "VTuber identity evidence",
+      "locator": "Creator channel labels its channel trailer Slime Alien VTuber; Kumoricon also publishes the virtual character biography."
+    },
+    {
+      "id": "identity-piapiufo-2",
+      "url": "https://www.kumoricon.org/guests/content-creator",
+      "type": "VTuber identity evidence",
+      "locator": "Creator channel labels its channel trailer Slime Alien VTuber; Kumoricon also publishes the virtual character biography."
+    },
+    {
+      "id": "identity-rainhoe",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-ratcousin",
+      "url": "https://www.youtube.com/channel/UC4SsZwfkpvWlFmgCoqaarPw",
+      "type": "VTuber identity evidence",
+      "locator": "Creator channel has an explicitly VTuber-titled model / becoming-a-VTuber series."
+    },
+    {
+      "id": "identity-sinder",
+      "url": "https://bsky.app/profile/sinder.gg",
+      "type": "VTuber identity evidence",
+      "locator": "Creator self-identifies as a VTuber and links the exact Twitch channel in the verified-domain Bluesky profile."
+    },
+    {
+      "id": "identity-vchiban",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-henyathegenius",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-ironmouse",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-nihmune",
+      "url": "https://virtualyoutuber.fandom.com/wiki/Akuma_Nihmune",
+      "type": "VTuber identity evidence",
+      "locator": "Independent VTuber identity corroborated by the VTuber directory and linked creator channel; distinct from inference based on the generic meet-and-greet title."
+    },
+    {
+      "id": "identity-nihmune-2",
+      "url": "https://www.youtube.com/@AkumaNihmune",
+      "type": "VTuber identity evidence",
+      "locator": "Independent VTuber identity corroborated by the VTuber directory and linked creator channel; distinct from inference based on the generic meet-and-greet title."
+    },
+    {
+      "id": "identity-nyanners",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-shindigs",
+      "url": "https://www.youtube.com/watch?v=GYnQwQbosjI",
+      "type": "VTuber identity evidence",
+      "locator": "Creator describes their own VTuber model in their published video."
+    },
+    {
+      "id": "identity-shxtou",
+      "url": "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+      "type": "VTuber identity evidence",
+      "locator": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster."
+    },
+    {
+      "id": "identity-thisisgob",
+      "url": "https://www.offkaiexpo.com/activities/programming/",
+      "type": "VTuber identity evidence",
+      "locator": "OffKai organizer programme identifies ThisIsGob among its four self-described cartoon VTubers in VTubing OUTSIDE the lines!"
+    }
+  ],
+  "participants": {
+    "AmaLee": {
+      "classification": "verified-vtuber",
+      "basis": "Organizer biography explicitly identifies the guest as a VTuber.",
+      "source_ids": [
+        "identity-amalee"
+      ]
+    },
+    "Arielle": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-arielle"
+      ]
+    },
+    "BigNoseBug": {
+      "classification": "verified-vtuber",
+      "basis": "Creator website explicitly identifies the creator as a VTuber, including the cartoon mascot model.",
+      "source_ids": [
+        "identity-bignosebug"
+      ]
+    },
+    "CodeMiko": {
+      "classification": "verified-vtuber",
+      "basis": "Verified official Linktree explicitly describes CodeMiko as a VTuber and links the exact Twitch channel.",
+      "source_ids": [
+        "identity-codemiko"
+      ]
+    },
+    "GEEGA": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-geega"
+      ]
+    },
+    "LordAethelstan": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-lordaethelstan"
+      ]
+    },
+    "MurderCrumpet": {
+      "classification": "verified-vtuber",
+      "basis": "Creator channel includes a VTuber lore video and explicitly identifies the Twitch persona.",
+      "source_ids": [
+        "identity-murdercrumpet",
+        "identity-murdercrumpet-2"
+      ]
+    },
+    "PiaPiUFO": {
+      "classification": "verified-vtuber",
+      "basis": "Creator channel labels its channel trailer Slime Alien VTuber; Kumoricon also publishes the virtual character biography.",
+      "source_ids": [
+        "identity-piapiufo",
+        "identity-piapiufo-2"
+      ]
+    },
+    "Rainhoe": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-rainhoe"
+      ]
+    },
+    "RatCousin": {
+      "classification": "verified-vtuber",
+      "basis": "Creator channel has an explicitly VTuber-titled model / becoming-a-VTuber series.",
+      "source_ids": [
+        "identity-ratcousin"
+      ]
+    },
+    "Sinder": {
+      "classification": "verified-vtuber",
+      "basis": "Creator self-identifies as a VTuber and links the exact Twitch channel in the verified-domain Bluesky profile.",
+      "source_ids": [
+        "identity-sinder"
+      ]
+    },
+    "VchiBan": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-vchiban"
+      ]
+    },
+    "henyathegenius": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-henyathegenius"
+      ]
+    },
+    "ironmouse": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-ironmouse"
+      ]
+    },
+    "nihmune": {
+      "classification": "verified-vtuber",
+      "basis": "Independent VTuber identity corroborated by the VTuber directory and linked creator channel; distinct from inference based on the generic meet-and-greet title.",
+      "source_ids": [
+        "identity-nihmune",
+        "identity-nihmune-2"
+      ]
+    },
+    "nyanners": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-nyanners"
+      ]
+    },
+    "shindigs": {
+      "classification": "verified-vtuber",
+      "basis": "Creator describes their own VTuber model in their published video.",
+      "source_ids": [
+        "identity-shindigs"
+      ]
+    },
+    "shxtou": {
+      "classification": "verified-vtuber",
+      "basis": "The organizer explicitly labels the exact named appearance VTuber Meet & Greet; group credit does not expand to an assumed member roster.",
+      "source_ids": [
+        "identity-shxtou"
+      ]
+    },
+    "thisisgob": {
+      "classification": "verified-vtuber",
+      "basis": "OffKai organizer programme identifies ThisIsGob among its four self-described cartoon VTubers in VTubing OUTSIDE the lines!",
+      "source_ids": [
+        "identity-thisisgob"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "VTuber Meet & Greet | ironmouse",
+      "date": "2026-11-13",
+      "start_time": "12:00",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "ironmouse"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | Rainhoe",
+      "date": "2026-11-13",
+      "start_time": "14:30",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Rainhoe"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | henyathegenius",
+      "date": "2026-11-13",
+      "start_time": "16:00",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "henyathegenius"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "Live Animation and VTubing: The Frontiers of Interactive Streaming",
+      "date": "2026-11-13",
+      "start_time": "16:30",
+      "stage": "NomNom Theater",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "RatCousin",
+        "shindigs",
+        "thisisgob",
+        "BigNoseBug"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ]
+    },
+    {
+      "event": "Meet & Greet | nihmune",
+      "date": "2026-11-14",
+      "start_time": "10:30",
+      "stage": "Meet & Greet - 6",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "nihmune"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | shxtou",
+      "date": "2026-11-14",
+      "start_time": "10:30",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "shxtou"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | ironmouse",
+      "date": "2026-11-14",
+      "start_time": "12:00",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "ironmouse"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTubing Community MeetUp Hosted by Twitch Creator Clubs",
+      "date": "2026-11-14",
+      "start_time": "13:30",
+      "stage": "Community MeetUps 1",
+      "basis": "The published title/description explicitly concerns VTubers or VTuber model creation; no individual VTuber lineup is inferred.",
+      "verified_talents": [],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | Arielle",
+      "date": "2026-11-14",
+      "start_time": "14:30",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Arielle"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | nyanners & LordAethelstan",
+      "date": "2026-11-14",
+      "start_time": "16:00",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "nyanners",
+        "LordAethelstan"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "Ironmouse Presents: Open Stage!",
+      "date": "2026-11-14",
+      "start_time": "16:30",
+      "stage": "Glitch Theater",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "ironmouse",
+        "PiaPiUFO"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | AmaLee",
+      "date": "2026-11-15",
+      "start_time": "10:30",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "AmaLee"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "Meet & Greet | Sinder",
+      "date": "2026-11-15",
+      "start_time": "12:00",
+      "stage": "Meet & Greet - 1",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Sinder"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | ironmouse",
+      "date": "2026-11-15",
+      "start_time": "12:00",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "ironmouse"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "Meet & Greet | MurderCrumpet",
+      "date": "2026-11-15",
+      "start_time": "14:30",
+      "stage": "Meet & Greet - 2",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "MurderCrumpet"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "Meet & Greet | CodeMiko",
+      "date": "2026-11-15",
+      "start_time": "14:30",
+      "stage": "Meet & Greet - 6",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "CodeMiko"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | GEEGA",
+      "date": "2026-11-15",
+      "start_time": "14:30",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "GEEGA"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    },
+    {
+      "event": "VTuber Meet & Greet | VchiBan",
+      "date": "2026-11-15",
+      "start_time": "16:00",
+      "stage": "Meet & Greet - 7",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "VchiBan"
+      ],
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026",
+        "https://www.twitchcon.com/san-diego-2026/meet-and-greet/"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "event": "Becoming the Monster: A Creature Voice Acting Workshop",
+      "person": "TakingBackSubway",
+      "reason": "Generic creature voice-acting instruction; no confirmed VTuber presenter or specifically VTubing programme established. Removed following the user correction."
+    },
+    {
+      "people": "julieee22 and the meetup facilitating team",
+      "reason": "Keep published speaker/host credits without inferring VTuber self-identification from co-listing."
+    },
+    {
+      "people": "Open Stage co-performers other than ironmouse and PiaPiUFO",
+      "reason": "Mixed karaoke bill: preserve credits in notes, omit unverified identities from participants/Talent."
+    }
+  ]
+}

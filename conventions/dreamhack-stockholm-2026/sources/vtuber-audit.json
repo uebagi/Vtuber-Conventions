@@ -1,0 +1,430 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-airani-iofifteen",
+      "url": "https://hololive.hololivepro.com/en/talents/airani-iofifteen/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-anya-melfissa",
+      "url": "https://hololive.hololivepro.com/en/talents/anya-melfissa/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-elizabeth-rose-bloodflame",
+      "url": "https://hololive.hololivepro.com/en/talents/elizabeth-rose-bloodflame/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-jurard-t-rexford",
+      "url": "https://holostars.hololivepro.com/en/talent/jurard-t-rexford/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-kaela-kovalskia",
+      "url": "https://hololive.hololivepro.com/en/talents/kaela-kovalskia/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-kobo-kanaeru",
+      "url": "https://hololive.hololivepro.com/en/talents/kobo-kanaeru/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-kureiji-ollie",
+      "url": "https://hololive.hololivepro.com/en/talents/kureiji-ollie/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-moona-hoshinova",
+      "url": "https://hololive.hololivepro.com/en/talents/moona-hoshinova/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-mori-calliope",
+      "url": "https://hololive.hololivepro.com/en/talents/mori-calliope/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-nerissa-ravencroft",
+      "url": "https://hololive.hololivepro.com/en/talents/nerissa-ravencroft/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-octavio",
+      "url": "https://holostars.hololivepro.com/en/talent/octavio/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-pavolia-reine",
+      "url": "https://hololive.hololivepro.com/en/talents/pavolia-reine/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-raora-panthera",
+      "url": "https://hololive.hololivepro.com/en/talents/raora-panthera/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-shiori-novella",
+      "url": "https://hololive.hololivepro.com/en/talents/shiori-novella/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-takanashi-kiara",
+      "url": "https://hololive.hololivepro.com/en/talents/takanashi-kiara/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-vestia-zeta",
+      "url": "https://hololive.hololivepro.com/en/talents/vestia-zeta/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    }
+  ],
+  "participants": {
+    "Airani Iofifteen": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-airani-iofifteen"
+      ]
+    },
+    "Anya Melfissa": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-anya-melfissa"
+      ]
+    },
+    "Elizabeth Rose Bloodflame": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-elizabeth-rose-bloodflame"
+      ]
+    },
+    "Jurard T Rexford": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-jurard-t-rexford"
+      ]
+    },
+    "Kaela Kovalskia": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-kaela-kovalskia"
+      ]
+    },
+    "Kobo Kanaeru": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-kobo-kanaeru"
+      ]
+    },
+    "Kureiji Ollie": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-kureiji-ollie"
+      ]
+    },
+    "Moona Hoshinova": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-moona-hoshinova"
+      ]
+    },
+    "Mori Calliope": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-mori-calliope"
+      ]
+    },
+    "Nerissa Ravencroft": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-nerissa-ravencroft"
+      ]
+    },
+    "Octavio": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-octavio"
+      ]
+    },
+    "Pavolia Reine": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-pavolia-reine"
+      ]
+    },
+    "Raora Panthera": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-raora-panthera"
+      ]
+    },
+    "Shiori Novella": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-shiori-novella"
+      ]
+    },
+    "Takanashi Kiara": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-takanashi-kiara"
+      ]
+    },
+    "Vestia Zeta": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-vestia-zeta"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "Airani Iofifteen — Meet & Greet",
+      "date": "2026-11-27",
+      "start_time": "12:55",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Airani Iofifteen"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Kureiji Ollie — Meet & Greet",
+      "date": "2026-11-27",
+      "start_time": "12:55",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Kureiji Ollie"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Moona Hoshinova — Meet & Greet",
+      "date": "2026-11-27",
+      "start_time": "13:55",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Moona Hoshinova"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Pavolia Reine — Meet & Greet",
+      "date": "2026-11-27",
+      "start_time": "13:55",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Pavolia Reine"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Kaela Kovalskia — Meet & Greet",
+      "date": "2026-11-27",
+      "start_time": "19:10",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Kaela Kovalskia"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Raora Panthera — Meet & Greet",
+      "date": "2026-11-27",
+      "start_time": "19:10",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Raora Panthera"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "hololive SUPER KARAOKE PARTY",
+      "date": "2026-11-28",
+      "start_time": "13:00",
+      "stage": "Victoriahallen",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Mori Calliope",
+        "Nerissa Ravencroft",
+        "Elizabeth Rose Bloodflame"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/hololive/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Shiori Novella — Meet & Greet",
+      "date": "2026-11-28",
+      "start_time": "18:05",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Shiori Novella"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Vestia Zeta — Meet & Greet",
+      "date": "2026-11-28",
+      "start_time": "18:05",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Vestia Zeta"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Kobo Kanaeru — Meet & Greet",
+      "date": "2026-11-28",
+      "start_time": "18:55",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Kobo Kanaeru"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Takanashi Kiara — Meet & Greet",
+      "date": "2026-11-28",
+      "start_time": "18:55",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Takanashi Kiara"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Jurard T Rexford — Meet & Greet",
+      "date": "2026-11-29",
+      "start_time": "14:15",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Jurard T Rexford"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Octavio — Meet & Greet",
+      "date": "2026-11-29",
+      "start_time": "14:15",
+      "stage": "Expo",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Octavio"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/meet-and-greet/",
+        "https://holostars.hololivepro.com/en/news/20261019-01-43/"
+      ]
+    },
+    {
+      "event": "Shattered Legends — Panel & Sneak Peek",
+      "date": "2026-11-29",
+      "start_time": "15:30",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Mori Calliope",
+        "Nerissa Ravencroft"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/hololive/"
+      ]
+    },
+    {
+      "event": "Anya Melfissa — guest appearance",
+      "date": "",
+      "start_time": "",
+      "stage": "Location unannounced",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Anya Melfissa"
+      ],
+      "sources": [
+        "https://dreamhack.com/stockholm/hololive/"
+      ]
+    }
+  ],
+  "excluded": []
+}

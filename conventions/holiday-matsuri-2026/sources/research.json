@@ -1,0 +1,74 @@
+{
+  "checked_on": "2026-11-12",
+  "event": {
+    "name": "Holiday Matsuri 2026",
+    "start": "2026-12-18",
+    "end": "2026-12-20",
+    "venue": "Orange County Convention Center, Orlando, Florida, USA",
+    "timezone": "America/New_York",
+    "abbreviation": "EST",
+    "offset": "-05:00"
+  },
+  "sources": [
+    {
+      "id": "guest-index",
+      "url": "https://holidaymatsuri.com/category/guests/",
+      "type": "official webpage",
+      "locator": "Current 2026 header/footer; DokiBird guest listing"
+    },
+    {
+      "id": "guest-index-page-3",
+      "url": "https://holidaymatsuri.com/category/guests/page/3",
+      "type": "official webpage",
+      "locator": "Rin Penrose and Sayu Sincro//Nisity listings"
+    },
+    {
+      "id": "guest-index-page-6",
+      "url": "https://holidaymatsuri.com/category/guests/page/6",
+      "type": "official webpage",
+      "locator": "Ami Amami and Phoebe Chan VTuber listings; venue/date footer"
+    }
+  ],
+  "notes": [
+    "Event dates and venue are explicit in the current 2026 header/footer. Guest entries reuse older artwork and their linked biographies return 404. The named guests are retained here as leads only, not confirmed participants in runtime data; a single clearly qualified pending card represents the unresolved programme. Do not promote these to timed sessions without a 2026-specific confirmation."
+  ],
+  "excluded_sessions": [
+    {
+      "date": "",
+      "day": "",
+      "start_time": "",
+      "end_time": "",
+      "timezone": "America/New_York",
+      "timezone_abbreviation": "EST",
+      "utc_offset": "-05:00",
+      "stage": "Location unannounced",
+      "event": "VTuber programming — awaiting 2026 guest confirmation",
+      "source_url": "https://holidaymatsuri.com/category/guests/;https://holidaymatsuri.com/category/guests/page/3;https://holidaymatsuri.com/category/guests/page/6",
+      "listed_hosts": "",
+      "participants": "???",
+      "lineup_status": "unannounced",
+      "lineup_notes": "The current guest index lists DokiBird, Rin Penrose, Sayu Sincro//Nisity, Ami Amami and Phoebe Chan, but individual pages are unavailable and some artwork dates from 2024. Their 2026 participation and session details need reconfirmation.",
+      "participant_source_urls": "https://holidaymatsuri.com/category/guests/;https://holidaymatsuri.com/category/guests/page/3;https://holidaymatsuri.com/category/guests/page/6",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "false",
+      "event_status": "",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "vtuber-programme-pending",
+      "source_ids": [
+        "guest-index",
+        "guest-index-page-3",
+        "guest-index-page-6"
+      ]
+    }
+  ],
+  "sessions": [],
+  "publication_status": "Research only: 2026 VTuber participation could not be independently reconfirmed. No runtime schedule or home-page card is published."
+}

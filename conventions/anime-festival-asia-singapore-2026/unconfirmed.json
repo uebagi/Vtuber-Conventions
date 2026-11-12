@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-11-12",
+  "sessions": [
+    {
+      "date": "2026-11-29",
+      "day": "Sunday",
+      "start_time": "",
+      "end_time": "",
+      "timezone": "Asia/Singapore",
+      "timezone_abbreviation": "SGT",
+      "utc_offset": "+08:00",
+      "stage": "AFA NEXT Stage",
+      "event": "Paradox Live — 96Neko virtual appearance",
+      "source_url": "https://animefestival.asia/afasg26/guests/",
+      "listed_hosts": "",
+      "participants": "96Neko",
+      "lineup_status": "announced",
+      "lineup_notes": "Virtual appearance as the voice of Anne Faulkner. Individual stage time and end time are unannounced. No in-person attendance is implied.",
+      "participant_source_urls": "https://animefestival.asia/afasg26/guests/",
+      "is_concert": "false",
+      "concert_classification_notes": "No music performance established for this session.",
+      "is_meet_greet": "false",
+      "event_status": "official",
+      "meet_greet_type": "",
+      "price": "",
+      "booth": "",
+      "event_type": "",
+      "organizer": "",
+      "venue": "",
+      "calendar_uid": "",
+      "end_date": "",
+      "id": "paradox-live-96neko"
+    }
+  ]
+}

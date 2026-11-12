@@ -1,0 +1,50 @@
+{
+  "timezone": "America/Los_Angeles",
+  "days": [
+    {
+      "date": "2026-11-13",
+      "entries": [
+        {
+          "label": "Convention hours",
+          "opens": "08:00",
+          "closes": "23:45"
+        },
+        {
+          "label": "KumoriMarket",
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-14",
+      "entries": [
+        {
+          "label": "Convention hours",
+          "opens": "08:00",
+          "closes": "23:45"
+        },
+        {
+          "label": "KumoriMarket",
+          "opens": "10:00",
+          "closes": "18:00"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-15",
+      "entries": [
+        {
+          "label": "Convention hours",
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "label": "KumoriMarket",
+          "opens": "10:00",
+          "closes": "16:00"
+        }
+      ]
+    }
+  ]
+}

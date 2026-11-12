@@ -1,0 +1,401 @@
+{
+  "checked_on": "2026-11-12",
+  "scope": "Documented VTuber appearance or a programme explicitly about VTubing. participants/Talent contains only verified VTubers; other contributors remain credits only.",
+  "sources": [
+    {
+      "id": "identity-airani-iofifteen",
+      "url": "https://hololive.hololivepro.com/en/talents/airani-iofifteen/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-anya-melfissa",
+      "url": "https://hololive.hololivepro.com/en/talents/anya-melfissa/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-axel-syrios",
+      "url": "https://holostars.hololivepro.com/en/talent/axel-syrios/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-banzoin-hakka",
+      "url": "https://holostars.hololivepro.com/en/news/20261106-01-44/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-machina-x-flayon",
+      "url": "https://holostars.hololivepro.com/en/news/20261106-01-44/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-mori-calliope",
+      "url": "https://hololive.hololivepro.com/en/talents/mori-calliope/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-octavio",
+      "url": "https://holostars.hololivepro.com/en/talent/octavio/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-oozora-subaru",
+      "url": "https://hololive.hololivepro.com/en/talents/oozora-subaru/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-ouro-kronii",
+      "url": "https://hololive.hololivepro.com/en/talents/ouro-kronii/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-pavolia-reine",
+      "url": "https://hololive.hololivepro.com/en/talents/pavolia-reine/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-raora-panthera",
+      "url": "https://hololive.hololivepro.com/en/talents/raora-panthera/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-shiori-novella",
+      "url": "https://hololive.hololivepro.com/en/talents/shiori-novella/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-takanashi-kiara",
+      "url": "https://hololive.hololivepro.com/en/talents/takanashi-kiara/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-takane-lui",
+      "url": "https://hololive.hololivepro.com/en/talents/takane-lui/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    },
+    {
+      "id": "identity-vestia-zeta",
+      "url": "https://hololive.hololivepro.com/en/talents/vestia-zeta/",
+      "type": "VTuber identity evidence",
+      "locator": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent."
+    }
+  ],
+  "participants": {
+    "Airani Iofifteen": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-airani-iofifteen"
+      ]
+    },
+    "Anya Melfissa": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-anya-melfissa"
+      ]
+    },
+    "Axel Syrios": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-axel-syrios"
+      ]
+    },
+    "Banzoin Hakka": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-banzoin-hakka"
+      ]
+    },
+    "Machina X Flayon": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-machina-x-flayon"
+      ]
+    },
+    "Mori Calliope": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-mori-calliope"
+      ]
+    },
+    "Octavio": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-octavio"
+      ]
+    },
+    "Oozora Subaru": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-oozora-subaru"
+      ]
+    },
+    "Ouro Kronii": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-ouro-kronii"
+      ]
+    },
+    "Pavolia Reine": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-pavolia-reine"
+      ]
+    },
+    "Raora Panthera": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-raora-panthera"
+      ]
+    },
+    "Shiori Novella": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-shiori-novella"
+      ]
+    },
+    "Takanashi Kiara": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-takanashi-kiara"
+      ]
+    },
+    "Takane Lui": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-takane-lui"
+      ]
+    },
+    "Vestia Zeta": {
+      "classification": "verified-vtuber",
+      "basis": "Official hololive production / HOLOSTARS talent or edition-specific agency announcement identifies the virtual talent.",
+      "source_ids": [
+        "identity-vestia-zeta"
+      ]
+    }
+  },
+  "events": [
+    {
+      "event": "Oozora Subaru — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Oozora Subaru"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Takane Lui — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Takane Lui"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Airani Iofifteen — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Airani Iofifteen"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Anya Melfissa — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Anya Melfissa"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Pavolia Reine — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Pavolia Reine"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Vestia Zeta — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Vestia Zeta"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Mori Calliope — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Mori Calliope"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Takanashi Kiara — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Takanashi Kiara"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Ouro Kronii — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Ouro Kronii"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Raora Panthera — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Raora Panthera"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Shiori Novella — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Shiori Novella"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Axel Syrios — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Axel Syrios"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Machina X Flayon — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Machina X Flayon"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Banzoin Hakka — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Banzoin Hakka"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    },
+    {
+      "event": "Octavio — booth-exclusive stream",
+      "date": "",
+      "start_time": "",
+      "stage": "hololive production — Booth 1204",
+      "basis": "Confirmed named VTuber performer or host.",
+      "verified_talents": [
+        "Octavio"
+      ],
+      "sources": [
+        "https://holostars.hololivepro.com/en/news/20261106-01-44/"
+      ]
+    }
+  ],
+  "excluded": []
+}

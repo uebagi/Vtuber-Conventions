@@ -1,0 +1,139 @@
+{
+  "checked_on": "2026-11-12",
+  "profiles": {
+    "Alejandro Saab / CyYu": {
+      "x": null,
+      "sources": [
+        "https://awa-con.com/guests/"
+      ],
+      "notes": "No unambiguous X profile was established from the reviewed official sources."
+    },
+    "AmaLee": {
+      "x": null,
+      "sources": [
+        "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      ],
+      "primary": {
+        "url": "https://www.twitch.tv/amalee",
+        "source": "https://api.twitchcon.com/sessions?eventName=san-diego-2026"
+      },
+      "notes": "Officially linked primary channel retained; X identity unresolved."
+    },
+    "Amaya Whisper": {
+      "x": "https://x.com/Amaya_Whisper",
+      "sources": [
+        "https://amayawhisper.carrd.co/",
+        "https://ww.twstalker.com/Amaya_Whisper"
+      ],
+      "primary": {
+        "url": "https://amayawhisper.carrd.co/",
+        "source": "https://vexpo.uk/guests"
+      }
+    },
+    "Aurelia": {
+      "x": "https://x.com/AureliaCassi",
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    "Fuwa": {
+      "x": "https://x.com/fuwa_norenburg",
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    "Kou Mariya": {
+      "x": "https://x.com/koumariya",
+      "sources": [
+        "https://virtualyoutuber.fandom.com/wiki/Kou_Mariya"
+      ]
+    },
+    "Leah Asimov": {
+      "x": "https://x.com/LeahAsimov",
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    "Lethia": {
+      "x": "https://x.com/Lethia_Live",
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    "Luci": {
+      "x": "https://x.com/lucinarosevt",
+      "sources": [
+        "https://awa-con.com/v-moe-maid-cafe/"
+      ]
+    },
+    "Majokko Meimi": {
+      "x": "https://x.com/majokkomeimi",
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    "Michaela Laws": {
+      "x": null,
+      "sources": [
+        "https://awa-con.com/guests/"
+      ],
+      "notes": "No unambiguous X profile was established from the reviewed official sources."
+    },
+    "Mogu": {
+      "x": "https://x.com/mogughost",
+      "sources": [
+        "https://awa-con.com/glitch-stars/"
+      ]
+    },
+    "Nana Asteria": {
+      "x": "https://x.com/NanaAsteria",
+      "sources": [
+        "https://x.com/NanaAsteria/status/2095154947432288499",
+        "https://x.com/veizojp/status/2097324078960927023"
+      ],
+      "checked_on": "2026-09-11"
+    },
+    "Penny Puffball": {
+      "x": "https://x.com/PennyPuffball",
+      "sources": [
+        "https://mobile.twstalker.com/PennyPuffball",
+        "https://x.com/PennyPuffball/status/2095254782239711559"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/@PennyPuffball",
+        "source": "https://vexpo.uk/guests"
+      },
+      "checked_on": "2026-09-11"
+    },
+    "Pillow Dear": {
+      "x": "https://x.com/pillowdearASMR",
+      "sources": [
+        "https://pillowdearvt.com/",
+        "https://www6.twstalker.com/pillowdearASMR",
+        "https://x.com/pillowdearASMR/status/2095217555832979510"
+      ],
+      "primary": {
+        "url": "https://pillowdearvt.com/",
+        "source": "https://vexpo.uk/guests"
+      },
+      "checked_on": "2026-09-11"
+    },
+    "Yena Youngblood": {
+      "x": "https://x.com/YenaYoungblood",
+      "sources": [
+        "https://w.twstalker.com/YenaYoungblood"
+      ],
+      "checked_on": "2026-09-12"
+    },
+    "rachie": {
+      "x": "https://x.com/splendiferachie",
+      "sources": [
+        "https://hololist.net/splendiferachie/"
+      ],
+      "primary": {
+        "url": "https://www.youtube.com/channel/UCRbsmnDTHD9-4pEIuG7zYRw",
+        "source": "https://vexpo.uk/guests"
+      }
+    }
+  }
+}

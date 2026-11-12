@@ -109,6 +109,16 @@ setImmediate(async () => {
   assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.start_time === '14:00' && s.stage === 'JUBILEE STAGE').participants"), 'cakejumper');
   assert.equal(run("sessions.find(s => s.date === '2026-09-20' && s.start_time === '15:30' && s.stage === 'JUBILEE STAGE').participants.split(';').length"), 6);
   const originalFetch = context.fetch;
+  // Events can launch with only announcements, before any timed schedule exists.
+  context.fetch = async path => path === 'schedule.csv'
+    ? {ok: true, text: async () => fs.readFileSync('conventions/vexpo-2026/schedule.csv', 'utf8').split(/\r?\n/)[0] + '\n'}
+    : originalFetch(path);
+  await run('load()');
+  assert.equal(run('sessions.length'), 8);
+  assert.equal(run('filteredSessions().length'), 8);
+  assert.equal(elements['#download-calendar'].disabled, true);
+  assert(!run('createCalendar(sessions)').includes('BEGIN:VEVENT'));
+  assert.throws(() => run("parseCSV('wrong,headers\\n', ['date', 'event'])"), /Invalid schedule columns/);
   context.fetch = async () => ({ok: false});
   await assert.rejects(run('loadUnconfirmed()'), /unavailable/);
   context.fetch = async () => ({ok: true, json: async () => ({sessions: [{event: 'Bad data'}]})});
