@@ -6,6 +6,7 @@
   <meta name="description" content="Browse Kumoricon 2026 VTuber panels, concerts, meet-and-greets and fan activities. All times are Pacific Standard Time.">
   <title>Kumoricon 2026 · Schedule</title>
   <link rel="stylesheet" href="../../assets/styles.css">
+  <script src="../../assets/timetable.js" defer></script>
   <script src="../../assets/app.js" defer></script>
 </head>
 <body data-groups="groups.json" data-opening-hours="opening-hours.json" data-socials="socials.json" data-event-name="Kumoricon" data-event-id="kumoricon-2026" data-venue="Oregon Convention Center, Portland, Oregon, USA">
@@ -33,7 +34,7 @@
       </div>
     </section>
 
-    <div class="results-bar"><p id="status" role="status" aria-live="polite">Loading the schedule…</p><div class="result-actions"><button id="download-calendar" type="button" disabled>Download calendar (.ics)</button><button id="reset" type="button" class="reset">Reset filters</button></div></div>
+    <div class="results-bar"><p id="status" role="status" aria-live="polite">Loading the schedule…</p><div class="result-actions"><label class="view-switch">View<select id="schedule-view" aria-label="Schedule view"><option value="cards">Cards</option><option value="calendar">Calendar</option></select></label><button id="download-calendar" type="button" disabled>Download calendar (.ics)</button><button id="reset" type="button" class="reset">Reset filters</button></div></div>
     <div id="schedule" aria-label="Sessions"></div>
     <noscript><p>Enable JavaScript to browse the schedule, or <a href="schedule.csv">download the CSV</a>.</p></noscript>
     <footer>Unofficial planner · Schedule and guest information checked November 12, 2026</footer>

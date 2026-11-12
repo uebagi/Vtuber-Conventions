@@ -24,6 +24,12 @@ A static site for convention schedules, participant socials, filters, and calend
 
 Keep the shared asset paths as `../../assets/app.js` and `../../assets/styles.css`, and the convention page's home link as `../../`. Dates and location filter options are generated from the CSV. Use a new folder and event ID for each year's convention.
 
+## Schedule views
+
+Use the **View** selector on a convention page to switch between **Cards** and **Calendar**. Calendar shows days in columns with a shared event-local time axis; simultaneous events occupy separate lanes. Click an event for the full card, sources, socials and calendar download. Existing filters apply to both views. `?view=calendar` shares the calendar view alongside filters; invalid view values fall back to Cards, and Reset filters returns to Cards.
+
+Untimed appearances appear below the grid rather than receiving invented all-day slots. Dashed start-only markers say that the end is unannounced; their display space does not create a duration or affect ICS. Confirmed overnight sessions are split at local midnight for display and retain one calendar identity. Shared `assets/timetable.js` loads before `assets/app.js`; packaging copies both automatically. Verify geometry with `node tests/timetable.cjs` and check interactions in the browser.
+
 ## Automatic archive
 
 The home page moves cards into **Archive** after their final day in the convention's local timezone. Set `data-end-date="2026-11-15" data-timezone="America/Los_Angeles"` on each convention link, using that edition's researched values. `assets/directory.js` checks on page load, every minute, and when a tab becomes visible again; no deployment or scheduled job is needed at the end of an event. Archived cards show most recent first. Missing or invalid metadata leaves a card in the current list.

@@ -206,6 +206,8 @@ const statusLabel = session => ({ official: 'Official', unofficial: 'Unofficial'
 const schedule = document.querySelector('#schedule');
 const status = document.querySelector('#status');
 const downloadCalendar = document.querySelector('#download-calendar');
+const viewSelect = document.querySelector('#schedule-view');
+let scheduleView = 'cards';
 
 // Export UTC instants so calendar apps preserve BST regardless of device timezone.
 function calendarTimestamp(value) {
@@ -389,7 +391,7 @@ function matchesEventType(session) {
 
 function filteredSessions() {
   const terms = normalize(search.value.trim()).split(/\s+/).filter(Boolean);
-  return sessions.filter(s => (selectedDay === 'all' || (selectedDay === 'unconfirmed' ? !hasConfirmedTime(s) : s.date === selectedDay))
+  return sessions.filter(s => (selectedDay === 'all' || (selectedDay === 'unconfirmed' ? !hasConfirmedTime(s) : s.date === selectedDay || (scheduleView === 'calendar' && globalThis.scheduleTimetable?.occursOnDay(s, selectedDay))))
     && (stage.value === 'all' || s.stage === stage.value)
     && (!announced.checked || s.lineup_status !== 'unannounced')
     && (!concerts.checked || s.is_concert === 'true')
@@ -402,10 +404,15 @@ function filteredSessions() {
 }
 
 const filterSelects = {type: eventType, stage, status: eventStatus, 'meet-greets': meetGreets, group: groupFilter, talent: talentFilter};
+function scheduleDates() {
+  return [...new Set([...sessions.map(s => s.date).filter(Boolean), ...(scheduleView === 'calendar' && globalThis.scheduleTimetable ? globalThis.scheduleTimetable.layout(sessions).map(day => day.date) : [])])].sort();
+}
 function restoreFiltersFromURL() {
   const params = new URL(location.href).searchParams;
+  scheduleView = params.get('view') === 'calendar' ? 'calendar' : 'cards';
+  if (viewSelect) viewSelect.value = scheduleView;
   search.value = params.get('q') || '';
-  selectedDay = params.get('day') === 'unconfirmed' && sessions.some(s => !hasConfirmedTime(s)) ? 'unconfirmed' : sessions.some(session => session.date && session.date === params.get('day')) ? params.get('day') : 'all';
+  selectedDay = params.get('day') === 'unconfirmed' && sessions.some(s => !hasConfirmedTime(s)) ? 'unconfirmed' : scheduleDates().includes(params.get('day')) ? params.get('day') : 'all';
   for (const [key, select] of Object.entries(filterSelects)) {
     if (!select) continue;
     const value = params.get(key);
@@ -426,7 +433,7 @@ function restoreFiltersFromURL() {
 }
 function syncFiltersToURL() {
   const url = new URL(location.href);
-  const values = {q: search.value, day: selectedDay, announced: announced.checked ? '1' : '', concerts: concerts.checked ? '1' : ''};
+  const values = {q: search.value, day: selectedDay, announced: announced.checked ? '1' : '', concerts: concerts.checked ? '1' : '', view: scheduleView === 'calendar' ? 'calendar' : ''};
   for (const [key, select] of Object.entries(filterSelects)) values[key] = select?.value || 'all';
   if (typeMenu) values.type = selectedTypes.has('all') ? 'all' : [...selectedTypes].sort().join(',') || 'none';
   for (const [key, value] of Object.entries(values)) {
@@ -450,6 +457,10 @@ function render() {
   downloadCalendar.title = 'Only appearances with a confirmed date and start time are included.';
   status.textContent = `${filtered.length} of ${sessions.length} sessions · Event local time`;
   schedule.replaceChildren();
+  if (filtered.length && scheduleView === 'calendar' && globalThis.scheduleTimetable) {
+    globalThis.scheduleTimetable.render(schedule, filtered, {el, card, displayDate, selectedDay});
+    return;
+  }
   for (const date of [...new Set(sessions.map(s => s.date))]) {
     const items = filtered.filter(s => s.date === date); if (!items.length) continue;
     const section = el('section'); const heading = el('div', 'day-heading');
@@ -467,7 +478,7 @@ function render() {
 function setupDays() {
   const container = document.querySelector('.days');
   container.replaceChildren();
-  const dates = [...new Set(sessions.map(s => s.date).filter(Boolean))];
+  const dates = scheduleDates();
   if (sessions.some(s => !hasConfirmedTime(s))) dates.push('unconfirmed');
   for (const date of ['all', ...dates]) {
     const label = date === 'all' ? 'All days' : date === 'unconfirmed' ? 'Unconfirmed time' : new Date(date + 'T12:00:00Z').toLocaleDateString('en-US', { weekday: 'short', day: 'numeric', month: 'short', timeZone: 'UTC' });
@@ -483,6 +494,11 @@ function setupDays() {
   }
 }
 search.addEventListener('input', render); stage.addEventListener('change', render); announced.addEventListener('change', render);
+viewSelect?.addEventListener('change', () => {
+  scheduleView = viewSelect.value === 'calendar' ? 'calendar' : 'cards';
+  if (selectedDay !== 'all' && selectedDay !== 'unconfirmed' && !scheduleDates().includes(selectedDay)) selectedDay = 'all';
+  setupDays(); render();
+});
 concerts.addEventListener('change', () => { if (concerts.checked && meetGreets.value === 'only') meetGreets.value = 'exclude'; render(); });
 meetGreets.addEventListener('change', () => { if (meetGreets.value === 'only') concerts.checked = false; render(); });
 eventStatus.addEventListener('change', render);
@@ -501,6 +517,7 @@ typeMenu?.addEventListener('keydown', event => { if (event.key === 'Escape') { t
 eventType?.addEventListener('change', () => { concerts.checked = false; meetGreets.value = 'all'; render(); });
 downloadCalendar.addEventListener('click', () => saveCalendar(filteredSessions(), `${config.eventId}-${selectedDay === 'all' ? 'schedule' : selectedDay.toLowerCase()}.ics`));
 document.querySelector('#reset').addEventListener('click', () => {
+  scheduleView = 'cards'; if (viewSelect) viewSelect.value = 'cards';
   search.value = ''; stage.value = 'all'; announced.checked = false; concerts.checked = false; meetGreets.value = 'all'; eventStatus.value = 'all';
   if (groupFilter) groupFilter.value = 'all';
   if (talentFilter) talentFilter.value = 'all';

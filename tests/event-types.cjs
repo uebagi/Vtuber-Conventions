@@ -11,6 +11,7 @@ class Element {
   querySelectorAll() { return this.children; }
 }
 const elements = Object.fromEntries(['#opening-hours', '#search', '#stage', '#announced', '#event-types', '#event-types-summary', '#event-status', '#group', '#talent', '#schedule', '#status', '#download-calendar', '#reset', '.days'].map(k => [k, new Element()]));
+elements['#schedule-view'] = new Element();
 elements['#group'].value = elements['#stage'].value = elements['#event-status'].value = elements['#event-types'].value = 'all';
 const html = fs.readFileSync('conventions/vexpo-2026/index.html', 'utf8');
 assert(!html.includes('value="exclude-meet-greets"'));
@@ -28,6 +29,12 @@ context.window = {addEventListener: (name, handler) => { windowHandlers[name] = 
 vm.runInContext(fs.readFileSync('assets/app.js', 'utf8'), context);
 setImmediate(async () => {
   const run = code => vm.runInContext(code, context);
+  elements['#schedule-view'].value = 'calendar'; elements['#schedule-view'].handlers.change();
+  assert.equal(new URL(context.location.href).searchParams.get('view'), 'calendar');
+  assert.equal(run('filteredSessions().length'), 263);
+  windowHandlers.popstate(); assert.equal(elements['#schedule-view'].value, 'calendar');
+  elements['#reset'].click(); assert.equal(elements['#schedule-view'].value, 'cards');
+  assert(!new URL(context.location.href).searchParams.has('view'));
   const check = (type, checked) => { const box = elements['#event-types'].children.find(box => box.value === type); box.checked = checked; box.handlers.change(); };
   const select = type => { check('all', true); if (type !== 'all') check(type, true); };
   for (const [type, expected] of [['all', 263], ['concert', 19], ['meet-greet', 215], ['roaming', 19], ['afterparty', 4], ['stage-panel', 32]]) {
