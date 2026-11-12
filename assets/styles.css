@@ -60,7 +60,8 @@
 /* Day columns and a shared local-time axis. */
 .view-switch{display:flex;align-items:center;gap:8px;color:var(--muted);font-size:.85rem}.view-switch select{min-height:42px;padding:8px 30px 8px 10px;width:auto}
 .timetable-hint{font-size:.8rem;color:var(--muted);margin:0 0 10px}
-.timetable-viewport{max-height:72vh;overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);overscroll-behavior:contain;scrollbar-color:#736285 var(--surface)}
+#schedule{width:100%;max-width:100%;min-width:0;container: schedule / inline-size}
+.timetable-viewport{width:100%;max-width:100%;min-width:0;max-height:72vh;overflow:auto;border:1px solid var(--line);border-radius:14px;background:var(--surface);overscroll-behavior:contain;scrollbar-color:#736285 var(--surface)}
 .timetable{min-width:100%;width:max-content}.timetable-head,.timetable-body{display:grid;min-width:100%}.timetable-head{position:sticky;top:0;z-index:4;background:#211e32;min-height:74px;border-bottom:1px solid var(--line)}
 .timetable-zone{position:sticky;left:0;z-index:5;background:#211e32;display:flex;align-items:center;justify-content:center;font-size:.72rem;color:var(--muted)}
 .timetable-date{display:flex;flex-direction:column;justify-content:center;padding:10px 14px;border-left:1px solid var(--line)}.timetable-date strong{font-family:'Space Grotesk',sans-serif}.timetable-date span{font-size:.75rem;color:var(--muted)}
@@ -73,9 +74,7 @@
 @media(max-width:760px){.view-switch{flex-basis:100%;justify-content:space-between}.view-switch select{flex:1;max-width:220px}.timetable-dialog{padding:12px}.timetable-viewport{max-height:70dvh}}
 
 .timetable-agenda{display:none}
-@media(max-width:760px){
-  .timetable-viewport{display:none}
-  .timetable-agenda{display:block;min-width:0}
+  .timetable-agenda,.agenda-day{width:100%;max-width:100%;min-width:0}
   .agenda-day+.agenda-day{margin-top:28px}
   .agenda-heading{display:flex;flex-direction:column;gap:2px;margin:0 0 12px;font-size:1.1rem;line-height:1.4}
   .agenda-heading>span{font-size:.8rem;font-weight:400;color:var(--muted)}
@@ -87,4 +86,11 @@
   .agenda-location,.agenda-notice{font-size:.76rem;line-height:1.4;color:var(--muted)}
   .agenda-start-only{border-left-style:dashed}
   .agenda-event:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+@media(max-width:760px){
+  .timetable-viewport{display:none}
+  .timetable-agenda{display:block}
+}
+@container schedule (max-width:960px){
+  .timetable-viewport{display:none}
+  .timetable-agenda{display:block}
 }

@@ -21,7 +21,8 @@ try {
     if (!fs.existsSync(path.join(source, 'schedule.csv'))) continue;
     const target = path.join(output, 'conventions', entry.name);
     const page = fs.readFileSync(path.join(source, 'index.html'), 'utf8');
-    assert.equal(fs.readFileSync(path.join(target, 'index.html'), 'utf8'), page);
+    const packaged = fs.readFileSync(path.join(target, 'index.html'), 'utf8');
+    assert.equal(packaged.replace(/\?v=[a-f0-9]{12}/g, ''), page);
     for (const [, name] of page.matchAll(/data-(?:socials|groups|opening-hours|unconfirmed)="([^"]+)"/g)) {
       assert.deepEqual(fs.readFileSync(path.join(target, name)), fs.readFileSync(path.join(source, name)));
     }
@@ -34,8 +35,10 @@ try {
   assert(html.includes('href="../../"'));
   for (const match of html.matchAll(/(?:href|src)="([^"#]+)"/g)) {
     if (/^https?:/.test(match[1])) continue;
-    assert(fs.existsSync(path.resolve(convention, match[1])), `Broken local link: ${match[1]}`);
+    assert(fs.existsSync(path.resolve(convention, match[1].split(/[?#]/)[0])), `Broken local link: ${match[1]}`);
   }
+  for (const asset of ['styles.css', 'timetable.js', 'app.js', 'map.js']) assert(new RegExp(`assets/${asset.replace('.', '\\.')}\\?v=[a-f0-9]{12}`).test(html));
+  assert(/assets\/directory\.js\?v=[a-f0-9]{12}/.test(rootHTML));
   for (const name of ['schedule.csv', 'socials.json', 'opening-hours.json', 'groups.json', 'unconfirmed.json']) {
     const source = fs.readFileSync(path.join(repository, 'conventions', slug, name));
     assert.deepEqual(fs.readFileSync(path.join(convention, name)), source);
@@ -75,7 +78,9 @@ try {
   fs.copyFileSync(path.join(repository, 'conventions', 'index.html'), path.join(fixture, 'conventions', 'index.html'));
   fs.mkdirSync(path.join(fixture, 'assets'));
   fs.writeFileSync(path.join(fixture, 'index.html'), '<a href="conventions/example-con-2030/">Example</a>');
-  fs.writeFileSync(path.join(future, 'index.html'), '<p>Example</p>');
+  fs.writeFileSync(path.join(future, 'index.html'), '<link href="../../assets/styles.css"><script src="../../assets/timetable.js"></script><p>Example</p>');
+  fs.writeFileSync(path.join(fixture, 'assets', 'styles.css'), 'body {color:red}');
+  fs.writeFileSync(path.join(fixture, 'assets', 'timetable.js'), '/* Calendar */');
   fs.writeFileSync(path.join(future, 'schedule.csv'), 'date,event\n2030-09-18,Example\n');
   fs.writeFileSync(path.join(future, 'private-notes.txt'), 'Not a runtime file');
   fs.mkdirSync(path.join(fixture, 'conventions', 'draft-without-schedule'));
@@ -83,6 +88,12 @@ try {
   assert.deepEqual(fs.readdirSync(path.join(futureOutput, 'conventions')).sort(), ['example-con-2030', 'index.html']);
   assert.deepEqual(fs.readdirSync(path.join(futureOutput, 'conventions', 'example-con-2030')).sort(), ['index.html', 'schedule.csv']);
   assert(!fs.existsSync(path.join(futureOutput, 'example-con-2030')));
+  const firstHTML = fs.readFileSync(path.join(futureOutput, 'conventions', 'example-con-2030', 'index.html'), 'utf8');
+  fs.writeFileSync(path.join(fixture, 'assets', 'styles.css'), 'body {color:blue}');
+  const changedOutput = buildSite(path.join(temporary, 'changed-site'), fixture);
+  const changedHTML = fs.readFileSync(path.join(changedOutput, 'conventions', 'example-con-2030', 'index.html'), 'utf8');
+  assert.notEqual(firstHTML.match(/styles\.css\?v=([a-f0-9]+)/)[1], changedHTML.match(/styles\.css\?v=([a-f0-9]+)/)[1]);
+  assert.equal(firstHTML.match(/timetable\.js\?v=([a-f0-9]+)/)[1], changedHTML.match(/timetable\.js\?v=([a-f0-9]+)/)[1]);
   console.log('PASS: Nested convention packaging, relative links, optional data, legacy redirects and downloads, source exclusions, and future convention discovery.');
 } finally {
   const resolved = path.resolve(temporary);

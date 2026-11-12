@@ -1,5 +1,6 @@
 const fs = require('node:fs');
 const path = require('node:path');
+const { createHash } = require('node:crypto');
 
 const repository = path.resolve(__dirname, '..');
 const legacySlugs = new Set(['vexpo-2026']);
@@ -8,8 +9,23 @@ const dataFiles = ['schedule.csv', 'socials.json', 'opening-hours.json', 'groups
 function buildSite(destination, source = repository) {
   destination = path.resolve(destination);
   if (fs.existsSync(destination)) throw new Error(`Output already exists: ${destination}. Choose a fresh directory.`);
+  const assetDirectory = path.join(source, 'assets');
+  const versions = new Map(fs.readdirSync(assetDirectory, {withFileTypes: true})
+    .filter(entry => entry.isFile() && /\.(css|js)$/.test(entry.name))
+    .map(entry => [entry.name, createHash('sha256').update(fs.readFileSync(path.join(assetDirectory, entry.name))).digest('hex').slice(0, 12)]));
+  const writeHTML = (input, output) => {
+    const html = fs.readFileSync(input, 'utf8').replace(/(?:href|src)="([^"]+)"/g, (attribute, value) => {
+      if (!/^(?:\.\.\/)*assets\/[^/]+$/.test(value.split(/[?#]/)[0])) return attribute;
+      const url = new URL(value, 'https://assets.invalid/');
+      const version = versions.get(path.posix.basename(url.pathname));
+      if (!version) return attribute;
+      url.searchParams.set('v', version);
+      return attribute.replace(value, value.split(/[?#]/)[0] + url.search + url.hash);
+    });
+    fs.writeFileSync(output, html);
+  };
   fs.mkdirSync(destination, { recursive: true });
-  fs.copyFileSync(path.join(source, 'index.html'), path.join(destination, 'index.html'));
+  writeHTML(path.join(source, 'index.html'), path.join(destination, 'index.html'));
   fs.cpSync(path.join(source, 'assets'), path.join(destination, 'assets'), { recursive: true });
 
   const conventions = path.join(source, 'conventions');
@@ -21,7 +37,7 @@ function buildSite(destination, source = repository) {
     if (!fs.existsSync(path.join(convention, 'schedule.csv'))) continue;
     const output = path.join(destination, 'conventions', directory.name);
     fs.mkdirSync(output, { recursive: true });
-    fs.copyFileSync(path.join(convention, 'index.html'), path.join(output, 'index.html'));
+    writeHTML(path.join(convention, 'index.html'), path.join(output, 'index.html'));
     for (const file of dataFiles) {
       if (fs.existsSync(path.join(convention, file))) {
         fs.copyFileSync(path.join(convention, file), path.join(output, file));
